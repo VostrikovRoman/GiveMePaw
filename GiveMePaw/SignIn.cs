@@ -22,6 +22,15 @@ namespace GiveMePaw
 
         }
 
-        
+
+        private void link_to_sign_up_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void link_to_sign_in_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }
