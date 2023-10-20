@@ -8,14 +8,3 @@ C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMeP
 C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.CoreCompileInputs.cache
 C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.exe
 C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.pdb
-C:\Users\женя\Source\Repos\VostrikovRoman\GiveMePaw\GiveMePaw\bin\Debug\GiveMePaw.exe.config
-C:\Users\женя\Source\Repos\VostrikovRoman\GiveMePaw\GiveMePaw\bin\Debug\GiveMePaw.exe
-C:\Users\женя\Source\Repos\VostrikovRoman\GiveMePaw\GiveMePaw\bin\Debug\GiveMePaw.pdb
-C:\Users\женя\Source\Repos\VostrikovRoman\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.AssemblyReference.cache
-C:\Users\женя\Source\Repos\VostrikovRoman\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.profil.resources
-C:\Users\женя\Source\Repos\VostrikovRoman\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.SignIn.resources
-C:\Users\женя\Source\Repos\VostrikovRoman\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.Properties.Resources.resources
-C:\Users\женя\Source\Repos\VostrikovRoman\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.GenerateResource.cache
-C:\Users\женя\Source\Repos\VostrikovRoman\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.CoreCompileInputs.cache
-C:\Users\женя\Source\Repos\VostrikovRoman\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.exe
-C:\Users\женя\Source\Repos\VostrikovRoman\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.pdb

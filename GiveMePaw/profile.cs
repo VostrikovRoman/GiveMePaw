@@ -10,25 +10,19 @@ using System.Windows.Forms;
 
 namespace GiveMePaw
 {
-    public partial class SignIn : Form
+    public partial class profile : Form
     {
-        public SignIn()
+        public profile()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
 
-
-        private void link_to_sign_up_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void link_to_sign_in_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void profile_Load(object sender, EventArgs e)
         {
 
         }
