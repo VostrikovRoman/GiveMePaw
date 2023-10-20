@@ -35,7 +35,6 @@ namespace GiveMePaw
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.password_sign_in = new System.Windows.Forms.TextBox();
             this.email_sign_in = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -58,7 +57,6 @@ namespace GiveMePaw
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.SignInDisplay.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SignUpDisplay.SuspendLayout();
@@ -77,7 +75,6 @@ namespace GiveMePaw
             this.SignInDisplay.Controls.Add(this.link_to_sign_up);
             this.SignInDisplay.Controls.Add(this.label3);
             this.SignInDisplay.Controls.Add(this.panel2);
-            this.SignInDisplay.Controls.Add(this.pictureBox3);
             this.SignInDisplay.Controls.Add(this.password_sign_in);
             this.SignInDisplay.Controls.Add(this.email_sign_in);
             this.SignInDisplay.Controls.Add(this.label1);
@@ -133,17 +130,6 @@ namespace GiveMePaw
             this.label2.Size = new System.Drawing.Size(116, 34);
             this.label2.TabIndex = 0;
             this.label2.Text = "ВОЙТИ";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::GiveMePaw.Properties.Resources.paws__1_;
-            this.pictureBox3.Location = new System.Drawing.Point(-173, 104);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(453, 406);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
             // 
             // password_sign_in
             // 
@@ -319,7 +305,7 @@ namespace GiveMePaw
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::GiveMePaw.Properties.Resources.paws__1_;
-            this.pictureBox4.Location = new System.Drawing.Point(730, 75);
+            this.pictureBox4.Location = new System.Drawing.Point(727, 104);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(453, 406);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -371,9 +357,9 @@ namespace GiveMePaw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 614);
-            this.Controls.Add(this.SignUpDisplay);
+            this.ClientSize = new System.Drawing.Size(1008, 613);
             this.Controls.Add(this.SignInDisplay);
+            this.Controls.Add(this.SignUpDisplay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1024, 652);
@@ -385,7 +371,6 @@ namespace GiveMePaw
             this.SignInDisplay.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.SignUpDisplay.ResumeLayout(false);
@@ -405,7 +390,6 @@ namespace GiveMePaw
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox password_sign_in;
         private System.Windows.Forms.TextBox email_sign_in;
         private System.Windows.Forms.Panel panel2;
