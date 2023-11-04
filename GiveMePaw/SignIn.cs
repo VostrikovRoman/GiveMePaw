@@ -40,7 +40,7 @@ namespace GiveMePaw
         private void save_button_sign_up_Click(object sender, EventArgs e)
         {
             SignIn.ActiveForm.Hide();
-            GiveMePaw NewForm = new GiveMePaw();
+            ForUsers NewForm = new ForUsers();
             NewForm.ShowDialog();
             Close();
         }
@@ -48,7 +48,7 @@ namespace GiveMePaw
         private void sign_in_button_Click(object sender, EventArgs e)
         {
             SignIn.ActiveForm.Hide();
-            GiveMePaw NewForm = new GiveMePaw();
+            ForUsers NewForm = new ForUsers();
             NewForm.ShowDialog();
             Close();
         }

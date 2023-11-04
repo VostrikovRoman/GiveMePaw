@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GiveMePaw
 {
-    public partial class GiveMePaw : Form
+    public partial class Account : Form
     {
-        public GiveMePaw()
+        public Account()
         {
             InitializeComponent();
         }
