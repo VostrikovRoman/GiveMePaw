@@ -63,6 +63,16 @@ namespace GiveMePaw.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_give_me_paw_2 {
+            get {
+                object obj = ResourceManager.GetObject("logo_give_me_paw 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap paws__1_ {
             get {
                 object obj = ResourceManager.GetObject("paws (1)", resourceCulture);
@@ -106,6 +116,26 @@ namespace GiveMePaw.Properties {
         internal static System.Drawing.Bitmap Rectangle_9__1_ {
             get {
                 object obj = ResourceManager.GetObject("Rectangle 9 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rectangle_9__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("Rectangle 9 (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rectangle_91 {
+            get {
+                object obj = ResourceManager.GetObject("Rectangle 91", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

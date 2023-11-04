@@ -8,3 +8,16 @@ C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMeP
 C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.CoreCompileInputs.cache
 C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.exe
 C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.pdb
+C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\bin\Debug\GiveMePaw.exe.config
+C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\bin\Debug\GiveMePaw.exe
+C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\bin\Debug\GiveMePaw.pdb
+C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.AssemblyReference.cache
+C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.SignIn.resources
+C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.Properties.Resources.resources
+C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.GenerateResource.cache
+C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.CoreCompileInputs.cache
+C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.exe
+C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.pdb
+C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.Account.resources
+C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.ForEmployers.resources
+C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.ForUsers.resources

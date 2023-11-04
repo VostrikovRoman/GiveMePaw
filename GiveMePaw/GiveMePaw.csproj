@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account.Designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForEmployers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForEmployers.Designer.cs">
+      <DependentUpon>ForEmployers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForUsers.Designer.cs">
+      <DependentUpon>ForUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +72,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForEmployers.resx">
+      <DependentUpon>ForEmployers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForUsers.resx">
+      <DependentUpon>ForUsers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +121,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Rectangle 9 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 91.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 9 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_give_me_paw 2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -33,7 +33,7 @@ namespace GiveMePaw
             this.SignInDisplay = new System.Windows.Forms.Panel();
             this.link_to_sign_up = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.sign_in_button = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.password_sign_in = new System.Windows.Forms.TextBox();
@@ -42,6 +42,7 @@ namespace GiveMePaw
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.SignUpDisplay = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.password_sign_up = new System.Windows.Forms.TextBox();
             this.email_sign_up = new System.Windows.Forms.TextBox();
             this.phone_sign_up = new System.Windows.Forms.TextBox();
@@ -55,17 +56,16 @@ namespace GiveMePaw
             this.surname_sign_up = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.SignInDisplay.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.sign_in_button.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SignUpDisplay.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.save_button_sign_up.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // SignInDisplay
@@ -76,7 +76,7 @@ namespace GiveMePaw
             this.SignInDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
             this.SignInDisplay.Controls.Add(this.link_to_sign_up);
             this.SignInDisplay.Controls.Add(this.label3);
-            this.SignInDisplay.Controls.Add(this.panel2);
+            this.SignInDisplay.Controls.Add(this.sign_in_button);
             this.SignInDisplay.Controls.Add(this.pictureBox3);
             this.SignInDisplay.Controls.Add(this.password_sign_in);
             this.SignInDisplay.Controls.Add(this.email_sign_in);
@@ -114,14 +114,15 @@ namespace GiveMePaw
             this.label3.TabIndex = 7;
             this.label3.Text = "Ещё нет аккаунта? Зарегистрируйся";
             // 
-            // panel2
+            // sign_in_button
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(412, 417);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(198, 47);
-            this.panel2.TabIndex = 6;
+            this.sign_in_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
+            this.sign_in_button.Controls.Add(this.label2);
+            this.sign_in_button.Location = new System.Drawing.Point(412, 417);
+            this.sign_in_button.Name = "sign_in_button";
+            this.sign_in_button.Size = new System.Drawing.Size(198, 47);
+            this.sign_in_button.TabIndex = 6;
+            this.sign_in_button.Click += new System.EventHandler(this.sign_in_button_Click);
             // 
             // label2
             // 
@@ -133,6 +134,7 @@ namespace GiveMePaw
             this.label2.Size = new System.Drawing.Size(116, 34);
             this.label2.TabIndex = 0;
             this.label2.Text = "ВОЙТИ";
+            this.label2.Click += new System.EventHandler(this.sign_in_button_Click);
             // 
             // pictureBox3
             // 
@@ -202,6 +204,7 @@ namespace GiveMePaw
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SignUpDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            this.SignUpDisplay.Controls.Add(this.pictureBox5);
             this.SignUpDisplay.Controls.Add(this.password_sign_up);
             this.SignUpDisplay.Controls.Add(this.email_sign_up);
             this.SignUpDisplay.Controls.Add(this.phone_sign_up);
@@ -214,11 +217,21 @@ namespace GiveMePaw
             this.SignUpDisplay.Controls.Add(this.surname_sign_up);
             this.SignUpDisplay.Controls.Add(this.label6);
             this.SignUpDisplay.Controls.Add(this.pictureBox6);
-            this.SignUpDisplay.Controls.Add(this.pictureBox5);
             this.SignUpDisplay.Location = new System.Drawing.Point(0, 0);
             this.SignUpDisplay.Name = "SignUpDisplay";
             this.SignUpDisplay.Size = new System.Drawing.Size(1011, 617);
             this.SignUpDisplay.TabIndex = 9;
+            this.SignUpDisplay.Visible = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = global::GiveMePaw.Properties.Resources.Rectangle_91;
+            this.pictureBox5.Location = new System.Drawing.Point(0, -328);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(314, 620);
+            this.pictureBox5.TabIndex = 16;
+            this.pictureBox5.TabStop = false;
             // 
             // password_sign_up
             // 
@@ -303,6 +316,7 @@ namespace GiveMePaw
             this.save_button_sign_up.Name = "save_button_sign_up";
             this.save_button_sign_up.Size = new System.Drawing.Size(232, 47);
             this.save_button_sign_up.TabIndex = 6;
+            this.save_button_sign_up.Click += new System.EventHandler(this.save_button_sign_up_Click);
             // 
             // label5
             // 
@@ -314,6 +328,7 @@ namespace GiveMePaw
             this.label5.Size = new System.Drawing.Size(158, 34);
             this.label5.TabIndex = 0;
             this.label5.Text = "Сохранить";
+            this.label5.Click += new System.EventHandler(this.save_button_sign_up_Click);
             // 
             // pictureBox4
             // 
@@ -349,23 +364,13 @@ namespace GiveMePaw
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::GiveMePaw.Properties.Resources.Rectangle_9__1_;
-            this.pictureBox6.Location = new System.Drawing.Point(-10, 304);
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::GiveMePaw.Properties.Resources.Rectangle_9__1_1;
+            this.pictureBox6.Location = new System.Drawing.Point(0, 274);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(555, 331);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 10;
+            this.pictureBox6.Size = new System.Drawing.Size(513, 404);
+            this.pictureBox6.TabIndex = 17;
             this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::GiveMePaw.Properties.Resources.Rectangle_9;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(268, 333);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 9;
-            this.pictureBox5.TabStop = false;
             // 
             // SignIn
             // 
@@ -383,18 +388,18 @@ namespace GiveMePaw
             this.Load += new System.EventHandler(this.Form1_Load);
             this.SignInDisplay.ResumeLayout(false);
             this.SignInDisplay.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.sign_in_button.ResumeLayout(false);
+            this.sign_in_button.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.SignUpDisplay.ResumeLayout(false);
             this.SignUpDisplay.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.save_button_sign_up.ResumeLayout(false);
             this.save_button_sign_up.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -408,12 +413,11 @@ namespace GiveMePaw
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox password_sign_in;
         private System.Windows.Forms.TextBox email_sign_in;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel sign_in_button;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.LinkLabel link_to_sign_up;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel SignUpDisplay;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.LinkLabel link_to_sign_in;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel save_button_sign_up;
@@ -421,12 +425,13 @@ namespace GiveMePaw
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.TextBox surname_sign_up;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.TextBox password_sign_up;
         private System.Windows.Forms.TextBox email_sign_up;
         private System.Windows.Forms.TextBox phone_sign_up;
         private System.Windows.Forms.TextBox last_name_sign_up;
         private System.Windows.Forms.TextBox name_sign_up;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }
 
