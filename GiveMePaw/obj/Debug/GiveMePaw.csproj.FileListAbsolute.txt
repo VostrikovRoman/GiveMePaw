@@ -21,3 +21,16 @@ C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMeP
 C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.Account.resources
 C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.ForEmployers.resources
 C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.ForUsers.resources
+\\SAN-MNG-1\Students\ДТ\Т-223901-НТ-ИСТ\Vostrikov-RA\ОРПО\GiveMePaw\GiveMePaw\bin\Debug\GiveMePaw.exe.config
+\\SAN-MNG-1\Students\ДТ\Т-223901-НТ-ИСТ\Vostrikov-RA\ОРПО\GiveMePaw\GiveMePaw\bin\Debug\GiveMePaw.exe
+\\SAN-MNG-1\Students\ДТ\Т-223901-НТ-ИСТ\Vostrikov-RA\ОРПО\GiveMePaw\GiveMePaw\bin\Debug\GiveMePaw.pdb
+\\SAN-MNG-1\Students\ДТ\Т-223901-НТ-ИСТ\Vostrikov-RA\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.AssemblyReference.cache
+\\SAN-MNG-1\Students\ДТ\Т-223901-НТ-ИСТ\Vostrikov-RA\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.Account.resources
+\\SAN-MNG-1\Students\ДТ\Т-223901-НТ-ИСТ\Vostrikov-RA\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.ForEmployers.resources
+\\SAN-MNG-1\Students\ДТ\Т-223901-НТ-ИСТ\Vostrikov-RA\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.ForUsers.resources
+\\SAN-MNG-1\Students\ДТ\Т-223901-НТ-ИСТ\Vostrikov-RA\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.SignIn.resources
+\\SAN-MNG-1\Students\ДТ\Т-223901-НТ-ИСТ\Vostrikov-RA\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.Properties.Resources.resources
+\\SAN-MNG-1\Students\ДТ\Т-223901-НТ-ИСТ\Vostrikov-RA\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.GenerateResource.cache
+\\SAN-MNG-1\Students\ДТ\Т-223901-НТ-ИСТ\Vostrikov-RA\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.CoreCompileInputs.cache
+\\SAN-MNG-1\Students\ДТ\Т-223901-НТ-ИСТ\Vostrikov-RA\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.exe
+\\SAN-MNG-1\Students\ДТ\Т-223901-НТ-ИСТ\Vostrikov-RA\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.pdb
