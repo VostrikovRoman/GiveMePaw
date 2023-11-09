@@ -86,16 +86,6 @@ namespace GiveMePaw
             {
                 MessageBox.Show("Неправильный email или пароль!");
             }
-                
-
-            
-            
-           
-
-            //SignIn.ActiveForm.Hide();
-            //ForUsers NewForm = new ForUsers();
-           // NewForm.ShowDialog();
-           //Close();
         }
 
 
