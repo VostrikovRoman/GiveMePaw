@@ -420,7 +420,6 @@ namespace GiveMePaw
             this.MinimumSize = new System.Drawing.Size(1024, 652);
             this.Name = "SignIn";
             this.Text = "Дай лапу";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.SignInDisplay.ResumeLayout(false);
             this.SignInDisplay.PerformLayout();
             this.sign_in_button.ResumeLayout(false);
