@@ -24,10 +24,5 @@ namespace GiveMePaw
             info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
             about_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
         }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

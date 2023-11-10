@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,12 +17,6 @@ namespace GiveMePaw
         {
             InitializeComponent();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
 
         private void link_to_sign_up_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -64,13 +59,43 @@ namespace GiveMePaw
 
         private void sign_in_button_Click(object sender, EventArgs e)
         {
-            email_sign_in.Text = "email";
-            password_sign_in.Text = "пароль";
+            String emailUser = email_sign_in.Text;
+            String passwordUser = password_sign_in.Text;
 
-            SignIn.ActiveForm.Hide();
-            ForUsers NewForm = new ForUsers();
-            NewForm.ShowDialog();
-            Close();
+            DB db = new DB();
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `email` = @eU AND `password` = @pU", db.getConnection());
+            command.Parameters.Add("@eU", MySqlDbType.VarChar).Value = emailUser;
+            command.Parameters.Add("@pU", MySqlDbType.VarChar).Value = passwordUser;
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            if (table.Rows.Count > 0)
+            {
+                email_sign_in.Text = "email";
+                password_sign_in.Text = "пароль";
+                SignIn.ActiveForm.Hide();
+                ForUsers NewForm = new ForUsers();
+                NewForm.ShowDialog();
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Неправильный email или пароль!");
+            }
+                
+
+            
+            
+           
+
+            //SignIn.ActiveForm.Hide();
+            //ForUsers NewForm = new ForUsers();
+           // NewForm.ShowDialog();
+           //Close();
         }
 
 
