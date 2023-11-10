@@ -50,3 +50,5 @@ C:\Users\User\Source\Repos\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.CoreCo
 C:\Users\User\Source\Repos\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.CopyComplete
 C:\Users\User\Source\Repos\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.exe
 C:\Users\User\Source\Repos\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.pdb
+C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\bin\Debug\MySql.Data.xml
+C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.CopyComplete
