@@ -41,6 +41,7 @@ namespace GiveMePaw
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SignUpDisplay = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.password_sign_up = new System.Windows.Forms.TextBox();
@@ -56,6 +57,7 @@ namespace GiveMePaw
             this.surname_sign_up = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SignInDisplay.SuspendLayout();
             this.sign_in_button.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -83,6 +85,7 @@ namespace GiveMePaw
             this.SignInDisplay.Controls.Add(this.label1);
             this.SignInDisplay.Controls.Add(this.pictureBox1);
             this.SignInDisplay.Controls.Add(this.pictureBox2);
+            this.SignInDisplay.Controls.Add(this.textBox1);
             this.SignInDisplay.Location = new System.Drawing.Point(0, 0);
             this.SignInDisplay.Name = "SignInDisplay";
             this.SignInDisplay.Size = new System.Drawing.Size(1011, 617);
@@ -154,8 +157,10 @@ namespace GiveMePaw
             this.password_sign_in.Location = new System.Drawing.Point(340, 336);
             this.password_sign_in.Name = "password_sign_in";
             this.password_sign_in.Size = new System.Drawing.Size(340, 44);
-            this.password_sign_in.TabIndex = 4;
+            this.password_sign_in.TabIndex = 3;
             this.password_sign_in.Text = "пароль";
+            this.password_sign_in.Enter += new System.EventHandler(this.password_sign_in_Enter);
+            this.password_sign_in.Leave += new System.EventHandler(this.password_sign_in_Leave);
             // 
             // email_sign_in
             // 
@@ -164,8 +169,10 @@ namespace GiveMePaw
             this.email_sign_in.Location = new System.Drawing.Point(340, 274);
             this.email_sign_in.Name = "email_sign_in";
             this.email_sign_in.Size = new System.Drawing.Size(340, 44);
-            this.email_sign_in.TabIndex = 3;
+            this.email_sign_in.TabIndex = 2;
             this.email_sign_in.Text = "email";
+            this.email_sign_in.Enter += new System.EventHandler(this.email_sign_in_Enter);
+            this.email_sign_in.Leave += new System.EventHandler(this.email_sign_in_Leave);
             // 
             // label1
             // 
@@ -198,6 +205,14 @@ namespace GiveMePaw
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            this.textBox1.Location = new System.Drawing.Point(984, 581);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(12, 20);
+            this.textBox1.TabIndex = 1;
+            // 
             // SignUpDisplay
             // 
             this.SignUpDisplay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -217,6 +232,7 @@ namespace GiveMePaw
             this.SignUpDisplay.Controls.Add(this.surname_sign_up);
             this.SignUpDisplay.Controls.Add(this.label6);
             this.SignUpDisplay.Controls.Add(this.pictureBox6);
+            this.SignUpDisplay.Controls.Add(this.textBox2);
             this.SignUpDisplay.Location = new System.Drawing.Point(0, 0);
             this.SignUpDisplay.Name = "SignUpDisplay";
             this.SignUpDisplay.Size = new System.Drawing.Size(1011, 617);
@@ -240,8 +256,10 @@ namespace GiveMePaw
             this.password_sign_up.Location = new System.Drawing.Point(330, 391);
             this.password_sign_up.Name = "password_sign_up";
             this.password_sign_up.Size = new System.Drawing.Size(356, 36);
-            this.password_sign_up.TabIndex = 15;
+            this.password_sign_up.TabIndex = 8;
             this.password_sign_up.Text = "пароль";
+            this.password_sign_up.Enter += new System.EventHandler(this.password_sign_up_Enter);
+            this.password_sign_up.Leave += new System.EventHandler(this.password_sign_up_Leave);
             // 
             // email_sign_up
             // 
@@ -250,8 +268,10 @@ namespace GiveMePaw
             this.email_sign_up.Location = new System.Drawing.Point(330, 340);
             this.email_sign_up.Name = "email_sign_up";
             this.email_sign_up.Size = new System.Drawing.Size(356, 36);
-            this.email_sign_up.TabIndex = 14;
+            this.email_sign_up.TabIndex = 7;
             this.email_sign_up.Text = "email";
+            this.email_sign_up.Enter += new System.EventHandler(this.email_sign_up_Enter);
+            this.email_sign_up.Leave += new System.EventHandler(this.email_sign_up_Leave);
             // 
             // phone_sign_up
             // 
@@ -260,8 +280,10 @@ namespace GiveMePaw
             this.phone_sign_up.Location = new System.Drawing.Point(330, 289);
             this.phone_sign_up.Name = "phone_sign_up";
             this.phone_sign_up.Size = new System.Drawing.Size(356, 36);
-            this.phone_sign_up.TabIndex = 13;
+            this.phone_sign_up.TabIndex = 6;
             this.phone_sign_up.Text = "телефон";
+            this.phone_sign_up.Enter += new System.EventHandler(this.phone_sign_up_Enter);
+            this.phone_sign_up.Leave += new System.EventHandler(this.phone_sign_up_Leave);
             // 
             // last_name_sign_up
             // 
@@ -270,8 +292,10 @@ namespace GiveMePaw
             this.last_name_sign_up.Location = new System.Drawing.Point(330, 238);
             this.last_name_sign_up.Name = "last_name_sign_up";
             this.last_name_sign_up.Size = new System.Drawing.Size(356, 36);
-            this.last_name_sign_up.TabIndex = 12;
+            this.last_name_sign_up.TabIndex = 5;
             this.last_name_sign_up.Text = "отчество";
+            this.last_name_sign_up.Enter += new System.EventHandler(this.last_name_sign_up_Enter);
+            this.last_name_sign_up.Leave += new System.EventHandler(this.last_name_sign_up_Leave);
             // 
             // name_sign_up
             // 
@@ -280,8 +304,10 @@ namespace GiveMePaw
             this.name_sign_up.Location = new System.Drawing.Point(330, 187);
             this.name_sign_up.Name = "name_sign_up";
             this.name_sign_up.Size = new System.Drawing.Size(356, 36);
-            this.name_sign_up.TabIndex = 11;
+            this.name_sign_up.TabIndex = 4;
             this.name_sign_up.Text = "имя";
+            this.name_sign_up.Enter += new System.EventHandler(this.name_sign_up_Enter);
+            this.name_sign_up.Leave += new System.EventHandler(this.name_sign_up_Leave);
             // 
             // link_to_sign_in
             // 
@@ -290,7 +316,7 @@ namespace GiveMePaw
             this.link_to_sign_in.BackColor = System.Drawing.Color.Transparent;
             this.link_to_sign_in.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.link_to_sign_in.LinkColor = System.Drawing.Color.Black;
-            this.link_to_sign_in.Location = new System.Drawing.Point(619, 528);
+            this.link_to_sign_in.Location = new System.Drawing.Point(598, 528);
             this.link_to_sign_in.Name = "link_to_sign_in";
             this.link_to_sign_in.Size = new System.Drawing.Size(61, 24);
             this.link_to_sign_in.TabIndex = 8;
@@ -302,11 +328,11 @@ namespace GiveMePaw
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Sans", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(326, 529);
+            this.label4.Location = new System.Drawing.Point(336, 529);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(295, 22);
+            this.label4.Size = new System.Drawing.Size(266, 22);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Ещё нет аккаунта? Зарегистрируйся";
+            this.label4.Text = "Уже есть аккаунт? Авторзируйся";
             // 
             // save_button_sign_up
             // 
@@ -350,6 +376,8 @@ namespace GiveMePaw
             this.surname_sign_up.Size = new System.Drawing.Size(356, 36);
             this.surname_sign_up.TabIndex = 3;
             this.surname_sign_up.Text = "фамилия";
+            this.surname_sign_up.Enter += new System.EventHandler(this.surname_sign_up_Enter);
+            this.surname_sign_up.Leave += new System.EventHandler(this.surname_sign_up_Leave);
             // 
             // label6
             // 
@@ -372,11 +400,18 @@ namespace GiveMePaw
             this.pictureBox6.TabIndex = 17;
             this.pictureBox6.TabStop = false;
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(28, 572);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(17, 20);
+            this.textBox2.TabIndex = 1;
+            // 
             // SignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 614);
+            this.ClientSize = new System.Drawing.Size(1008, 613);
             this.Controls.Add(this.SignUpDisplay);
             this.Controls.Add(this.SignInDisplay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -432,6 +467,8 @@ namespace GiveMePaw
         private System.Windows.Forms.TextBox name_sign_up;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 
