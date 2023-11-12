@@ -51,8 +51,10 @@ namespace GiveMePaw
             command.Parameters.Add("@eU", MySqlDbType.VarChar).Value = email_sign_up.Text;
             command.Parameters.Add("@phoneU", MySqlDbType.VarChar).Value = phone_sign_up.Text;
 
+            db.openConnection();
             adapter.SelectCommand = command;
             adapter.Fill(table);
+            db.closeConnection();
 
             if (table.Rows.Count > 0)
             {
@@ -67,6 +69,13 @@ namespace GiveMePaw
         
         private void save_button_sign_up_Click(object sender, EventArgs e)
         {
+            if (surname_sign_up.Text == "фамилия" | name_sign_up.Text == "имя" | last_name_sign_up.Text == "отчество" | phone_sign_up.Text == "телефон" | email_sign_up.Text == "email" | password_sign_up.Text == "пароль");
+            {
+                MessageBox.Show("Заполните всё колонки");
+                return;
+            }
+            
+            
             if (isUserExists())
                 return;
             
@@ -121,9 +130,11 @@ namespace GiveMePaw
             command.Parameters.Add("@eU", MySqlDbType.VarChar).Value = emailUser;
             command.Parameters.Add("@pU", MySqlDbType.VarChar).Value = passwordUser;
 
+            db.openConnection();
             adapter.SelectCommand = command;
             adapter.Fill(table);
-
+            db.closeConnection();
+            
             if (table.Rows.Count > 0)
             {
                 email_sign_in.Text = "email";
