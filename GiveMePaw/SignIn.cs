@@ -69,7 +69,7 @@ namespace GiveMePaw
         
         private void save_button_sign_up_Click(object sender, EventArgs e)
         {
-            if (surname_sign_up.Text == "фамилия" | name_sign_up.Text == "имя" | last_name_sign_up.Text == "отчество" | phone_sign_up.Text == "телефон" | email_sign_up.Text == "email" | password_sign_up.Text == "пароль");
+            if (surname_sign_up.Text == "фамилия" | name_sign_up.Text == "имя" | last_name_sign_up.Text == "отчество" | phone_sign_up.Text == "телефон" | email_sign_up.Text == "email" | password_sign_up.Text == "пароль")
             {
                 MessageBox.Show("Заполните всё колонки");
                 return;
