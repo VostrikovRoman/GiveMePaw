@@ -238,6 +238,7 @@ namespace GiveMePaw
             this.SignUpDisplay.Size = new System.Drawing.Size(1011, 617);
             this.SignUpDisplay.TabIndex = 9;
             this.SignUpDisplay.Visible = false;
+            this.SignUpDisplay.Paint += new System.Windows.Forms.PaintEventHandler(this.SignUpDisplay_Paint);
             // 
             // pictureBox5
             // 

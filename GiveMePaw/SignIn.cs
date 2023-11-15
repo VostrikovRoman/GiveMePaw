@@ -285,6 +285,11 @@ namespace GiveMePaw
                 password_sign_up.Text = "пароль";
             }
         }
+
+        private void SignUpDisplay_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
         /////     /////
     }
 }

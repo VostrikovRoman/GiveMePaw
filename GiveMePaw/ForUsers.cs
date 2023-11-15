@@ -64,6 +64,21 @@ namespace GiveMePaw
         {
 
         }
+
+        private void label42_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label48_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label54_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
