@@ -29,5 +29,45 @@ namespace GiveMePaw
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void start_panel_Paint(object sender, PaintEventArgs e)
+        {
+          
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label24_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
+
+
+// label_cat.Parent = pictureBox_Dog;
+// label_cat.BackColor = Color.Transparent;
