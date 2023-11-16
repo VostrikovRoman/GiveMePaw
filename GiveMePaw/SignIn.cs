@@ -41,20 +41,80 @@ namespace GiveMePaw
             password_sign_up.Text = "пароль";
         }
 
+        public Boolean isUserExists()
+        {
+            DB db = new DB();
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `email` = @eU OR `phone_number` = @phoneU", db.getConnection());
+            command.Parameters.Add("@eU", MySqlDbType.VarChar).Value = email_sign_up.Text;
+            command.Parameters.Add("@phoneU", MySqlDbType.VarChar).Value = phone_sign_up.Text;
+
+            db.openConnection();
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+            db.closeConnection();
+
+            if (table.Rows.Count > 0)
+            {
+                MessageBox.Show("Пользователь с таким email или номер телефона существует!");
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        
         private void save_button_sign_up_Click(object sender, EventArgs e)
         {
-            surname_sign_up.Text = "фамилия";
-            name_sign_up.Text = "имя";
-            last_name_sign_up.Text = "отчество";
-            phone_sign_up.Text = "телефон";
-            email_sign_up.Text = "email";
-            password_sign_up.Text = "пароль";
+            if (surname_sign_up.Text == "фамилия" | name_sign_up.Text == "имя" | last_name_sign_up.Text == "отчество" | phone_sign_up.Text == "телефон" | email_sign_up.Text == "email" | password_sign_up.Text == "пароль")
+            {
+                MessageBox.Show("Заполните всё колонки");
+                return;
+            }
+            
+            
+            if (isUserExists())
+                return;
+            
+            DB db = new DB();
+            MySqlCommand command = new MySqlCommand("INSERT INTO `users` (`name`, `second_name`, `patronomic`, `email`, `phone_number`, `password`) VALUES (@name, @sname, @patronomic, @email, @phone, @pass)", db.getConnection());
+            command.Parameters.Add("@name", MySqlDbType.VarChar).Value = name_sign_up.Text;
+            command.Parameters.Add("@sname", MySqlDbType.VarChar).Value = surname_sign_up.Text;
+            command.Parameters.Add("@patronomic", MySqlDbType.VarChar).Value = last_name_sign_up.Text;
+            command.Parameters.Add("@email", MySqlDbType.VarChar).Value = email_sign_up.Text;
+            command.Parameters.Add("@phone", MySqlDbType.VarChar).Value = phone_sign_up.Text;
+            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = password_sign_up.Text;
+
+            db.openConnection();
+
+            if (command.ExecuteNonQuery() == 1)
+            {
+                surname_sign_up.Text = "фамилия";
+                name_sign_up.Text = "имя";
+                last_name_sign_up.Text = "отчество";
+                phone_sign_up.Text = "телефон";
+                email_sign_up.Text = "email";
+                password_sign_up.Text = "пароль";
+                SignInDisplay.Visible = true;
+                SignUpDisplay.Visible = false;
+                MessageBox.Show("Успешно");
+            }
 
 
-            SignIn.ActiveForm.Hide();
-            ForUsers NewForm = new ForUsers();
-            NewForm.ShowDialog();
-            Close();
+            else
+            {
+                MessageBox.Show("Ошибка");
+            }
+            db.closeConnection();
+            
+            
+            
+            
+            
+            
         }
 
         private void sign_in_button_Click(object sender, EventArgs e)
@@ -70,9 +130,11 @@ namespace GiveMePaw
             command.Parameters.Add("@eU", MySqlDbType.VarChar).Value = emailUser;
             command.Parameters.Add("@pU", MySqlDbType.VarChar).Value = passwordUser;
 
+            db.openConnection();
             adapter.SelectCommand = command;
             adapter.Fill(table);
-
+            db.closeConnection();
+            
             if (table.Rows.Count > 0)
             {
                 email_sign_in.Text = "email";
@@ -86,16 +148,7 @@ namespace GiveMePaw
             {
                 MessageBox.Show("Неправильный email или пароль!");
             }
-                
-
-            
-            
-           
-
-            //SignIn.ActiveForm.Hide();
-            //ForUsers NewForm = new ForUsers();
-           // NewForm.ShowDialog();
-           //Close();
+               
         }
 
 
@@ -231,6 +284,11 @@ namespace GiveMePaw
             {
                 password_sign_up.Text = "пароль";
             }
+        }
+
+        private void SignUpDisplay_Paint(object sender, PaintEventArgs e)
+        {
+
         }
         /////     /////
     }

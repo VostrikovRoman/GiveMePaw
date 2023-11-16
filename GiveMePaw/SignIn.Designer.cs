@@ -84,8 +84,8 @@ namespace GiveMePaw
             this.SignInDisplay.Controls.Add(this.email_sign_in);
             this.SignInDisplay.Controls.Add(this.label1);
             this.SignInDisplay.Controls.Add(this.pictureBox1);
-            this.SignInDisplay.Controls.Add(this.pictureBox2);
             this.SignInDisplay.Controls.Add(this.textBox1);
+            this.SignInDisplay.Controls.Add(this.pictureBox2);
             this.SignInDisplay.Location = new System.Drawing.Point(0, 0);
             this.SignInDisplay.Name = "SignInDisplay";
             this.SignInDisplay.Size = new System.Drawing.Size(1011, 617);
@@ -238,6 +238,7 @@ namespace GiveMePaw
             this.SignUpDisplay.Size = new System.Drawing.Size(1011, 617);
             this.SignUpDisplay.TabIndex = 9;
             this.SignUpDisplay.Visible = false;
+            this.SignUpDisplay.Paint += new System.Windows.Forms.PaintEventHandler(this.SignUpDisplay_Paint);
             // 
             // pictureBox5
             // 
