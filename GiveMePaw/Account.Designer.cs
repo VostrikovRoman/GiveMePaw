@@ -42,6 +42,7 @@ namespace GiveMePaw
             this.MaximumSize = new System.Drawing.Size(1024, 652);
             this.MinimumSize = new System.Drawing.Size(1024, 652);
             this.Name = "Account";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Дай Лапу";
             this.ResumeLayout(false);
 

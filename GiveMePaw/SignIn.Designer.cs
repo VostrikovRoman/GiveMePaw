@@ -40,8 +40,8 @@ namespace GiveMePaw
             this.email_sign_in = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.SignUpDisplay = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.password_sign_up = new System.Windows.Forms.TextBox();
@@ -84,8 +84,8 @@ namespace GiveMePaw
             this.SignInDisplay.Controls.Add(this.email_sign_in);
             this.SignInDisplay.Controls.Add(this.label1);
             this.SignInDisplay.Controls.Add(this.pictureBox1);
-            this.SignInDisplay.Controls.Add(this.textBox1);
             this.SignInDisplay.Controls.Add(this.pictureBox2);
+            this.SignInDisplay.Controls.Add(this.textBox1);
             this.SignInDisplay.Location = new System.Drawing.Point(0, 0);
             this.SignInDisplay.Name = "SignInDisplay";
             this.SignInDisplay.Size = new System.Drawing.Size(1011, 617);
@@ -195,6 +195,14 @@ namespace GiveMePaw
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            this.textBox1.Location = new System.Drawing.Point(984, 581);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(12, 20);
+            this.textBox1.TabIndex = 1;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
@@ -204,14 +212,6 @@ namespace GiveMePaw
             this.pictureBox2.Size = new System.Drawing.Size(513, 404);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
-            this.textBox1.Location = new System.Drawing.Point(984, 581);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(12, 20);
-            this.textBox1.TabIndex = 1;
             // 
             // SignUpDisplay
             // 
@@ -412,14 +412,15 @@ namespace GiveMePaw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 613);
-            this.Controls.Add(this.SignUpDisplay);
+            this.ClientSize = new System.Drawing.Size(1008, 614);
             this.Controls.Add(this.SignInDisplay);
+            this.Controls.Add(this.SignUpDisplay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1024, 652);
             this.MinimumSize = new System.Drawing.Size(1024, 652);
             this.Name = "SignIn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Дай лапу";
             this.SignInDisplay.ResumeLayout(false);
             this.SignInDisplay.PerformLayout();

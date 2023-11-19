@@ -24,61 +24,6 @@ namespace GiveMePaw
             info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
             about_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
         }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void start_panel_Paint(object sender, PaintEventArgs e)
-        {
-          
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label24_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label42_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label48_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label54_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 
