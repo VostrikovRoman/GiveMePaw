@@ -16,7 +16,7 @@ namespace GiveMePaw
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ForUsers());
+            Application.Run(new SignIn());
         }
     }
 }
