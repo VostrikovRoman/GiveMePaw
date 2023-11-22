@@ -38,7 +38,15 @@ namespace GiveMePaw
 
         }
 
-       
+        private void account_button_Click(object sender, EventArgs e)
+        {
+            ForUsers.ActiveForm.Hide();
+            Account NewForm = new Account();
+            NewForm.ShowDialog();
+            Close();
+        }
+
+
 
 
 

@@ -49,7 +49,7 @@ namespace GiveMePaw
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
+            this.account_button = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.give_away_panel = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -384,7 +384,7 @@ namespace GiveMePaw
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.account_button);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.give_away_panel);
@@ -400,18 +400,19 @@ namespace GiveMePaw
             this.panel1.Size = new System.Drawing.Size(1016, 618);
             this.panel1.TabIndex = 0;
             // 
-            // label10
+            // account_button
             // 
-            this.label10.AutoSize = true;
-            this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label10.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
-            this.label10.Location = new System.Drawing.Point(759, 33);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(145, 27);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Пестерев Д.";
+            this.account_button.AutoSize = true;
+            this.account_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.account_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.account_button.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.account_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
+            this.account_button.Location = new System.Drawing.Point(759, 33);
+            this.account_button.Name = "account_button";
+            this.account_button.Size = new System.Drawing.Size(145, 27);
+            this.account_button.TabIndex = 8;
+            this.account_button.Text = "Пестерев Д.";
+            this.account_button.Click += new System.EventHandler(this.account_button_Click);
             // 
             // pictureBox2
             // 
@@ -458,7 +459,6 @@ namespace GiveMePaw
             this.label42.Size = new System.Drawing.Size(112, 34);
             this.label42.TabIndex = 0;
             this.label42.Text = "отмена";
-           
             // 
             // panel8
             // 
@@ -1401,7 +1401,7 @@ namespace GiveMePaw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 613);
+            this.ClientSize = new System.Drawing.Size(1008, 614);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -1499,7 +1499,7 @@ namespace GiveMePaw
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel second_panel;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label account_button;
         private System.Windows.Forms.PictureBox pictureBox_Mouse;
         private System.Windows.Forms.PictureBox pictureBox_Rabbit;
         private System.Windows.Forms.PictureBox pictureBox_Parrot;

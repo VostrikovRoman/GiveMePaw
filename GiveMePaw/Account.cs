@@ -20,22 +20,58 @@ namespace GiveMePaw
 
         private void Account_Load(object sender, EventArgs e)
         {
+
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
-
             DB db = new DB();
-            MySqlCommand command = new MySqlCommand("SELECT ", db.getConnection());
-            command.Parameters.Add("@name", MySqlDbType.VarChar).Value = name_sign_up.Text;
-            command.Parameters.Add("@sname", MySqlDbType.VarChar).Value = surname_sign_up.Text;
-            command.Parameters.Add("@patronomic", MySqlDbType.VarChar).Value = last_name_sign_up.Text;
-            command.Parameters.Add("@email", MySqlDbType.VarChar).Value = email_sign_up.Text;
-            command.Parameters.Add("@phone", MySqlDbType.VarChar).Value = phone_sign_up.Text;
-            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = password_sign_up.Text;
-
             db.openConnection();
-            adapter.SelectCommand = command;
-            adapter.Fill(table);
+            //Surname//
+            MySqlCommand command_surname = new MySqlCommand("SELECT second_name FROM users WHERE email = @email", db.getConnection());
+            MySqlParameter n1 = new MySqlParameter("@email", textBox2.Text);
+            command_surname.Parameters.Add(n1);
+            string surname = (string)command_surname.ExecuteScalar();
+            command_surname.ExecuteNonQuery();
+            //Name//
+            MySqlCommand command_name = new MySqlCommand("SELECT name FROM users WHERE email = @email", db.getConnection());
+            MySqlParameter n2 = new MySqlParameter("@email", textBox2.Text);
+            command_name.Parameters.Add(n2);
+            string name = (string)command_name.ExecuteScalar();
+            command_name.ExecuteNonQuery();
+            //Last_name//
+            MySqlCommand command_last_name = new MySqlCommand("SELECT patronomic FROM users WHERE email = @email", db.getConnection());
+            MySqlParameter n3 = new MySqlParameter("@email", textBox2.Text);
+            command_surname.Parameters.Add(n3);
+            string last_name = (string)command_last_name.ExecuteScalar();
+            command_last_name.ExecuteNonQuery();
+            //Email//
+            MySqlCommand command_email = new MySqlCommand("SELECT email FROM users WHERE email = @email", db.getConnection());
+            MySqlParameter n4 = new MySqlParameter("@email", textBox2.Text);
+            command_email.Parameters.Add(n4);
+            string email = (string)command_email.ExecuteScalar();
+            command_email.ExecuteNonQuery();
+            //Phone//
+            MySqlCommand command_phone = new MySqlCommand("SELECT phone_number FROM users WHERE email = @email", db.getConnection());
+            MySqlParameter n5 = new MySqlParameter("@email", textBox2.Text);
+            command_phone.Parameters.Add(n5);
+            string phone = (string)command_phone.ExecuteScalar();
+            command_phone.ExecuteNonQuery();
+            //Password//
+            MySqlCommand command_password = new MySqlCommand("SELECT password FROM users WHERE email = @email", db.getConnection());
+            MySqlParameter n6 = new MySqlParameter("@email", textBox2.Text);
+            command_password.Parameters.Add(n6);
+            string password = (string)command_password.ExecuteScalar();
+            command_password.ExecuteNonQuery();
+
+            /*adapter.SelectCommand = command;
+            adapter.Fill(table);*/
             db.closeConnection();
+
+            surname_account.Text = surname;
+            name_account.Text = name;
+            last_name_account.Text = last_name;
+            email_account.Text = email;
+            phone_account.Text = phone;
+            password_account.Text = password;
 
             surname_account.ReadOnly = true;
             name_account.ReadOnly = true;
@@ -54,6 +90,58 @@ namespace GiveMePaw
 
         private void update_button_account_Click(object sender, EventArgs e)
         {
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            DB db = new DB();
+            db.openConnection();
+            //Surname//
+            MySqlCommand command_surname = new MySqlCommand("SELECT second_name FROM users WHERE email = @email", db.getConnection());
+            MySqlParameter n1 = new MySqlParameter("@email", textBox2.Text);
+            command_surname.Parameters.Add(n1);
+            string surname = (string)command_surname.ExecuteScalar();
+            command_surname.ExecuteNonQuery();
+            //Name//
+            MySqlCommand command_name = new MySqlCommand("SELECT name FROM users WHERE email = @email", db.getConnection());
+            MySqlParameter n2 = new MySqlParameter("@email", textBox2.Text);
+            command_name.Parameters.Add(n2);
+            string name = (string)command_name.ExecuteScalar();
+            command_name.ExecuteNonQuery();
+            //Last_name//
+            MySqlCommand command_last_name = new MySqlCommand("SELECT patronomic FROM users WHERE email = @email", db.getConnection());
+            MySqlParameter n3 = new MySqlParameter("@email", textBox2.Text);
+            command_last_name.Parameters.Add(n3);
+            string last_name = (string)command_last_name.ExecuteScalar();
+            command_last_name.ExecuteNonQuery();
+            //Email//
+            MySqlCommand command_email = new MySqlCommand("SELECT email FROM users WHERE email = @email", db.getConnection());
+            MySqlParameter n4 = new MySqlParameter("@email", textBox2.Text);
+            command_email.Parameters.Add(n4);
+            string email = (string)command_email.ExecuteScalar();
+            command_email.ExecuteNonQuery();
+            //Phone//
+            MySqlCommand command_phone = new MySqlCommand("SELECT phone_number FROM users WHERE email = @email", db.getConnection());
+            MySqlParameter n5 = new MySqlParameter("@email", textBox2.Text);
+            command_phone.Parameters.Add(n5);
+            string phone = (string)command_phone.ExecuteScalar();
+            command_phone.ExecuteNonQuery();
+            //Password//
+            MySqlCommand command_password = new MySqlCommand("SELECT password FROM users WHERE email = @email", db.getConnection());
+            MySqlParameter n6 = new MySqlParameter("@email", textBox2.Text);
+            command_password.Parameters.Add(n6);
+            string password = (string)command_password.ExecuteScalar();
+            command_password.ExecuteNonQuery();
+
+            /*adapter.SelectCommand = command;
+            adapter.Fill(table);*/
+            db.closeConnection();
+
+            surname_account.Text = surname;
+            name_account.Text = name;
+            last_name_account.Text = last_name;
+            email_account.Text = email;
+            phone_account.Text = phone;
+            password_account.Text = password;
+
             surname_account.ReadOnly = false;
             name_account.ReadOnly = false;
             last_name_account.ReadOnly = false;
@@ -125,7 +213,10 @@ namespace GiveMePaw
 
         private void exit_button_account_Click(object sender, EventArgs e)
         {
-
+            Account.ActiveForm.Hide();
+            SignIn NewForm = new SignIn();
+            NewForm.ShowDialog();
+            Close();
         }
     }
 }
