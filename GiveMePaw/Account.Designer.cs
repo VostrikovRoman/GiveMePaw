@@ -48,6 +48,10 @@ namespace GiveMePaw
             this.update_button_account = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.save_button_account = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cancel_button_account = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.back_button_account)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit_button_account)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,11 +59,14 @@ namespace GiveMePaw
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.update_button_account.SuspendLayout();
+            this.save_button_account.SuspendLayout();
+            this.cancel_button_account.SuspendLayout();
             this.SuspendLayout();
             // 
             // label6
             // 
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
             this.label6.Location = new System.Drawing.Point(101, 525);
@@ -72,6 +79,7 @@ namespace GiveMePaw
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Lucida Sans", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
             this.label1.Location = new System.Drawing.Point(124, 43);
@@ -79,10 +87,12 @@ namespace GiveMePaw
             this.label1.Size = new System.Drawing.Size(116, 39);
             this.label1.TabIndex = 24;
             this.label1.Text = "назад";
+            this.label1.Click += new System.EventHandler(this.back_button_account_Click);
             // 
             // back_button_account
             // 
             this.back_button_account.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            this.back_button_account.Cursor = System.Windows.Forms.Cursors.Hand;
             this.back_button_account.Image = global::GiveMePaw.Properties.Resources.back_1;
             this.back_button_account.Location = new System.Drawing.Point(33, 43);
             this.back_button_account.Name = "back_button_account";
@@ -90,10 +100,12 @@ namespace GiveMePaw
             this.back_button_account.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.back_button_account.TabIndex = 25;
             this.back_button_account.TabStop = false;
+            this.back_button_account.Click += new System.EventHandler(this.back_button_account_Click);
             // 
             // exit_button_account
             // 
             this.exit_button_account.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            this.exit_button_account.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exit_button_account.Image = global::GiveMePaw.Properties.Resources.log_out_2;
             this.exit_button_account.Location = new System.Drawing.Point(33, 529);
             this.exit_button_account.Name = "exit_button_account";
@@ -101,6 +113,7 @@ namespace GiveMePaw
             this.exit_button_account.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.exit_button_account.TabIndex = 22;
             this.exit_button_account.TabStop = false;
+            this.exit_button_account.Click += new System.EventHandler(this.exit_button_account_Click);
             // 
             // pictureBox1
             // 
@@ -162,6 +175,7 @@ namespace GiveMePaw
             this.password_account.ForeColor = System.Drawing.Color.Gray;
             this.password_account.Location = new System.Drawing.Point(391, 443);
             this.password_account.Name = "password_account";
+            this.password_account.ReadOnly = true;
             this.password_account.Size = new System.Drawing.Size(356, 36);
             this.password_account.TabIndex = 32;
             this.password_account.Text = "пароль";
@@ -172,6 +186,7 @@ namespace GiveMePaw
             this.email_account.ForeColor = System.Drawing.Color.Gray;
             this.email_account.Location = new System.Drawing.Point(391, 392);
             this.email_account.Name = "email_account";
+            this.email_account.ReadOnly = true;
             this.email_account.Size = new System.Drawing.Size(356, 36);
             this.email_account.TabIndex = 31;
             this.email_account.Text = "email";
@@ -182,6 +197,7 @@ namespace GiveMePaw
             this.phone_account.ForeColor = System.Drawing.Color.Gray;
             this.phone_account.Location = new System.Drawing.Point(391, 341);
             this.phone_account.Name = "phone_account";
+            this.phone_account.ReadOnly = true;
             this.phone_account.Size = new System.Drawing.Size(356, 36);
             this.phone_account.TabIndex = 30;
             this.phone_account.Text = "телефон";
@@ -192,6 +208,7 @@ namespace GiveMePaw
             this.last_name_account.ForeColor = System.Drawing.Color.Gray;
             this.last_name_account.Location = new System.Drawing.Point(391, 290);
             this.last_name_account.Name = "last_name_account";
+            this.last_name_account.ReadOnly = true;
             this.last_name_account.Size = new System.Drawing.Size(356, 36);
             this.last_name_account.TabIndex = 29;
             this.last_name_account.Text = "отчество";
@@ -202,6 +219,7 @@ namespace GiveMePaw
             this.name_account.ForeColor = System.Drawing.Color.Gray;
             this.name_account.Location = new System.Drawing.Point(391, 239);
             this.name_account.Name = "name_account";
+            this.name_account.ReadOnly = true;
             this.name_account.Size = new System.Drawing.Size(356, 36);
             this.name_account.TabIndex = 28;
             this.name_account.Text = "имя";
@@ -212,6 +230,7 @@ namespace GiveMePaw
             this.surname_account.ForeColor = System.Drawing.Color.Gray;
             this.surname_account.Location = new System.Drawing.Point(391, 187);
             this.surname_account.Name = "surname_account";
+            this.surname_account.ReadOnly = true;
             this.surname_account.Size = new System.Drawing.Size(356, 36);
             this.surname_account.TabIndex = 27;
             this.surname_account.Text = "фамилия";
@@ -220,6 +239,7 @@ namespace GiveMePaw
             // 
             this.update_button_account.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
             this.update_button_account.Controls.Add(this.label3);
+            this.update_button_account.Cursor = System.Windows.Forms.Cursors.Hand;
             this.update_button_account.Location = new System.Drawing.Point(465, 495);
             this.update_button_account.Name = "update_button_account";
             this.update_button_account.Size = new System.Drawing.Size(222, 40);
@@ -237,6 +257,7 @@ namespace GiveMePaw
             this.label3.Size = new System.Drawing.Size(176, 27);
             this.label3.TabIndex = 34;
             this.label3.Text = "Редактировать";
+            this.label3.Click += new System.EventHandler(this.update_button_account_Click);
             // 
             // textBox1
             // 
@@ -247,12 +268,64 @@ namespace GiveMePaw
             this.textBox1.Size = new System.Drawing.Size(11, 36);
             this.textBox1.TabIndex = 1;
             // 
+            // save_button_account
+            // 
+            this.save_button_account.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
+            this.save_button_account.Controls.Add(this.label4);
+            this.save_button_account.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.save_button_account.Location = new System.Drawing.Point(584, 495);
+            this.save_button_account.Name = "save_button_account";
+            this.save_button_account.Size = new System.Drawing.Size(153, 40);
+            this.save_button_account.TabIndex = 35;
+            this.save_button_account.Visible = false;
+            this.save_button_account.Click += new System.EventHandler(this.save_button_account_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Lucida Sans", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.label4.Location = new System.Drawing.Point(16, 7);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(119, 26);
+            this.label4.TabIndex = 34;
+            this.label4.Text = "Сохранить";
+            this.label4.Click += new System.EventHandler(this.save_button_account_Click);
+            // 
+            // cancel_button_account
+            // 
+            this.cancel_button_account.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            this.cancel_button_account.Controls.Add(this.label5);
+            this.cancel_button_account.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cancel_button_account.Location = new System.Drawing.Point(401, 495);
+            this.cancel_button_account.Name = "cancel_button_account";
+            this.cancel_button_account.Size = new System.Drawing.Size(153, 40);
+            this.cancel_button_account.TabIndex = 36;
+            this.cancel_button_account.Visible = false;
+            this.cancel_button_account.Click += new System.EventHandler(this.cancel_button_account_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Lucida Sans", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.label5.Location = new System.Drawing.Point(27, 7);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(88, 26);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "Отмена";
+            this.label5.Click += new System.EventHandler(this.cancel_button_account_Click);
+            // 
             // Account
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1008, 613);
+            this.ClientSize = new System.Drawing.Size(1008, 614);
+            this.Controls.Add(this.cancel_button_account);
+            this.Controls.Add(this.save_button_account);
             this.Controls.Add(this.update_button_account);
             this.Controls.Add(this.password_account);
             this.Controls.Add(this.email_account);
@@ -286,6 +359,10 @@ namespace GiveMePaw
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.update_button_account.ResumeLayout(false);
             this.update_button_account.PerformLayout();
+            this.save_button_account.ResumeLayout(false);
+            this.save_button_account.PerformLayout();
+            this.cancel_button_account.ResumeLayout(false);
+            this.cancel_button_account.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,5 +388,9 @@ namespace GiveMePaw
         private System.Windows.Forms.Panel update_button_account;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel save_button_account;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel cancel_button_account;
+        private System.Windows.Forms.Label label5;
     }
 }
