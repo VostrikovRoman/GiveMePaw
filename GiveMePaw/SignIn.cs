@@ -102,8 +102,6 @@ namespace GiveMePaw
                 SignUpDisplay.Visible = false;
                 MessageBox.Show("Успешно");
             }
-
-
             else
             {
                 MessageBox.Show("Ошибка");
@@ -146,7 +144,12 @@ namespace GiveMePaw
             }
             else
             {
-                MessageBox.Show("Неправильный email или пароль!");
+                email_sign_in.ForeColor = Color.Firebrick;
+                password_sign_in.ForeColor = Color.Firebrick;
+                email_sign_in.Text = "email";
+                password_sign_in.Text = "пароль";
+                password_sign_in.UseSystemPasswordChar = false;
+                textBox1.Focus();
             }
                
         }
@@ -158,6 +161,7 @@ namespace GiveMePaw
            if (email_sign_in.Text == "email")
             {
                 email_sign_in.Text = "";
+                email_sign_in.ForeColor = Color.Gray;
             }
         }
         private void email_sign_in_Leave(object sender, EventArgs e)
@@ -174,6 +178,7 @@ namespace GiveMePaw
             {
                 password_sign_in.Text = "";
                 password_sign_in.UseSystemPasswordChar = true;
+                password_sign_in.ForeColor = Color.Gray;
             }
         }
 
@@ -287,6 +292,11 @@ namespace GiveMePaw
         }
 
         private void SignUpDisplay_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void SignIn_Load(object sender, EventArgs e)
         {
 
         }

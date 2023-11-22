@@ -75,3 +75,9 @@ C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMeP
 C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\bin\Debug\System.Buffers.dll
+\\SAN-MNG-1\Students\ДТ\Т-223901-НТ-ИСТ\Vostrikov-RA\ОРПО\GiveMePaw\GiveMePaw\bin\Debug\System.Memory.dll
+\\SAN-MNG-1\Students\ДТ\Т-223901-НТ-ИСТ\Vostrikov-RA\ОРПО\GiveMePaw\GiveMePaw\bin\Debug\System.Threading.Tasks.Extensions.dll
+\\SAN-MNG-1\Students\ДТ\Т-223901-НТ-ИСТ\Vostrikov-RA\ОРПО\GiveMePaw\GiveMePaw\bin\Debug\System.Numerics.Vectors.dll
+\\SAN-MNG-1\Students\ДТ\Т-223901-НТ-ИСТ\Vostrikov-RA\ОРПО\GiveMePaw\GiveMePaw\bin\Debug\System.Buffers.dll
+\\SAN-MNG-1\Students\ДТ\Т-223901-НТ-ИСТ\Vostrikov-RA\ОРПО\GiveMePaw\GiveMePaw\bin\Debug\MySql.Data.xml
+\\SAN-MNG-1\Students\ДТ\Т-223901-НТ-ИСТ\Vostrikov-RA\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.CopyComplete

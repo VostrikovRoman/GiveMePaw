@@ -136,5 +136,20 @@
   <ItemGroup>
     <None Include="Resources\logo_give_me_paw 2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back 1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
