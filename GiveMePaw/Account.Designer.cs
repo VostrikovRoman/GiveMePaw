@@ -52,7 +52,6 @@ namespace GiveMePaw
             this.label4 = new System.Windows.Forms.Label();
             this.cancel_button_account = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.back_button_account)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit_button_account)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -319,23 +318,12 @@ namespace GiveMePaw
             this.label5.Text = "Отмена";
             this.label5.Click += new System.EventHandler(this.cancel_button_account_Click);
             // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Gray;
-            this.textBox2.Location = new System.Drawing.Point(433, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(356, 36);
-            this.textBox2.TabIndex = 37;
-            this.textBox2.Text = "rmnvstrkv@gmail.com";
-            // 
             // Account
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1008, 614);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.cancel_button_account);
             this.Controls.Add(this.save_button_account);
             this.Controls.Add(this.update_button_account);
@@ -404,6 +392,5 @@ namespace GiveMePaw
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel cancel_button_account;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
     }
 }

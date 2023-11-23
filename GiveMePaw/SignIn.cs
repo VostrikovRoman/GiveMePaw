@@ -135,6 +135,7 @@ namespace GiveMePaw
             
             if (table.Rows.Count > 0)
             {
+                user_email = emailUser;
                 email_sign_in.Text = "email";
                 password_sign_in.Text = "пароль";
                 SignIn.ActiveForm.Hide();
@@ -153,7 +154,7 @@ namespace GiveMePaw
             }
                
         }
-
+        public static string user_email = "";
 
         /////Текст-подсказка для формы входа и регистрации/////
         private void email_sign_in_Enter(object sender, EventArgs e)
