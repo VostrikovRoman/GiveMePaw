@@ -121,6 +121,7 @@ namespace GiveMePaw
             // 
             this.sign_in_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
             this.sign_in_button.Controls.Add(this.label2);
+            this.sign_in_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sign_in_button.Location = new System.Drawing.Point(412, 417);
             this.sign_in_button.Name = "sign_in_button";
             this.sign_in_button.Size = new System.Drawing.Size(198, 47);
@@ -339,6 +340,7 @@ namespace GiveMePaw
             // 
             this.save_button_sign_up.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
             this.save_button_sign_up.Controls.Add(this.label5);
+            this.save_button_sign_up.Cursor = System.Windows.Forms.Cursors.Hand;
             this.save_button_sign_up.Location = new System.Drawing.Point(398, 449);
             this.save_button_sign_up.Name = "save_button_sign_up";
             this.save_button_sign_up.Size = new System.Drawing.Size(232, 47);
@@ -412,7 +414,7 @@ namespace GiveMePaw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 613);
+            this.ClientSize = new System.Drawing.Size(1008, 614);
             this.Controls.Add(this.SignUpDisplay);
             this.Controls.Add(this.SignInDisplay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

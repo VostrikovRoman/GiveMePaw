@@ -74,6 +74,7 @@ namespace GiveMePaw
             this.label6.Size = new System.Drawing.Size(178, 57);
             this.label6.TabIndex = 23;
             this.label6.Text = "Выйти из аккаунта";
+            this.label6.Click += new System.EventHandler(this.exit_button_account_Click);
             // 
             // label1
             // 

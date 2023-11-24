@@ -409,9 +409,9 @@ namespace GiveMePaw
             this.account_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
             this.account_button.Location = new System.Drawing.Point(759, 33);
             this.account_button.Name = "account_button";
-            this.account_button.Size = new System.Drawing.Size(145, 27);
+            this.account_button.Size = new System.Drawing.Size(120, 27);
             this.account_button.TabIndex = 8;
-            this.account_button.Text = "Пестерев Д.";
+            this.account_button.Text = "Иванов И.";
             this.account_button.Click += new System.EventHandler(this.account_button_Click);
             // 
             // pictureBox2
