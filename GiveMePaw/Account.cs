@@ -98,15 +98,11 @@ namespace GiveMePaw
             surname_account.ReadOnly = false;
             name_account.ReadOnly = false;
             last_name_account.ReadOnly = false;
-            email_account.ReadOnly = false;
-            phone_account.ReadOnly = false;
             password_account.ReadOnly = false;
 
             surname_account.ForeColor = Color.Black;
             name_account.ForeColor = Color.Black;
             last_name_account.ForeColor = Color.Black;
-            email_account.ForeColor = Color.Black;
-            phone_account.ForeColor = Color.Black;
             password_account.ForeColor = Color.Black;
 
             update_button_account.Visible = false;
@@ -171,8 +167,6 @@ namespace GiveMePaw
             surname_account.ReadOnly = true;
             name_account.ReadOnly = true;
             last_name_account.ReadOnly = true;
-            email_account.ReadOnly = true;
-            phone_account.ReadOnly = true;
             password_account.ReadOnly = true;
 
             surname_account.ForeColor = Color.Gray;
@@ -194,6 +188,7 @@ namespace GiveMePaw
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             DB db = new DB();
             db.openConnection();
+
             MySqlCommand command = new MySqlCommand("UPDATE users SET name=@name, second_name=@surname, patronomic=@last_name, email=@new_email, phone_number=@phone, password=@password WHERE email = @old_email", db.getConnection());
             MySqlParameter n1 = new MySqlParameter("@old_email", SignIn.user_email);
             command.Parameters.Add(n1);
@@ -215,8 +210,6 @@ namespace GiveMePaw
             surname_account.ReadOnly = true;
             name_account.ReadOnly = true;
             last_name_account.ReadOnly = true;
-            email_account.ReadOnly = true;
-            phone_account.ReadOnly = true;
             password_account.ReadOnly = true;
 
             surname_account.ForeColor = Color.Gray;
