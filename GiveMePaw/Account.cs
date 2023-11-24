@@ -235,6 +235,8 @@ namespace GiveMePaw
 
         private void exit_button_account_Click(object sender, EventArgs e)
         {
+            SignIn.isSignIn = false;
+            SignIn.Role = "3";
             Account.ActiveForm.Hide();
             SignIn NewForm = new SignIn();
             NewForm.ShowDialog();

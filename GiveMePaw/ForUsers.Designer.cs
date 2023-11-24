@@ -342,6 +342,7 @@ namespace GiveMePaw
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(44)))), ((int)(((byte)(4)))));
             this.label2.Location = new System.Drawing.Point(74, 17);
@@ -387,14 +388,14 @@ namespace GiveMePaw
             this.panel1.Controls.Add(this.account_button);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel11);
+            this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.give_away_panel);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.second_panel);
             this.panel1.Controls.Add(this.Main_panel);
             this.panel1.Controls.Add(this.panel13);
             this.panel1.Controls.Add(this.panel12);
-            this.panel1.Controls.Add(this.panel11);
-            this.panel1.Controls.Add(this.panel10);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1016, 618);
@@ -444,21 +445,21 @@ namespace GiveMePaw
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
             this.panel9.Controls.Add(this.label42);
-            this.panel9.Location = new System.Drawing.Point(188, 425);
+            this.panel9.Location = new System.Drawing.Point(200, 425);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(166, 45);
+            this.panel9.Size = new System.Drawing.Size(151, 39);
             this.panel9.TabIndex = 21;
             // 
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Lucida Sans", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Font = new System.Drawing.Font("Lucida Sans", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(44)))), ((int)(((byte)(4)))));
-            this.label42.Location = new System.Drawing.Point(23, 11);
+            this.label42.Location = new System.Drawing.Point(27, 5);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(112, 34);
+            this.label42.Size = new System.Drawing.Size(95, 29);
             this.label42.TabIndex = 0;
-            this.label42.Text = "отмена";
+            this.label42.Text = "Отмена";
             // 
             // panel8
             // 
@@ -466,19 +467,19 @@ namespace GiveMePaw
             this.panel8.Controls.Add(this.label41);
             this.panel8.Location = new System.Drawing.Point(371, 425);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(173, 45);
+            this.panel8.Size = new System.Drawing.Size(162, 39);
             this.panel8.TabIndex = 20;
             // 
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Lucida Sans", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Font = new System.Drawing.Font("Lucida Sans", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(44)))), ((int)(((byte)(4)))));
-            this.label41.Location = new System.Drawing.Point(6, 11);
+            this.label41.Location = new System.Drawing.Point(21, 5);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(151, 34);
+            this.label41.Size = new System.Drawing.Size(124, 29);
             this.label41.TabIndex = 0;
-            this.label41.Text = "отправить";
+            this.label41.Text = "Отправить";
             // 
             // textBox5
             // 
