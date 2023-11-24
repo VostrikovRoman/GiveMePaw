@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace GiveMePaw
 {
@@ -102,8 +103,6 @@ namespace GiveMePaw
                 SignUpDisplay.Visible = false;
                 MessageBox.Show("Успешно");
             }
-
-
             else
             {
                 MessageBox.Show("Ошибка");
@@ -117,6 +116,9 @@ namespace GiveMePaw
             
         }
 
+        public static bool isSignIn = false;
+        public static string Role = "3";
+
         private void sign_in_button_Click(object sender, EventArgs e)
         {
             String emailUser = email_sign_in.Text;
@@ -129,28 +131,55 @@ namespace GiveMePaw
             MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `email` = @eU AND `password` = @pU", db.getConnection());
             command.Parameters.Add("@eU", MySqlDbType.VarChar).Value = emailUser;
             command.Parameters.Add("@pU", MySqlDbType.VarChar).Value = passwordUser;
-
             db.openConnection();
             adapter.SelectCommand = command;
             adapter.Fill(table);
             db.closeConnection();
-            
+
+            db.openConnection();
+            MySqlCommand role = new MySqlCommand("SELECT role FROM `users` WHERE `email` = @eU AND `password` = @pU", db.getConnection());
+            MySqlParameter n1 = new MySqlParameter("@eU", emailUser);
+            role.Parameters.Add(n1);
+            MySqlParameter n2 = new MySqlParameter("@pU", passwordUser);
+            role.Parameters.Add(n2);
+            string role_id = Convert.ToString(role.ExecuteScalar());
+            role.ExecuteNonQuery();
+            db.closeConnection();
+
             if (table.Rows.Count > 0)
             {
+                isSignIn = true;
+                user_email = emailUser;
                 email_sign_in.Text = "email";
                 password_sign_in.Text = "пароль";
-                SignIn.ActiveForm.Hide();
-                ForUsers NewForm = new ForUsers();
-                NewForm.ShowDialog();
-                Close();
+
+                if (role_id == "3")
+                {
+                    SignIn.ActiveForm.Hide();
+                    ForUsers NewForm = new ForUsers();
+                    NewForm.ShowDialog();
+                    Close();
+                }
+                else if (role_id == "1" || role_id == "2")
+                {
+                    SignIn.ActiveForm.Hide();
+                    ForEmployers NewForm = new ForEmployers();
+                    NewForm.ShowDialog();
+                    Close();
+                }
             }
             else
             {
-                MessageBox.Show("Неправильный email или пароль!");
+                email_sign_in.ForeColor = Color.Firebrick;
+                password_sign_in.ForeColor = Color.Firebrick;
+                email_sign_in.Text = "email";
+                password_sign_in.Text = "пароль";
+                password_sign_in.UseSystemPasswordChar = false;
+                textBox1.Focus();
             }
                
         }
-
+        public static string user_email = "";
 
         /////Текст-подсказка для формы входа и регистрации/////
         private void email_sign_in_Enter(object sender, EventArgs e)
@@ -158,6 +187,7 @@ namespace GiveMePaw
            if (email_sign_in.Text == "email")
             {
                 email_sign_in.Text = "";
+                email_sign_in.ForeColor = Color.Gray;
             }
         }
         private void email_sign_in_Leave(object sender, EventArgs e)
@@ -174,6 +204,7 @@ namespace GiveMePaw
             {
                 password_sign_in.Text = "";
                 password_sign_in.UseSystemPasswordChar = true;
+                password_sign_in.ForeColor = Color.Gray;
             }
         }
 
@@ -287,6 +318,11 @@ namespace GiveMePaw
         }
 
         private void SignUpDisplay_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void SignIn_Load(object sender, EventArgs e)
         {
 
         }
