@@ -220,6 +220,7 @@ namespace GiveMePaw
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SignUpDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            this.SignUpDisplay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.SignUpDisplay.Controls.Add(this.pictureBox5);
             this.SignUpDisplay.Controls.Add(this.password_sign_up);
             this.SignUpDisplay.Controls.Add(this.email_sign_up);
@@ -414,7 +415,7 @@ namespace GiveMePaw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 614);
+            this.ClientSize = new System.Drawing.Size(1008, 613);
             this.Controls.Add(this.SignUpDisplay);
             this.Controls.Add(this.SignInDisplay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

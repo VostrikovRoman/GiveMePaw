@@ -151,5 +151,23 @@
   <ItemGroup>
     <None Include="Resources\back 1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vibrating-phone_Active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vibrating-phone_Passive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hand_Active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_Passive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hand_Passive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_Active.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
