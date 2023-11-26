@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -227,20 +228,52 @@ namespace GiveMePaw
 
         private void back_button_account_Click(object sender, EventArgs e)
         {
-            Account.ActiveForm.Hide();
-            ForUsers NewForm = new ForUsers();
-            NewForm.ShowDialog();
-            Close();
+            string emailUser = File.ReadAllText("checkSignIn.txt");
+
+            DB db = new DB();
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            db.openConnection();
+            MySqlCommand role = new MySqlCommand("SELECT role FROM `users` WHERE `email` = @eU", db.getConnection());
+            MySqlParameter n1 = new MySqlParameter("@eU", emailUser);
+            role.Parameters.Add(n1);
+            string role_id = Convert.ToString(role.ExecuteScalar());
+            role.ExecuteNonQuery();
+            db.closeConnection();
+
+            if (role_id=="1" || role_id == "2")
+            {
+                Account.ActiveForm.Hide();
+                ForEmployers NewForm = new ForEmployers();
+                NewForm.ShowDialog();
+                Close();
+            }
+            else if (role_id == "3")
+            {
+                Account.ActiveForm.Hide();
+                ForUsers NewForm = new ForUsers();
+                NewForm.ShowDialog();
+                Close();
+            }
+
         }
 
         private void exit_button_account_Click(object sender, EventArgs e)
         {
-            SignIn.isSignIn = false;
-            SignIn.Role = "3";
-            Account.ActiveForm.Hide();
-            SignIn NewForm = new SignIn();
-            NewForm.ShowDialog();
-            Close();
+            try
+            {
+                File.Delete("checkSignIn.txt");
+                Account.ActiveForm.Hide();
+                SignIn NewForm = new SignIn();
+                NewForm.ShowDialog();
+                Close();
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка!");
+            }
         }
+
     }
 }

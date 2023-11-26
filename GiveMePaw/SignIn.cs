@@ -116,9 +116,6 @@ namespace GiveMePaw
             
         }
 
-        public static bool isSignIn = false;
-        public static string Role = "3";
-
         private void sign_in_button_Click(object sender, EventArgs e)
         {
             String emailUser = email_sign_in.Text;
@@ -148,10 +145,14 @@ namespace GiveMePaw
 
             if (table.Rows.Count > 0)
             {
-                isSignIn = true;
                 user_email = emailUser;
                 email_sign_in.Text = "email";
                 password_sign_in.Text = "пароль";
+
+                if (remember_me_button.Checked == true)
+                {
+                    SaveFile(emailUser, "checkSignIn.txt");
+                }
 
                 if (role_id == "3")
                 {
@@ -160,7 +161,14 @@ namespace GiveMePaw
                     NewForm.ShowDialog();
                     Close();
                 }
-                else if (role_id == "1" || role_id == "2")
+                else if (role_id == "1")
+                {
+                    SignIn.ActiveForm.Hide();
+                    ForEmployers NewForm = new ForEmployers();
+                    NewForm.ShowDialog();
+                    Close();
+                }
+                else if (role_id == "2")
                 {
                     SignIn.ActiveForm.Hide();
                     ForEmployers NewForm = new ForEmployers();
@@ -180,6 +188,21 @@ namespace GiveMePaw
                
         }
         public static string user_email = "";
+
+        //Функция записи текстового файла//
+        void SaveFile(string a, string b)
+        {
+            try
+            {
+                File.Create(b).Close();
+                File.WriteAllText(b, a);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Exception: " + e.Message);
+            }
+        }
+        /////////
 
         /////Текст-подсказка для формы входа и регистрации/////
         private void email_sign_in_Enter(object sender, EventArgs e)

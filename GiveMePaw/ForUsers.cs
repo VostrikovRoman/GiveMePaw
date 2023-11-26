@@ -72,6 +72,11 @@ namespace GiveMePaw
             Close();
         }
 
+        private void back_button_for_users_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
 
 
 
