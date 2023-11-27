@@ -123,7 +123,6 @@ namespace GiveMePaw
             // 
             this.sign_in_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
             this.sign_in_button.Controls.Add(this.label2);
-            this.sign_in_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sign_in_button.Location = new System.Drawing.Point(412, 417);
             this.sign_in_button.Name = "sign_in_button";
             this.sign_in_button.Size = new System.Drawing.Size(198, 47);
@@ -241,7 +240,6 @@ namespace GiveMePaw
             this.SignUpDisplay.Size = new System.Drawing.Size(1011, 617);
             this.SignUpDisplay.TabIndex = 9;
             this.SignUpDisplay.Visible = false;
-            this.SignUpDisplay.Paint += new System.Windows.Forms.PaintEventHandler(this.SignUpDisplay_Paint);
             // 
             // pictureBox5
             // 
@@ -342,7 +340,6 @@ namespace GiveMePaw
             // 
             this.save_button_sign_up.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
             this.save_button_sign_up.Controls.Add(this.label5);
-            this.save_button_sign_up.Cursor = System.Windows.Forms.Cursors.Hand;
             this.save_button_sign_up.Location = new System.Drawing.Point(398, 449);
             this.save_button_sign_up.Name = "save_button_sign_up";
             this.save_button_sign_up.Size = new System.Drawing.Size(232, 47);
@@ -436,9 +433,7 @@ namespace GiveMePaw
             this.MaximumSize = new System.Drawing.Size(1024, 652);
             this.MinimumSize = new System.Drawing.Size(1024, 652);
             this.Name = "SignIn";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Дай лапу";
-            this.Load += new System.EventHandler(this.SignIn_Load);
             this.SignInDisplay.ResumeLayout(false);
             this.SignInDisplay.PerformLayout();
             this.sign_in_button.ResumeLayout(false);

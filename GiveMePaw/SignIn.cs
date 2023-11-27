@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 
 namespace GiveMePaw
 {
@@ -42,32 +41,6 @@ namespace GiveMePaw
             password_sign_up.Text = "пароль";
         }
 
-        public Boolean isUserExists()
-        {
-            DB db = new DB();
-            DataTable table = new DataTable();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `email` = @eU OR `phone_number` = @phoneU", db.getConnection());
-            command.Parameters.Add("@eU", MySqlDbType.VarChar).Value = email_sign_up.Text;
-            command.Parameters.Add("@phoneU", MySqlDbType.VarChar).Value = phone_sign_up.Text;
-
-            db.openConnection();
-            adapter.SelectCommand = command;
-            adapter.Fill(table);
-            db.closeConnection();
-
-            if (table.Rows.Count > 0)
-            {
-                MessageBox.Show("Пользователь с таким email или номер телефона существует!");
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-        
         private void save_button_sign_up_Click(object sender, EventArgs e)
         {
             if (surname_sign_up.Text == "фамилия" | name_sign_up.Text == "имя" | last_name_sign_up.Text == "отчество" | phone_sign_up.Text == "телефон" | email_sign_up.Text == "email" | password_sign_up.Text == "пароль")
@@ -128,20 +101,9 @@ namespace GiveMePaw
             MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `email` = @eU AND `password` = @pU", db.getConnection());
             command.Parameters.Add("@eU", MySqlDbType.VarChar).Value = emailUser;
             command.Parameters.Add("@pU", MySqlDbType.VarChar).Value = passwordUser;
-            db.openConnection();
+
             adapter.SelectCommand = command;
             adapter.Fill(table);
-            db.closeConnection();
-
-            db.openConnection();
-            MySqlCommand role = new MySqlCommand("SELECT role FROM `users` WHERE `email` = @eU AND `password` = @pU", db.getConnection());
-            MySqlParameter n1 = new MySqlParameter("@eU", emailUser);
-            role.Parameters.Add(n1);
-            MySqlParameter n2 = new MySqlParameter("@pU", passwordUser);
-            role.Parameters.Add(n2);
-            string role_id = Convert.ToString(role.ExecuteScalar());
-            role.ExecuteNonQuery();
-            db.closeConnection();
 
             if (table.Rows.Count > 0)
             {
@@ -210,7 +172,6 @@ namespace GiveMePaw
            if (email_sign_in.Text == "email")
             {
                 email_sign_in.Text = "";
-                email_sign_in.ForeColor = Color.Gray;
             }
         }
         private void email_sign_in_Leave(object sender, EventArgs e)
@@ -227,7 +188,6 @@ namespace GiveMePaw
             {
                 password_sign_in.Text = "";
                 password_sign_in.UseSystemPasswordChar = true;
-                password_sign_in.ForeColor = Color.Gray;
             }
         }
 
@@ -338,16 +298,6 @@ namespace GiveMePaw
             {
                 password_sign_up.Text = "пароль";
             }
-        }
-
-        private void SignUpDisplay_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void SignIn_Load(object sender, EventArgs e)
-        {
-
         }
         /////     /////
     }
