@@ -101,7 +101,7 @@ namespace GiveMePaw
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
 
-            MySqlCommand command = new MySqlCommand("Select * FROM `users` WHERE `email` = @eU", db.getConnection());
+            MySqlCommand command = new MySqlCommand("Select * FROM `users` INNER JOIN `roles` ON users.role = roles.id_roles WHERE `email` = @eU", db.getConnection());
             command.Parameters.Add("@eU", MySqlDbType.VarChar).Value = email;
 
             db.openConnection();
@@ -113,15 +113,14 @@ namespace GiveMePaw
             {
                 panelFindUsers.Visible = false;
                 panelUser.Visible = true;
-
-                String id = Convert.ToString(table.Rows[0][0]);
+                panelBackButtBack.Visible = true;
 
                 labelEmail.Text = Convert.ToString(table.Rows[0][4]);
                 labelSecondName.Text = "Фамилия: " + Convert.ToString(table.Rows[0][2]);
                 labelName.Text = "Имя: " + Convert.ToString(table.Rows[0][1]);
                 labelPatronomic.Text = "Отчество: " + Convert.ToString(table.Rows[0][3]);
                 labelPhoneNum.Text = "Номер телефона:" + Convert.ToString(table.Rows[0][5]);
-                labelRole.Text = "Роль: " + Convert.ToString(table.Rows[0][7]);
+                labelRole.Text = "Роль: " + Convert.ToString(table.Rows[0][9]);
             }
             else
             {
@@ -134,10 +133,11 @@ namespace GiveMePaw
             DB db = new DB();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             string email = labelEmail.Text; 
-            MySqlCommand command = new MySqlCommand("UPDATE `givemepaw`.`users` SET `role` = '1' WHERE (`email`= '"+email+"');", db.getConnection());
+            MySqlCommand command = new MySqlCommand("UPDATE `givemepaw`.`users` SET `role` = '1' WHERE (`email`= '" + email + "');", db.getConnection());
             db.openConnection();
             command.ExecuteNonQuery();
             db.closeConnection();
+            refreshUserStatus();
         }
 
         private void labelChangeRoleManag_Click(object sender, EventArgs e)
@@ -149,6 +149,8 @@ namespace GiveMePaw
             db.openConnection();
             command.ExecuteNonQuery();
             db.closeConnection();
+            refreshUserStatus();
+
         }
 
         private void labelChangeRoleUser_Click(object sender, EventArgs e)
@@ -157,9 +159,36 @@ namespace GiveMePaw
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             string email = labelEmail.Text;
             MySqlCommand command = new MySqlCommand("UPDATE `givemepaw`.`users` SET `role` = '3' WHERE (`email`= '" + email + "');", db.getConnection());
+            
             db.openConnection();
             command.ExecuteNonQuery();
             db.closeConnection();
+            refreshUserStatus();
+        }
+
+        private void refreshUserStatus()
+        {
+            String email = labelEmail.Text;
+            DB db = new DB();
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            MySqlCommand command = new MySqlCommand("Select * FROM `users` INNER JOIN `roles` ON users.role = roles.id_roles WHERE `email` = '" + email + "'", db.getConnection());
+            
+            db.openConnection();
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+            db.closeConnection();
+
+            labelRole.Text = "Роль: " + Convert.ToString(table.Rows[0][9]);
+         
+        }
+
+        private void labelButtBackText_Click(object sender, EventArgs e)
+        {
+            panelBackButtBack.Visible = false;
+            panelFindUsers.Visible = true;
+            panelUser.Visible = false;
+
         }
     }
 }

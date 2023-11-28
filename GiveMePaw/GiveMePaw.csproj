@@ -178,5 +178,8 @@
   <ItemGroup>
     <None Include="Resources\Loop.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back 2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
