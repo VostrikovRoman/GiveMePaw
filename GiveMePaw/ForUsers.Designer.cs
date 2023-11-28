@@ -45,8 +45,8 @@ namespace GiveMePaw
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.main_Tab_button = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.home_label = new System.Windows.Forms.Label();
+            this.home_pict = new System.Windows.Forms.PictureBox();
             this.logo_text = new System.Windows.Forms.Label();
             this.logo_picture = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -152,7 +152,7 @@ namespace GiveMePaw
             this.give_away_Tab_button.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.main_Tab_button.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.home_pict)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_picture)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_acc)).BeginInit();
@@ -217,10 +217,12 @@ namespace GiveMePaw
             // 
             this.out_Tab_button.Controls.Add(this.label9);
             this.out_Tab_button.Controls.Add(this.pictureBox7);
+            this.out_Tab_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.out_Tab_button.Location = new System.Drawing.Point(32, 531);
             this.out_Tab_button.Name = "out_Tab_button";
             this.out_Tab_button.Size = new System.Drawing.Size(157, 50);
             this.out_Tab_button.TabIndex = 16;
+            this.out_Tab_button.Click += new System.EventHandler(this.out_Tab_button_Click);
             // 
             // label9
             // 
@@ -253,6 +255,7 @@ namespace GiveMePaw
             this.info_Tab_button.Name = "info_Tab_button";
             this.info_Tab_button.Size = new System.Drawing.Size(239, 60);
             this.info_Tab_button.TabIndex = 7;
+            this.info_Tab_button.Click += new System.EventHandler(this.info_Tab_button_Click);
             // 
             // label5
             // 
@@ -319,6 +322,7 @@ namespace GiveMePaw
             this.give_away_Tab_button.Name = "give_away_Tab_button";
             this.give_away_Tab_button.Size = new System.Drawing.Size(239, 60);
             this.give_away_Tab_button.TabIndex = 6;
+            this.give_away_Tab_button.Click += new System.EventHandler(this.give_away_Tab_button_Click);
             // 
             // label3
             // 
@@ -343,8 +347,8 @@ namespace GiveMePaw
             // main_Tab_button
             // 
             this.main_Tab_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.main_Tab_button.Controls.Add(this.label2);
-            this.main_Tab_button.Controls.Add(this.pictureBox3);
+            this.main_Tab_button.Controls.Add(this.home_label);
+            this.main_Tab_button.Controls.Add(this.home_pict);
             this.main_Tab_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.main_Tab_button.Enabled = false;
             this.main_Tab_button.Location = new System.Drawing.Point(0, 132);
@@ -352,27 +356,27 @@ namespace GiveMePaw
             this.main_Tab_button.Size = new System.Drawing.Size(239, 60);
             this.main_Tab_button.TabIndex = 5;
             // 
-            // label2
+            // home_label
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(44)))), ((int)(((byte)(4)))));
-            this.label2.Location = new System.Drawing.Point(74, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 27);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Главная";
+            this.home_label.AutoSize = true;
+            this.home_label.BackColor = System.Drawing.Color.Transparent;
+            this.home_label.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.home_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(44)))), ((int)(((byte)(4)))));
+            this.home_label.Location = new System.Drawing.Point(74, 17);
+            this.home_label.Name = "home_label";
+            this.home_label.Size = new System.Drawing.Size(101, 27);
+            this.home_label.TabIndex = 7;
+            this.home_label.Text = "Главная";
             // 
-            // pictureBox3
+            // home_pict
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 10);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(55, 43);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
+            this.home_pict.Image = ((System.Drawing.Image)(resources.GetObject("home_pict.Image")));
+            this.home_pict.Location = new System.Drawing.Point(12, 10);
+            this.home_pict.Name = "home_pict";
+            this.home_pict.Size = new System.Drawing.Size(55, 43);
+            this.home_pict.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.home_pict.TabIndex = 6;
+            this.home_pict.TabStop = false;
             // 
             // logo_text
             // 
@@ -1455,7 +1459,7 @@ namespace GiveMePaw
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.main_Tab_button.ResumeLayout(false);
             this.main_Tab_button.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.home_pict)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_picture)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -1519,13 +1523,13 @@ namespace GiveMePaw
         private System.Windows.Forms.Panel give_away_Tab_button;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel main_Tab_button;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox home_pict;
         private System.Windows.Forms.Label logo_text;
         private System.Windows.Forms.PictureBox logo_picture;
         private System.Windows.Forms.PictureBox picture_acc;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label home_label;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

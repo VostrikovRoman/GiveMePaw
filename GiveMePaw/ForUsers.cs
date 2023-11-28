@@ -50,19 +50,17 @@ namespace GiveMePaw
 
             // Изменение цвета кнопок меню (слева)
 
-
-
             main_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
             give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
             contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
             info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
 
+            //
 
 
         }
 
-
-        
+        // открыть форму account
         private void account_button_Click(object sender, EventArgs e)
         {
             ForUsers.ActiveForm.Hide();
@@ -71,13 +69,47 @@ namespace GiveMePaw
             Close();
         }
 
-        private void contact_Tab_button_Click(object sender, EventArgs e)
+
+        // кнопка выхода
+        private void out_Tab_button_Click(object sender, EventArgs e)
+        {
+            SignIn.isSignIn = false;
+            SignIn.Role = "3";
+            Account.ActiveForm.Hide();
+            SignIn NewForm = new SignIn();
+            NewForm.ShowDialog();
+            Close();
+        }
+        // Кнопки меню *(слева)
+        private void give_away_Tab_button_Click(object sender, EventArgs e)
         {
             main_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
             give_away_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
             contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
             info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+         
         }
+
+        private void contact_Tab_button_Click(object sender, EventArgs e)
+        {
+            main_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            contact_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+            info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+        }
+
+        private void info_Tab_button_Click(object sender, EventArgs e)
+        {
+            main_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            info_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+        }
+
+
+
+
+
 
 
 
