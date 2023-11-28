@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,31 @@ namespace GiveMePaw
             InitializeComponent();
         }
 
+        public Boolean isUserExists()
+        {
+            DB db = new DB();
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `email` = @eU OR `phone_number` = @phoneU", db.getConnection());
+            command.Parameters.Add("@eU", MySqlDbType.VarChar).Value = email_sign_up.Text;
+            command.Parameters.Add("@phoneU", MySqlDbType.VarChar).Value = phone_sign_up.Text;
+
+            db.openConnection();
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+            db.closeConnection();
+
+            if (table.Rows.Count > 0)
+            {
+                MessageBox.Show("Пользователь с таким email или номер телефона существует!");
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         private void link_to_sign_up_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             SignInDisplay.Visible = false;
@@ -101,9 +127,20 @@ namespace GiveMePaw
             MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `email` = @eU AND `password` = @pU", db.getConnection());
             command.Parameters.Add("@eU", MySqlDbType.VarChar).Value = emailUser;
             command.Parameters.Add("@pU", MySqlDbType.VarChar).Value = passwordUser;
-
+            db.openConnection();
             adapter.SelectCommand = command;
             adapter.Fill(table);
+            db.closeConnection();
+
+            db.openConnection();
+            MySqlCommand role = new MySqlCommand("SELECT role FROM `users` WHERE `email` = @eU AND `password` = @pU", db.getConnection());
+            MySqlParameter n1 = new MySqlParameter("@eU", emailUser);
+            role.Parameters.Add(n1);
+            MySqlParameter n2 = new MySqlParameter("@pU", passwordUser);
+            role.Parameters.Add(n2);
+            string role_id = Convert.ToString(role.ExecuteScalar());
+            role.ExecuteNonQuery();
+            db.closeConnection();
 
             if (table.Rows.Count > 0)
             {

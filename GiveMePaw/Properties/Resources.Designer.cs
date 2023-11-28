@@ -73,6 +73,16 @@ namespace GiveMePaw.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap back_11 {
+            get {
+                object obj = ResourceManager.GetObject("back 11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hand_Active {
             get {
                 object obj = ResourceManager.GetObject("hand_Active", resourceCulture);
