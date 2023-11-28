@@ -137,7 +137,7 @@ namespace GiveMePaw
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1008, 613);
+            this.panel1.Size = new System.Drawing.Size(1008, 614);
             this.panel1.TabIndex = 1;
             // 
             // account_button
@@ -152,6 +152,7 @@ namespace GiveMePaw
             this.account_button.Size = new System.Drawing.Size(120, 27);
             this.account_button.TabIndex = 8;
             this.account_button.Text = "Иванов И.";
+            this.account_button.Click += new System.EventHandler(this.account_button_Click);
             // 
             // pictureBox2
             // 
@@ -182,6 +183,7 @@ namespace GiveMePaw
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label9.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
             this.label9.Location = new System.Drawing.Point(94, 557);
@@ -189,9 +191,11 @@ namespace GiveMePaw
             this.label9.Size = new System.Drawing.Size(81, 27);
             this.label9.TabIndex = 11;
             this.label9.Text = "Выход";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // pictureBox7
             // 
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(34, 552);
             this.pictureBox7.Name = "pictureBox7";
@@ -199,6 +203,7 @@ namespace GiveMePaw
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 7;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.label9_Click);
             // 
             // info_Tab_button
             // 
@@ -884,7 +889,7 @@ namespace GiveMePaw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 613);
+            this.ClientSize = new System.Drawing.Size(1008, 614);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -893,6 +898,7 @@ namespace GiveMePaw
             this.Name = "ForEmployers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Дай Лапу";
+            this.Load += new System.EventHandler(this.ForEmployers_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
