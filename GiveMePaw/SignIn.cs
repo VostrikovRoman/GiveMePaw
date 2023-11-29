@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 
 namespace GiveMePaw
 {
@@ -17,29 +17,6 @@ namespace GiveMePaw
         public SignIn()
         {
             InitializeComponent();
-        }
-
-        private void link_to_sign_up_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            SignInDisplay.Visible = false;
-            SignUpDisplay.Visible = true;
-
-            email_sign_in.Text = "email";
-            password_sign_in.Text = "пароль";
-
-        }
-
-        private void link_to_sign_in_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            SignInDisplay.Visible = true;
-            SignUpDisplay.Visible = false;
-
-            surname_sign_up.Text = "фамилия";
-            name_sign_up.Text = "имя";
-            last_name_sign_up.Text = "отчество";
-            phone_sign_up.Text = "телефон";
-            email_sign_up.Text = "email";
-            password_sign_up.Text = "пароль";
         }
 
         public Boolean isUserExists()
@@ -67,7 +44,29 @@ namespace GiveMePaw
                 return false;
             }
         }
-        
+        private void link_to_sign_up_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            SignInDisplay.Visible = false;
+            SignUpDisplay.Visible = true;
+
+            email_sign_in.Text = "email";
+            password_sign_in.Text = "пароль";
+
+        }
+
+        private void link_to_sign_in_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            SignInDisplay.Visible = true;
+            SignUpDisplay.Visible = false;
+
+            surname_sign_up.Text = "фамилия";
+            name_sign_up.Text = "имя";
+            last_name_sign_up.Text = "отчество";
+            phone_sign_up.Text = "телефон";
+            email_sign_up.Text = "email";
+            password_sign_up.Text = "пароль";
+        }
+
         private void save_button_sign_up_Click(object sender, EventArgs e)
         {
             if (surname_sign_up.Text == "фамилия" | name_sign_up.Text == "имя" | last_name_sign_up.Text == "отчество" | phone_sign_up.Text == "телефон" | email_sign_up.Text == "email" | password_sign_up.Text == "пароль")
@@ -116,9 +115,6 @@ namespace GiveMePaw
             
         }
 
-        public static bool isSignIn = false;
-        public static string Role = "3";
-
         private void sign_in_button_Click(object sender, EventArgs e)
         {
             String emailUser = email_sign_in.Text;
@@ -148,10 +144,14 @@ namespace GiveMePaw
 
             if (table.Rows.Count > 0)
             {
-                isSignIn = true;
                 user_email = emailUser;
                 email_sign_in.Text = "email";
                 password_sign_in.Text = "пароль";
+
+                if (remember_me_button.Checked == true)
+                {
+                    SaveFile(emailUser, "checkSignIn.txt");
+                }
 
                 if (role_id == "3")
                 {
@@ -160,7 +160,14 @@ namespace GiveMePaw
                     NewForm.ShowDialog();
                     Close();
                 }
-                else if (role_id == "1" || role_id == "2")
+                else if (role_id == "1")
+                {
+                    SignIn.ActiveForm.Hide();
+                    ForEmployers NewForm = new ForEmployers();
+                    NewForm.ShowDialog();
+                    Close();
+                }
+                else if (role_id == "2")
                 {
                     SignIn.ActiveForm.Hide();
                     ForEmployers NewForm = new ForEmployers();
@@ -181,13 +188,27 @@ namespace GiveMePaw
         }
         public static string user_email = "";
 
+        //Функция записи текстового файла//
+        void SaveFile(string a, string b)
+        {
+            try
+            {
+                File.Create(b).Close();
+                File.WriteAllText(b, a);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Exception: " + e.Message);
+            }
+        }
+        /////////
+
         /////Текст-подсказка для формы входа и регистрации/////
         private void email_sign_in_Enter(object sender, EventArgs e)
         {
            if (email_sign_in.Text == "email")
             {
                 email_sign_in.Text = "";
-                email_sign_in.ForeColor = Color.Gray;
             }
         }
         private void email_sign_in_Leave(object sender, EventArgs e)
@@ -204,7 +225,6 @@ namespace GiveMePaw
             {
                 password_sign_in.Text = "";
                 password_sign_in.UseSystemPasswordChar = true;
-                password_sign_in.ForeColor = Color.Gray;
             }
         }
 
@@ -315,16 +335,6 @@ namespace GiveMePaw
             {
                 password_sign_up.Text = "пароль";
             }
-        }
-
-        private void SignUpDisplay_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void SignIn_Load(object sender, EventArgs e)
-        {
-
         }
         /////     /////
     }

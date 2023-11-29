@@ -69,6 +69,11 @@ namespace GiveMePaw
             Close();
         }
 
+        private void back_button_for_users_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
 
         // кнопка выхода
         private void out_Tab_button_Click(object sender, EventArgs e)

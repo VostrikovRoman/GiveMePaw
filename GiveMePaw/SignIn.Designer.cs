@@ -58,6 +58,7 @@ namespace GiveMePaw
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.remember_me_button = new System.Windows.Forms.RadioButton();
             this.SignInDisplay.SuspendLayout();
             this.sign_in_button.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -76,6 +77,7 @@ namespace GiveMePaw
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SignInDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            this.SignInDisplay.Controls.Add(this.remember_me_button);
             this.SignInDisplay.Controls.Add(this.link_to_sign_up);
             this.SignInDisplay.Controls.Add(this.label3);
             this.SignInDisplay.Controls.Add(this.sign_in_button);
@@ -121,7 +123,6 @@ namespace GiveMePaw
             // 
             this.sign_in_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
             this.sign_in_button.Controls.Add(this.label2);
-            this.sign_in_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sign_in_button.Location = new System.Drawing.Point(412, 417);
             this.sign_in_button.Name = "sign_in_button";
             this.sign_in_button.Size = new System.Drawing.Size(198, 47);
@@ -239,7 +240,6 @@ namespace GiveMePaw
             this.SignUpDisplay.Size = new System.Drawing.Size(1011, 617);
             this.SignUpDisplay.TabIndex = 9;
             this.SignUpDisplay.Visible = false;
-            this.SignUpDisplay.Paint += new System.Windows.Forms.PaintEventHandler(this.SignUpDisplay_Paint);
             // 
             // pictureBox5
             // 
@@ -340,7 +340,6 @@ namespace GiveMePaw
             // 
             this.save_button_sign_up.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
             this.save_button_sign_up.Controls.Add(this.label5);
-            this.save_button_sign_up.Cursor = System.Windows.Forms.Cursors.Hand;
             this.save_button_sign_up.Location = new System.Drawing.Point(398, 449);
             this.save_button_sign_up.Name = "save_button_sign_up";
             this.save_button_sign_up.Size = new System.Drawing.Size(232, 47);
@@ -410,21 +409,31 @@ namespace GiveMePaw
             this.textBox2.Size = new System.Drawing.Size(17, 20);
             this.textBox2.TabIndex = 1;
             // 
+            // remember_me_button
+            // 
+            this.remember_me_button.AutoSize = true;
+            this.remember_me_button.Font = new System.Drawing.Font("Lucida Sans", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.remember_me_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(44)))), ((int)(((byte)(4)))));
+            this.remember_me_button.Location = new System.Drawing.Point(416, 484);
+            this.remember_me_button.Name = "remember_me_button";
+            this.remember_me_button.Size = new System.Drawing.Size(182, 26);
+            this.remember_me_button.TabIndex = 9;
+            this.remember_me_button.Text = "Запомнить меня";
+            this.remember_me_button.UseVisualStyleBackColor = true;
+            // 
             // SignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 614);
-            this.Controls.Add(this.SignUpDisplay);
             this.Controls.Add(this.SignInDisplay);
+            this.Controls.Add(this.SignUpDisplay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1024, 652);
             this.MinimumSize = new System.Drawing.Size(1024, 652);
             this.Name = "SignIn";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Дай лапу";
-            this.Load += new System.EventHandler(this.SignIn_Load);
             this.SignInDisplay.ResumeLayout(false);
             this.SignInDisplay.PerformLayout();
             this.sign_in_button.ResumeLayout(false);
@@ -473,6 +482,7 @@ namespace GiveMePaw
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.RadioButton remember_me_button;
     }
 }
 
