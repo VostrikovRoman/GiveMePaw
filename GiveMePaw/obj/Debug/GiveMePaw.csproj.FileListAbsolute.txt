@@ -60,11 +60,3 @@ C:\Users\User\Source\Repos\GiveMePaw\GiveMePaw\bin\Debug\System.Memory.dll
 C:\Users\User\Source\Repos\GiveMePaw\GiveMePaw\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\User\Source\Repos\GiveMePaw\GiveMePaw\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\User\Source\Repos\GiveMePaw\GiveMePaw\bin\Debug\System.Buffers.dll
-C:\Users\женя\source\repos\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.AssemblyReference.cache
-C:\Users\женя\source\repos\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.Account.resources
-C:\Users\женя\source\repos\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.ForEmployers.resources
-C:\Users\женя\source\repos\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.SignIn.resources
-C:\Users\женя\source\repos\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.Properties.Resources.resources
-C:\Users\женя\source\repos\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.GenerateResource.cache
-C:\Users\женя\source\repos\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.exe
-C:\Users\женя\source\repos\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.pdb

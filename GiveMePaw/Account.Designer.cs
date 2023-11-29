@@ -253,7 +253,7 @@ namespace GiveMePaw
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.label3.Location = new System.Drawing.Point(15, 7);
+            this.label3.Location = new System.Drawing.Point(25, 5);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(176, 27);
             this.label3.TabIndex = 34;
@@ -324,7 +324,7 @@ namespace GiveMePaw
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1008, 613);
+            this.ClientSize = new System.Drawing.Size(1008, 614);
             this.Controls.Add(this.cancel_button_account);
             this.Controls.Add(this.save_button_account);
             this.Controls.Add(this.update_button_account);
