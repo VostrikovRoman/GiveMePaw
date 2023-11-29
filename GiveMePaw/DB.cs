@@ -28,6 +28,4 @@ namespace GiveMePaw
             return connection;
         }
     }
-
-
 }

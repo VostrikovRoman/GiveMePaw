@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,29 +17,6 @@ namespace GiveMePaw
         public SignIn()
         {
             InitializeComponent();
-        }
-
-        private void link_to_sign_up_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            SignInDisplay.Visible = false;
-            SignUpDisplay.Visible = true;
-
-            email_sign_in.Text = "email";
-            password_sign_in.Text = "пароль";
-
-        }
-
-        private void link_to_sign_in_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            SignInDisplay.Visible = true;
-            SignUpDisplay.Visible = false;
-
-            surname_sign_up.Text = "фамилия";
-            name_sign_up.Text = "имя";
-            last_name_sign_up.Text = "отчество";
-            phone_sign_up.Text = "телефон";
-            email_sign_up.Text = "email";
-            password_sign_up.Text = "пароль";
         }
 
         public Boolean isUserExists()
@@ -66,7 +44,29 @@ namespace GiveMePaw
                 return false;
             }
         }
-        
+        private void link_to_sign_up_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            SignInDisplay.Visible = false;
+            SignUpDisplay.Visible = true;
+
+            email_sign_in.Text = "email";
+            password_sign_in.Text = "пароль";
+
+        }
+
+        private void link_to_sign_in_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            SignInDisplay.Visible = true;
+            SignUpDisplay.Visible = false;
+
+            surname_sign_up.Text = "фамилия";
+            name_sign_up.Text = "имя";
+            last_name_sign_up.Text = "отчество";
+            phone_sign_up.Text = "телефон";
+            email_sign_up.Text = "email";
+            password_sign_up.Text = "пароль";
+        }
+
         private void save_button_sign_up_Click(object sender, EventArgs e)
         {
             if (surname_sign_up.Text == "фамилия" | name_sign_up.Text == "имя" | last_name_sign_up.Text == "отчество" | phone_sign_up.Text == "телефон" | email_sign_up.Text == "email" | password_sign_up.Text == "пароль")
@@ -102,8 +102,6 @@ namespace GiveMePaw
                 SignUpDisplay.Visible = false;
                 MessageBox.Show("Успешно");
             }
-
-
             else
             {
                 MessageBox.Show("Ошибка");
@@ -129,28 +127,81 @@ namespace GiveMePaw
             MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `email` = @eU AND `password` = @pU", db.getConnection());
             command.Parameters.Add("@eU", MySqlDbType.VarChar).Value = emailUser;
             command.Parameters.Add("@pU", MySqlDbType.VarChar).Value = passwordUser;
-
             db.openConnection();
             adapter.SelectCommand = command;
             adapter.Fill(table);
             db.closeConnection();
-            
+
+            db.openConnection();
+            MySqlCommand role = new MySqlCommand("SELECT role FROM `users` WHERE `email` = @eU AND `password` = @pU", db.getConnection());
+            MySqlParameter n1 = new MySqlParameter("@eU", emailUser);
+            role.Parameters.Add(n1);
+            MySqlParameter n2 = new MySqlParameter("@pU", passwordUser);
+            role.Parameters.Add(n2);
+            string role_id = Convert.ToString(role.ExecuteScalar());
+            role.ExecuteNonQuery();
+            db.closeConnection();
+
             if (table.Rows.Count > 0)
             {
+                user_email = emailUser;
                 email_sign_in.Text = "email";
                 password_sign_in.Text = "пароль";
-                SignIn.ActiveForm.Hide();
-                ForUsers NewForm = new ForUsers();
-                NewForm.ShowDialog();
-                Close();
+
+                if (remember_me_button.Checked == true)
+                {
+                    SaveFile(emailUser, "checkSignIn.txt");
+                }
+
+                if (role_id == "3")
+                {
+                    SignIn.ActiveForm.Hide();
+                    ForUsers NewForm = new ForUsers();
+                    NewForm.ShowDialog();
+                    Close();
+                }
+                else if (role_id == "1")
+                {
+                    SignIn.ActiveForm.Hide();
+                    ForEmployers NewForm = new ForEmployers();
+                    NewForm.ShowDialog();
+                    Close();
+                }
+                else if (role_id == "2")
+                {
+                    SignIn.ActiveForm.Hide();
+                    ForEmployers NewForm = new ForEmployers();
+                    NewForm.ShowDialog();
+                    Close();
+                }
             }
             else
             {
-                MessageBox.Show("Неправильный email или пароль!");
+                email_sign_in.ForeColor = Color.Firebrick;
+                password_sign_in.ForeColor = Color.Firebrick;
+                email_sign_in.Text = "email";
+                password_sign_in.Text = "пароль";
+                password_sign_in.UseSystemPasswordChar = false;
+                textBox1.Focus();
             }
                
         }
+        public static string user_email = "";
 
+        //Функция записи текстового файла//
+        void SaveFile(string a, string b)
+        {
+            try
+            {
+                File.Create(b).Close();
+                File.WriteAllText(b, a);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Exception: " + e.Message);
+            }
+        }
+        /////////
 
         /////Текст-подсказка для формы входа и регистрации/////
         private void email_sign_in_Enter(object sender, EventArgs e)
@@ -284,11 +335,6 @@ namespace GiveMePaw
             {
                 password_sign_up.Text = "пароль";
             }
-        }
-
-        private void SignUpDisplay_Paint(object sender, PaintEventArgs e)
-        {
-
         }
         /////     /////
     }
