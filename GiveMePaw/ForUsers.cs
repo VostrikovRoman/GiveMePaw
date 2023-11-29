@@ -76,15 +76,7 @@ namespace GiveMePaw
 
 
         // кнопка выхода
-        private void out_Tab_button_Click(object sender, EventArgs e)
-        {
-            SignIn.isSignIn = false;
-            SignIn.Role = "3";
-            Account.ActiveForm.Hide();
-            SignIn NewForm = new SignIn();
-            NewForm.ShowDialog();
-            Close();
-        }
+     
         // Кнопки меню *(слева)
         private void give_away_Tab_button_Click(object sender, EventArgs e)
         {

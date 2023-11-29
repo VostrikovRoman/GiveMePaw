@@ -34,8 +34,7 @@ namespace GiveMePaw
             this.menu_panel = new System.Windows.Forms.Panel();
             this.out_Tab_button = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.back_button_for_users = new System.Windows.Forms.PictureBox();
-            this.info_Tab_button = new System.Windows.Forms.Panel();
+           
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.contact_Tab_button = new System.Windows.Forms.Panel();
