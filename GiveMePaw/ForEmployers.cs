@@ -124,7 +124,7 @@ namespace GiveMePaw
             }
             else
             {
-                MessageBox.Show("нету");
+                MessageBox.Show("Пользователя с таким email, не существует!");
             }
         }
 
