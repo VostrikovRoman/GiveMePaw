@@ -119,7 +119,7 @@ namespace GiveMePaw
                 labelSecondName.Text = "Фамилия: " + Convert.ToString(table.Rows[0][2]);
                 labelName.Text = "Имя: " + Convert.ToString(table.Rows[0][1]);
                 labelPatronomic.Text = "Отчество: " + Convert.ToString(table.Rows[0][3]);
-                labelPhoneNum.Text = "Номер телефона:" + Convert.ToString(table.Rows[0][5]);
+                labelPhoneNum.Text = "Номер телефона: " + Convert.ToString(table.Rows[0][5]);
                 labelRole.Text = "Роль: " + Convert.ToString(table.Rows[0][9]);
             }
             else
@@ -130,40 +130,29 @@ namespace GiveMePaw
 
         private void labelChangeRoleAdmin_Click(object sender, EventArgs e)
         {
-            DB db = new DB();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            string email = labelEmail.Text; 
-            MySqlCommand command = new MySqlCommand("UPDATE `givemepaw`.`users` SET `role` = '1' WHERE (`email`= '" + email + "');", db.getConnection());
-            db.openConnection();
-            command.ExecuteNonQuery();
-            db.closeConnection();
-            refreshUserStatus();
+            panelUserInfo.Visible = false;
+            panelConfirmAdmin.Visible = true;
+            labelButtBackText.Enabled = false;
+            labelConfirmAdmin.Text = "Вы уверены что хотите назначить пользователя "+labelEmail.Text + " адиминистратором?";
+
         }
 
         private void labelChangeRoleManag_Click(object sender, EventArgs e)
         {
-            DB db = new DB();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            string email = labelEmail.Text;
-            MySqlCommand command = new MySqlCommand("UPDATE `givemepaw`.`users` SET `role` = '2' WHERE (`email`= '" + email + "');", db.getConnection());
-            db.openConnection();
-            command.ExecuteNonQuery();
-            db.closeConnection();
-            refreshUserStatus();
+            panelUserInfo.Visible = false;
+            panelConfirmManager.Visible = true;
+            labelButtBackText.Enabled = false;
+            labelConfirmManager.Text = "Вы уверены что хотите назначить пользователя "+labelEmail.Text+" менеджером?";
 
         }
 
         private void labelChangeRoleUser_Click(object sender, EventArgs e)
         {
-            DB db = new DB();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            string email = labelEmail.Text;
-            MySqlCommand command = new MySqlCommand("UPDATE `givemepaw`.`users` SET `role` = '3' WHERE (`email`= '" + email + "');", db.getConnection());
-            
-            db.openConnection();
-            command.ExecuteNonQuery();
-            db.closeConnection();
-            refreshUserStatus();
+            panelUserInfo.Visible = false;
+            panelConfirmUser.Visible = true;
+            labelButtBackText.Enabled = false;
+            labelConfirmUser.Text = "Вы уверены что хотите назначить пользователя "+labelEmail.Text+" пользователем?";
+
         }
 
         private void refreshUserStatus()
@@ -189,6 +178,74 @@ namespace GiveMePaw
             panelFindUsers.Visible = true;
             panelUser.Visible = false;
 
+        }
+
+        private void labelButConfirmAdminY_Click(object sender, EventArgs e)
+        {
+            DB db = new DB();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            string email = labelEmail.Text; 
+            MySqlCommand command = new MySqlCommand("UPDATE `givemepaw`.`users` SET `role` = '1' WHERE (`email`= '" + email + "');", db.getConnection());
+            db.openConnection();
+            command.ExecuteNonQuery();
+            db.closeConnection();
+            refreshUserStatus();
+            panelUserInfo.Visible = true;
+            panelConfirmAdmin.Visible = false;
+            labelButtBackText.Enabled = true;
+
+        }
+
+        private void labelButConfirmAdminN_Click(object sender, EventArgs e)
+        {
+            panelUserInfo.Visible = true;
+            panelConfirmAdmin.Visible = false;
+            labelButtBackText.Enabled = true;
+        }
+
+        private void labelButConfirmManagerY_Click(object sender, EventArgs e)
+        {
+           DB db = new DB();
+           MySqlDataAdapter adapter = new MySqlDataAdapter();
+           string email = labelEmail.Text;
+           MySqlCommand command = new MySqlCommand("UPDATE `givemepaw`.`users` SET `role` = '2' WHERE (`email`= '" + email + "');", db.getConnection());
+           db.openConnection();
+           command.ExecuteNonQuery();
+           db.closeConnection();
+           refreshUserStatus();
+           panelUserInfo.Visible = true;
+           panelConfirmManager.Visible = false;
+           labelButtBackText.Enabled = true;
+        }
+
+        private void labelButConfirmManagerN_Click(object sender, EventArgs e)
+        {
+            panelUserInfo.Visible = true;
+            panelConfirmManager.Visible = false;
+            labelButtBackText.Enabled = true;
+        }
+
+        private void labelButConfirmUserY_Click(object sender, EventArgs e)
+        {
+            DB db = new DB();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            string email = labelEmail.Text;
+            MySqlCommand command = new MySqlCommand("UPDATE `givemepaw`.`users` SET `role` = '3' WHERE (`email`= '" + email + "');", db.getConnection());
+            
+            db.openConnection();
+            command.ExecuteNonQuery();
+            db.closeConnection();
+            refreshUserStatus();
+            panelUserInfo.Visible = true;
+            panelConfirmUser.Visible = false;
+            labelButtBackText.Enabled = true;
+        }
+
+        private void labelButConfirmUserN_Click(object sender, EventArgs e)
+        {
+            panelUserInfo.Visible = true;
+            panelConfirmUser.Visible = false;
+            labelButtBackText.Enabled = true;
         }
     }
 }
