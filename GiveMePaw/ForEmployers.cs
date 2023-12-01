@@ -247,5 +247,11 @@ namespace GiveMePaw
             panelConfirmUser.Visible = false;
             labelButtBackText.Enabled = true;
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            FormAddPet form = new FormAddPet();
+            form.ShowDialog();
+        }
     }
 }

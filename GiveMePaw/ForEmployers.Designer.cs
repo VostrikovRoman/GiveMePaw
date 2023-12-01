@@ -29,43 +29,39 @@ namespace GiveMePaw
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForEmployers));
             this.panel1 = new System.Windows.Forms.Panel();
             this.account_button = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.info_Tab_button = new System.Windows.Forms.Panel();
             this.labelButInfo = new System.Windows.Forms.Label();
-            this.picturePaw = new System.Windows.Forms.PictureBox();
             this.contact_Tab_button = new System.Windows.Forms.Panel();
             this.labelButtContactText = new System.Windows.Forms.Label();
-            this.pictureButtContact = new System.Windows.Forms.PictureBox();
             this.Pet_Tab_button = new System.Windows.Forms.Panel();
             this.labelButtPetText = new System.Windows.Forms.Label();
-            this.pictureButtPet = new System.Windows.Forms.PictureBox();
             this.Users_Tab_button = new System.Windows.Forms.Panel();
             this.labelButtUsersText = new System.Windows.Forms.Label();
-            this.pictureButtUsers = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelButNewPet = new System.Windows.Forms.Label();
             this.panelUsersFind = new System.Windows.Forms.Panel();
             this.panelBackButtBack = new System.Windows.Forms.Panel();
             this.labelButtBackText = new System.Windows.Forms.Label();
-            this.pictureBoxButtBack = new System.Windows.Forms.PictureBox();
             this.label74 = new System.Windows.Forms.Label();
             this.panelUser = new System.Windows.Forms.Panel();
-            this.panelConfirmAdmin = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.labelButConfirmAdminY = new System.Windows.Forms.Label();
-            this.labelConfirmAdmin = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.labelChangeRoleUser = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.labelChangeRoleManag = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelChangeRoleAdmin = new System.Windows.Forms.Label();
+            this.panelConfirmAdmin = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.labelButConfirmAdminN = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.labelButConfirmAdminY = new System.Windows.Forms.Label();
+            this.labelConfirmAdmin = new System.Windows.Forms.Label();
             this.panelUserInfo = new System.Windows.Forms.Panel();
             this.labelEmail = new System.Windows.Forms.Label();
             this.labelRole = new System.Windows.Forms.Label();
@@ -73,16 +69,26 @@ namespace GiveMePaw
             this.labelPatronomic = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.labelSecondName = new System.Windows.Forms.Label();
+            this.panelConfirmUser = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.labelButConfirmUserN = new System.Windows.Forms.Label();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.labelButConfirmUserY = new System.Windows.Forms.Label();
+            this.labelConfirmUser = new System.Windows.Forms.Label();
+            this.panelConfirmManager = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.labelButConfirmManagerN = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.labelButConfirmManagerY = new System.Windows.Forms.Label();
+            this.labelConfirmManager = new System.Windows.Forms.Label();
             this.panelFindUsers = new System.Windows.Forms.Panel();
             this.labelButtFindUser = new System.Windows.Forms.Label();
             this.panelBackTextBoxFindUser = new System.Windows.Forms.Panel();
-            this.pictureBoxLoop = new System.Windows.Forms.PictureBox();
             this.emailFindUser = new System.Windows.Forms.TextBox();
             this.labelFindUserText = new System.Windows.Forms.Label();
             this.panelContact = new System.Windows.Forms.Panel();
             this.label58 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.label56 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
@@ -103,57 +109,65 @@ namespace GiveMePaw
             this.label2 = new System.Windows.Forms.Label();
             this.panelPet = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.labelButConfirmAdminN = new System.Windows.Forms.Label();
-            this.panelConfirmManager = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.labelButConfirmManagerN = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.labelButConfirmManagerY = new System.Windows.Forms.Label();
-            this.labelConfirmManager = new System.Windows.Forms.Label();
-            this.panelConfirmUser = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.labelButConfirmUserN = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.labelButConfirmUserY = new System.Windows.Forms.Label();
-            this.labelConfirmUser = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBoxFindPet = new System.Windows.Forms.TextBox();
+            this.dataGridViewPet = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.picturePaw = new System.Windows.Forms.PictureBox();
+            this.pictureButtContact = new System.Windows.Forms.PictureBox();
+            this.pictureButtPet = new System.Windows.Forms.PictureBox();
+            this.pictureButtUsers = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxButtBack = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLoop = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.info_Tab_button.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picturePaw)).BeginInit();
             this.contact_Tab_button.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureButtContact)).BeginInit();
             this.Pet_Tab_button.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureButtPet)).BeginInit();
             this.Users_Tab_button.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureButtUsers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelUsersFind.SuspendLayout();
             this.panelBackButtBack.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxButtBack)).BeginInit();
             this.panelUser.SuspendLayout();
-            this.panelConfirmAdmin.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panelUserInfo.SuspendLayout();
-            this.panelFindUsers.SuspendLayout();
-            this.panelBackTextBoxFindUser.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoop)).BeginInit();
-            this.panelContact.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            this.panelInfo.SuspendLayout();
-            this.panelPet.SuspendLayout();
+            this.panelConfirmAdmin.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.panelConfirmManager.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panelUserInfo.SuspendLayout();
             this.panelConfirmUser.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
+            this.panelConfirmManager.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panelFindUsers.SuspendLayout();
+            this.panelBackTextBoxFindUser.SuspendLayout();
+            this.panelContact.SuspendLayout();
+            this.panelInfo.SuspendLayout();
+            this.panelPet.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePaw)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureButtContact)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureButtPet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureButtUsers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxButtBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoop)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -162,10 +176,10 @@ namespace GiveMePaw
             this.panel1.Controls.Add(this.account_button);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panelPet);
             this.panel1.Controls.Add(this.panelUsersFind);
             this.panel1.Controls.Add(this.panelContact);
             this.panel1.Controls.Add(this.panelInfo);
-            this.panel1.Controls.Add(this.panelPet);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -185,16 +199,6 @@ namespace GiveMePaw
             this.account_button.TabIndex = 8;
             this.account_button.Text = "Иванов И.";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(680, 21);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(73, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
@@ -204,7 +208,7 @@ namespace GiveMePaw
             this.panel2.Controls.Add(this.contact_Tab_button);
             this.panel2.Controls.Add(this.Pet_Tab_button);
             this.panel2.Controls.Add(this.Users_Tab_button);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.labelButNewPet);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -221,16 +225,6 @@ namespace GiveMePaw
             this.label9.Size = new System.Drawing.Size(81, 27);
             this.label9.TabIndex = 11;
             this.label9.Text = "Выход";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(34, 552);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(54, 38);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 7;
-            this.pictureBox7.TabStop = false;
             // 
             // info_Tab_button
             // 
@@ -257,16 +251,6 @@ namespace GiveMePaw
             this.labelButInfo.Text = "Информация";
             this.labelButInfo.Click += new System.EventHandler(this.labelButInfo_Click);
             // 
-            // picturePaw
-            // 
-            this.picturePaw.Image = global::GiveMePaw.Properties.Resources.paw_Passive;
-            this.picturePaw.Location = new System.Drawing.Point(12, 10);
-            this.picturePaw.Name = "picturePaw";
-            this.picturePaw.Size = new System.Drawing.Size(55, 43);
-            this.picturePaw.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picturePaw.TabIndex = 9;
-            this.picturePaw.TabStop = false;
-            // 
             // contact_Tab_button
             // 
             this.contact_Tab_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
@@ -291,16 +275,6 @@ namespace GiveMePaw
             this.labelButtContactText.Text = "Контакты";
             this.labelButtContactText.Click += new System.EventHandler(this.labelButtContactText_Click);
             // 
-            // pictureButtContact
-            // 
-            this.pictureButtContact.Image = ((System.Drawing.Image)(resources.GetObject("pictureButtContact.Image")));
-            this.pictureButtContact.Location = new System.Drawing.Point(12, 10);
-            this.pictureButtContact.Name = "pictureButtContact";
-            this.pictureButtContact.Size = new System.Drawing.Size(55, 43);
-            this.pictureButtContact.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureButtContact.TabIndex = 8;
-            this.pictureButtContact.TabStop = false;
-            // 
             // Pet_Tab_button
             // 
             this.Pet_Tab_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
@@ -323,16 +297,6 @@ namespace GiveMePaw
             this.labelButtPetText.TabIndex = 8;
             this.labelButtPetText.Text = "Животные";
             this.labelButtPetText.Click += new System.EventHandler(this.labelButtPetText_Click);
-            // 
-            // pictureButtPet
-            // 
-            this.pictureButtPet.Image = ((System.Drawing.Image)(resources.GetObject("pictureButtPet.Image")));
-            this.pictureButtPet.Location = new System.Drawing.Point(12, 10);
-            this.pictureButtPet.Name = "pictureButtPet";
-            this.pictureButtPet.Size = new System.Drawing.Size(55, 43);
-            this.pictureButtPet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureButtPet.TabIndex = 7;
-            this.pictureButtPet.TabStop = false;
             // 
             // Users_Tab_button
             // 
@@ -359,36 +323,16 @@ namespace GiveMePaw
             this.labelButtUsersText.Text = "Пользователи";
             this.labelButtUsersText.Click += new System.EventHandler(this.labelButtUsersText_Click);
             // 
-            // pictureButtUsers
+            // labelButNewPet
             // 
-            this.pictureButtUsers.Image = global::GiveMePaw.Properties.Resources.home_Active;
-            this.pictureButtUsers.Location = new System.Drawing.Point(12, 10);
-            this.pictureButtUsers.Name = "pictureButtUsers";
-            this.pictureButtUsers.Size = new System.Drawing.Size(55, 43);
-            this.pictureButtUsers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureButtUsers.TabIndex = 6;
-            this.pictureButtUsers.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Sans", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
-            this.label1.Location = new System.Drawing.Point(89, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 26);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Дай лапу";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GiveMePaw.Properties.Resources.logo_give_me_paw_2;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 33);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.labelButNewPet.AutoSize = true;
+            this.labelButNewPet.Font = new System.Drawing.Font("Lucida Sans", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelButNewPet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            this.labelButNewPet.Location = new System.Drawing.Point(89, 45);
+            this.labelButNewPet.Name = "labelButNewPet";
+            this.labelButNewPet.Size = new System.Drawing.Size(101, 26);
+            this.labelButNewPet.TabIndex = 5;
+            this.labelButNewPet.Text = "Дай лапу";
             // 
             // panelUsersFind
             // 
@@ -424,16 +368,6 @@ namespace GiveMePaw
             this.labelButtBackText.Text = "назад";
             this.labelButtBackText.Click += new System.EventHandler(this.labelButtBackText_Click);
             // 
-            // pictureBoxButtBack
-            // 
-            this.pictureBoxButtBack.Image = global::GiveMePaw.Properties.Resources.back_2;
-            this.pictureBoxButtBack.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxButtBack.Name = "pictureBoxButtBack";
-            this.pictureBoxButtBack.Size = new System.Drawing.Size(35, 35);
-            this.pictureBoxButtBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxButtBack.TabIndex = 7;
-            this.pictureBoxButtBack.TabStop = false;
-            // 
             // label74
             // 
             this.label74.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -460,55 +394,6 @@ namespace GiveMePaw
             this.panelUser.Size = new System.Drawing.Size(741, 459);
             this.panelUser.TabIndex = 7;
             this.panelUser.Visible = false;
-            // 
-            // panelConfirmAdmin
-            // 
-            this.panelConfirmAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
-            this.panelConfirmAdmin.Controls.Add(this.panel8);
-            this.panelConfirmAdmin.Controls.Add(this.panel7);
-            this.panelConfirmAdmin.Controls.Add(this.labelConfirmAdmin);
-            this.panelConfirmAdmin.Location = new System.Drawing.Point(5, 52);
-            this.panelConfirmAdmin.Name = "panelConfirmAdmin";
-            this.panelConfirmAdmin.Size = new System.Drawing.Size(500, 326);
-            this.panelConfirmAdmin.TabIndex = 11;
-            this.panelConfirmAdmin.Visible = false;
-            // 
-            // panel7
-            // 
-            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.panel7.Controls.Add(this.labelButConfirmAdminY);
-            this.panel7.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel7.Location = new System.Drawing.Point(70, 225);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(177, 46);
-            this.panel7.TabIndex = 9;
-            // 
-            // labelButConfirmAdminY
-            // 
-            this.labelButConfirmAdminY.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelButConfirmAdminY.BackColor = System.Drawing.Color.Transparent;
-            this.labelButConfirmAdminY.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelButConfirmAdminY.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelButConfirmAdminY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.labelButConfirmAdminY.Location = new System.Drawing.Point(0, 0);
-            this.labelButConfirmAdminY.Name = "labelButConfirmAdminY";
-            this.labelButConfirmAdminY.Size = new System.Drawing.Size(177, 46);
-            this.labelButConfirmAdminY.TabIndex = 10;
-            this.labelButConfirmAdminY.Text = "Да";
-            this.labelButConfirmAdminY.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelButConfirmAdminY.Click += new System.EventHandler(this.labelButConfirmAdminY_Click);
-            // 
-            // labelConfirmAdmin
-            // 
-            this.labelConfirmAdmin.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelConfirmAdmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.labelConfirmAdmin.Location = new System.Drawing.Point(50, 33);
-            this.labelConfirmAdmin.Name = "labelConfirmAdmin";
-            this.labelConfirmAdmin.Size = new System.Drawing.Size(400, 166);
-            this.labelConfirmAdmin.TabIndex = 5;
-            this.labelConfirmAdmin.Text = "Вы уверены что хотите назначить пользователя 1234567890098765 адиминистратором?";
-            this.labelConfirmAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel5
             // 
@@ -585,6 +470,81 @@ namespace GiveMePaw
             this.labelChangeRoleAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.labelChangeRoleAdmin.Click += new System.EventHandler(this.labelChangeRoleAdmin_Click);
             // 
+            // panelConfirmAdmin
+            // 
+            this.panelConfirmAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            this.panelConfirmAdmin.Controls.Add(this.panel8);
+            this.panelConfirmAdmin.Controls.Add(this.panel7);
+            this.panelConfirmAdmin.Controls.Add(this.labelConfirmAdmin);
+            this.panelConfirmAdmin.Location = new System.Drawing.Point(5, 52);
+            this.panelConfirmAdmin.Name = "panelConfirmAdmin";
+            this.panelConfirmAdmin.Size = new System.Drawing.Size(500, 326);
+            this.panelConfirmAdmin.TabIndex = 11;
+            this.panelConfirmAdmin.Visible = false;
+            // 
+            // panel8
+            // 
+            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panel8.Controls.Add(this.labelButConfirmAdminN);
+            this.panel8.Cursor = System.Windows.Forms.Cursors.Default;
+            this.panel8.Location = new System.Drawing.Point(253, 225);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(177, 46);
+            this.panel8.TabIndex = 10;
+            // 
+            // labelButConfirmAdminN
+            // 
+            this.labelButConfirmAdminN.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelButConfirmAdminN.BackColor = System.Drawing.Color.Transparent;
+            this.labelButConfirmAdminN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelButConfirmAdminN.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelButConfirmAdminN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.labelButConfirmAdminN.Location = new System.Drawing.Point(0, 0);
+            this.labelButConfirmAdminN.Name = "labelButConfirmAdminN";
+            this.labelButConfirmAdminN.Size = new System.Drawing.Size(177, 46);
+            this.labelButConfirmAdminN.TabIndex = 10;
+            this.labelButConfirmAdminN.Text = "Нет";
+            this.labelButConfirmAdminN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelButConfirmAdminN.Click += new System.EventHandler(this.labelButConfirmAdminN_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.panel7.Controls.Add(this.labelButConfirmAdminY);
+            this.panel7.Cursor = System.Windows.Forms.Cursors.Default;
+            this.panel7.Location = new System.Drawing.Point(70, 225);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(177, 46);
+            this.panel7.TabIndex = 9;
+            // 
+            // labelButConfirmAdminY
+            // 
+            this.labelButConfirmAdminY.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelButConfirmAdminY.BackColor = System.Drawing.Color.Transparent;
+            this.labelButConfirmAdminY.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelButConfirmAdminY.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelButConfirmAdminY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.labelButConfirmAdminY.Location = new System.Drawing.Point(0, 0);
+            this.labelButConfirmAdminY.Name = "labelButConfirmAdminY";
+            this.labelButConfirmAdminY.Size = new System.Drawing.Size(177, 46);
+            this.labelButConfirmAdminY.TabIndex = 10;
+            this.labelButConfirmAdminY.Text = "Да";
+            this.labelButConfirmAdminY.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelButConfirmAdminY.Click += new System.EventHandler(this.labelButConfirmAdminY_Click);
+            // 
+            // labelConfirmAdmin
+            // 
+            this.labelConfirmAdmin.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConfirmAdmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.labelConfirmAdmin.Location = new System.Drawing.Point(50, 33);
+            this.labelConfirmAdmin.Name = "labelConfirmAdmin";
+            this.labelConfirmAdmin.Size = new System.Drawing.Size(400, 166);
+            this.labelConfirmAdmin.TabIndex = 5;
+            this.labelConfirmAdmin.Text = "Вы уверены что хотите назначить пользователя 1234567890098765 адиминистратором?";
+            this.labelConfirmAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panelUserInfo
             // 
             this.panelUserInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
@@ -659,6 +619,156 @@ namespace GiveMePaw
             this.labelSecondName.TabIndex = 0;
             this.labelSecondName.Text = "Фамилия:";
             // 
+            // panelConfirmUser
+            // 
+            this.panelConfirmUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            this.panelConfirmUser.Controls.Add(this.panel11);
+            this.panelConfirmUser.Controls.Add(this.panel12);
+            this.panelConfirmUser.Controls.Add(this.labelConfirmUser);
+            this.panelConfirmUser.Location = new System.Drawing.Point(5, 52);
+            this.panelConfirmUser.Name = "panelConfirmUser";
+            this.panelConfirmUser.Size = new System.Drawing.Size(500, 326);
+            this.panelConfirmUser.TabIndex = 14;
+            this.panelConfirmUser.Visible = false;
+            // 
+            // panel11
+            // 
+            this.panel11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panel11.Controls.Add(this.labelButConfirmUserN);
+            this.panel11.Cursor = System.Windows.Forms.Cursors.Default;
+            this.panel11.Location = new System.Drawing.Point(253, 225);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(177, 46);
+            this.panel11.TabIndex = 10;
+            // 
+            // labelButConfirmUserN
+            // 
+            this.labelButConfirmUserN.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelButConfirmUserN.BackColor = System.Drawing.Color.Transparent;
+            this.labelButConfirmUserN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelButConfirmUserN.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelButConfirmUserN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.labelButConfirmUserN.Location = new System.Drawing.Point(0, 0);
+            this.labelButConfirmUserN.Name = "labelButConfirmUserN";
+            this.labelButConfirmUserN.Size = new System.Drawing.Size(177, 46);
+            this.labelButConfirmUserN.TabIndex = 10;
+            this.labelButConfirmUserN.Text = "Нет";
+            this.labelButConfirmUserN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelButConfirmUserN.Click += new System.EventHandler(this.labelButConfirmUserN_Click);
+            // 
+            // panel12
+            // 
+            this.panel12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.panel12.Controls.Add(this.labelButConfirmUserY);
+            this.panel12.Cursor = System.Windows.Forms.Cursors.Default;
+            this.panel12.Location = new System.Drawing.Point(70, 225);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(177, 46);
+            this.panel12.TabIndex = 9;
+            // 
+            // labelButConfirmUserY
+            // 
+            this.labelButConfirmUserY.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelButConfirmUserY.BackColor = System.Drawing.Color.Transparent;
+            this.labelButConfirmUserY.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelButConfirmUserY.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelButConfirmUserY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.labelButConfirmUserY.Location = new System.Drawing.Point(0, 0);
+            this.labelButConfirmUserY.Name = "labelButConfirmUserY";
+            this.labelButConfirmUserY.Size = new System.Drawing.Size(177, 46);
+            this.labelButConfirmUserY.TabIndex = 10;
+            this.labelButConfirmUserY.Text = "Да";
+            this.labelButConfirmUserY.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelButConfirmUserY.Click += new System.EventHandler(this.labelButConfirmUserY_Click);
+            // 
+            // labelConfirmUser
+            // 
+            this.labelConfirmUser.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConfirmUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.labelConfirmUser.Location = new System.Drawing.Point(50, 33);
+            this.labelConfirmUser.Name = "labelConfirmUser";
+            this.labelConfirmUser.Size = new System.Drawing.Size(400, 166);
+            this.labelConfirmUser.TabIndex = 5;
+            this.labelConfirmUser.Text = "Вы уверены что хотите назначить пользователя 1234567890098765 пользователем?";
+            this.labelConfirmUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelConfirmManager
+            // 
+            this.panelConfirmManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            this.panelConfirmManager.Controls.Add(this.panel9);
+            this.panelConfirmManager.Controls.Add(this.panel10);
+            this.panelConfirmManager.Controls.Add(this.labelConfirmManager);
+            this.panelConfirmManager.Location = new System.Drawing.Point(5, 52);
+            this.panelConfirmManager.Name = "panelConfirmManager";
+            this.panelConfirmManager.Size = new System.Drawing.Size(500, 326);
+            this.panelConfirmManager.TabIndex = 12;
+            this.panelConfirmManager.Visible = false;
+            // 
+            // panel9
+            // 
+            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panel9.Controls.Add(this.labelButConfirmManagerN);
+            this.panel9.Cursor = System.Windows.Forms.Cursors.Default;
+            this.panel9.Location = new System.Drawing.Point(253, 225);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(177, 46);
+            this.panel9.TabIndex = 10;
+            // 
+            // labelButConfirmManagerN
+            // 
+            this.labelButConfirmManagerN.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelButConfirmManagerN.BackColor = System.Drawing.Color.Transparent;
+            this.labelButConfirmManagerN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelButConfirmManagerN.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelButConfirmManagerN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.labelButConfirmManagerN.Location = new System.Drawing.Point(0, 0);
+            this.labelButConfirmManagerN.Name = "labelButConfirmManagerN";
+            this.labelButConfirmManagerN.Size = new System.Drawing.Size(177, 46);
+            this.labelButConfirmManagerN.TabIndex = 10;
+            this.labelButConfirmManagerN.Text = "Нет";
+            this.labelButConfirmManagerN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelButConfirmManagerN.Click += new System.EventHandler(this.labelButConfirmManagerN_Click);
+            // 
+            // panel10
+            // 
+            this.panel10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.panel10.Controls.Add(this.labelButConfirmManagerY);
+            this.panel10.Cursor = System.Windows.Forms.Cursors.Default;
+            this.panel10.Location = new System.Drawing.Point(70, 225);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(177, 46);
+            this.panel10.TabIndex = 9;
+            // 
+            // labelButConfirmManagerY
+            // 
+            this.labelButConfirmManagerY.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelButConfirmManagerY.BackColor = System.Drawing.Color.Transparent;
+            this.labelButConfirmManagerY.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelButConfirmManagerY.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelButConfirmManagerY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.labelButConfirmManagerY.Location = new System.Drawing.Point(0, 0);
+            this.labelButConfirmManagerY.Name = "labelButConfirmManagerY";
+            this.labelButConfirmManagerY.Size = new System.Drawing.Size(177, 46);
+            this.labelButConfirmManagerY.TabIndex = 10;
+            this.labelButConfirmManagerY.Text = "Да";
+            this.labelButConfirmManagerY.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelButConfirmManagerY.Click += new System.EventHandler(this.labelButConfirmManagerY_Click);
+            // 
+            // labelConfirmManager
+            // 
+            this.labelConfirmManager.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConfirmManager.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.labelConfirmManager.Location = new System.Drawing.Point(50, 33);
+            this.labelConfirmManager.Name = "labelConfirmManager";
+            this.labelConfirmManager.Size = new System.Drawing.Size(400, 166);
+            this.labelConfirmManager.TabIndex = 5;
+            this.labelConfirmManager.Text = "Вы уверены что хотите назначить пользователя 1234567890098765 менеджером?";
+            this.labelConfirmManager.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panelFindUsers
             // 
             this.panelFindUsers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -691,17 +801,6 @@ namespace GiveMePaw
             this.panelBackTextBoxFindUser.Name = "panelBackTextBoxFindUser";
             this.panelBackTextBoxFindUser.Size = new System.Drawing.Size(383, 35);
             this.panelBackTextBoxFindUser.TabIndex = 5;
-            // 
-            // pictureBoxLoop
-            // 
-            this.pictureBoxLoop.BackColor = System.Drawing.Color.White;
-            this.pictureBoxLoop.Image = global::GiveMePaw.Properties.Resources.Loop;
-            this.pictureBoxLoop.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxLoop.Name = "pictureBoxLoop";
-            this.pictureBoxLoop.Size = new System.Drawing.Size(35, 35);
-            this.pictureBoxLoop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLoop.TabIndex = 10;
-            this.pictureBoxLoop.TabStop = false;
             // 
             // emailFindUser
             // 
@@ -769,16 +868,6 @@ namespace GiveMePaw
             this.label57.Size = new System.Drawing.Size(283, 22);
             this.label57.TabIndex = 19;
             this.label57.Text = "Адрес: ул. Красногвардейская, ";
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
-            this.pictureBox17.Location = new System.Drawing.Point(465, 100);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(270, 241);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox17.TabIndex = 18;
-            this.pictureBox17.TabStop = false;
             // 
             // label56
             // 
@@ -979,6 +1068,9 @@ namespace GiveMePaw
             // 
             // panelPet
             // 
+            this.panelPet.Controls.Add(this.dataGridViewPet);
+            this.panelPet.Controls.Add(this.textBoxFindPet);
+            this.panelPet.Controls.Add(this.label3);
             this.panelPet.Controls.Add(this.label6);
             this.panelPet.Location = new System.Drawing.Point(254, 101);
             this.panelPet.Name = "panelPet";
@@ -998,181 +1090,229 @@ namespace GiveMePaw
             this.label6.Text = "Животные";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel8
+            // label3
             // 
-            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.panel8.Controls.Add(this.labelButConfirmAdminN);
-            this.panel8.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel8.Location = new System.Drawing.Point(253, 225);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(177, 46);
-            this.panel8.TabIndex = 10;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label3.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.label3.Location = new System.Drawing.Point(39, 90);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(146, 50);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Добавить";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // labelButConfirmAdminN
+            // textBoxFindPet
             // 
-            this.labelButConfirmAdminN.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelButConfirmAdminN.BackColor = System.Drawing.Color.Transparent;
-            this.labelButConfirmAdminN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelButConfirmAdminN.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelButConfirmAdminN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.labelButConfirmAdminN.Location = new System.Drawing.Point(0, 0);
-            this.labelButConfirmAdminN.Name = "labelButConfirmAdminN";
-            this.labelButConfirmAdminN.Size = new System.Drawing.Size(177, 46);
-            this.labelButConfirmAdminN.TabIndex = 10;
-            this.labelButConfirmAdminN.Text = "Нет";
-            this.labelButConfirmAdminN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelButConfirmAdminN.Click += new System.EventHandler(this.labelButConfirmAdminN_Click);
+            this.textBoxFindPet.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxFindPet.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFindPet.Location = new System.Drawing.Point(317, 98);
+            this.textBoxFindPet.Name = "textBoxFindPet";
+            this.textBoxFindPet.Size = new System.Drawing.Size(308, 32);
+            this.textBoxFindPet.TabIndex = 10;
             // 
-            // panelConfirmManager
+            // dataGridViewPet
             // 
-            this.panelConfirmManager.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
-            this.panelConfirmManager.Controls.Add(this.panel9);
-            this.panelConfirmManager.Controls.Add(this.panel10);
-            this.panelConfirmManager.Controls.Add(this.labelConfirmManager);
-            this.panelConfirmManager.Location = new System.Drawing.Point(5, 52);
-            this.panelConfirmManager.Name = "panelConfirmManager";
-            this.panelConfirmManager.Size = new System.Drawing.Size(500, 326);
-            this.panelConfirmManager.TabIndex = 12;
-            this.panelConfirmManager.Visible = false;
+            this.dataGridViewPet.AllowUserToAddRows = false;
+            this.dataGridViewPet.AllowUserToDeleteRows = false;
+            this.dataGridViewPet.AllowUserToResizeColumns = false;
+            this.dataGridViewPet.AllowUserToResizeRows = false;
+            this.dataGridViewPet.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewPet.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewPet.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridViewPet.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewPet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPet.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.Column8});
+            this.dataGridViewPet.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridViewPet.Location = new System.Drawing.Point(26, 164);
+            this.dataGridViewPet.MultiSelect = false;
+            this.dataGridViewPet.Name = "dataGridViewPet";
+            this.dataGridViewPet.ReadOnly = true;
+            this.dataGridViewPet.RowHeadersVisible = false;
+            this.dataGridViewPet.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridViewPet.Size = new System.Drawing.Size(700, 320);
+            this.dataGridViewPet.TabIndex = 0;
             // 
-            // panel9
+            // Column1
             // 
-            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.panel9.Controls.Add(this.labelButConfirmManagerN);
-            this.panel9.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel9.Location = new System.Drawing.Point(253, 225);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(177, 46);
-            this.panel9.TabIndex = 10;
+            this.Column1.HeaderText = "id";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
-            // labelButConfirmManagerN
+            // Column2
             // 
-            this.labelButConfirmManagerN.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelButConfirmManagerN.BackColor = System.Drawing.Color.Transparent;
-            this.labelButConfirmManagerN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelButConfirmManagerN.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelButConfirmManagerN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.labelButConfirmManagerN.Location = new System.Drawing.Point(0, 0);
-            this.labelButConfirmManagerN.Name = "labelButConfirmManagerN";
-            this.labelButConfirmManagerN.Size = new System.Drawing.Size(177, 46);
-            this.labelButConfirmManagerN.TabIndex = 10;
-            this.labelButConfirmManagerN.Text = "Нет";
-            this.labelButConfirmManagerN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelButConfirmManagerN.Click += new System.EventHandler(this.labelButConfirmManagerN_Click);
+            this.Column2.HeaderText = "pet_type";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
-            // panel10
+            // Column3
             // 
-            this.panel10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.panel10.Controls.Add(this.labelButConfirmManagerY);
-            this.panel10.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel10.Location = new System.Drawing.Point(70, 225);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(177, 46);
-            this.panel10.TabIndex = 9;
+            this.Column3.HeaderText = "name";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
-            // labelButConfirmManagerY
+            // Column4
             // 
-            this.labelButConfirmManagerY.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelButConfirmManagerY.BackColor = System.Drawing.Color.Transparent;
-            this.labelButConfirmManagerY.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelButConfirmManagerY.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelButConfirmManagerY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.labelButConfirmManagerY.Location = new System.Drawing.Point(0, 0);
-            this.labelButConfirmManagerY.Name = "labelButConfirmManagerY";
-            this.labelButConfirmManagerY.Size = new System.Drawing.Size(177, 46);
-            this.labelButConfirmManagerY.TabIndex = 10;
-            this.labelButConfirmManagerY.Text = "Да";
-            this.labelButConfirmManagerY.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelButConfirmManagerY.Click += new System.EventHandler(this.labelButConfirmManagerY_Click);
+            this.Column4.HeaderText = "age";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
-            // labelConfirmManager
+            // Column5
             // 
-            this.labelConfirmManager.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelConfirmManager.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.labelConfirmManager.Location = new System.Drawing.Point(50, 33);
-            this.labelConfirmManager.Name = "labelConfirmManager";
-            this.labelConfirmManager.Size = new System.Drawing.Size(400, 166);
-            this.labelConfirmManager.TabIndex = 5;
-            this.labelConfirmManager.Text = "Вы уверены что хотите назначить пользователя 1234567890098765 менеджером?";
-            this.labelConfirmManager.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Column5.HeaderText = "breed";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
-            // panelConfirmUser
+            // Column6
             // 
-            this.panelConfirmUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
-            this.panelConfirmUser.Controls.Add(this.panel11);
-            this.panelConfirmUser.Controls.Add(this.panel12);
-            this.panelConfirmUser.Controls.Add(this.labelConfirmUser);
-            this.panelConfirmUser.Location = new System.Drawing.Point(5, 52);
-            this.panelConfirmUser.Name = "panelConfirmUser";
-            this.panelConfirmUser.Size = new System.Drawing.Size(500, 326);
-            this.panelConfirmUser.TabIndex = 14;
-            this.panelConfirmUser.Visible = false;
+            this.Column6.HeaderText = "photo";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
             // 
-            // panel11
+            // Column7
             // 
-            this.panel11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.panel11.Controls.Add(this.labelButConfirmUserN);
-            this.panel11.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel11.Location = new System.Drawing.Point(253, 225);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(177, 46);
-            this.panel11.TabIndex = 10;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Column7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Column7.HeaderText = "";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Text = "Edit";
+            this.Column7.UseColumnTextForButtonValue = true;
             // 
-            // labelButConfirmUserN
+            // Column8
             // 
-            this.labelButConfirmUserN.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelButConfirmUserN.BackColor = System.Drawing.Color.Transparent;
-            this.labelButConfirmUserN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelButConfirmUserN.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelButConfirmUserN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.labelButConfirmUserN.Location = new System.Drawing.Point(0, 0);
-            this.labelButConfirmUserN.Name = "labelButConfirmUserN";
-            this.labelButConfirmUserN.Size = new System.Drawing.Size(177, 46);
-            this.labelButConfirmUserN.TabIndex = 10;
-            this.labelButConfirmUserN.Text = "Нет";
-            this.labelButConfirmUserN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelButConfirmUserN.Click += new System.EventHandler(this.labelButConfirmUserN_Click);
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Column8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Column8.HeaderText = "";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Text = "Delete";
+            this.Column8.UseColumnTextForButtonValue = true;
             // 
-            // panel12
+            // pictureBox2
             // 
-            this.panel12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.panel12.Controls.Add(this.labelButConfirmUserY);
-            this.panel12.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel12.Location = new System.Drawing.Point(70, 225);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(177, 46);
-            this.panel12.TabIndex = 9;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(680, 21);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(73, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
             // 
-            // labelButConfirmUserY
+            // pictureBox7
             // 
-            this.labelButConfirmUserY.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelButConfirmUserY.BackColor = System.Drawing.Color.Transparent;
-            this.labelButConfirmUserY.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelButConfirmUserY.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelButConfirmUserY.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.labelButConfirmUserY.Location = new System.Drawing.Point(0, 0);
-            this.labelButConfirmUserY.Name = "labelButConfirmUserY";
-            this.labelButConfirmUserY.Size = new System.Drawing.Size(177, 46);
-            this.labelButConfirmUserY.TabIndex = 10;
-            this.labelButConfirmUserY.Text = "Да";
-            this.labelButConfirmUserY.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelButConfirmUserY.Click += new System.EventHandler(this.labelButConfirmUserY_Click);
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(34, 552);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(54, 38);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 7;
+            this.pictureBox7.TabStop = false;
             // 
-            // labelConfirmUser
+            // picturePaw
             // 
-            this.labelConfirmUser.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelConfirmUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.labelConfirmUser.Location = new System.Drawing.Point(50, 33);
-            this.labelConfirmUser.Name = "labelConfirmUser";
-            this.labelConfirmUser.Size = new System.Drawing.Size(400, 166);
-            this.labelConfirmUser.TabIndex = 5;
-            this.labelConfirmUser.Text = "Вы уверены что хотите назначить пользователя 1234567890098765 пользователем?";
-            this.labelConfirmUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.picturePaw.Image = global::GiveMePaw.Properties.Resources.paw_Passive;
+            this.picturePaw.Location = new System.Drawing.Point(12, 10);
+            this.picturePaw.Name = "picturePaw";
+            this.picturePaw.Size = new System.Drawing.Size(55, 43);
+            this.picturePaw.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picturePaw.TabIndex = 9;
+            this.picturePaw.TabStop = false;
+            // 
+            // pictureButtContact
+            // 
+            this.pictureButtContact.Image = ((System.Drawing.Image)(resources.GetObject("pictureButtContact.Image")));
+            this.pictureButtContact.Location = new System.Drawing.Point(12, 10);
+            this.pictureButtContact.Name = "pictureButtContact";
+            this.pictureButtContact.Size = new System.Drawing.Size(55, 43);
+            this.pictureButtContact.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureButtContact.TabIndex = 8;
+            this.pictureButtContact.TabStop = false;
+            // 
+            // pictureButtPet
+            // 
+            this.pictureButtPet.Image = ((System.Drawing.Image)(resources.GetObject("pictureButtPet.Image")));
+            this.pictureButtPet.Location = new System.Drawing.Point(12, 10);
+            this.pictureButtPet.Name = "pictureButtPet";
+            this.pictureButtPet.Size = new System.Drawing.Size(55, 43);
+            this.pictureButtPet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureButtPet.TabIndex = 7;
+            this.pictureButtPet.TabStop = false;
+            // 
+            // pictureButtUsers
+            // 
+            this.pictureButtUsers.Image = global::GiveMePaw.Properties.Resources.home_Active;
+            this.pictureButtUsers.Location = new System.Drawing.Point(12, 10);
+            this.pictureButtUsers.Name = "pictureButtUsers";
+            this.pictureButtUsers.Size = new System.Drawing.Size(55, 43);
+            this.pictureButtUsers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureButtUsers.TabIndex = 6;
+            this.pictureButtUsers.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GiveMePaw.Properties.Resources.logo_give_me_paw_2;
+            this.pictureBox1.Location = new System.Drawing.Point(33, 33);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBoxButtBack
+            // 
+            this.pictureBoxButtBack.Image = global::GiveMePaw.Properties.Resources.back_2;
+            this.pictureBoxButtBack.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxButtBack.Name = "pictureBoxButtBack";
+            this.pictureBoxButtBack.Size = new System.Drawing.Size(35, 35);
+            this.pictureBoxButtBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxButtBack.TabIndex = 7;
+            this.pictureBoxButtBack.TabStop = false;
+            // 
+            // pictureBoxLoop
+            // 
+            this.pictureBoxLoop.BackColor = System.Drawing.Color.White;
+            this.pictureBoxLoop.Image = global::GiveMePaw.Properties.Resources.Loop;
+            this.pictureBoxLoop.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxLoop.Name = "pictureBoxLoop";
+            this.pictureBoxLoop.Size = new System.Drawing.Size(35, 35);
+            this.pictureBoxLoop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLoop.TabIndex = 10;
+            this.pictureBoxLoop.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
+            this.pictureBox17.Location = new System.Drawing.Point(465, 100);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(270, 241);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox17.TabIndex = 18;
+            this.pictureBox17.TabStop = false;
             // 
             // ForEmployers
             // 
@@ -1189,55 +1329,57 @@ namespace GiveMePaw
             this.Text = "Дай Лапу";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.info_Tab_button.ResumeLayout(false);
             this.info_Tab_button.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picturePaw)).EndInit();
             this.contact_Tab_button.ResumeLayout(false);
             this.contact_Tab_button.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureButtContact)).EndInit();
             this.Pet_Tab_button.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureButtPet)).EndInit();
             this.Users_Tab_button.ResumeLayout(false);
             this.Users_Tab_button.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureButtUsers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelUsersFind.ResumeLayout(false);
             this.panelBackButtBack.ResumeLayout(false);
             this.panelBackButtBack.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxButtBack)).EndInit();
             this.panelUser.ResumeLayout(false);
-            this.panelConfirmAdmin.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panelConfirmAdmin.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
             this.panelUserInfo.ResumeLayout(false);
             this.panelUserInfo.PerformLayout();
+            this.panelConfirmUser.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.panelConfirmManager.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
             this.panelFindUsers.ResumeLayout(false);
             this.panelFindUsers.PerformLayout();
             this.panelBackTextBoxFindUser.ResumeLayout(false);
             this.panelBackTextBoxFindUser.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoop)).EndInit();
             this.panelContact.ResumeLayout(false);
             this.panelContact.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             this.panelInfo.ResumeLayout(false);
             this.panelInfo.PerformLayout();
             this.panelPet.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panelConfirmManager.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panelConfirmUser.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
+            this.panelPet.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePaw)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureButtContact)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureButtPet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureButtUsers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxButtBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoop)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1261,7 +1403,7 @@ namespace GiveMePaw
         private System.Windows.Forms.Panel Users_Tab_button;
         private System.Windows.Forms.Label labelButtUsersText;
         private System.Windows.Forms.PictureBox pictureButtUsers;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelButNewPet;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label account_button;
         private System.Windows.Forms.Panel panelUsersFind;
@@ -1331,5 +1473,16 @@ namespace GiveMePaw
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label labelButConfirmManagerY;
         private System.Windows.Forms.Label labelConfirmManager;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView dataGridViewPet;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewButtonColumn Column7;
+        private System.Windows.Forms.DataGridViewButtonColumn Column8;
+        private System.Windows.Forms.TextBox textBoxFindPet;
     }
 }
