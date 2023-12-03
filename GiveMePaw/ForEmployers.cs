@@ -248,10 +248,19 @@ namespace GiveMePaw
             labelButtBackText.Enabled = true;
         }
 
+        public void Display()
+        {
+            DB.DisplayAndSerachPet("SELECT * FROM pets", dataGridViewPet);
+        }
         private void label3_Click(object sender, EventArgs e)
         {
-            FormAddPet form = new FormAddPet();
+            FormAddPet form = new FormAddPet(this);
             form.ShowDialog();
+        }
+
+        private void ForEmployers_Shown(object sender, EventArgs e)
+        {
+            Display();
         }
     }
 }

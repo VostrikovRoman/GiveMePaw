@@ -110,6 +110,7 @@ namespace GiveMePaw
             MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
             DataTable tbl = new DataTable();
             adp.Fill(tbl);
+            dvg.DataSource = tbl;
             con.Close();  
 
 
