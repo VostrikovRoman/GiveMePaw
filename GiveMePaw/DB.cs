@@ -33,14 +33,14 @@ namespace GiveMePaw
         public static void AddPet(Pet std)
         {
             DB db = new DB();
-            string sql = "INSERT INTO `pets` VALUES ('null', '@pet_type', '@name,' '@age', '@weight', '@breed', @photo)";
+            string sql = "INSERT INTO `pets` (`pet_type`, `name`, `age`, `weight`, `breed`, `photo`) VALUES (@pet_type, @name, @age, @weight, @breed, @photo)";
             MySqlConnection con = db.getConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
             cmd.Parameters.Add("@pet_type", MySqlDbType.Int32).Value = std.Pet_type;
             cmd.Parameters.Add("@name", MySqlDbType.VarChar).Value = std.Name;
             cmd.Parameters.Add("@age", MySqlDbType.Int32).Value = std.Age;
-            cmd.Parameters.Add("@Weight", MySqlDbType.Int32).Value = std.Weight;
+            cmd.Parameters.Add("@weight", MySqlDbType.Int32).Value = std.Weight;
             cmd.Parameters.Add("@breed", MySqlDbType.VarChar).Value = std.Breed;
             cmd.Parameters.Add("@photo", MySqlDbType.VarChar).Value = std.Photo;
             try

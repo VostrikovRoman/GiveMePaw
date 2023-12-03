@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,15 +23,28 @@ namespace GiveMePaw
 
         public void Clear()
         {
-            NameTxtbx.Text = Pet_typeTxtbx.Text = AgeTxtbx.Text = WeightTxtbx.Text = BreedTxtbx.Text = Pet_typeTxtbx.Text = string.Empty;
+            NameTxtbx.Text = Pet_typeTxtbx.Text = AgeTxtbx.Text = WeightTxtbx.Text = BreedTxtbx.Text = PhotoTxtbx.Text = string.Empty;
         }
 
         private void labelButtSavePet_Click(object sender, EventArgs e)
         {
-             Pet std = new Pet(Pet_typeTxtbx.Text.Trim(), NameTxtbx.Text.Trim(), AgeTxtbx.Text.Trim(), WeightTxtbx.Text.Trim(), BreedTxtbx.Text.Trim(), PhotoTxtbx.Text.Trim());
-             DB.AddPet(std);
-             Clear();
-             _parent.Display();
+            DB bd = new DB();
+            MySqlCommand command = new MySqlCommand("INSERT INTO `pets` (`pet_type`, `name`, `age`, `weight`, `breed`, `photo`) VALUES (@PT, @NAME, @AGE, @WEIGHT, @BREED, @PHOTO)", bd.getConnection());
+            command.Parameters.Add("@PT", MySqlDbType.Int32).Value = Pet_typeTxtbx.Text;
+            command.Parameters.Add("@NAME", MySqlDbType.VarChar).Value = NameTxtbx.Text;
+            command.Parameters.Add("@AGE", MySqlDbType.Int32).Value = AgeTxtbx.Text;
+            command.Parameters.Add("@WEIGHT", MySqlDbType.Int32).Value = WeightTxtbx.Text;
+            command.Parameters.Add("@BREED", MySqlDbType.VarChar).Value = BreedTxtbx.Text;
+            command.Parameters.Add("@PHOTO", MySqlDbType.VarChar).Value = PhotoTxtbx.Text;
+            bd.openConnection();
+            command.ExecuteNonQuery();
+            bd.closeConnection();
+            Clear();
+            _parent.Display();
+
+
+
+
         }
     }
 }

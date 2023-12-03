@@ -199,7 +199,7 @@ namespace GiveMePaw
             this.PhotoTxtbx.Location = new System.Drawing.Point(176, 324);
             this.PhotoTxtbx.Name = "PhotoTxtbx";
             this.PhotoTxtbx.Size = new System.Drawing.Size(356, 36);
-            this.PhotoTxtbx.TabIndex = 38;
+            this.PhotoTxtbx.TabIndex = 1;
             // 
             // BreedTxtbx
             // 
@@ -208,7 +208,7 @@ namespace GiveMePaw
             this.BreedTxtbx.Location = new System.Drawing.Point(176, 273);
             this.BreedTxtbx.Name = "BreedTxtbx";
             this.BreedTxtbx.Size = new System.Drawing.Size(356, 36);
-            this.BreedTxtbx.TabIndex = 37;
+            this.BreedTxtbx.TabIndex = 1;
             // 
             // WeightTxtbx
             // 
@@ -217,7 +217,7 @@ namespace GiveMePaw
             this.WeightTxtbx.Location = new System.Drawing.Point(176, 222);
             this.WeightTxtbx.Name = "WeightTxtbx";
             this.WeightTxtbx.Size = new System.Drawing.Size(356, 36);
-            this.WeightTxtbx.TabIndex = 36;
+            this.WeightTxtbx.TabIndex = 1;
             // 
             // AgeTxtbx
             // 
@@ -226,7 +226,7 @@ namespace GiveMePaw
             this.AgeTxtbx.Location = new System.Drawing.Point(176, 171);
             this.AgeTxtbx.Name = "AgeTxtbx";
             this.AgeTxtbx.Size = new System.Drawing.Size(356, 36);
-            this.AgeTxtbx.TabIndex = 35;
+            this.AgeTxtbx.TabIndex = 1;
             // 
             // NameTxtbx
             // 
@@ -235,7 +235,7 @@ namespace GiveMePaw
             this.NameTxtbx.Location = new System.Drawing.Point(176, 120);
             this.NameTxtbx.Name = "NameTxtbx";
             this.NameTxtbx.Size = new System.Drawing.Size(356, 36);
-            this.NameTxtbx.TabIndex = 34;
+            this.NameTxtbx.TabIndex = 1;
             // 
             // Pet_typeTxtbx
             // 
@@ -244,7 +244,7 @@ namespace GiveMePaw
             this.Pet_typeTxtbx.Location = new System.Drawing.Point(176, 68);
             this.Pet_typeTxtbx.Name = "Pet_typeTxtbx";
             this.Pet_typeTxtbx.Size = new System.Drawing.Size(356, 36);
-            this.Pet_typeTxtbx.TabIndex = 33;
+            this.Pet_typeTxtbx.TabIndex = 1;
             // 
             // FormAddPet
             // 
