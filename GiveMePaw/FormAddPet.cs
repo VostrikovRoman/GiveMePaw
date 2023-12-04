@@ -14,11 +14,19 @@ namespace GiveMePaw
     public partial class FormAddPet : Form
     {
         private readonly ForEmployers _parent;
+
+        public string pet_type, name, age, wieght, breed, photo, id;
         
         public FormAddPet(ForEmployers parent)
         {
             InitializeComponent();
             _parent = parent;
+        }
+
+        public void UpdateInfo()
+        {
+            labelTextAddPet.Text = "Изменение животного";
+            labelButtSavePet.Text = "Изменить";
         }
 
         public void Clear()
@@ -28,23 +36,20 @@ namespace GiveMePaw
 
         private void labelButtSavePet_Click(object sender, EventArgs e)
         {
-            DB bd = new DB();
-            MySqlCommand command = new MySqlCommand("INSERT INTO `pets` (`pet_type`, `name`, `age`, `weight`, `breed`, `photo`) VALUES (@PT, @NAME, @AGE, @WEIGHT, @BREED, @PHOTO)", bd.getConnection());
-            command.Parameters.Add("@PT", MySqlDbType.Int32).Value = Pet_typeTxtbx.Text;
-            command.Parameters.Add("@NAME", MySqlDbType.VarChar).Value = NameTxtbx.Text;
-            command.Parameters.Add("@AGE", MySqlDbType.Int32).Value = AgeTxtbx.Text;
-            command.Parameters.Add("@WEIGHT", MySqlDbType.Int32).Value = WeightTxtbx.Text;
-            command.Parameters.Add("@BREED", MySqlDbType.VarChar).Value = BreedTxtbx.Text;
-            command.Parameters.Add("@PHOTO", MySqlDbType.VarChar).Value = PhotoTxtbx.Text;
-            bd.openConnection();
-            command.ExecuteNonQuery();
-            bd.closeConnection();
+            if (labelButtSavePet.Text == "Сохранить")
+            {
+                Pet std = new Pet(Pet_typeTxtbx.Text.Trim(), NameTxtbx.Text.Trim(), AgeTxtbx.Text.Trim(), WeightTxtbx.Text.Trim(), BreedTxtbx.Text.Trim(), PhotoTxtbx.Text.Trim());
+                DB.AddPet(std);
             Clear();
+            }
+
+            if (labelButtSavePet.Text == "Изменить")
+            {
+                Pet std = new Pet(Pet_typeTxtbx.Text.Trim(), NameTxtbx.Text.Trim(), AgeTxtbx.Text.Trim(), WeightTxtbx.Text.Trim(), BreedTxtbx.Text.Trim(), PhotoTxtbx.Text.Trim());
+                DB.UpdatePet(std, id);
+            }
+
             _parent.Display();
-
-
-
-
         }
     }
 }

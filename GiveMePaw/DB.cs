@@ -43,6 +43,7 @@ namespace GiveMePaw
             cmd.Parameters.Add("@weight", MySqlDbType.Int32).Value = std.Weight;
             cmd.Parameters.Add("@breed", MySqlDbType.VarChar).Value = std.Breed;
             cmd.Parameters.Add("@photo", MySqlDbType.VarChar).Value = std.Photo;
+            con.Open();
             try
             {
                 cmd.ExecuteNonQuery();
@@ -69,6 +70,7 @@ namespace GiveMePaw
             cmd.Parameters.Add("@Weight", MySqlDbType.Int32).Value = std.Weight;
             cmd.Parameters.Add("@breed", MySqlDbType.VarChar).Value = std.Breed;
             cmd.Parameters.Add("@photo", MySqlDbType.VarChar).Value = std.Photo;
+            con.Open();
             try
             {
                 cmd.ExecuteNonQuery();
@@ -84,11 +86,12 @@ namespace GiveMePaw
         public static void DeletePet(string id)
         {
             DB db = new DB();
-            string sql = "DELETE FROM pets WHERE id = @id";
+            string sql = "DELETE FROM pets WHERE id = "+id+"";
             MySqlConnection con = db.getConnection();
             MySqlCommand cmd = new MySqlCommand(sql, con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
+            //cmd.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
+            con.Open();
             try
             {
                 cmd.ExecuteNonQuery();
