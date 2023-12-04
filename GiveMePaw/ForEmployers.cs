@@ -276,17 +276,19 @@ namespace GiveMePaw
             if(e.ColumnIndex == 0)
             {
                 //Edit
-                form.Clear();
-                form.id = dataGridViewPet.Rows[e.RowIndex].Cells[2].Value.ToString();
-                form.pet_type = dataGridViewPet.Rows[e.RowIndex].Cells[3].Value.ToString();
-                form.name = dataGridViewPet.Rows[e.RowIndex].Cells[4].Value.ToString();
-                form.age = dataGridViewPet.Rows[e.RowIndex].Cells[5].Value.ToString();
-                form.wieght = dataGridViewPet.Rows[e.RowIndex].Cells[6].Value.ToString();
-                form.breed = dataGridViewPet.Rows[e.RowIndex].Cells[7].Value.ToString();
-                form.photo = dataGridViewPet.Rows[e.RowIndex].Cells[8].Value.ToString();
-                form.UpdateInfo();
-                form.ShowDialog();
-                MessageBox.Show("Вы уверены что хотите изменить жтвотное?", "Информация", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
+                if (MessageBox.Show("Вы уверены что хотите изменить житвотное?", "Информация", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
+                {
+                    form.Clear();
+                    form.id = dataGridViewPet.Rows[e.RowIndex].Cells[2].Value.ToString();
+                    form.pet_type = dataGridViewPet.Rows[e.RowIndex].Cells[3].Value.ToString();
+                    form.name = dataGridViewPet.Rows[e.RowIndex].Cells[4].Value.ToString();
+                    form.age = dataGridViewPet.Rows[e.RowIndex].Cells[5].Value.ToString();
+                    form.wieght = dataGridViewPet.Rows[e.RowIndex].Cells[6].Value.ToString();
+                    form.breed = dataGridViewPet.Rows[e.RowIndex].Cells[7].Value.ToString();
+                    form.photo = dataGridViewPet.Rows[e.RowIndex].Cells[8].Value.ToString();
+                    form.UpdateInfo();
+                    form.ShowDialog();
+                }
                 return;
             }
 
