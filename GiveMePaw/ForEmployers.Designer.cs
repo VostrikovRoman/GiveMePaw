@@ -1057,7 +1057,7 @@ namespace GiveMePaw
             this.Column8.HeaderText = "";
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
-            this.Column8.Text = "Edit";
+            this.Column8.Text = "Изменить";
             this.Column8.UseColumnTextForButtonValue = true;
             // 
             // Column9
@@ -1073,7 +1073,7 @@ namespace GiveMePaw
             this.Column9.HeaderText = "";
             this.Column9.Name = "Column9";
             this.Column9.ReadOnly = true;
-            this.Column9.Text = "Delete";
+            this.Column9.Text = "Удалить";
             this.Column9.UseColumnTextForButtonValue = true;
             // 
             // ForEmployers
