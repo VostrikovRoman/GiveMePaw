@@ -13,9 +13,11 @@ namespace GiveMePaw
 {
     public partial class ForEmployers : Form
     {
+        FormAddPet form;
         public ForEmployers()
         {
             InitializeComponent();
+            form = new FormAddPet(this); 
         }
         
        
@@ -119,7 +121,7 @@ namespace GiveMePaw
                 labelSecondName.Text = "Фамилия: " + Convert.ToString(table.Rows[0][2]);
                 labelName.Text = "Имя: " + Convert.ToString(table.Rows[0][1]);
                 labelPatronomic.Text = "Отчество: " + Convert.ToString(table.Rows[0][3]);
-                labelPhoneNum.Text = "Номер телефона:" + Convert.ToString(table.Rows[0][5]);
+                labelPhoneNum.Text = "Номер телефона: " + Convert.ToString(table.Rows[0][5]);
                 labelRole.Text = "Роль: " + Convert.ToString(table.Rows[0][9]);
             }
             else
@@ -130,40 +132,49 @@ namespace GiveMePaw
 
         private void labelChangeRoleAdmin_Click(object sender, EventArgs e)
         {
-            DB db = new DB();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            string email = labelEmail.Text; 
-            MySqlCommand command = new MySqlCommand("UPDATE `givemepaw`.`users` SET `role` = '1' WHERE (`email`= '" + email + "');", db.getConnection());
-            db.openConnection();
-            command.ExecuteNonQuery();
-            db.closeConnection();
-            refreshUserStatus();
+            if (MessageBox.Show("Вы уверены что хотите назначить этого пользователя                                           администратором?", "Информация", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                DB db = new DB();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                string email = labelEmail.Text;
+                MySqlCommand command = new MySqlCommand("UPDATE `givemepaw`.`users` SET `role` = '1' WHERE (`email`= '" + email + "');", db.getConnection());
+                db.openConnection();
+                command.ExecuteNonQuery();
+                db.closeConnection();
+                refreshUserStatus();
+            }
+            return;
         }
 
         private void labelChangeRoleManag_Click(object sender, EventArgs e)
         {
-            DB db = new DB();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            string email = labelEmail.Text;
-            MySqlCommand command = new MySqlCommand("UPDATE `givemepaw`.`users` SET `role` = '2' WHERE (`email`= '" + email + "');", db.getConnection());
-            db.openConnection();
-            command.ExecuteNonQuery();
-            db.closeConnection();
-            refreshUserStatus();
-
+            if (MessageBox.Show("Вы уверены что хотите назначить этого пользователя                                               менеджером?", "Информация", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                DB db = new DB();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                string email = labelEmail.Text;
+                MySqlCommand command = new MySqlCommand("UPDATE `givemepaw`.`users` SET `role` = '2' WHERE (`email`= '" + email + "');", db.getConnection());
+                db.openConnection();
+                command.ExecuteNonQuery();
+                db.closeConnection();
+                refreshUserStatus();
+            }
         }
 
         private void labelChangeRoleUser_Click(object sender, EventArgs e)
         {
-            DB db = new DB();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            string email = labelEmail.Text;
-            MySqlCommand command = new MySqlCommand("UPDATE `givemepaw`.`users` SET `role` = '3' WHERE (`email`= '" + email + "');", db.getConnection());
-            
-            db.openConnection();
-            command.ExecuteNonQuery();
-            db.closeConnection();
-            refreshUserStatus();
+            if (MessageBox.Show("Вы уверены что хотите назначить этого пользователя                                            пользователем?", "Информация", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                DB db = new DB();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                string email = labelEmail.Text;
+                MySqlCommand command = new MySqlCommand("UPDATE `givemepaw`.`users` SET `role` = '3' WHERE (`email`= '" + email + "');", db.getConnection());
+
+                db.openConnection();
+                command.ExecuteNonQuery();
+                db.closeConnection();
+                refreshUserStatus();
+            }
         }
 
         private void refreshUserStatus()
@@ -189,6 +200,60 @@ namespace GiveMePaw
             panelFindUsers.Visible = true;
             panelUser.Visible = false;
 
+        }
+    
+        public void Display()
+        {
+            DB.DisplayAndSerachPet("SELECT * FROM pets", dataGridViewPet);
+        }
+        private void label3_Click(object sender, EventArgs e)
+        {
+            form.Clear();
+            form.ShowDialog();
+        }
+
+        private void ForEmployers_Shown(object sender, EventArgs e)
+        {
+            Display();
+        }
+
+        private void textBoxFindPet_TextChanged(object sender, EventArgs e)
+        {
+            DB.DisplayAndSerachPet("SELECT * FROM pets WHERE name LIKE'%"+ textBoxFindPet.Text +"%'", dataGridViewPet);
+        }
+
+        private void dataGridViewPet_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            if(e.ColumnIndex == 0)
+            {
+                //Edit
+                if (MessageBox.Show("Вы уверены что хотите изменить житвотное?", "Информация", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
+                {
+                    form.Clear();
+                    form.id = dataGridViewPet.Rows[e.RowIndex].Cells[2].Value.ToString();
+                    form.pet_type = dataGridViewPet.Rows[e.RowIndex].Cells[3].Value.ToString();
+                    form.name = dataGridViewPet.Rows[e.RowIndex].Cells[4].Value.ToString();
+                    form.age = dataGridViewPet.Rows[e.RowIndex].Cells[5].Value.ToString();
+                    form.wieght = dataGridViewPet.Rows[e.RowIndex].Cells[6].Value.ToString();
+                    form.breed = dataGridViewPet.Rows[e.RowIndex].Cells[7].Value.ToString();
+                    form.photo = dataGridViewPet.Rows[e.RowIndex].Cells[8].Value.ToString();
+                    form.UpdateInfo();
+                    form.ShowDialog();
+                }
+                return;
+            }
+
+            if (e.ColumnIndex == 1)
+            {
+                //Delete
+                if(MessageBox.Show("Вы уверены что хотите удалить жтвотное?", "Информация", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
+                {
+                    DB.DeletePet(dataGridViewPet.Rows[e.RowIndex].Cells[2].Value.ToString());
+                    Display();
+                }
+                return;
+            }
         }
     }
 }
