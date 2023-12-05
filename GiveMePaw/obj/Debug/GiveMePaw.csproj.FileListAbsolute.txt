@@ -60,3 +60,4 @@ C:\Users\User\Source\Repos\GiveMePaw\GiveMePaw\bin\Debug\System.Memory.dll
 C:\Users\User\Source\Repos\GiveMePaw\GiveMePaw\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\User\Source\Repos\GiveMePaw\GiveMePaw\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\User\Source\Repos\GiveMePaw\GiveMePaw\bin\Debug\System.Buffers.dll
+C:\Users\User\Source\Repos\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.FormAddPet.resources
