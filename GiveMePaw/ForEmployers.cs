@@ -255,5 +255,43 @@ namespace GiveMePaw
                 return;
             }
         }
+
+        private void exit_button_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void account_button_Click(object sender, EventArgs e)
+        {
+            ForEmployers.ActiveForm.Hide();
+            Account NewForm = new Account();
+            NewForm.ShowDialog();
+            Close();
+        }
+
+        private void ForEmployers_Load(object sender, EventArgs e)
+        {
+            //Для того, чтобы в профиле отображалось имя пользователя//
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            DB db = new DB();
+            db.openConnection();
+            //Surname//
+            MySqlCommand command_surname = new MySqlCommand("SELECT second_name FROM users WHERE email = @email", db.getConnection());
+            MySqlParameter n1 = new MySqlParameter("@email", SignIn.user_email);
+            command_surname.Parameters.Add(n1);
+            string surname = (string)command_surname.ExecuteScalar();
+            command_surname.ExecuteNonQuery();
+            //Name//
+            MySqlCommand command_name = new MySqlCommand("SELECT name FROM users WHERE email = @email", db.getConnection());
+            MySqlParameter n2 = new MySqlParameter("@email", SignIn.user_email);
+            command_name.Parameters.Add(n2);
+            string name = (string)command_name.ExecuteScalar();
+            command_name.ExecuteNonQuery();
+
+            account_button.Text = surname + " " + name.Substring(0, 1) + ".";
+
+            //////////////////
+        }
     }
 }
