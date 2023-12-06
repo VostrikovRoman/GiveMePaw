@@ -51,42 +51,6 @@ namespace GiveMePaw
             this.panel1 = new System.Windows.Forms.Panel();
             this.account_button = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.Main_panel = new System.Windows.Forms.Panel();
-            this.pictureBox_Mouse = new System.Windows.Forms.PictureBox();
-            this.pictureBox_Rabbit = new System.Windows.Forms.PictureBox();
-            this.pictureBox_Parrot = new System.Windows.Forms.PictureBox();
-            this.pictureBox_Cat = new System.Windows.Forms.PictureBox();
-            this.pictureBox_Dog = new System.Windows.Forms.PictureBox();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label60 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label74 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
             this.give_away_panel = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label42 = new System.Windows.Forms.Label();
@@ -139,6 +103,42 @@ namespace GiveMePaw
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.Main_panel = new System.Windows.Forms.Panel();
+            this.pictureBox_Mouse = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Rabbit = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Parrot = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Cat = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Dog = new System.Windows.Forms.PictureBox();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.label60 = new System.Windows.Forms.Label();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.back_button_for_users)).BeginInit();
             this.info_Tab_button.SuspendLayout();
@@ -152,19 +152,6 @@ namespace GiveMePaw
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.Main_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Mouse)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Rabbit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Parrot)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Cat)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Dog)).BeginInit();
-            this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            this.panel11.SuspendLayout();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             this.give_away_panel.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -179,6 +166,19 @@ namespace GiveMePaw
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.Main_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Mouse)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Rabbit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Parrot)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Cat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Dog)).BeginInit();
+            this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            this.panel11.SuspendLayout();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -392,14 +392,14 @@ namespace GiveMePaw
             this.panel1.Controls.Add(this.account_button);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.give_away_panel);
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.second_panel);
             this.panel1.Controls.Add(this.Main_panel);
             this.panel1.Controls.Add(this.panel13);
             this.panel1.Controls.Add(this.panel12);
             this.panel1.Controls.Add(this.panel11);
             this.panel1.Controls.Add(this.panel10);
-            this.panel1.Controls.Add(this.give_away_panel);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.second_panel);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1016, 618);
@@ -428,403 +428,6 @@ namespace GiveMePaw
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
-            // 
-            // Main_panel
-            // 
-            this.Main_panel.Controls.Add(this.pictureBox_Mouse);
-            this.Main_panel.Controls.Add(this.pictureBox_Rabbit);
-            this.Main_panel.Controls.Add(this.pictureBox_Parrot);
-            this.Main_panel.Controls.Add(this.pictureBox_Cat);
-            this.Main_panel.Controls.Add(this.pictureBox_Dog);
-            this.Main_panel.Controls.Add(this.label6);
-            this.Main_panel.Location = new System.Drawing.Point(245, 101);
-            this.Main_panel.Name = "Main_panel";
-            this.Main_panel.Size = new System.Drawing.Size(751, 514);
-            this.Main_panel.TabIndex = 7;
-            // 
-            // pictureBox_Mouse
-            // 
-            this.pictureBox_Mouse.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Mouse.Image")));
-            this.pictureBox_Mouse.Location = new System.Drawing.Point(263, 292);
-            this.pictureBox_Mouse.Name = "pictureBox_Mouse";
-            this.pictureBox_Mouse.Size = new System.Drawing.Size(230, 219);
-            this.pictureBox_Mouse.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_Mouse.TabIndex = 8;
-            this.pictureBox_Mouse.TabStop = false;
-            // 
-            // pictureBox_Rabbit
-            // 
-            this.pictureBox_Rabbit.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Rabbit.Image")));
-            this.pictureBox_Rabbit.Location = new System.Drawing.Point(3, 292);
-            this.pictureBox_Rabbit.Name = "pictureBox_Rabbit";
-            this.pictureBox_Rabbit.Size = new System.Drawing.Size(230, 219);
-            this.pictureBox_Rabbit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_Rabbit.TabIndex = 7;
-            this.pictureBox_Rabbit.TabStop = false;
-            // 
-            // pictureBox_Parrot
-            // 
-            this.pictureBox_Parrot.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Parrot.Image")));
-            this.pictureBox_Parrot.Location = new System.Drawing.Point(521, 45);
-            this.pictureBox_Parrot.Name = "pictureBox_Parrot";
-            this.pictureBox_Parrot.Size = new System.Drawing.Size(230, 219);
-            this.pictureBox_Parrot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox_Parrot.TabIndex = 6;
-            this.pictureBox_Parrot.TabStop = false;
-            // 
-            // pictureBox_Cat
-            // 
-            this.pictureBox_Cat.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Cat.Image")));
-            this.pictureBox_Cat.Location = new System.Drawing.Point(263, 44);
-            this.pictureBox_Cat.Name = "pictureBox_Cat";
-            this.pictureBox_Cat.Size = new System.Drawing.Size(230, 219);
-            this.pictureBox_Cat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox_Cat.TabIndex = 5;
-            this.pictureBox_Cat.TabStop = false;
-            // 
-            // pictureBox_Dog
-            // 
-            this.pictureBox_Dog.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Dog.Image")));
-            this.pictureBox_Dog.Location = new System.Drawing.Point(3, 45);
-            this.pictureBox_Dog.Name = "pictureBox_Dog";
-            this.pictureBox_Dog.Size = new System.Drawing.Size(230, 219);
-            this.pictureBox_Dog.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox_Dog.TabIndex = 4;
-            this.pictureBox_Dog.TabStop = false;
-            // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.pictureBox19);
-            this.panel13.Controls.Add(this.textBox8);
-            this.panel13.Controls.Add(this.label60);
-            this.panel13.Location = new System.Drawing.Point(245, 101);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(751, 514);
-            this.panel13.TabIndex = 15;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
-            this.pictureBox19.Location = new System.Drawing.Point(292, 88);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(150, 150);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox19.TabIndex = 7;
-            this.pictureBox19.TabStop = false;
-            // 
-            // textBox8
-            // 
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox8.Location = new System.Drawing.Point(179, 244);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(411, 77);
-            this.textBox8.TabIndex = 6;
-            this.textBox8.Text = "Ошибка, попробуйте позже!";
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("Lucida Sans", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.label60.Location = new System.Drawing.Point(37, 85);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(0, 38);
-            this.label60.TabIndex = 5;
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.pictureBox18);
-            this.panel12.Controls.Add(this.textBox7);
-            this.panel12.Controls.Add(this.label8);
-            this.panel12.Location = new System.Drawing.Point(245, 101);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(751, 514);
-            this.panel12.TabIndex = 14;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
-            this.pictureBox18.Location = new System.Drawing.Point(292, 85);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(150, 150);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox18.TabIndex = 7;
-            this.pictureBox18.TabStop = false;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox7.Location = new System.Drawing.Point(160, 250);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(411, 77);
-            this.textBox7.TabIndex = 6;
-            this.textBox7.Text = "Спасибо за заявку, скоро мы с вами                     свяжемся!";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Lucida Sans", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.label8.Location = new System.Drawing.Point(37, 85);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 38);
-            this.label8.TabIndex = 5;
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.textBox6);
-            this.panel11.Controls.Add(this.label59);
-            this.panel11.Controls.Add(this.label74);
-            this.panel11.Location = new System.Drawing.Point(245, 101);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(751, 514);
-            this.panel11.TabIndex = 13;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox6.Location = new System.Drawing.Point(54, 109);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(655, 391);
-            this.textBox6.TabIndex = 6;
-            this.textBox6.Text = resources.GetString("textBox6.Text");
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Lucida Sans", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.label59.Location = new System.Drawing.Point(37, 85);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(0, 38);
-            this.label59.TabIndex = 5;
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Font = new System.Drawing.Font("Lucida Sans", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label74.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.label74.Location = new System.Drawing.Point(254, 9);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(173, 38);
-            this.label74.TabIndex = 4;
-            this.label74.Text = "О приюте";
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.label58);
-            this.panel10.Controls.Add(this.label57);
-            this.panel10.Controls.Add(this.pictureBox17);
-            this.panel10.Controls.Add(this.label56);
-            this.panel10.Controls.Add(this.label55);
-            this.panel10.Controls.Add(this.label54);
-            this.panel10.Controls.Add(this.label53);
-            this.panel10.Controls.Add(this.label52);
-            this.panel10.Controls.Add(this.label51);
-            this.panel10.Controls.Add(this.label50);
-            this.panel10.Controls.Add(this.label49);
-            this.panel10.Controls.Add(this.label48);
-            this.panel10.Controls.Add(this.label47);
-            this.panel10.Controls.Add(this.label46);
-            this.panel10.Controls.Add(this.label44);
-            this.panel10.Controls.Add(this.label43);
-            this.panel10.Controls.Add(this.label45);
-            this.panel10.Location = new System.Drawing.Point(246, 102);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(751, 514);
-            this.panel10.TabIndex = 12;
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.ForeColor = System.Drawing.Color.Black;
-            this.label58.Location = new System.Drawing.Point(464, 390);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(51, 22);
-            this.label58.TabIndex = 20;
-            this.label58.Text = "д.59";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.ForeColor = System.Drawing.Color.Black;
-            this.label57.Location = new System.Drawing.Point(461, 363);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(283, 22);
-            this.label57.TabIndex = 19;
-            this.label57.Text = "Адрес: ул. Красногвардейская, ";
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
-            this.pictureBox17.Location = new System.Drawing.Point(465, 100);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(270, 241);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox17.TabIndex = 18;
-            this.pictureBox17.TabStop = false;
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.ForeColor = System.Drawing.Color.Black;
-            this.label56.Location = new System.Drawing.Point(14, 385);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(212, 22);
-            this.label56.TabIndex = 17;
-            this.label56.Text = "• aboba@gmail.com";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.ForeColor = System.Drawing.Color.Black;
-            this.label55.Location = new System.Drawing.Point(10, 279);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(212, 22);
-            this.label55.TabIndex = 16;
-            this.label55.Text = "• aboba@gmail.com";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.ForeColor = System.Drawing.Color.Black;
-            this.label54.Location = new System.Drawing.Point(10, 172);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(212, 22);
-            this.label54.TabIndex = 15;
-            this.label54.Text = "• aboba@gmail.com";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.ForeColor = System.Drawing.Color.Black;
-            this.label53.Location = new System.Drawing.Point(14, 363);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(160, 22);
-            this.label53.TabIndex = 14;
-            this.label53.Text = "• 89221981156";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.ForeColor = System.Drawing.Color.Black;
-            this.label52.Location = new System.Drawing.Point(10, 256);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(160, 22);
-            this.label52.TabIndex = 13;
-            this.label52.Text = "• 89221981156";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.ForeColor = System.Drawing.Color.Black;
-            this.label51.Location = new System.Drawing.Point(10, 150);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(160, 22);
-            this.label51.TabIndex = 12;
-            this.label51.Text = "• 89221981156";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.ForeColor = System.Drawing.Color.Black;
-            this.label50.Location = new System.Drawing.Point(161, 319);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(286, 22);
-            this.label50.TabIndex = 11;
-            this.label50.Text = "Кондратьев Руслан Васильевич";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.ForeColor = System.Drawing.Color.Black;
-            this.label49.Location = new System.Drawing.Point(108, 215);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(286, 22);
-            this.label49.TabIndex = 10;
-            this.label49.Text = "Кондратьев Руслан Васильевич";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.Color.Black;
-            this.label48.Location = new System.Drawing.Point(155, 116);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(286, 22);
-            this.label48.TabIndex = 9;
-            this.label48.Text = "Кондратьев Руслан Васильевич";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Lucida Sans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.Color.Black;
-            this.label47.Location = new System.Drawing.Point(10, 319);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(152, 22);
-            this.label47.TabIndex = 8;
-            this.label47.Text = "Тех. Поддержка:";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Lucida Sans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.Color.Black;
-            this.label46.Location = new System.Drawing.Point(10, 214);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(103, 22);
-            this.label46.TabIndex = 7;
-            this.label46.Text = "Менеджер:";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Lucida Sans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.Color.Black;
-            this.label44.Location = new System.Drawing.Point(10, 116);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(150, 22);
-            this.label44.TabIndex = 6;
-            this.label44.Text = "Администратор:";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.Color.Black;
-            this.label43.Location = new System.Drawing.Point(9, 68);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(187, 27);
-            this.label43.TabIndex = 5;
-            this.label43.Text = "Наши контакты:";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Lucida Sans", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.label45.Location = new System.Drawing.Point(170, 8);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(421, 38);
-            this.label45.TabIndex = 4;
-            this.label45.Text = "Контактная информация";
             // 
             // give_away_panel
             // 
@@ -1402,11 +1005,403 @@ namespace GiveMePaw
             this.label7.TabIndex = 3;
             this.label7.Text = "СОБАКИ";
             // 
+            // Main_panel
+            // 
+            this.Main_panel.Controls.Add(this.pictureBox_Mouse);
+            this.Main_panel.Controls.Add(this.pictureBox_Rabbit);
+            this.Main_panel.Controls.Add(this.pictureBox_Parrot);
+            this.Main_panel.Controls.Add(this.pictureBox_Cat);
+            this.Main_panel.Controls.Add(this.pictureBox_Dog);
+            this.Main_panel.Controls.Add(this.label6);
+            this.Main_panel.Location = new System.Drawing.Point(245, 101);
+            this.Main_panel.Name = "Main_panel";
+            this.Main_panel.Size = new System.Drawing.Size(751, 514);
+            this.Main_panel.TabIndex = 7;
+            // 
+            // pictureBox_Mouse
+            // 
+            this.pictureBox_Mouse.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Mouse.Image")));
+            this.pictureBox_Mouse.Location = new System.Drawing.Point(263, 292);
+            this.pictureBox_Mouse.Name = "pictureBox_Mouse";
+            this.pictureBox_Mouse.Size = new System.Drawing.Size(230, 219);
+            this.pictureBox_Mouse.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Mouse.TabIndex = 8;
+            this.pictureBox_Mouse.TabStop = false;
+            // 
+            // pictureBox_Rabbit
+            // 
+            this.pictureBox_Rabbit.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Rabbit.Image")));
+            this.pictureBox_Rabbit.Location = new System.Drawing.Point(3, 292);
+            this.pictureBox_Rabbit.Name = "pictureBox_Rabbit";
+            this.pictureBox_Rabbit.Size = new System.Drawing.Size(230, 219);
+            this.pictureBox_Rabbit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Rabbit.TabIndex = 7;
+            this.pictureBox_Rabbit.TabStop = false;
+            // 
+            // pictureBox_Parrot
+            // 
+            this.pictureBox_Parrot.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Parrot.Image")));
+            this.pictureBox_Parrot.Location = new System.Drawing.Point(521, 45);
+            this.pictureBox_Parrot.Name = "pictureBox_Parrot";
+            this.pictureBox_Parrot.Size = new System.Drawing.Size(230, 219);
+            this.pictureBox_Parrot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_Parrot.TabIndex = 6;
+            this.pictureBox_Parrot.TabStop = false;
+            // 
+            // pictureBox_Cat
+            // 
+            this.pictureBox_Cat.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Cat.Image")));
+            this.pictureBox_Cat.Location = new System.Drawing.Point(263, 44);
+            this.pictureBox_Cat.Name = "pictureBox_Cat";
+            this.pictureBox_Cat.Size = new System.Drawing.Size(230, 219);
+            this.pictureBox_Cat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_Cat.TabIndex = 5;
+            this.pictureBox_Cat.TabStop = false;
+            // 
+            // pictureBox_Dog
+            // 
+            this.pictureBox_Dog.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Dog.Image")));
+            this.pictureBox_Dog.Location = new System.Drawing.Point(3, 45);
+            this.pictureBox_Dog.Name = "pictureBox_Dog";
+            this.pictureBox_Dog.Size = new System.Drawing.Size(230, 219);
+            this.pictureBox_Dog.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox_Dog.TabIndex = 4;
+            this.pictureBox_Dog.TabStop = false;
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.label39);
+            this.panel13.Controls.Add(this.pictureBox19);
+            this.panel13.Controls.Add(this.label60);
+            this.panel13.Location = new System.Drawing.Point(245, 101);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(751, 514);
+            this.panel13.TabIndex = 15;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
+            this.pictureBox19.Location = new System.Drawing.Point(292, 88);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(150, 150);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox19.TabIndex = 7;
+            this.pictureBox19.TabStop = false;
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Lucida Sans", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.label60.Location = new System.Drawing.Point(37, 85);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(0, 38);
+            this.label60.TabIndex = 5;
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.label61);
+            this.panel12.Controls.Add(this.pictureBox18);
+            this.panel12.Controls.Add(this.label8);
+            this.panel12.Location = new System.Drawing.Point(245, 101);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(751, 514);
+            this.panel12.TabIndex = 14;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
+            this.pictureBox18.Location = new System.Drawing.Point(292, 85);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(150, 150);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox18.TabIndex = 7;
+            this.pictureBox18.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Lucida Sans", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.label8.Location = new System.Drawing.Point(37, 85);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(0, 38);
+            this.label8.TabIndex = 5;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.label10);
+            this.panel11.Controls.Add(this.label59);
+            this.panel11.Controls.Add(this.label74);
+            this.panel11.Location = new System.Drawing.Point(245, 101);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(751, 514);
+            this.panel11.TabIndex = 13;
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Lucida Sans", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.label59.Location = new System.Drawing.Point(37, 85);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(0, 38);
+            this.label59.TabIndex = 5;
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("Lucida Sans", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.label74.Location = new System.Drawing.Point(254, 9);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(173, 38);
+            this.label74.TabIndex = 4;
+            this.label74.Text = "О приюте";
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.label58);
+            this.panel10.Controls.Add(this.label57);
+            this.panel10.Controls.Add(this.pictureBox17);
+            this.panel10.Controls.Add(this.label56);
+            this.panel10.Controls.Add(this.label55);
+            this.panel10.Controls.Add(this.label54);
+            this.panel10.Controls.Add(this.label53);
+            this.panel10.Controls.Add(this.label52);
+            this.panel10.Controls.Add(this.label51);
+            this.panel10.Controls.Add(this.label50);
+            this.panel10.Controls.Add(this.label49);
+            this.panel10.Controls.Add(this.label48);
+            this.panel10.Controls.Add(this.label47);
+            this.panel10.Controls.Add(this.label46);
+            this.panel10.Controls.Add(this.label44);
+            this.panel10.Controls.Add(this.label43);
+            this.panel10.Controls.Add(this.label45);
+            this.panel10.Location = new System.Drawing.Point(246, 102);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(751, 514);
+            this.panel10.TabIndex = 12;
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.ForeColor = System.Drawing.Color.Black;
+            this.label58.Location = new System.Drawing.Point(464, 390);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(51, 22);
+            this.label58.TabIndex = 20;
+            this.label58.Text = "д.59";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.ForeColor = System.Drawing.Color.Black;
+            this.label57.Location = new System.Drawing.Point(461, 363);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(283, 22);
+            this.label57.TabIndex = 19;
+            this.label57.Text = "Адрес: ул. Красногвардейская, ";
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
+            this.pictureBox17.Location = new System.Drawing.Point(465, 100);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(270, 241);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox17.TabIndex = 18;
+            this.pictureBox17.TabStop = false;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.ForeColor = System.Drawing.Color.Black;
+            this.label56.Location = new System.Drawing.Point(14, 385);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(212, 22);
+            this.label56.TabIndex = 17;
+            this.label56.Text = "• aboba@gmail.com";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.ForeColor = System.Drawing.Color.Black;
+            this.label55.Location = new System.Drawing.Point(10, 279);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(212, 22);
+            this.label55.TabIndex = 16;
+            this.label55.Text = "• aboba@gmail.com";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.ForeColor = System.Drawing.Color.Black;
+            this.label54.Location = new System.Drawing.Point(10, 172);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(212, 22);
+            this.label54.TabIndex = 15;
+            this.label54.Text = "• aboba@gmail.com";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.ForeColor = System.Drawing.Color.Black;
+            this.label53.Location = new System.Drawing.Point(14, 363);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(160, 22);
+            this.label53.TabIndex = 14;
+            this.label53.Text = "• 89221981156";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.ForeColor = System.Drawing.Color.Black;
+            this.label52.Location = new System.Drawing.Point(10, 256);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(160, 22);
+            this.label52.TabIndex = 13;
+            this.label52.Text = "• 89221981156";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.Color.Black;
+            this.label51.Location = new System.Drawing.Point(10, 150);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(160, 22);
+            this.label51.TabIndex = 12;
+            this.label51.Text = "• 89221981156";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.Color.Black;
+            this.label50.Location = new System.Drawing.Point(161, 319);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(286, 22);
+            this.label50.TabIndex = 11;
+            this.label50.Text = "Кондратьев Руслан Васильевич";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.Color.Black;
+            this.label49.Location = new System.Drawing.Point(108, 215);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(286, 22);
+            this.label49.TabIndex = 10;
+            this.label49.Text = "Кондратьев Руслан Васильевич";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.Black;
+            this.label48.Location = new System.Drawing.Point(155, 116);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(286, 22);
+            this.label48.TabIndex = 9;
+            this.label48.Text = "Кондратьев Руслан Васильевич";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Lucida Sans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.Black;
+            this.label47.Location = new System.Drawing.Point(10, 319);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(152, 22);
+            this.label47.TabIndex = 8;
+            this.label47.Text = "Тех. Поддержка:";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Lucida Sans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.Black;
+            this.label46.Location = new System.Drawing.Point(10, 214);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(103, 22);
+            this.label46.TabIndex = 7;
+            this.label46.Text = "Менеджер:";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Lucida Sans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.Black;
+            this.label44.Location = new System.Drawing.Point(10, 116);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(150, 22);
+            this.label44.TabIndex = 6;
+            this.label44.Text = "Администратор:";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.Black;
+            this.label43.Location = new System.Drawing.Point(9, 68);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(187, 27);
+            this.label43.TabIndex = 5;
+            this.label43.Text = "Наши контакты:";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Lucida Sans", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.label45.Location = new System.Drawing.Point(170, 8);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(421, 38);
+            this.label45.TabIndex = 4;
+            this.label45.Text = "Контактная информация";
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Lucida Sans", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(56, 98);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(642, 351);
+            this.label10.TabIndex = 7;
+            this.label10.Text = resources.GetString("label10.Text");
+            // 
+            // label39
+            // 
+            this.label39.Font = new System.Drawing.Font("Lucida Sans", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(177, 257);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(407, 70);
+            this.label39.TabIndex = 8;
+            this.label39.Text = "Ошибка! Попробуйте позже.";
+            // 
+            // label61
+            // 
+            this.label61.Font = new System.Drawing.Font("Lucida Sans", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.Location = new System.Drawing.Point(177, 250);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(407, 70);
+            this.label61.TabIndex = 9;
+            this.label61.Text = "Спасибо за заявку! Скоро мы с вами свяжемся.";
+            this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ForUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 613);
+            this.ClientSize = new System.Drawing.Size(1008, 614);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -1434,24 +1429,6 @@ namespace GiveMePaw
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.Main_panel.ResumeLayout(false);
-            this.Main_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Mouse)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Rabbit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Parrot)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Cat)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Dog)).EndInit();
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             this.give_away_panel.ResumeLayout(false);
             this.give_away_panel.PerformLayout();
             this.panel9.ResumeLayout(false);
@@ -1475,6 +1452,24 @@ namespace GiveMePaw
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.Main_panel.ResumeLayout(false);
+            this.Main_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Mouse)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Rabbit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Parrot)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Cat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Dog)).EndInit();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1581,14 +1576,14 @@ namespace GiveMePaw
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.PictureBox pictureBox17;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label10;
     }
 }

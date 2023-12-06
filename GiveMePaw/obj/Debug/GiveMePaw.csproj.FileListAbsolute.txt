@@ -61,3 +61,4 @@ C:\Users\User\Source\Repos\GiveMePaw\GiveMePaw\bin\Debug\System.Threading.Tasks.
 C:\Users\User\Source\Repos\GiveMePaw\GiveMePaw\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\User\Source\Repos\GiveMePaw\GiveMePaw\bin\Debug\System.Buffers.dll
 C:\Users\User\Source\Repos\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.FormAddPet.resources
+C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.FormAddPet.resources

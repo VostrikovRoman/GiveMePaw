@@ -58,7 +58,7 @@ namespace GiveMePaw
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.remember_me_button = new System.Windows.Forms.RadioButton();
+            this.remember_me_button = new System.Windows.Forms.CheckBox();
             this.SignInDisplay.SuspendLayout();
             this.sign_in_button.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -412,12 +412,13 @@ namespace GiveMePaw
             // remember_me_button
             // 
             this.remember_me_button.AutoSize = true;
-            this.remember_me_button.Font = new System.Drawing.Font("Lucida Sans", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.remember_me_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.remember_me_button.Font = new System.Drawing.Font("Lucida Sans", 17F, System.Drawing.FontStyle.Bold);
             this.remember_me_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(44)))), ((int)(((byte)(4)))));
-            this.remember_me_button.Location = new System.Drawing.Point(416, 484);
+            this.remember_me_button.Location = new System.Drawing.Point(412, 480);
             this.remember_me_button.Name = "remember_me_button";
-            this.remember_me_button.Size = new System.Drawing.Size(182, 26);
-            this.remember_me_button.TabIndex = 9;
+            this.remember_me_button.Size = new System.Drawing.Size(194, 30);
+            this.remember_me_button.TabIndex = 10;
             this.remember_me_button.Text = "Запомнить меня";
             this.remember_me_button.UseVisualStyleBackColor = true;
             // 
@@ -482,7 +483,7 @@ namespace GiveMePaw
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.RadioButton remember_me_button;
+        private System.Windows.Forms.CheckBox remember_me_button;
     }
 }
 

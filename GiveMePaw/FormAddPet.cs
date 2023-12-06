@@ -16,7 +16,12 @@ namespace GiveMePaw
         private readonly ForEmployers _parent;
 
         public string pet_type, name, age, wieght, breed, photo, id;
-        
+
+        private void FormAddPet_Load(object sender, EventArgs e)
+        {
+
+        }
+
         public FormAddPet(ForEmployers parent)
         {
             InitializeComponent();
@@ -36,20 +41,27 @@ namespace GiveMePaw
 
         private void labelButtSavePet_Click(object sender, EventArgs e)
         {
-            if (labelButtSavePet.Text == "Сохранить")
+            try
             {
-                Pet std = new Pet(Pet_typeTxtbx.Text.Trim(), NameTxtbx.Text.Trim(), AgeTxtbx.Text.Trim(), WeightTxtbx.Text.Trim(), BreedTxtbx.Text.Trim(), PhotoTxtbx.Text.Trim());
-                DB.AddPet(std);
-            Clear();
-            }
+                if (labelButtSavePet.Text == "Сохранить")
+                {
+                    Pet std = new Pet(Pet_typeTxtbx.Text.Trim(), NameTxtbx.Text.Trim(), AgeTxtbx.Text.Trim(), WeightTxtbx.Text.Trim(), BreedTxtbx.Text.Trim(), PhotoTxtbx.Text.Trim());
+                    DB.AddPet(std);
+                    Clear();
+                }
 
-            if (labelButtSavePet.Text == "Изменить")
+                if (labelButtSavePet.Text == "Изменить")
+                {
+                    Pet std = new Pet(Pet_typeTxtbx.Text.Trim(), NameTxtbx.Text.Trim(), AgeTxtbx.Text.Trim(), WeightTxtbx.Text.Trim(), BreedTxtbx.Text.Trim(), PhotoTxtbx.Text.Trim());
+                    DB.UpdatePet(std, id);
+                }
+
+                _parent.Display();
+            }
+            catch
             {
-                Pet std = new Pet(Pet_typeTxtbx.Text.Trim(), NameTxtbx.Text.Trim(), AgeTxtbx.Text.Trim(), WeightTxtbx.Text.Trim(), BreedTxtbx.Text.Trim(), PhotoTxtbx.Text.Trim());
-                DB.UpdatePet(std, id);
+                MessageBox.Show("Ошибка!");
             }
-
-            _parent.Display();
         }
     }
 }

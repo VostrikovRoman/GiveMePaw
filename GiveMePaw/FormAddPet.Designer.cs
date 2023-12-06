@@ -255,6 +255,7 @@ namespace GiveMePaw
             this.Controls.Add(this.panelHat);
             this.Name = "FormAddPet";
             this.Text = "FormAddPet";
+            this.Load += new System.EventHandler(this.FormAddPet_Load);
             this.panelHat.ResumeLayout(false);
             this.panelAddPet.ResumeLayout(false);
             this.panelAddPet.PerformLayout();

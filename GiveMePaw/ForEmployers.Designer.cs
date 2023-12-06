@@ -30,14 +30,14 @@ namespace GiveMePaw
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForEmployers));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.account_button = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.exit_button = new System.Windows.Forms.PictureBox();
             this.info_Tab_button = new System.Windows.Forms.Panel();
             this.labelButInfo = new System.Windows.Forms.Label();
             this.picturePaw = new System.Windows.Forms.PictureBox();
@@ -52,10 +52,31 @@ namespace GiveMePaw
             this.pictureButtUsers = new System.Windows.Forms.PictureBox();
             this.labelButNewPet = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelPet = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.dataGridViewPet = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Colum5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.textBoxFindPet = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panelUsersFind = new System.Windows.Forms.Panel();
             this.panelBackButtBack = new System.Windows.Forms.Panel();
             this.labelButtBackText = new System.Windows.Forms.Label();
             this.pictureBoxButtBack = new System.Windows.Forms.PictureBox();
+            this.panelFindUsers = new System.Windows.Forms.Panel();
+            this.labelButtFindUser = new System.Windows.Forms.Label();
+            this.panelBackTextBoxFindUser = new System.Windows.Forms.Panel();
+            this.pictureBoxLoop = new System.Windows.Forms.PictureBox();
+            this.emailFindUser = new System.Windows.Forms.TextBox();
+            this.labelFindUserText = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
             this.panelUser = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -71,12 +92,6 @@ namespace GiveMePaw
             this.labelPatronomic = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.labelSecondName = new System.Windows.Forms.Label();
-            this.panelFindUsers = new System.Windows.Forms.Panel();
-            this.labelButtFindUser = new System.Windows.Forms.Label();
-            this.panelBackTextBoxFindUser = new System.Windows.Forms.Panel();
-            this.pictureBoxLoop = new System.Windows.Forms.PictureBox();
-            this.emailFindUser = new System.Windows.Forms.TextBox();
-            this.labelFindUserText = new System.Windows.Forms.Label();
             this.panelContact = new System.Windows.Forms.Panel();
             this.label58 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
@@ -96,27 +111,13 @@ namespace GiveMePaw
             this.label43 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.panelInfo = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label59 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panelPet = new System.Windows.Forms.Panel();
-            this.dataGridViewPet = new System.Windows.Forms.DataGridView();
-            this.textBoxFindPet = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Colum5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exit_button)).BeginInit();
             this.info_Tab_button.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturePaw)).BeginInit();
             this.contact_Tab_button.SuspendLayout();
@@ -126,22 +127,23 @@ namespace GiveMePaw
             this.Users_Tab_button.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureButtUsers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelPet.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPet)).BeginInit();
             this.panelUsersFind.SuspendLayout();
             this.panelBackButtBack.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxButtBack)).BeginInit();
+            this.panelFindUsers.SuspendLayout();
+            this.panelBackTextBoxFindUser.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoop)).BeginInit();
             this.panelUser.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelUserInfo.SuspendLayout();
-            this.panelFindUsers.SuspendLayout();
-            this.panelBackTextBoxFindUser.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoop)).BeginInit();
             this.panelContact.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             this.panelInfo.SuspendLayout();
-            this.panelPet.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPet)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -150,14 +152,14 @@ namespace GiveMePaw
             this.panel1.Controls.Add(this.account_button);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.panelPet);
             this.panel1.Controls.Add(this.panelUsersFind);
             this.panel1.Controls.Add(this.panelContact);
             this.panel1.Controls.Add(this.panelInfo);
+            this.panel1.Controls.Add(this.panelPet);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1008, 613);
+            this.panel1.Size = new System.Drawing.Size(1008, 614);
             this.panel1.TabIndex = 1;
             // 
             // account_button
@@ -172,6 +174,7 @@ namespace GiveMePaw
             this.account_button.Size = new System.Drawing.Size(120, 27);
             this.account_button.TabIndex = 8;
             this.account_button.Text = "Иванов И.";
+            this.account_button.Click += new System.EventHandler(this.account_button_Click);
             // 
             // pictureBox2
             // 
@@ -187,7 +190,7 @@ namespace GiveMePaw
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.pictureBox7);
+            this.panel2.Controls.Add(this.exit_button);
             this.panel2.Controls.Add(this.info_Tab_button);
             this.panel2.Controls.Add(this.contact_Tab_button);
             this.panel2.Controls.Add(this.Pet_Tab_button);
@@ -202,6 +205,7 @@ namespace GiveMePaw
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label9.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
             this.label9.Location = new System.Drawing.Point(94, 557);
@@ -209,16 +213,19 @@ namespace GiveMePaw
             this.label9.Size = new System.Drawing.Size(81, 27);
             this.label9.TabIndex = 11;
             this.label9.Text = "Выход";
+            this.label9.Click += new System.EventHandler(this.exit_button_Click);
             // 
-            // pictureBox7
+            // exit_button
             // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(34, 552);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(54, 38);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 7;
-            this.pictureBox7.TabStop = false;
+            this.exit_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exit_button.Image = ((System.Drawing.Image)(resources.GetObject("exit_button.Image")));
+            this.exit_button.Location = new System.Drawing.Point(34, 552);
+            this.exit_button.Name = "exit_button";
+            this.exit_button.Size = new System.Drawing.Size(54, 38);
+            this.exit_button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.exit_button.TabIndex = 7;
+            this.exit_button.TabStop = false;
+            this.exit_button.Click += new System.EventHandler(this.exit_button_Click);
             // 
             // info_Tab_button
             // 
@@ -378,12 +385,189 @@ namespace GiveMePaw
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // panelPet
+            // 
+            this.panelPet.Controls.Add(this.pictureBox3);
+            this.panelPet.Controls.Add(this.dataGridViewPet);
+            this.panelPet.Controls.Add(this.textBoxFindPet);
+            this.panelPet.Controls.Add(this.label3);
+            this.panelPet.Controls.Add(this.label6);
+            this.panelPet.Location = new System.Drawing.Point(254, 101);
+            this.panelPet.Name = "panelPet";
+            this.panelPet.Size = new System.Drawing.Size(751, 514);
+            this.panelPet.TabIndex = 10;
+            this.panelPet.Visible = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.Window;
+            this.pictureBox3.Image = global::GiveMePaw.Properties.Resources.Loop;
+            this.pictureBox3.Location = new System.Drawing.Point(158, 83);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 11;
+            this.pictureBox3.TabStop = false;
+            // 
+            // dataGridViewPet
+            // 
+            this.dataGridViewPet.AllowUserToAddRows = false;
+            this.dataGridViewPet.AllowUserToDeleteRows = false;
+            this.dataGridViewPet.AllowUserToResizeColumns = false;
+            this.dataGridViewPet.AllowUserToResizeRows = false;
+            this.dataGridViewPet.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewPet.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewPet.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridViewPet.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewPet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPet.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Colum5,
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9});
+            this.dataGridViewPet.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridViewPet.Location = new System.Drawing.Point(8, 150);
+            this.dataGridViewPet.MultiSelect = false;
+            this.dataGridViewPet.Name = "dataGridViewPet";
+            this.dataGridViewPet.ReadOnly = true;
+            this.dataGridViewPet.RowHeadersVisible = false;
+            this.dataGridViewPet.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridViewPet.Size = new System.Drawing.Size(727, 246);
+            this.dataGridViewPet.TabIndex = 0;
+            this.dataGridViewPet.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPet_CellClick);
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "id";
+            this.Column1.HeaderText = "id";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "pet_type";
+            this.Column2.HeaderText = "Тип";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "name";
+            this.Column3.HeaderText = "Имя";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "age";
+            this.Column4.HeaderText = "Возраст";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Colum5
+            // 
+            this.Colum5.DataPropertyName = "weight";
+            this.Colum5.HeaderText = "Вес";
+            this.Colum5.Name = "Colum5";
+            this.Colum5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "breed";
+            this.Column6.HeaderText = "Порода";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "photo";
+            this.Column7.HeaderText = "Фото";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Column8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Column8.HeaderText = "";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Text = "Изменить";
+            this.Column8.UseColumnTextForButtonValue = true;
+            // 
+            // Column9
+            // 
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.Column9.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Column9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Column9.HeaderText = "";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Text = "Удалить";
+            this.Column9.UseColumnTextForButtonValue = true;
+            // 
+            // textBoxFindPet
+            // 
+            this.textBoxFindPet.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxFindPet.Font = new System.Drawing.Font("Lucida Sans", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFindPet.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxFindPet.Location = new System.Drawing.Point(198, 83);
+            this.textBoxFindPet.Multiline = true;
+            this.textBoxFindPet.Name = "textBoxFindPet";
+            this.textBoxFindPet.Size = new System.Drawing.Size(393, 40);
+            this.textBoxFindPet.TabIndex = 10;
+            this.textBoxFindPet.TextChanged += new System.EventHandler(this.textBoxFindPet_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label3.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(44)))), ((int)(((byte)(4)))));
+            this.label3.Location = new System.Drawing.Point(305, 429);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(154, 40);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Добавить";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label6.Font = new System.Drawing.Font("Lucida Sans", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.label6.Location = new System.Drawing.Point(0, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(751, 38);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Животные";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panelUsersFind
             // 
             this.panelUsersFind.Controls.Add(this.panelBackButtBack);
+            this.panelUsersFind.Controls.Add(this.panelFindUsers);
             this.panelUsersFind.Controls.Add(this.label74);
             this.panelUsersFind.Controls.Add(this.panelUser);
-            this.panelUsersFind.Controls.Add(this.panelFindUsers);
             this.panelUsersFind.Location = new System.Drawing.Point(245, 101);
             this.panelUsersFind.Name = "panelUsersFind";
             this.panelUsersFind.Size = new System.Drawing.Size(751, 514);
@@ -422,6 +606,72 @@ namespace GiveMePaw
             this.pictureBoxButtBack.TabIndex = 7;
             this.pictureBoxButtBack.TabStop = false;
             // 
+            // panelFindUsers
+            // 
+            this.panelFindUsers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panelFindUsers.Controls.Add(this.labelButtFindUser);
+            this.panelFindUsers.Controls.Add(this.panelBackTextBoxFindUser);
+            this.panelFindUsers.Controls.Add(this.labelFindUserText);
+            this.panelFindUsers.Location = new System.Drawing.Point(157, 143);
+            this.panelFindUsers.Name = "panelFindUsers";
+            this.panelFindUsers.Size = new System.Drawing.Size(443, 207);
+            this.panelFindUsers.TabIndex = 6;
+            // 
+            // labelButtFindUser
+            // 
+            this.labelButtFindUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
+            this.labelButtFindUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelButtFindUser.Font = new System.Drawing.Font("Lucida Sans", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelButtFindUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.labelButtFindUser.Location = new System.Drawing.Point(159, 148);
+            this.labelButtFindUser.Name = "labelButtFindUser";
+            this.labelButtFindUser.Size = new System.Drawing.Size(140, 40);
+            this.labelButtFindUser.TabIndex = 6;
+            this.labelButtFindUser.Text = "Найти";
+            this.labelButtFindUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelButtFindUser.Click += new System.EventHandler(this.labelButtFindUser_Click);
+            // 
+            // panelBackTextBoxFindUser
+            // 
+            this.panelBackTextBoxFindUser.Controls.Add(this.pictureBoxLoop);
+            this.panelBackTextBoxFindUser.Controls.Add(this.emailFindUser);
+            this.panelBackTextBoxFindUser.Location = new System.Drawing.Point(35, 89);
+            this.panelBackTextBoxFindUser.Name = "panelBackTextBoxFindUser";
+            this.panelBackTextBoxFindUser.Size = new System.Drawing.Size(383, 35);
+            this.panelBackTextBoxFindUser.TabIndex = 5;
+            // 
+            // pictureBoxLoop
+            // 
+            this.pictureBoxLoop.BackColor = System.Drawing.Color.White;
+            this.pictureBoxLoop.Image = global::GiveMePaw.Properties.Resources.Loop;
+            this.pictureBoxLoop.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxLoop.Name = "pictureBoxLoop";
+            this.pictureBoxLoop.Size = new System.Drawing.Size(35, 35);
+            this.pictureBoxLoop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLoop.TabIndex = 10;
+            this.pictureBoxLoop.TabStop = false;
+            // 
+            // emailFindUser
+            // 
+            this.emailFindUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.emailFindUser.Font = new System.Drawing.Font("Lucida Sans", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailFindUser.ForeColor = System.Drawing.Color.Gray;
+            this.emailFindUser.Location = new System.Drawing.Point(35, 0);
+            this.emailFindUser.Name = "emailFindUser";
+            this.emailFindUser.Size = new System.Drawing.Size(348, 35);
+            this.emailFindUser.TabIndex = 4;
+            // 
+            // labelFindUserText
+            // 
+            this.labelFindUserText.Font = new System.Drawing.Font("Lucida Sans", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFindUserText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.labelFindUserText.Location = new System.Drawing.Point(19, 16);
+            this.labelFindUserText.Name = "labelFindUserText";
+            this.labelFindUserText.Size = new System.Drawing.Size(399, 64);
+            this.labelFindUserText.TabIndex = 0;
+            this.labelFindUserText.Text = "Найти пользователя по email";
+            this.labelFindUserText.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
             // label74
             // 
             this.label74.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -448,7 +698,7 @@ namespace GiveMePaw
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(164)))), ((int)(((byte)(84)))));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
             this.panel5.Controls.Add(this.labelChangeRoleUser);
             this.panel5.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel5.Location = new System.Drawing.Point(522, 278);
@@ -461,11 +711,11 @@ namespace GiveMePaw
             this.labelChangeRoleUser.AutoSize = true;
             this.labelChangeRoleUser.BackColor = System.Drawing.Color.Transparent;
             this.labelChangeRoleUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelChangeRoleUser.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChangeRoleUser.Font = new System.Drawing.Font("Lucida Sans", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelChangeRoleUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
             this.labelChangeRoleUser.Location = new System.Drawing.Point(17, 0);
             this.labelChangeRoleUser.Name = "labelChangeRoleUser";
-            this.labelChangeRoleUser.Size = new System.Drawing.Size(179, 54);
+            this.labelChangeRoleUser.Size = new System.Drawing.Size(165, 52);
             this.labelChangeRoleUser.TabIndex = 10;
             this.labelChangeRoleUser.Text = "Назначить \r\nпользователем\r\n";
             this.labelChangeRoleUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -473,7 +723,7 @@ namespace GiveMePaw
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(164)))), ((int)(((byte)(84)))));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
             this.panel4.Controls.Add(this.labelChangeRoleManag);
             this.panel4.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel4.Location = new System.Drawing.Point(522, 192);
@@ -486,11 +736,11 @@ namespace GiveMePaw
             this.labelChangeRoleManag.AutoSize = true;
             this.labelChangeRoleManag.BackColor = System.Drawing.Color.Transparent;
             this.labelChangeRoleManag.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelChangeRoleManag.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChangeRoleManag.Font = new System.Drawing.Font("Lucida Sans", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelChangeRoleManag.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
             this.labelChangeRoleManag.Location = new System.Drawing.Point(29, 0);
             this.labelChangeRoleManag.Name = "labelChangeRoleManag";
-            this.labelChangeRoleManag.Size = new System.Drawing.Size(151, 54);
+            this.labelChangeRoleManag.Size = new System.Drawing.Size(140, 52);
             this.labelChangeRoleManag.TabIndex = 10;
             this.labelChangeRoleManag.Text = "Назначить\r\nменеджером\r\n";
             this.labelChangeRoleManag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -498,7 +748,7 @@ namespace GiveMePaw
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(164)))), ((int)(((byte)(84)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
             this.panel3.Controls.Add(this.labelChangeRoleAdmin);
             this.panel3.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel3.Location = new System.Drawing.Point(522, 102);
@@ -511,11 +761,11 @@ namespace GiveMePaw
             this.labelChangeRoleAdmin.AutoSize = true;
             this.labelChangeRoleAdmin.BackColor = System.Drawing.Color.Transparent;
             this.labelChangeRoleAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelChangeRoleAdmin.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChangeRoleAdmin.Font = new System.Drawing.Font("Lucida Sans", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelChangeRoleAdmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
             this.labelChangeRoleAdmin.Location = new System.Drawing.Point(0, 0);
             this.labelChangeRoleAdmin.Name = "labelChangeRoleAdmin";
-            this.labelChangeRoleAdmin.Size = new System.Drawing.Size(208, 54);
+            this.labelChangeRoleAdmin.Size = new System.Drawing.Size(192, 52);
             this.labelChangeRoleAdmin.TabIndex = 10;
             this.labelChangeRoleAdmin.Text = "Назначить \r\nадминистратором";
             this.labelChangeRoleAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -594,70 +844,6 @@ namespace GiveMePaw
             this.labelSecondName.Size = new System.Drawing.Size(111, 27);
             this.labelSecondName.TabIndex = 0;
             this.labelSecondName.Text = "Фамилия:";
-            // 
-            // panelFindUsers
-            // 
-            this.panelFindUsers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panelFindUsers.Controls.Add(this.labelButtFindUser);
-            this.panelFindUsers.Controls.Add(this.panelBackTextBoxFindUser);
-            this.panelFindUsers.Controls.Add(this.labelFindUserText);
-            this.panelFindUsers.Location = new System.Drawing.Point(157, 143);
-            this.panelFindUsers.Name = "panelFindUsers";
-            this.panelFindUsers.Size = new System.Drawing.Size(443, 207);
-            this.panelFindUsers.TabIndex = 6;
-            // 
-            // labelButtFindUser
-            // 
-            this.labelButtFindUser.AutoSize = true;
-            this.labelButtFindUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
-            this.labelButtFindUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelButtFindUser.Font = new System.Drawing.Font("Lucida Sans", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelButtFindUser.Location = new System.Drawing.Point(175, 136);
-            this.labelButtFindUser.Name = "labelButtFindUser";
-            this.labelButtFindUser.Size = new System.Drawing.Size(104, 37);
-            this.labelButtFindUser.TabIndex = 6;
-            this.labelButtFindUser.Text = "Найти";
-            this.labelButtFindUser.Click += new System.EventHandler(this.labelButtFindUser_Click);
-            // 
-            // panelBackTextBoxFindUser
-            // 
-            this.panelBackTextBoxFindUser.Controls.Add(this.pictureBoxLoop);
-            this.panelBackTextBoxFindUser.Controls.Add(this.emailFindUser);
-            this.panelBackTextBoxFindUser.Location = new System.Drawing.Point(35, 65);
-            this.panelBackTextBoxFindUser.Name = "panelBackTextBoxFindUser";
-            this.panelBackTextBoxFindUser.Size = new System.Drawing.Size(383, 35);
-            this.panelBackTextBoxFindUser.TabIndex = 5;
-            // 
-            // pictureBoxLoop
-            // 
-            this.pictureBoxLoop.BackColor = System.Drawing.Color.White;
-            this.pictureBoxLoop.Image = global::GiveMePaw.Properties.Resources.Loop;
-            this.pictureBoxLoop.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxLoop.Name = "pictureBoxLoop";
-            this.pictureBoxLoop.Size = new System.Drawing.Size(35, 35);
-            this.pictureBoxLoop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLoop.TabIndex = 10;
-            this.pictureBoxLoop.TabStop = false;
-            // 
-            // emailFindUser
-            // 
-            this.emailFindUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.emailFindUser.Font = new System.Drawing.Font("Lucida Sans", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailFindUser.ForeColor = System.Drawing.Color.Gray;
-            this.emailFindUser.Location = new System.Drawing.Point(35, 0);
-            this.emailFindUser.Name = "emailFindUser";
-            this.emailFindUser.Size = new System.Drawing.Size(348, 35);
-            this.emailFindUser.TabIndex = 4;
-            // 
-            // labelFindUserText
-            // 
-            this.labelFindUserText.AutoSize = true;
-            this.labelFindUserText.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFindUserText.Location = new System.Drawing.Point(11, 7);
-            this.labelFindUserText.Name = "labelFindUserText";
-            this.labelFindUserText.Size = new System.Drawing.Size(421, 31);
-            this.labelFindUserText.TabIndex = 0;
-            this.labelFindUserText.Text = "Найти пользователя по email";
             // 
             // panelContact
             // 
@@ -872,7 +1058,7 @@ namespace GiveMePaw
             // 
             // panelInfo
             // 
-            this.panelInfo.Controls.Add(this.textBox6);
+            this.panelInfo.Controls.Add(this.label1);
             this.panelInfo.Controls.Add(this.label59);
             this.panelInfo.Controls.Add(this.label2);
             this.panelInfo.Location = new System.Drawing.Point(254, 101);
@@ -880,17 +1066,6 @@ namespace GiveMePaw
             this.panelInfo.Size = new System.Drawing.Size(751, 514);
             this.panelInfo.TabIndex = 14;
             this.panelInfo.Visible = false;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox6.Location = new System.Drawing.Point(54, 109);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(655, 391);
-            this.textBox6.TabIndex = 6;
-            this.textBox6.Text = resources.GetString("textBox6.Text");
             // 
             // label59
             // 
@@ -913,174 +1088,20 @@ namespace GiveMePaw
             this.label2.Text = "О приюте";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panelPet
+            // label1
             // 
-            this.panelPet.Controls.Add(this.dataGridViewPet);
-            this.panelPet.Controls.Add(this.textBoxFindPet);
-            this.panelPet.Controls.Add(this.label3);
-            this.panelPet.Controls.Add(this.label6);
-            this.panelPet.Location = new System.Drawing.Point(254, 101);
-            this.panelPet.Name = "panelPet";
-            this.panelPet.Size = new System.Drawing.Size(751, 514);
-            this.panelPet.TabIndex = 10;
-            this.panelPet.Visible = false;
-            // 
-            // dataGridViewPet
-            // 
-            this.dataGridViewPet.AllowUserToAddRows = false;
-            this.dataGridViewPet.AllowUserToDeleteRows = false;
-            this.dataGridViewPet.AllowUserToResizeColumns = false;
-            this.dataGridViewPet.AllowUserToResizeRows = false;
-            this.dataGridViewPet.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewPet.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewPet.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridViewPet.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridViewPet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPet.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Colum5,
-            this.Column6,
-            this.Column7,
-            this.Column8,
-            this.Column9});
-            this.dataGridViewPet.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridViewPet.Location = new System.Drawing.Point(5, 180);
-            this.dataGridViewPet.MultiSelect = false;
-            this.dataGridViewPet.Name = "dataGridViewPet";
-            this.dataGridViewPet.ReadOnly = true;
-            this.dataGridViewPet.RowHeadersVisible = false;
-            this.dataGridViewPet.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridViewPet.Size = new System.Drawing.Size(737, 320);
-            this.dataGridViewPet.TabIndex = 0;
-            this.dataGridViewPet.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPet_CellClick);
-            // 
-            // textBoxFindPet
-            // 
-            this.textBoxFindPet.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxFindPet.Font = new System.Drawing.Font("Lucida Sans", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFindPet.Location = new System.Drawing.Point(317, 98);
-            this.textBoxFindPet.Name = "textBoxFindPet";
-            this.textBoxFindPet.Size = new System.Drawing.Size(308, 32);
-            this.textBoxFindPet.TabIndex = 10;
-            this.textBoxFindPet.TextChanged += new System.EventHandler(this.textBoxFindPet_TextChanged);
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
-            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label3.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.label3.Location = new System.Drawing.Point(39, 90);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 50);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Добавить";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label6.Font = new System.Drawing.Font("Lucida Sans", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.label6.Location = new System.Drawing.Point(0, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(751, 38);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Животные";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "id";
-            this.Column1.HeaderText = "id";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "pet_type";
-            this.Column2.HeaderText = "Тип";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "name";
-            this.Column3.HeaderText = "Имя";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "age";
-            this.Column4.HeaderText = "Возраст";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Colum5
-            // 
-            this.Colum5.DataPropertyName = "weight";
-            this.Colum5.HeaderText = "Вес";
-            this.Colum5.Name = "Colum5";
-            this.Colum5.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "breed";
-            this.Column6.HeaderText = "Порода";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "photo";
-            this.Column7.HeaderText = "Фото";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            // 
-            // Column8
-            // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.Column8.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Column8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column8.HeaderText = "";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Text = "Изменить";
-            this.Column8.UseColumnTextForButtonValue = true;
-            // 
-            // Column9
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.Column9.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column9.HeaderText = "";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            this.Column9.Text = "Удалить";
-            this.Column9.UseColumnTextForButtonValue = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Sans", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(60, 95);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(642, 351);
+            this.label1.TabIndex = 6;
+            this.label1.Text = resources.GetString("label1.Text");
             // 
             // ForEmployers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 613);
+            this.ClientSize = new System.Drawing.Size(1008, 614);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -1089,13 +1110,14 @@ namespace GiveMePaw
             this.Name = "ForEmployers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Дай Лапу";
+            this.Load += new System.EventHandler(this.ForEmployers_Load);
             this.Shown += new System.EventHandler(this.ForEmployers_Shown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exit_button)).EndInit();
             this.info_Tab_button.ResumeLayout(false);
             this.info_Tab_button.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturePaw)).EndInit();
@@ -1108,10 +1130,18 @@ namespace GiveMePaw
             this.Users_Tab_button.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureButtUsers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelPet.ResumeLayout(false);
+            this.panelPet.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPet)).EndInit();
             this.panelUsersFind.ResumeLayout(false);
             this.panelBackButtBack.ResumeLayout(false);
             this.panelBackButtBack.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxButtBack)).EndInit();
+            this.panelFindUsers.ResumeLayout(false);
+            this.panelBackTextBoxFindUser.ResumeLayout(false);
+            this.panelBackTextBoxFindUser.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoop)).EndInit();
             this.panelUser.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -1121,19 +1151,11 @@ namespace GiveMePaw
             this.panel3.PerformLayout();
             this.panelUserInfo.ResumeLayout(false);
             this.panelUserInfo.PerformLayout();
-            this.panelFindUsers.ResumeLayout(false);
-            this.panelFindUsers.PerformLayout();
-            this.panelBackTextBoxFindUser.ResumeLayout(false);
-            this.panelBackTextBoxFindUser.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoop)).EndInit();
             this.panelContact.ResumeLayout(false);
             this.panelContact.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             this.panelInfo.ResumeLayout(false);
             this.panelInfo.PerformLayout();
-            this.panelPet.ResumeLayout(false);
-            this.panelPet.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1144,7 +1166,7 @@ namespace GiveMePaw
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox exit_button;
         private System.Windows.Forms.Panel info_Tab_button;
         private System.Windows.Forms.Label labelButInfo;
         private System.Windows.Forms.PictureBox picturePaw;
@@ -1183,7 +1205,6 @@ namespace GiveMePaw
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Panel panelInfo;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelFindUsers;
@@ -1221,5 +1242,7 @@ namespace GiveMePaw
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewButtonColumn Column8;
         private System.Windows.Forms.DataGridViewButtonColumn Column9;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label1;
     }
 }
