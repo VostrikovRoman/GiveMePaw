@@ -614,9 +614,6 @@
         gg==
 </value>
   </data>
-  <metadata name="textBox6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="pictureButtContact.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -995,7 +992,7 @@
   <data name="pictureButtPet.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAABNdJREFUWEe1l2toHFUUx7diUQQfNaKiYGvVD6Ko2C++sLFK8UXcnbnXxBS1Ug2I
+        EQAACxEBf2RfkQAABNdJREFUWEe1l2toHFUUx7diUQQfNaKiYGvVD6Ko2C++sLFK8UXcnbnXxBS1Ug2I
         oLSoHyqaovhB+qEg1ZKgyWZm7mwomGpbKqWltfngB43WUqVBW/cxj7TxkVoRRW3H/7l7tjTN7sy+/MGw
         93/mzsy555z72FQrRFFqnu/IJ0MlNvmO2B0omfeVKHiOmPCVORyMdt/OXf9f8sPpSwJHfA4n9uPa4Clz
         C5w4XnLSy6dcuRTODMBehHNDh0bSHfxY+yFHyIlAiW0TA0vmsznl2aKzqB5ZwDJ1ZEReE2gnzYP0DJvb
@@ -2185,10 +2182,7 @@
         jd+6MRSgWhPbl6NNLsY1hLUXdY79sl32WpaH/j8cOrwe+GdKxwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="textBox6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="textBox6.Text" xml:space="preserve">
+  <data name="label1.Text" xml:space="preserve">
     <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin mi id lacus cursus, id varius odio commodo. Morbi imperdiet quam quis tortor dictum, ut interdum risus lobortis. Integer ut purus laoreet, elementum neque quis, vestibulum justo. Praesent non bibendum leo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed finibus sed risus sit amet hendrerit. Vivamus in metus ornare, venenatis mauris id, porta mi. Praesent at ipsum orci.</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
