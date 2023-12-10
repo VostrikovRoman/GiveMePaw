@@ -23,6 +23,7 @@ namespace GiveMePaw
         // Главная
         private void ForUsers_Load(object sender, EventArgs e)
         {
+       
             //Для того, чтобы в профиле отображалось имя пользователя//
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
@@ -49,18 +50,32 @@ namespace GiveMePaw
             give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
             contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
             info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            give_away_panel.Visible = false;
+            pet_panel.Visible = false;
+            many_animal_panel.Visible = false;
+            info_panel.Visible = false;
+            contacts_panel.Visible = false;
+            main_panel.Visible = true;
+            error_panel.Visible = false;
+            lacky_panel.Visible = false;
+           
+
+            label_dog.Parent = pictureBox_Dog;
+            label_dog.BackColor = Color.Transparent;
+
+            label_c.Parent = pictureBox_Cat;
+            label_c.BackColor = Color.Transparent;
+
+            label_p.Parent = pictureBox_Parrot;
+            label_p.BackColor = Color.Transparent;
+
+            label_r.Parent = pictureBox_Rabbit;
+            label_r.BackColor = Color.Transparent;
+
+            label_m.Parent = pictureBox_Mouse;
+            label_m.BackColor = Color.Transparent;
 
 
-
-        }
-
-        private void main_Tab_button_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void give_away_Tab_button_Paint(object sender, PaintEventArgs e)
-        {
 
         }
 
@@ -76,6 +91,217 @@ namespace GiveMePaw
         {
             Close();
         }
+
+        // сдать животное
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            give_away_panel.Visible = true;
+            pet_panel.Visible = false;
+            many_animal_panel.Visible = false;
+            info_panel.Visible = false;
+            contacts_panel.Visible = false;
+            main_panel.Visible = false;
+            error_panel.Visible = false;
+            lacky_panel.Visible = false;
+            main_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            give_away_Tab_button.BackColor = Color.FromArgb(164, 123, 81); 
+            contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            give_away_panel.Visible = true;
+            pet_panel.Visible = false;
+            many_animal_panel.Visible = false;
+            info_panel.Visible = false;
+            contacts_panel.Visible = false;
+            main_panel.Visible = false;
+            error_panel.Visible = false;
+            lacky_panel.Visible = false;
+            main_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            give_away_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+            contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+
+        }
+
+        private void give_away_Tab_button_Click(object sender, EventArgs e)
+        {
+            give_away_panel.Visible = true;
+            pet_panel.Visible = false;
+            many_animal_panel.Visible = false;
+            info_panel.Visible = false;
+            contacts_panel.Visible = false;
+            main_panel.Visible = false;
+            error_panel.Visible = false;
+            lacky_panel.Visible = false;
+            main_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            give_away_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+            contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+        }
+
+        // контакты
+
+        private void contact_Tab_button_Click(object sender, EventArgs e)
+        {
+            give_away_panel.Visible = false;
+            pet_panel.Visible = false;
+            many_animal_panel.Visible = false;
+            info_panel.Visible = false;
+            contacts_panel.Visible = true;
+            main_panel.Visible = false;
+            error_panel.Visible = false;
+            lacky_panel.Visible = false;
+            main_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48); 
+            contact_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+            info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            give_away_panel.Visible = false;
+            pet_panel.Visible = false;
+            many_animal_panel.Visible = false;
+            info_panel.Visible = false;
+            contacts_panel.Visible = true;
+            main_panel.Visible = false;
+            error_panel.Visible = false;
+            lacky_panel.Visible = false;
+            main_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48); 
+            contact_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+            info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            give_away_panel.Visible = false;
+            pet_panel.Visible = false;
+            many_animal_panel.Visible = false;
+            info_panel.Visible = false;
+            contacts_panel.Visible = true;
+            main_panel.Visible = false;
+            error_panel.Visible = false;
+            lacky_panel.Visible = false;
+            main_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48); 
+            contact_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+            info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+        }
+        // инфо
+
+        private void info_Tab_button_Click(object sender, EventArgs e)
+        {
+            give_away_panel.Visible = false;
+            pet_panel.Visible = false;
+            many_animal_panel.Visible = false;
+            info_panel.Visible = true;
+            contacts_panel.Visible = false;
+            main_panel.Visible = false;
+            error_panel.Visible = false;
+            lacky_panel.Visible = false;
+            main_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48); 
+            contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48); 
+            info_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            give_away_panel.Visible = false;
+            pet_panel.Visible = false;
+            many_animal_panel.Visible = false;
+            info_panel.Visible = true;
+            contacts_panel.Visible = false;
+            main_panel.Visible = false;
+            error_panel.Visible = false;
+            lacky_panel.Visible = false;
+            main_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            info_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            give_away_panel.Visible = false;
+            pet_panel.Visible = false;
+            many_animal_panel.Visible = false;
+            info_panel.Visible = true;
+            contacts_panel.Visible = false;
+            main_panel.Visible = false;
+            error_panel.Visible = false;
+            lacky_panel.Visible = false;
+            main_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            info_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+        }
+
+        // Главная
+
+        private void main_Tab_button_Click(object sender, EventArgs e)
+        {
+            give_away_panel.Visible = false;
+            pet_panel.Visible = false;
+            many_animal_panel.Visible = false;
+            info_panel.Visible = false;
+            contacts_panel.Visible = false;
+            main_panel.Visible = true;
+            error_panel.Visible = false;
+            lacky_panel.Visible = false;
+            main_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+            give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            give_away_panel.Visible = false;
+            pet_panel.Visible = false;
+            many_animal_panel.Visible = false;
+            info_panel.Visible = false;
+            contacts_panel.Visible = false;
+            main_panel.Visible = true;
+            error_panel.Visible = false;
+            lacky_panel.Visible = false;
+            main_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+            give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            give_away_panel.Visible = false;
+            pet_panel.Visible = false;
+            many_animal_panel.Visible = false;
+            info_panel.Visible = false;
+            contacts_panel.Visible = false;
+            main_panel.Visible = true;
+            error_panel.Visible = false;
+            lacky_panel.Visible = false;
+            main_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+            give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+        }
+
+        
+
+
+
+
+
+
+
+
+
+
 
 
 
