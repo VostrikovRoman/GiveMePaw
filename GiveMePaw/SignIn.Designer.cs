@@ -31,6 +31,7 @@ namespace GiveMePaw
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignIn));
             this.SignInDisplay = new System.Windows.Forms.Panel();
+            this.remember_me_button = new System.Windows.Forms.CheckBox();
             this.link_to_sign_up = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.sign_in_button = new System.Windows.Forms.Panel();
@@ -58,7 +59,6 @@ namespace GiveMePaw
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.remember_me_button = new System.Windows.Forms.CheckBox();
             this.SignInDisplay.SuspendLayout();
             this.sign_in_button.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -93,6 +93,19 @@ namespace GiveMePaw
             this.SignInDisplay.Size = new System.Drawing.Size(1011, 617);
             this.SignInDisplay.TabIndex = 0;
             // 
+            // remember_me_button
+            // 
+            this.remember_me_button.AutoSize = true;
+            this.remember_me_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.remember_me_button.Font = new System.Drawing.Font("Lucida Sans", 17F, System.Drawing.FontStyle.Bold);
+            this.remember_me_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(44)))), ((int)(((byte)(4)))));
+            this.remember_me_button.Location = new System.Drawing.Point(412, 480);
+            this.remember_me_button.Name = "remember_me_button";
+            this.remember_me_button.Size = new System.Drawing.Size(194, 30);
+            this.remember_me_button.TabIndex = 10;
+            this.remember_me_button.Text = "Запомнить меня";
+            this.remember_me_button.UseVisualStyleBackColor = true;
+            // 
             // link_to_sign_up
             // 
             this.link_to_sign_up.ActiveLinkColor = System.Drawing.Color.Black;
@@ -123,6 +136,7 @@ namespace GiveMePaw
             // 
             this.sign_in_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
             this.sign_in_button.Controls.Add(this.label2);
+            this.sign_in_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sign_in_button.Location = new System.Drawing.Point(412, 417);
             this.sign_in_button.Name = "sign_in_button";
             this.sign_in_button.Size = new System.Drawing.Size(198, 47);
@@ -340,6 +354,7 @@ namespace GiveMePaw
             // 
             this.save_button_sign_up.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
             this.save_button_sign_up.Controls.Add(this.label5);
+            this.save_button_sign_up.Cursor = System.Windows.Forms.Cursors.Hand;
             this.save_button_sign_up.Location = new System.Drawing.Point(398, 449);
             this.save_button_sign_up.Name = "save_button_sign_up";
             this.save_button_sign_up.Size = new System.Drawing.Size(232, 47);
@@ -409,24 +424,11 @@ namespace GiveMePaw
             this.textBox2.Size = new System.Drawing.Size(17, 20);
             this.textBox2.TabIndex = 1;
             // 
-            // remember_me_button
-            // 
-            this.remember_me_button.AutoSize = true;
-            this.remember_me_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.remember_me_button.Font = new System.Drawing.Font("Lucida Sans", 17F, System.Drawing.FontStyle.Bold);
-            this.remember_me_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(44)))), ((int)(((byte)(4)))));
-            this.remember_me_button.Location = new System.Drawing.Point(412, 480);
-            this.remember_me_button.Name = "remember_me_button";
-            this.remember_me_button.Size = new System.Drawing.Size(194, 30);
-            this.remember_me_button.TabIndex = 10;
-            this.remember_me_button.Text = "Запомнить меня";
-            this.remember_me_button.UseVisualStyleBackColor = true;
-            // 
             // SignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 614);
+            this.ClientSize = new System.Drawing.Size(1008, 613);
             this.Controls.Add(this.SignInDisplay);
             this.Controls.Add(this.SignUpDisplay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

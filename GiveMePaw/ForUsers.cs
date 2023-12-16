@@ -60,20 +60,21 @@ namespace GiveMePaw
             lacky_panel.Visible = false;
            
 
+            
             label_dog.Parent = pictureBox_Dog;
             label_dog.BackColor = Color.Transparent;
 
-            label_c.Parent = pictureBox_Cat;
-            label_c.BackColor = Color.Transparent;
+            label_cat.Parent = pictureBox_Cat;
+            label_cat.BackColor = Color.Transparent;
 
-            label_p.Parent = pictureBox_Parrot;
-            label_p.BackColor = Color.Transparent;
+            label_parrot.Parent = pictureBox_Parrot;
+            label_parrot.BackColor = Color.Transparent;
 
-            label_r.Parent = pictureBox_Rabbit;
-            label_r.BackColor = Color.Transparent;
+            label_rabbit.Parent = pictureBox_Rabbit;
+            label_rabbit.BackColor = Color.Transparent;
 
-            label_m.Parent = pictureBox_Mouse;
-            label_m.BackColor = Color.Transparent;
+            label_mouse.Parent = pictureBox_Mouse;
+            label_mouse.BackColor = Color.Transparent;
 
 
 
