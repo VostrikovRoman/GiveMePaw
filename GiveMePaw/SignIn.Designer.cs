@@ -344,11 +344,11 @@ namespace GiveMePaw
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Sans", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(336, 529);
+            this.label4.Location = new System.Drawing.Point(326, 529);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(266, 22);
+            this.label4.Size = new System.Drawing.Size(275, 22);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Уже есть аккаунт? Авторзируйся";
+            this.label4.Text = "Уже есть аккаунт? Авторизируйся";
             // 
             // save_button_sign_up
             // 
@@ -429,14 +429,15 @@ namespace GiveMePaw
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 613);
-            this.Controls.Add(this.SignInDisplay);
             this.Controls.Add(this.SignUpDisplay);
+            this.Controls.Add(this.SignInDisplay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1024, 652);
             this.MinimumSize = new System.Drawing.Size(1024, 652);
             this.Name = "SignIn";
             this.Text = "Дай лапу";
+            this.Load += new System.EventHandler(this.SignIn_Load);
             this.SignInDisplay.ResumeLayout(false);
             this.SignInDisplay.PerformLayout();
             this.sign_in_button.ResumeLayout(false);

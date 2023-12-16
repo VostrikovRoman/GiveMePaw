@@ -63,9 +63,9 @@ namespace GiveMePaw.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap back_1 {
+        internal static System.Drawing.Bitmap animal_Active {
             get {
-                object obj = ResourceManager.GetObject("back 1", resourceCulture);
+                object obj = ResourceManager.GetObject("animal_Active", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,19 @@ namespace GiveMePaw.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap back_11 {
+        internal static System.Drawing.Bitmap animal_Passive {
             get {
-                object obj = ResourceManager.GetObject("back 11", resourceCulture);
+                object obj = ResourceManager.GetObject("animal_Passive", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap back_1 {
+            get {
+                object obj = ResourceManager.GetObject("back_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -85,7 +95,7 @@ namespace GiveMePaw.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap back_2 {
             get {
-                object obj = ResourceManager.GetObject("back 2", resourceCulture);
+                object obj = ResourceManager.GetObject("back_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +103,9 @@ namespace GiveMePaw.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hand_Active {
+        internal static System.Drawing.Bitmap give_Active {
             get {
-                object obj = ResourceManager.GetObject("hand_Active", resourceCulture);
+                object obj = ResourceManager.GetObject("give_Active", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +113,9 @@ namespace GiveMePaw.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hand_Passive {
+        internal static System.Drawing.Bitmap give_Passive {
             get {
-                object obj = ResourceManager.GetObject("hand_Passive", resourceCulture);
+                object obj = ResourceManager.GetObject("give_Passive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +123,9 @@ namespace GiveMePaw.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap home_Active {
+        internal static System.Drawing.Bitmap home_1 {
             get {
-                object obj = ResourceManager.GetObject("home_Active", resourceCulture);
+                object obj = ResourceManager.GetObject("home_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +133,19 @@ namespace GiveMePaw.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap home_Passive {
+        internal static System.Drawing.Bitmap info_Active {
             get {
-                object obj = ResourceManager.GetObject("home_Passive", resourceCulture);
+                object obj = ResourceManager.GetObject("info_Active", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap info_Passive {
+            get {
+                object obj = ResourceManager.GetObject("info_Passive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -135,7 +155,7 @@ namespace GiveMePaw.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap log_out_2 {
             get {
-                object obj = ResourceManager.GetObject("log-out 2", resourceCulture);
+                object obj = ResourceManager.GetObject("log_out_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -145,7 +165,7 @@ namespace GiveMePaw.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap logo_give_me_paw_2 {
             get {
-                object obj = ResourceManager.GetObject("logo_give_me_paw 2", resourceCulture);
+                object obj = ResourceManager.GetObject("logo_give_me_paw_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +183,9 @@ namespace GiveMePaw.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap paw_Active {
+        internal static System.Drawing.Bitmap main_Active {
             get {
-                object obj = ResourceManager.GetObject("paw_Active", resourceCulture);
+                object obj = ResourceManager.GetObject("main_Active", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +193,9 @@ namespace GiveMePaw.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap paw_Passive {
+        internal static System.Drawing.Bitmap main_Passive {
             get {
-                object obj = ResourceManager.GetObject("paw_Passive", resourceCulture);
+                object obj = ResourceManager.GetObject("main_Passive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -185,7 +205,37 @@ namespace GiveMePaw.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap paws__1_ {
             get {
-                object obj = ResourceManager.GetObject("paws (1)", resourceCulture);
+                object obj = ResourceManager.GetObject("paws__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap phone_Active {
+            get {
+                object obj = ResourceManager.GetObject("phone_Active", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap phone_Passive {
+            get {
+                object obj = ResourceManager.GetObject("phone_Passive", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap phone_Passive1 {
+            get {
+                object obj = ResourceManager.GetObject("phone_Passive1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -195,7 +245,7 @@ namespace GiveMePaw.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Rectangle_32 {
             get {
-                object obj = ResourceManager.GetObject("Rectangle 32", resourceCulture);
+                object obj = ResourceManager.GetObject("Rectangle_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -205,7 +255,7 @@ namespace GiveMePaw.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Rectangle_33 {
             get {
-                object obj = ResourceManager.GetObject("Rectangle 33", resourceCulture);
+                object obj = ResourceManager.GetObject("Rectangle_33", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -215,7 +265,7 @@ namespace GiveMePaw.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Rectangle_7 {
             get {
-                object obj = ResourceManager.GetObject("Rectangle 7", resourceCulture);
+                object obj = ResourceManager.GetObject("Rectangle_7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -225,7 +275,7 @@ namespace GiveMePaw.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Rectangle_8 {
             get {
-                object obj = ResourceManager.GetObject("Rectangle 8", resourceCulture);
+                object obj = ResourceManager.GetObject("Rectangle_8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -235,7 +285,7 @@ namespace GiveMePaw.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Rectangle_9 {
             get {
-                object obj = ResourceManager.GetObject("Rectangle 9", resourceCulture);
+                object obj = ResourceManager.GetObject("Rectangle_9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -245,7 +295,7 @@ namespace GiveMePaw.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Rectangle_9__1_ {
             get {
-                object obj = ResourceManager.GetObject("Rectangle 9 (1)", resourceCulture);
+                object obj = ResourceManager.GetObject("Rectangle_9__1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -255,7 +305,7 @@ namespace GiveMePaw.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Rectangle_9__1_1 {
             get {
-                object obj = ResourceManager.GetObject("Rectangle 9 (1)1", resourceCulture);
+                object obj = ResourceManager.GetObject("Rectangle_9__1_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -265,7 +315,7 @@ namespace GiveMePaw.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Rectangle_91 {
             get {
-                object obj = ResourceManager.GetObject("Rectangle 91", resourceCulture);
+                object obj = ResourceManager.GetObject("Rectangle_91", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -275,7 +325,7 @@ namespace GiveMePaw.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap user_1 {
             get {
-                object obj = ResourceManager.GetObject("user 1", resourceCulture);
+                object obj = ResourceManager.GetObject("user_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,9 +333,9 @@ namespace GiveMePaw.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap vibrating_phone_Active {
+        internal static System.Drawing.Bitmap user_Active {
             get {
-                object obj = ResourceManager.GetObject("vibrating-phone_Active", resourceCulture);
+                object obj = ResourceManager.GetObject("user_Active", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,9 +343,9 @@ namespace GiveMePaw.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap vibrating_phone_Passive {
+        internal static System.Drawing.Bitmap user_Passive {
             get {
-                object obj = ResourceManager.GetObject("vibrating-phone_Passive", resourceCulture);
+                object obj = ResourceManager.GetObject("user_Passive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

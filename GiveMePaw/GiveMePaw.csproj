@@ -91,6 +91,11 @@
       <DependentUpon>ForUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="Pet.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,14 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -177,28 +177,28 @@
     <None Include="Resources\back 1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\vibrating-phone_Active.png" />
+    <None Include="Resources\phone_Active.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\vibrating-phone_Passive.png" />
+    <None Include="Resources\phonePassive.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\hand_Active.png" />
+    <None Include="Resources\animal_Active.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\home_Passive.png" />
+    <None Include="Resources\user_Passive.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\hand_Passive.png" />
+    <None Include="Resources\animal_Passive.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\home_Active.png" />
+    <None Include="Resources\user_Active.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\paw_Active.png" />
+    <None Include="Resources\info_Active.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\paw_Passive.png" />
+    <None Include="Resources\info_Passive.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Loop.png" />
@@ -217,6 +217,27 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\give_Active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\give_Passive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_Active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_Passive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_Passive.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_Passive.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

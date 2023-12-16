@@ -26,7 +26,7 @@ namespace GiveMePaw
             defoult_color();
             labelButtUsersText.ForeColor = Color.FromArgb(92, 65, 48);
             Users_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
-            pictureButtUsers.Image = new Bitmap(Properties.Resources.home_Active);
+            pictureButtUsers.Image = new Bitmap(Properties.Resources.user_Active);
             panelPet.Visible = false;
             panelContact.Visible = false;
             panelUsersFind.Visible = true;
@@ -38,7 +38,7 @@ namespace GiveMePaw
             defoult_color();
             labelButtPetText.ForeColor = Color.FromArgb(92, 65, 48);
             Pet_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
-            pictureButtPet.Image = new Bitmap(Properties.Resources.hand_Active);
+            pictureButtPet.Image = new Bitmap(Properties.Resources.animal_Active);
             panelPet.Visible = true;
             panelContact.Visible = false;
             panelUsersFind.Visible = false;
@@ -50,7 +50,7 @@ namespace GiveMePaw
             defoult_color();
             labelButtContactText.ForeColor = Color.FromArgb(92, 65, 48);
             contact_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
-            pictureButtContact.Image = new Bitmap(Properties.Resources.vibrating_phone_Active);
+            pictureButtContact.Image = new Bitmap(Properties.Resources.phone_Active);
             panelPet.Visible = false;
             panelContact.Visible = true;
             panelUsersFind.Visible = false;
@@ -62,7 +62,7 @@ namespace GiveMePaw
             defoult_color();
             labelButInfo.ForeColor = Color.FromArgb(92, 65, 48);
             info_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
-            picturePaw.Image = new Bitmap(Properties.Resources.paw_Active);
+            picturePaw.Image = new Bitmap(Properties.Resources.info_Active);
             panelPet.Visible = false;
             panelContact.Visible = false;
             panelUsersFind.Visible = false;
@@ -86,13 +86,13 @@ namespace GiveMePaw
 
 
 
-            pictureButtUsers.Image = new Bitmap(Properties.Resources.home_Passive);
+            pictureButtUsers.Image = new Bitmap(Properties.Resources.user_Passive);
 
-            pictureButtPet.Image = new Bitmap(Properties.Resources.hand_Passive);
+            pictureButtPet.Image = new Bitmap(Properties.Resources.animal_Passive);
 
-            pictureButtContact.Image = new Bitmap(Properties.Resources.vibrating_phone_Passive);
+            pictureButtContact.Image = new Bitmap(Properties.Resources.phone_Passive);
 
-            picturePaw.Image = new Bitmap(Properties.Resources.paw_Passive);
+            picturePaw.Image = new Bitmap(Properties.Resources.info_Passive);
 
         }
 

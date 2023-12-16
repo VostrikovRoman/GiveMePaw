@@ -36,7 +36,7 @@ namespace GiveMePaw
 
             if (table.Rows.Count > 0)
             {
-                MessageBox.Show("Пользователь с таким email или номер телефона существует!");
+                MessageBox.Show("Пользователь с таким email или номером телефона существует!");
                 return true;
             }
             else
@@ -104,7 +104,7 @@ namespace GiveMePaw
             }
             else
             {
-                MessageBox.Show("Ошибка");
+                MessageBox.Show("Ошибка! Проверьте ваше Интернет-подключение");
             }
             db.closeConnection();
             
@@ -198,7 +198,7 @@ namespace GiveMePaw
             }
             catch (Exception e)
             {
-                MessageBox.Show("Exception: " + e.Message);
+                MessageBox.Show("Ошибка!");
             }
         }
         /////////
@@ -335,6 +335,11 @@ namespace GiveMePaw
             {
                 password_sign_up.Text = "пароль";
             }
+        }
+
+        private void SignIn_Load(object sender, EventArgs e)
+        {
+
         }
         /////     /////
     }

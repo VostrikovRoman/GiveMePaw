@@ -100,7 +100,7 @@ namespace GiveMePaw
             // 
             this.back_button_account.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
             this.back_button_account.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.back_button_account.Image = global::GiveMePaw.Properties.Resources.back_11;
+            this.back_button_account.Image = global::GiveMePaw.Properties.Resources.back_1;
             this.back_button_account.Location = new System.Drawing.Point(33, 43);
             this.back_button_account.Name = "back_button_account";
             this.back_button_account.Size = new System.Drawing.Size(48, 47);
