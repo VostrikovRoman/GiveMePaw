@@ -72,16 +72,16 @@ namespace GiveMePaw
 
         private void defoult_color()
         {
-            labelButtUsersText.ForeColor = Color.FromArgb(164, 123, 81);
+            labelButtUsersText.ForeColor = Color.FromArgb(228, 164, 84);
             Users_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
 
-            labelButtPetText.ForeColor = Color.FromArgb(164, 123, 81);
+            labelButtPetText.ForeColor = Color.FromArgb(228, 164, 84);
             Pet_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
 
-            labelButtContactText.ForeColor = Color.FromArgb(164, 123, 81);
+            labelButtContactText.ForeColor = Color.FromArgb(228, 164, 84);
             contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
 
-            labelButInfo.ForeColor = Color.FromArgb(164, 123, 81);
+            labelButInfo.ForeColor = Color.FromArgb(228, 164, 84);
             info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
 
 

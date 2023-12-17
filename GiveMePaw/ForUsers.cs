@@ -23,6 +23,8 @@ namespace GiveMePaw
         // Главная
         private void ForUsers_Load(object sender, EventArgs e)
         {
+            //Меню слева//
+            start_color();
        
             //Для того, чтобы в профиле отображалось имя пользователя//
             DataTable table = new DataTable();
@@ -45,11 +47,6 @@ namespace GiveMePaw
             account_button.Text = surname + " " + name.Substring(0, 1) + ".";
 
             //////////////////
-
-            //main_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
-            //give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
-            contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
-            info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
             give_away_panel.Visible = false;
             pet_panel.Visible = false;
             many_animal_panel.Visible = false;
@@ -61,7 +58,7 @@ namespace GiveMePaw
            
 
             
-            label_dog.Parent = pictureBox_Dog;
+            /*label_dog.Parent = pictureBox_Dog;
             label_dog.BackColor = Color.Transparent;
 
             label_cat.Parent = pictureBox_Cat;
@@ -74,7 +71,7 @@ namespace GiveMePaw
             label_rabbit.BackColor = Color.Transparent;
 
             label_mouse.Parent = pictureBox_Mouse;
-            label_mouse.BackColor = Color.Transparent;
+            label_mouse.BackColor = Color.Transparent;*/
 
 
 
@@ -128,16 +125,16 @@ namespace GiveMePaw
 
         private void defoult_color()
         {
-            labelButtMainText.ForeColor = Color.FromArgb(164, 123, 81);
+            labelButtMainText.ForeColor = Color.FromArgb(228, 164, 84);
             Main_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
 
-            labelButtGiveText.ForeColor = Color.FromArgb(164, 123, 81);
+            labelButtGiveText.ForeColor = Color.FromArgb(228, 164, 84);
             Give_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
 
-            labelButtContactText.ForeColor = Color.FromArgb(164, 123, 81);
+            labelButtContactText.ForeColor = Color.FromArgb(228, 164, 84);
             contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
 
-            labelButInfo.ForeColor = Color.FromArgb(164, 123, 81);
+            labelButInfo.ForeColor = Color.FromArgb(228, 164, 84);
             info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
 
 
@@ -152,7 +149,33 @@ namespace GiveMePaw
 
         }
 
-        
+        private void start_color()
+        {
+            labelButtMainText.ForeColor = Color.FromArgb(92, 65, 48);
+            Main_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+
+            labelButtGiveText.ForeColor = Color.FromArgb(228, 164, 84);
+            Give_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+
+            labelButtContactText.ForeColor = Color.FromArgb(228, 164, 84);
+            contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+
+            labelButInfo.ForeColor = Color.FromArgb(228, 164, 84);
+            info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+
+
+
+            pictureButtMain.Image = new Bitmap(Properties.Resources.main_Active);
+
+            pictureButtGive.Image = new Bitmap(Properties.Resources.give_Passive);
+
+            pictureButtContact.Image = new Bitmap(Properties.Resources.phone_Passive);
+
+            picturePaw.Image = new Bitmap(Properties.Resources.info_Passive);
+
+        }
+
+
 
 
 
