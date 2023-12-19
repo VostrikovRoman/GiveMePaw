@@ -52,16 +52,6 @@ namespace GiveMePaw
             this.account_button = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.main_panel = new System.Windows.Forms.Panel();
-            this.label_mouse = new System.Windows.Forms.Label();
-            this.label_rabbit = new System.Windows.Forms.Label();
-            this.label_parrot = new System.Windows.Forms.Label();
-            this.label_cat = new System.Windows.Forms.Label();
-            this.label_dog = new System.Windows.Forms.Label();
-            this.pictureBox_Mouse = new System.Windows.Forms.PictureBox();
-            this.pictureBox_Rabbit = new System.Windows.Forms.PictureBox();
-            this.pictureBox_Parrot = new System.Windows.Forms.PictureBox();
-            this.pictureBox_Cat = new System.Windows.Forms.PictureBox();
-            this.pictureBox_Dog = new System.Windows.Forms.PictureBox();
             this.error_panel = new System.Windows.Forms.Panel();
             this.label39 = new System.Windows.Forms.Label();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
@@ -123,27 +113,39 @@ namespace GiveMePaw
             this.label37 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.many_animal_panel = new System.Windows.Forms.Panel();
+            this.many_dog_panel = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.back_button_many_pets = new System.Windows.Forms.PictureBox();
+            this.card_pet_2 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.age_pet_2 = new System.Windows.Forms.Label();
+            this.breed_pet_2 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.name_pet_2 = new System.Windows.Forms.Label();
+            this.image_pet_2 = new System.Windows.Forms.PictureBox();
+            this.card_pet_1 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.age_pet_1 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.breed_pet_1 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.name_pet_1 = new System.Windows.Forms.Label();
+            this.image_pet_1 = new System.Windows.Forms.PictureBox();
+            this.label_title_pet = new System.Windows.Forms.Label();
+            this.label_dog = new System.Windows.Forms.Label();
+            this.panel_dog = new System.Windows.Forms.Panel();
+            this.panel_cat = new System.Windows.Forms.Panel();
+            this.label_cat = new System.Windows.Forms.Label();
+            this.panel_parrot = new System.Windows.Forms.Panel();
+            this.label_parrot = new System.Windows.Forms.Label();
+            this.panel_rabbit = new System.Windows.Forms.Panel();
+            this.label_rabbit = new System.Windows.Forms.Label();
+            this.panel_mouse = new System.Windows.Forms.Panel();
+            this.label_mouse = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.Main_Tab_button.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureButtMain)).BeginInit();
@@ -158,11 +160,6 @@ namespace GiveMePaw
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.main_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Mouse)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Rabbit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Parrot)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Cat)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Dog)).BeginInit();
             this.error_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             this.lacky_panel.SuspendLayout();
@@ -178,12 +175,19 @@ namespace GiveMePaw
             this.save_button_sign_up.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            this.many_animal_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.many_dog_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.back_button_many_pets)).BeginInit();
+            this.card_pet_2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.image_pet_2)).BeginInit();
+            this.card_pet_1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.image_pet_1)).BeginInit();
+            this.panel_dog.SuspendLayout();
+            this.panel_cat.SuspendLayout();
+            this.panel_parrot.SuspendLayout();
+            this.panel_rabbit.SuspendLayout();
+            this.panel_mouse.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -278,6 +282,7 @@ namespace GiveMePaw
             // 
             // picturePaw
             // 
+            this.picturePaw.Image = global::GiveMePaw.Properties.Resources.info_Passive;
             this.picturePaw.Location = new System.Drawing.Point(12, 10);
             this.picturePaw.Name = "picturePaw";
             this.picturePaw.Size = new System.Drawing.Size(55, 43);
@@ -409,6 +414,7 @@ namespace GiveMePaw
             this.panel1.Controls.Add(this.account_button);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.many_dog_panel);
             this.panel1.Controls.Add(this.main_panel);
             this.panel1.Controls.Add(this.error_panel);
             this.panel1.Controls.Add(this.lacky_panel);
@@ -416,7 +422,6 @@ namespace GiveMePaw
             this.panel1.Controls.Add(this.contacts_panel);
             this.panel1.Controls.Add(this.give_away_panel);
             this.panel1.Controls.Add(this.pet_panel);
-            this.panel1.Controls.Add(this.many_animal_panel);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1016, 618);
@@ -448,130 +453,16 @@ namespace GiveMePaw
             // 
             // main_panel
             // 
-            this.main_panel.Controls.Add(this.label_mouse);
-            this.main_panel.Controls.Add(this.label_rabbit);
-            this.main_panel.Controls.Add(this.label_parrot);
-            this.main_panel.Controls.Add(this.label_cat);
-            this.main_panel.Controls.Add(this.label_dog);
-            this.main_panel.Controls.Add(this.pictureBox_Mouse);
-            this.main_panel.Controls.Add(this.pictureBox_Rabbit);
-            this.main_panel.Controls.Add(this.pictureBox_Parrot);
-            this.main_panel.Controls.Add(this.pictureBox_Cat);
-            this.main_panel.Controls.Add(this.pictureBox_Dog);
             this.main_panel.Controls.Add(this.label6);
+            this.main_panel.Controls.Add(this.panel_dog);
+            this.main_panel.Controls.Add(this.panel_rabbit);
+            this.main_panel.Controls.Add(this.panel_mouse);
+            this.main_panel.Controls.Add(this.panel_cat);
+            this.main_panel.Controls.Add(this.panel_parrot);
             this.main_panel.Location = new System.Drawing.Point(245, 101);
             this.main_panel.Name = "main_panel";
-            this.main_panel.Size = new System.Drawing.Size(751, 514);
+            this.main_panel.Size = new System.Drawing.Size(751, 566);
             this.main_panel.TabIndex = 7;
-            // 
-            // label_mouse
-            // 
-            this.label_mouse.BackColor = System.Drawing.Color.Transparent;
-            this.label_mouse.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_mouse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label_mouse.Location = new System.Drawing.Point(303, 360);
-            this.label_mouse.Name = "label_mouse";
-            this.label_mouse.Size = new System.Drawing.Size(145, 78);
-            this.label_mouse.TabIndex = 13;
-            this.label_mouse.Text = "Мелкие грызуны";
-            // 
-            // label_rabbit
-            // 
-            this.label_rabbit.AutoSize = true;
-            this.label_rabbit.BackColor = System.Drawing.Color.Transparent;
-            this.label_rabbit.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_rabbit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label_rabbit.Location = new System.Drawing.Point(41, 380);
-            this.label_rabbit.Name = "label_rabbit";
-            this.label_rabbit.Size = new System.Drawing.Size(145, 37);
-            this.label_rabbit.TabIndex = 12;
-            this.label_rabbit.Text = "Кролики";
-            // 
-            // label_parrot
-            // 
-            this.label_parrot.AutoSize = true;
-            this.label_parrot.BackColor = System.Drawing.Color.Transparent;
-            this.label_parrot.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_parrot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label_parrot.Location = new System.Drawing.Point(571, 101);
-            this.label_parrot.Name = "label_parrot";
-            this.label_parrot.Size = new System.Drawing.Size(138, 37);
-            this.label_parrot.TabIndex = 11;
-            this.label_parrot.Text = "Попугаи";
-            // 
-            // label_cat
-            // 
-            this.label_cat.AutoSize = true;
-            this.label_cat.BackColor = System.Drawing.Color.Transparent;
-            this.label_cat.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_cat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label_cat.Location = new System.Drawing.Point(329, 106);
-            this.label_cat.Name = "label_cat";
-            this.label_cat.Size = new System.Drawing.Size(112, 37);
-            this.label_cat.TabIndex = 10;
-            this.label_cat.Text = "Кошки";
-            // 
-            // label_dog
-            // 
-            this.label_dog.AutoSize = true;
-            this.label_dog.BackColor = System.Drawing.Color.Transparent;
-            this.label_dog.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_dog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label_dog.Location = new System.Drawing.Point(57, 176);
-            this.label_dog.Name = "label_dog";
-            this.label_dog.Size = new System.Drawing.Size(129, 37);
-            this.label_dog.TabIndex = 9;
-            this.label_dog.Text = "Собаки";
-            // 
-            // pictureBox_Mouse
-            // 
-            this.pictureBox_Mouse.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Mouse.Image")));
-            this.pictureBox_Mouse.Location = new System.Drawing.Point(263, 292);
-            this.pictureBox_Mouse.Name = "pictureBox_Mouse";
-            this.pictureBox_Mouse.Size = new System.Drawing.Size(230, 219);
-            this.pictureBox_Mouse.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_Mouse.TabIndex = 8;
-            this.pictureBox_Mouse.TabStop = false;
-            // 
-            // pictureBox_Rabbit
-            // 
-            this.pictureBox_Rabbit.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Rabbit.Image")));
-            this.pictureBox_Rabbit.Location = new System.Drawing.Point(3, 292);
-            this.pictureBox_Rabbit.Name = "pictureBox_Rabbit";
-            this.pictureBox_Rabbit.Size = new System.Drawing.Size(230, 219);
-            this.pictureBox_Rabbit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_Rabbit.TabIndex = 7;
-            this.pictureBox_Rabbit.TabStop = false;
-            // 
-            // pictureBox_Parrot
-            // 
-            this.pictureBox_Parrot.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Parrot.Image")));
-            this.pictureBox_Parrot.Location = new System.Drawing.Point(521, 45);
-            this.pictureBox_Parrot.Name = "pictureBox_Parrot";
-            this.pictureBox_Parrot.Size = new System.Drawing.Size(230, 219);
-            this.pictureBox_Parrot.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox_Parrot.TabIndex = 6;
-            this.pictureBox_Parrot.TabStop = false;
-            // 
-            // pictureBox_Cat
-            // 
-            this.pictureBox_Cat.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Cat.Image")));
-            this.pictureBox_Cat.Location = new System.Drawing.Point(261, 50);
-            this.pictureBox_Cat.Name = "pictureBox_Cat";
-            this.pictureBox_Cat.Size = new System.Drawing.Size(230, 219);
-            this.pictureBox_Cat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox_Cat.TabIndex = 5;
-            this.pictureBox_Cat.TabStop = false;
-            // 
-            // pictureBox_Dog
-            // 
-            this.pictureBox_Dog.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Dog.Image")));
-            this.pictureBox_Dog.Location = new System.Drawing.Point(4, 50);
-            this.pictureBox_Dog.Name = "pictureBox_Dog";
-            this.pictureBox_Dog.Size = new System.Drawing.Size(235, 219);
-            this.pictureBox_Dog.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox_Dog.TabIndex = 4;
-            this.pictureBox_Dog.TabStop = false;
             // 
             // error_panel
             // 
@@ -1242,21 +1133,24 @@ namespace GiveMePaw
             this.pictureBox15.TabIndex = 9;
             this.pictureBox15.TabStop = false;
             // 
-            // many_animal_panel
+            // many_dog_panel
             // 
-            this.many_animal_panel.Controls.Add(this.label24);
-            this.many_animal_panel.Controls.Add(this.pictureBox14);
-            this.many_animal_panel.Controls.Add(this.panel4);
-            this.many_animal_panel.Controls.Add(this.panel3);
-            this.many_animal_panel.Controls.Add(this.label7);
-            this.many_animal_panel.Location = new System.Drawing.Point(245, 101);
-            this.many_animal_panel.Name = "many_animal_panel";
-            this.many_animal_panel.Size = new System.Drawing.Size(751, 514);
-            this.many_animal_panel.TabIndex = 8;
+            this.many_dog_panel.Controls.Add(this.pictureBox4);
+            this.many_dog_panel.Controls.Add(this.pictureBox3);
+            this.many_dog_panel.Controls.Add(this.label24);
+            this.many_dog_panel.Controls.Add(this.back_button_many_pets);
+            this.many_dog_panel.Controls.Add(this.card_pet_2);
+            this.many_dog_panel.Controls.Add(this.card_pet_1);
+            this.many_dog_panel.Controls.Add(this.label_title_pet);
+            this.many_dog_panel.Location = new System.Drawing.Point(245, 101);
+            this.many_dog_panel.Name = "many_dog_panel";
+            this.many_dog_panel.Size = new System.Drawing.Size(751, 514);
+            this.many_dog_panel.TabIndex = 8;
             // 
             // label24
             // 
             this.label24.AutoSize = true;
+            this.label24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
             this.label24.Location = new System.Drawing.Point(58, 8);
@@ -1264,31 +1158,34 @@ namespace GiveMePaw
             this.label24.Size = new System.Drawing.Size(99, 31);
             this.label24.TabIndex = 8;
             this.label24.Text = "Назад";
+            this.label24.Click += new System.EventHandler(this.back_button_many_pets_Click);
             // 
-            // pictureBox14
+            // back_button_many_pets
             // 
-            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(52, 41);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 9;
-            this.pictureBox14.TabStop = false;
+            this.back_button_many_pets.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.back_button_many_pets.Image = ((System.Drawing.Image)(resources.GetObject("back_button_many_pets.Image")));
+            this.back_button_many_pets.Location = new System.Drawing.Point(3, 3);
+            this.back_button_many_pets.Name = "back_button_many_pets";
+            this.back_button_many_pets.Size = new System.Drawing.Size(52, 41);
+            this.back_button_many_pets.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.back_button_many_pets.TabIndex = 9;
+            this.back_button_many_pets.TabStop = false;
+            this.back_button_many_pets.Click += new System.EventHandler(this.back_button_many_pets_Click);
             // 
-            // panel4
+            // card_pet_2
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
-            this.panel4.Controls.Add(this.label23);
-            this.panel4.Controls.Add(this.label22);
-            this.panel4.Controls.Add(this.label21);
-            this.panel4.Controls.Add(this.label20);
-            this.panel4.Controls.Add(this.label19);
-            this.panel4.Controls.Add(this.label12);
-            this.panel4.Controls.Add(this.pictureBox13);
-            this.panel4.Location = new System.Drawing.Point(408, 45);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(293, 435);
-            this.panel4.TabIndex = 5;
+            this.card_pet_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            this.card_pet_2.Controls.Add(this.label23);
+            this.card_pet_2.Controls.Add(this.age_pet_2);
+            this.card_pet_2.Controls.Add(this.breed_pet_2);
+            this.card_pet_2.Controls.Add(this.label20);
+            this.card_pet_2.Controls.Add(this.label19);
+            this.card_pet_2.Controls.Add(this.name_pet_2);
+            this.card_pet_2.Controls.Add(this.image_pet_2);
+            this.card_pet_2.Location = new System.Drawing.Point(389, 72);
+            this.card_pet_2.Name = "card_pet_2";
+            this.card_pet_2.Size = new System.Drawing.Size(293, 408);
+            this.card_pet_2.TabIndex = 5;
             // 
             // label23
             // 
@@ -1301,27 +1198,27 @@ namespace GiveMePaw
             this.label23.TabIndex = 8;
             this.label23.Text = "месяцев";
             // 
-            // label22
+            // age_pet_2
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.label22.Location = new System.Drawing.Point(130, 346);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(46, 31);
-            this.label22.TabIndex = 8;
-            this.label22.Text = "10";
+            this.age_pet_2.AutoSize = true;
+            this.age_pet_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.age_pet_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.age_pet_2.Location = new System.Drawing.Point(130, 346);
+            this.age_pet_2.Name = "age_pet_2";
+            this.age_pet_2.Size = new System.Drawing.Size(30, 31);
+            this.age_pet_2.TabIndex = 8;
+            this.age_pet_2.Text = "?";
             // 
-            // label21
+            // breed_pet_2
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.label21.Location = new System.Drawing.Point(119, 300);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(182, 31);
-            this.label21.TabIndex = 8;
-            this.label21.Text = "Долматинец";
+            this.breed_pet_2.AutoSize = true;
+            this.breed_pet_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.breed_pet_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.breed_pet_2.Location = new System.Drawing.Point(119, 300);
+            this.breed_pet_2.Name = "breed_pet_2";
+            this.breed_pet_2.Size = new System.Drawing.Size(111, 31);
+            this.breed_pet_2.TabIndex = 8;
+            this.breed_pet_2.Text = "порода";
             // 
             // label20
             // 
@@ -1345,43 +1242,43 @@ namespace GiveMePaw
             this.label19.TabIndex = 8;
             this.label19.Text = "Порода: ";
             // 
-            // label12
+            // name_pet_2
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.label12.Location = new System.Drawing.Point(107, 251);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(126, 33);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "Жульен";
+            this.name_pet_2.AutoSize = true;
+            this.name_pet_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.name_pet_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.name_pet_2.Location = new System.Drawing.Point(107, 251);
+            this.name_pet_2.Name = "name_pet_2";
+            this.name_pet_2.Size = new System.Drawing.Size(119, 33);
+            this.name_pet_2.TabIndex = 2;
+            this.name_pet_2.Text = "Кличка";
+            this.name_pet_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox13
+            // image_pet_2
             // 
-            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(15, 22);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(259, 219);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 1;
-            this.pictureBox13.TabStop = false;
+            this.image_pet_2.Location = new System.Drawing.Point(15, 22);
+            this.image_pet_2.Name = "image_pet_2";
+            this.image_pet_2.Size = new System.Drawing.Size(259, 219);
+            this.image_pet_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.image_pet_2.TabIndex = 1;
+            this.image_pet_2.TabStop = false;
             // 
-            // panel3
+            // card_pet_1
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
-            this.panel3.Controls.Add(this.label18);
-            this.panel3.Controls.Add(this.label17);
-            this.panel3.Controls.Add(this.label16);
-            this.panel3.Controls.Add(this.label15);
-            this.panel3.Controls.Add(this.label14);
-            this.panel3.Controls.Add(this.label13);
-            this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.pictureBox8);
-            this.panel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.panel3.Location = new System.Drawing.Point(47, 45);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(293, 435);
-            this.panel3.TabIndex = 4;
+            this.card_pet_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            this.card_pet_1.Controls.Add(this.label18);
+            this.card_pet_1.Controls.Add(this.age_pet_1);
+            this.card_pet_1.Controls.Add(this.label16);
+            this.card_pet_1.Controls.Add(this.breed_pet_1);
+            this.card_pet_1.Controls.Add(this.label14);
+            this.card_pet_1.Controls.Add(this.label13);
+            this.card_pet_1.Controls.Add(this.name_pet_1);
+            this.card_pet_1.Controls.Add(this.image_pet_1);
+            this.card_pet_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.card_pet_1.Location = new System.Drawing.Point(64, 72);
+            this.card_pet_1.Name = "card_pet_1";
+            this.card_pet_1.Size = new System.Drawing.Size(293, 408);
+            this.card_pet_1.TabIndex = 4;
             // 
             // label18
             // 
@@ -1394,16 +1291,16 @@ namespace GiveMePaw
             this.label18.TabIndex = 7;
             this.label18.Text = "месяцев";
             // 
-            // label17
+            // age_pet_1
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.label17.Location = new System.Drawing.Point(124, 346);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(46, 31);
-            this.label17.TabIndex = 6;
-            this.label17.Text = "13";
+            this.age_pet_1.AutoSize = true;
+            this.age_pet_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.age_pet_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.age_pet_1.Location = new System.Drawing.Point(124, 346);
+            this.age_pet_1.Name = "age_pet_1";
+            this.age_pet_1.Size = new System.Drawing.Size(30, 31);
+            this.age_pet_1.TabIndex = 6;
+            this.age_pet_1.Text = "?";
             // 
             // label16
             // 
@@ -1416,16 +1313,16 @@ namespace GiveMePaw
             this.label16.TabIndex = 5;
             this.label16.Text = "Возраст:";
             // 
-            // label15
+            // breed_pet_1
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.label15.Location = new System.Drawing.Point(134, 300);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(92, 31);
-            this.label15.TabIndex = 4;
-            this.label15.Text = "Корги";
+            this.breed_pet_1.AutoSize = true;
+            this.breed_pet_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.breed_pet_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.breed_pet_1.Location = new System.Drawing.Point(134, 300);
+            this.breed_pet_1.Name = "breed_pet_1";
+            this.breed_pet_1.Size = new System.Drawing.Size(111, 31);
+            this.breed_pet_1.TabIndex = 4;
+            this.breed_pet_1.Text = "порода";
             // 
             // label14
             // 
@@ -1446,37 +1343,180 @@ namespace GiveMePaw
             this.label13.Size = new System.Drawing.Size(0, 13);
             this.label13.TabIndex = 2;
             // 
-            // label11
+            // name_pet_1
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.label11.Location = new System.Drawing.Point(101, 251);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(85, 33);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Арчи";
+            this.name_pet_1.AutoSize = true;
+            this.name_pet_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.name_pet_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.name_pet_1.Location = new System.Drawing.Point(101, 251);
+            this.name_pet_1.Name = "name_pet_1";
+            this.name_pet_1.Size = new System.Drawing.Size(119, 33);
+            this.name_pet_1.TabIndex = 1;
+            this.name_pet_1.Text = "Кличка";
+            this.name_pet_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox8
+            // image_pet_1
             // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(17, 22);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(259, 219);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 0;
-            this.pictureBox8.TabStop = false;
+            this.image_pet_1.Location = new System.Drawing.Point(17, 22);
+            this.image_pet_1.Name = "image_pet_1";
+            this.image_pet_1.Size = new System.Drawing.Size(259, 219);
+            this.image_pet_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.image_pet_1.TabIndex = 0;
+            this.image_pet_1.TabStop = false;
             // 
-            // label7
+            // label_title_pet
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Lucida Sans", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.label7.Location = new System.Drawing.Point(285, 3);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(163, 38);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "СОБАКИ";
+            this.label_title_pet.AutoSize = true;
+            this.label_title_pet.Font = new System.Drawing.Font("Lucida Sans", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_title_pet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.label_title_pet.Location = new System.Drawing.Point(285, 3);
+            this.label_title_pet.Name = "label_title_pet";
+            this.label_title_pet.Size = new System.Drawing.Size(163, 38);
+            this.label_title_pet.TabIndex = 3;
+            this.label_title_pet.Text = "СОБАКИ";
+            this.label_title_pet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_dog
+            // 
+            this.label_dog.AutoSize = true;
+            this.label_dog.Font = new System.Drawing.Font("Lucida Sans", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_dog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label_dog.Location = new System.Drawing.Point(45, 160);
+            this.label_dog.Name = "label_dog";
+            this.label_dog.Size = new System.Drawing.Size(115, 34);
+            this.label_dog.TabIndex = 9;
+            this.label_dog.Text = "Собаки";
+            // 
+            // panel_dog
+            // 
+            this.panel_dog.BackColor = System.Drawing.Color.Transparent;
+            this.panel_dog.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_dog.BackgroundImage")));
+            this.panel_dog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel_dog.Controls.Add(this.label_dog);
+            this.panel_dog.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel_dog.Location = new System.Drawing.Point(50, 72);
+            this.panel_dog.Name = "panel_dog";
+            this.panel_dog.Size = new System.Drawing.Size(200, 200);
+            this.panel_dog.TabIndex = 10;
+            this.panel_dog.Click += new System.EventHandler(this.panel_dog_Click);
+            // 
+            // panel_cat
+            // 
+            this.panel_cat.BackColor = System.Drawing.Color.Transparent;
+            this.panel_cat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_cat.BackgroundImage")));
+            this.panel_cat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel_cat.Controls.Add(this.label_cat);
+            this.panel_cat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel_cat.Location = new System.Drawing.Point(280, 72);
+            this.panel_cat.Name = "panel_cat";
+            this.panel_cat.Size = new System.Drawing.Size(200, 200);
+            this.panel_cat.TabIndex = 11;
+            this.panel_cat.Click += new System.EventHandler(this.panel_cat_Click);
+            // 
+            // label_cat
+            // 
+            this.label_cat.AutoSize = true;
+            this.label_cat.Font = new System.Drawing.Font("Lucida Sans", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_cat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label_cat.Location = new System.Drawing.Point(49, 160);
+            this.label_cat.Name = "label_cat";
+            this.label_cat.Size = new System.Drawing.Size(104, 34);
+            this.label_cat.TabIndex = 9;
+            this.label_cat.Text = "Кошки";
+            // 
+            // panel_parrot
+            // 
+            this.panel_parrot.BackColor = System.Drawing.Color.Transparent;
+            this.panel_parrot.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_parrot.BackgroundImage")));
+            this.panel_parrot.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel_parrot.Controls.Add(this.label_parrot);
+            this.panel_parrot.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel_parrot.Location = new System.Drawing.Point(510, 72);
+            this.panel_parrot.Name = "panel_parrot";
+            this.panel_parrot.Size = new System.Drawing.Size(200, 200);
+            this.panel_parrot.TabIndex = 11;
+            this.panel_parrot.Click += new System.EventHandler(this.panel_parrot_Click);
+            // 
+            // label_parrot
+            // 
+            this.label_parrot.AutoSize = true;
+            this.label_parrot.Font = new System.Drawing.Font("Lucida Sans", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_parrot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label_parrot.Location = new System.Drawing.Point(40, 158);
+            this.label_parrot.Name = "label_parrot";
+            this.label_parrot.Size = new System.Drawing.Size(126, 34);
+            this.label_parrot.TabIndex = 9;
+            this.label_parrot.Text = "Попугаи";
+            // 
+            // panel_rabbit
+            // 
+            this.panel_rabbit.BackColor = System.Drawing.Color.Transparent;
+            this.panel_rabbit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_rabbit.BackgroundImage")));
+            this.panel_rabbit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel_rabbit.Controls.Add(this.label_rabbit);
+            this.panel_rabbit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel_rabbit.Location = new System.Drawing.Point(50, 292);
+            this.panel_rabbit.Name = "panel_rabbit";
+            this.panel_rabbit.Size = new System.Drawing.Size(200, 200);
+            this.panel_rabbit.TabIndex = 11;
+            this.panel_rabbit.Click += new System.EventHandler(this.panel_rabbit_Click);
+            // 
+            // label_rabbit
+            // 
+            this.label_rabbit.AutoSize = true;
+            this.label_rabbit.Font = new System.Drawing.Font("Lucida Sans", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_rabbit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label_rabbit.Location = new System.Drawing.Point(35, 160);
+            this.label_rabbit.Name = "label_rabbit";
+            this.label_rabbit.Size = new System.Drawing.Size(129, 34);
+            this.label_rabbit.TabIndex = 9;
+            this.label_rabbit.Text = "Кролики";
+            // 
+            // panel_mouse
+            // 
+            this.panel_mouse.BackColor = System.Drawing.Color.Transparent;
+            this.panel_mouse.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_mouse.BackgroundImage")));
+            this.panel_mouse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel_mouse.Controls.Add(this.label_mouse);
+            this.panel_mouse.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel_mouse.Location = new System.Drawing.Point(280, 292);
+            this.panel_mouse.Name = "panel_mouse";
+            this.panel_mouse.Size = new System.Drawing.Size(200, 200);
+            this.panel_mouse.TabIndex = 11;
+            this.panel_mouse.Click += new System.EventHandler(this.panel_mouse_Click);
+            // 
+            // label_mouse
+            // 
+            this.label_mouse.Font = new System.Drawing.Font("Lucida Sans", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_mouse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label_mouse.Location = new System.Drawing.Point(16, 124);
+            this.label_mouse.Name = "label_mouse";
+            this.label_mouse.Size = new System.Drawing.Size(179, 73);
+            this.label_mouse.TabIndex = 9;
+            this.label_mouse.Text = "Мелкие грызуны";
+            this.label_mouse.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(697, 269);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 10;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(5, 269);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 11;
+            this.pictureBox4.TabStop = false;
             // 
             // ForUsers
             // 
@@ -1511,11 +1551,6 @@ namespace GiveMePaw
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.main_panel.ResumeLayout(false);
             this.main_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Mouse)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Rabbit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Parrot)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Cat)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Dog)).EndInit();
             this.error_panel.ResumeLayout(false);
             this.error_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
@@ -1541,15 +1576,26 @@ namespace GiveMePaw
             this.save_button_sign_up.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            this.many_animal_panel.ResumeLayout(false);
-            this.many_animal_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.many_dog_panel.ResumeLayout(false);
+            this.many_dog_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.back_button_many_pets)).EndInit();
+            this.card_pet_2.ResumeLayout(false);
+            this.card_pet_2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.image_pet_2)).EndInit();
+            this.card_pet_1.ResumeLayout(false);
+            this.card_pet_1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.image_pet_1)).EndInit();
+            this.panel_dog.ResumeLayout(false);
+            this.panel_dog.PerformLayout();
+            this.panel_cat.ResumeLayout(false);
+            this.panel_cat.PerformLayout();
+            this.panel_parrot.ResumeLayout(false);
+            this.panel_parrot.PerformLayout();
+            this.panel_rabbit.ResumeLayout(false);
+            this.panel_rabbit.PerformLayout();
+            this.panel_mouse.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1564,33 +1610,28 @@ namespace GiveMePaw
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox back_button_for_users;
         private System.Windows.Forms.Panel main_panel;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel many_animal_panel;
+        private System.Windows.Forms.Label label_title_pet;
+        private System.Windows.Forms.Panel many_dog_panel;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label account_button;
-        private System.Windows.Forms.PictureBox pictureBox_Mouse;
-        private System.Windows.Forms.PictureBox pictureBox_Rabbit;
-        private System.Windows.Forms.PictureBox pictureBox_Parrot;
-        private System.Windows.Forms.PictureBox pictureBox_Cat;
-        private System.Windows.Forms.PictureBox pictureBox_Dog;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Panel card_pet_2;
+        private System.Windows.Forms.Panel card_pet_1;
+        private System.Windows.Forms.PictureBox image_pet_2;
+        private System.Windows.Forms.PictureBox image_pet_1;
+        private System.Windows.Forms.Label name_pet_2;
+        private System.Windows.Forms.Label breed_pet_1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label name_pet_1;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label age_pet_2;
+        private System.Windows.Forms.Label breed_pet_2;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.Label age_pet_1;
+        private System.Windows.Forms.PictureBox back_button_many_pets;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Panel pet_panel;
         private System.Windows.Forms.Label label25;
@@ -1653,11 +1694,6 @@ namespace GiveMePaw
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label jhhjk;
-        private System.Windows.Forms.Label label_dog;
-        private System.Windows.Forms.Label label_mouse;
-        private System.Windows.Forms.Label label_rabbit;
-        private System.Windows.Forms.Label label_parrot;
-        private System.Windows.Forms.Label label_cat;
         private System.Windows.Forms.Panel Main_Tab_button;
         private System.Windows.Forms.Label labelButtMainText;
         private System.Windows.Forms.PictureBox pictureButtMain;
@@ -1670,5 +1706,17 @@ namespace GiveMePaw
         private System.Windows.Forms.Panel Give_Tab_button;
         private System.Windows.Forms.Label labelButtGiveText;
         private System.Windows.Forms.PictureBox pictureButtGive;
+        private System.Windows.Forms.Label label_dog;
+        private System.Windows.Forms.Panel panel_dog;
+        private System.Windows.Forms.Panel panel_mouse;
+        private System.Windows.Forms.Label label_mouse;
+        private System.Windows.Forms.Panel panel_rabbit;
+        private System.Windows.Forms.Label label_rabbit;
+        private System.Windows.Forms.Panel panel_parrot;
+        private System.Windows.Forms.Label label_parrot;
+        private System.Windows.Forms.Panel panel_cat;
+        private System.Windows.Forms.Label label_cat;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

@@ -23,9 +23,10 @@ namespace GiveMePaw
         // Главная
         private void ForUsers_Load(object sender, EventArgs e)
         {
+
             //Меню слева//
             start_color();
-       
+            /*
             //Для того, чтобы в профиле отображалось имя пользователя//
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
@@ -43,37 +44,19 @@ namespace GiveMePaw
             command_name.Parameters.Add(n2);
             string name = (string)command_name.ExecuteScalar();
             command_name.ExecuteNonQuery();
-
-            account_button.Text = surname + " " + name.Substring(0, 1) + ".";
+            
+            account_button.Text = surname + " " + name.Substring(0, 1) + ".";*/
 
             //////////////////
             give_away_panel.Visible = false;
             pet_panel.Visible = false;
-            many_animal_panel.Visible = false;
+            many_dog_panel.Visible = false;
             info_panel.Visible = false;
             contacts_panel.Visible = false;
             main_panel.Visible = true;
             error_panel.Visible = false;
             lacky_panel.Visible = false;
            
-
-            
-            /*label_dog.Parent = pictureBox_Dog;
-            label_dog.BackColor = Color.Transparent;
-
-            label_cat.Parent = pictureBox_Cat;
-            label_cat.BackColor = Color.Transparent;
-
-            label_parrot.Parent = pictureBox_Parrot;
-            label_parrot.BackColor = Color.Transparent;
-
-            label_rabbit.Parent = pictureBox_Rabbit;
-            label_rabbit.BackColor = Color.Transparent;
-
-            label_mouse.Parent = pictureBox_Mouse;
-            label_mouse.BackColor = Color.Transparent;*/
-
-
 
         }
 
@@ -99,6 +82,15 @@ namespace GiveMePaw
             labelButtMainText.ForeColor = Color.FromArgb(92, 65, 48);
             Main_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
             pictureButtMain.Image = new Bitmap(Properties.Resources.main_Active);
+
+            give_away_panel.Visible = false;
+            pet_panel.Visible = false;
+            many_dog_panel.Visible = false;
+            info_panel.Visible = false;
+            contacts_panel.Visible = false;
+            main_panel.Visible = true;
+            error_panel.Visible = false;
+            lacky_panel.Visible = false;
         }
         private void Give_Tab_button_Click(object sender, EventArgs e)
         {
@@ -106,6 +98,15 @@ namespace GiveMePaw
             labelButtGiveText.ForeColor = Color.FromArgb(92, 65, 48);
             Give_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
             pictureButtGive.Image = new Bitmap(Properties.Resources.give_Active);
+
+            give_away_panel.Visible = true;
+            pet_panel.Visible = false;
+            many_dog_panel.Visible = false;
+            info_panel.Visible = false;
+            contacts_panel.Visible = false;
+            main_panel.Visible = false;
+            error_panel.Visible = false;
+            lacky_panel.Visible = false;
         }
         private void contact_Tab_button_Click(object sender, EventArgs e)
         {
@@ -113,6 +114,15 @@ namespace GiveMePaw
             labelButtContactText.ForeColor = Color.FromArgb(92, 65, 48);
             contact_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
             pictureButtContact.Image = new Bitmap(Properties.Resources.phone_Active);
+
+            give_away_panel.Visible = false;
+            pet_panel.Visible = false;
+            many_dog_panel.Visible = false;
+            info_panel.Visible = false;
+            contacts_panel.Visible = true;
+            main_panel.Visible = false;
+            error_panel.Visible = false;
+            lacky_panel.Visible = false;
         }
         private void info_Tab_button_Click(object sender, EventArgs e)
         {
@@ -120,6 +130,15 @@ namespace GiveMePaw
             labelButInfo.ForeColor = Color.FromArgb(92, 65, 48);
             info_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
             picturePaw.Image = new Bitmap(Properties.Resources.info_Active);
+
+            give_away_panel.Visible = false;
+            pet_panel.Visible = false;
+            many_dog_panel.Visible = false;
+            info_panel.Visible = true;
+            contacts_panel.Visible = false;
+            main_panel.Visible = false;
+            error_panel.Visible = false;
+            lacky_panel.Visible = false;
         }
 
 
@@ -174,6 +193,60 @@ namespace GiveMePaw
             picturePaw.Image = new Bitmap(Properties.Resources.info_Passive);
 
         }
+
+        public string Animal = "";
+
+        private void panel_dog_Click(object sender, EventArgs e)
+        {
+            many_dog_panel.Visible = true;
+            main_panel.Visible = false;
+            label_title_pet.Text = "СОБАКИ";
+            Animal = "dog";
+        }
+
+        private void panel_cat_Click(object sender, EventArgs e)
+        {
+            many_dog_panel.Visible = true;
+            main_panel.Visible = false;
+            label_title_pet.Text = "КОШКИ";
+            Animal = "cat";
+        }
+
+        private void panel_parrot_Click(object sender, EventArgs e)
+        {
+            many_dog_panel.Visible = true;
+            main_panel.Visible = false;
+            label_title_pet.Text = "ПОПУГАИ";
+            Animal = "parrot";
+        }
+
+        private void panel_rabbit_Click(object sender, EventArgs e)
+        {
+            many_dog_panel.Visible = true;
+            main_panel.Visible = false;
+            label_title_pet.Text = "КРОЛИКИ";
+            Animal = "rabbit";
+        }
+
+        private void panel_mouse_Click(object sender, EventArgs e)
+        {
+            many_dog_panel.Visible = true;
+            main_panel.Visible = false;
+            label_title_pet.Text = "МЕЛКИЕ ГРЫЗУНЫ";
+            Animal = "mouse";
+        }
+
+
+
+
+        private void back_button_many_pets_Click(object sender, EventArgs e)
+        {
+            many_dog_panel.Visible = false;
+            main_panel.Visible = true;
+            Animal = "";
+        }
+
+        
 
 
 
