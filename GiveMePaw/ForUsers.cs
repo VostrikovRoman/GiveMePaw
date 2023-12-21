@@ -544,7 +544,7 @@ namespace GiveMePaw
             many_dog_panel.Visible = false;
             main_panel.Visible = true;
             Animal = "";
-
+            num = 0;
         }
 
         private void next_butt_Click(object sender, EventArgs e)
