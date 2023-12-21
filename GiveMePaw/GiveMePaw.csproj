@@ -239,5 +239,14 @@
   <ItemGroup>
     <None Include="Resources\phone_Passive.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\not_image.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\not_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\not_img.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

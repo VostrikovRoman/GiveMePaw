@@ -247,7 +247,7 @@ namespace GiveMePaw
             if (e.ColumnIndex == 1)
             {
                 //Delete
-                if(MessageBox.Show("Вы уверены что хотите удалить жтвотное?", "Информация", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
+                if(MessageBox.Show("Вы уверены что хотите удалить животное?", "Информация", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
                     DB.DeletePet(dataGridViewPet.Rows[e.RowIndex].Cells[2].Value.ToString());
                     Display();
