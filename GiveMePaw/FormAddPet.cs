@@ -17,6 +17,8 @@ namespace GiveMePaw
 
         public string pet_type, name, age, wieght, breed, photo, id;
 
+        
+
         private void FormAddPet_Load(object sender, EventArgs e)
         {
 
@@ -43,7 +45,7 @@ namespace GiveMePaw
         {
             try
             {
-                if (labelButtSavePet.Text == "Сохранить")
+                if (labelButtSavePet.Text == "Добавить")
                 {
                     Pet std = new Pet(Pet_typeTxtbx.Text.Trim(), NameTxtbx.Text.Trim(), AgeTxtbx.Text.Trim(), WeightTxtbx.Text.Trim(), BreedTxtbx.Text.Trim(), PhotoTxtbx.Text.Trim());
                     DB.AddPet(std);

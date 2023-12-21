@@ -26,7 +26,7 @@ namespace GiveMePaw
 
             //Меню слева//
             start_color();
-            /*
+            
             //Для того, чтобы в профиле отображалось имя пользователя//
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
@@ -45,7 +45,7 @@ namespace GiveMePaw
             string name = (string)command_name.ExecuteScalar();
             command_name.ExecuteNonQuery();
             
-            account_button.Text = surname + " " + name.Substring(0, 1) + ".";*/
+            account_button.Text = surname + " " + name.Substring(0, 1) + ".";
 
             //////////////////
             give_away_panel.Visible = false;
@@ -196,44 +196,311 @@ namespace GiveMePaw
 
         public string Animal = "";
 
-        private void panel_dog_Click(object sender, EventArgs e)
+        public Int32 num = 0;
+
+        private void Animal_card(int animal_type, string title_animal, string animal)
         {
             many_dog_panel.Visible = true;
             main_panel.Visible = false;
-            label_title_pet.Text = "СОБАКИ";
-            Animal = "dog";
+            label_title_pet.Text = title_animal;
+            Animal = animal;
+
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            DB db = new DB();
+            db.openConnection();
+
+            MySqlCommand command = new MySqlCommand("SELECT COUNT(pet_type) FROM pets WHERE pet_type = @animal_type ", db.getConnection());
+            MySqlParameter n1 = new MySqlParameter("@animal_type", animal_type);
+            command.Parameters.Add(n1);
+            Int64 count = (Int64)command.ExecuteScalar();
+            command.ExecuteNonQuery();
+
+            MySqlCommand command_give = new MySqlCommand("SELECT id FROM pets WHERE pet_type = @animal_type ", db.getConnection());
+            MySqlParameter n2 = new MySqlParameter("@animal_type", animal_type);
+            command_give.Parameters.Add(n2);
+            MySqlDataReader Reader = command_give.ExecuteReader();
+            Int32[] list = new Int32[count];
+
+            int i = 0;
+
+            if (Reader.HasRows)
+            {
+                while (Reader.Read())
+                {
+                    list[i] = Reader.GetInt32(0);
+                    i += 1;
+                }
+            }
+            Reader.Close();
+
+            if (count > 2 )
+            {
+                card_pet_1.Visible = true;
+                card_pet_2.Visible = true;
+                back_butt.Visible = true;
+                next_butt.Visible = true;
+
+                if (count % 2 == 0)
+                {
+                    if (num < count)
+                    {
+                        card_pet_1.Visible = true;
+                        card_pet_2.Visible = true;
+                        if (num + 2 < count)
+                        {
+                            next_butt.Visible = true;
+                        }
+                        else
+                        {
+                            next_butt.Visible = false;
+                        }
+                        if (num - 1 >= 0)
+                        {
+                            back_butt.Visible = true;
+                        }
+                        else
+                        {
+                            back_butt.Visible = false;
+                        }
+                        MySqlCommand fill_name_1 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
+                        MySqlParameter f_1 = new MySqlParameter("@id", list[num]);
+                        fill_name_1.Parameters.Add(f_1);
+                        name_pet_1.Text = Convert.ToString(fill_name_1.ExecuteScalar());
+                        fill_name_1.ExecuteNonQuery();
+                        MySqlCommand fill_name_2 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
+                        MySqlParameter f_2 = new MySqlParameter("@id", list[num+1]);
+                        fill_name_2.Parameters.Add(f_2);
+                        name_pet_2.Text = Convert.ToString(fill_name_2.ExecuteScalar());
+                        fill_name_2.ExecuteNonQuery();
+
+                        MySqlCommand fill_breed_1 = new MySqlCommand("SELECT breed FROM pets WHERE id = @id ", db.getConnection());
+                        MySqlParameter f_3 = new MySqlParameter("@id", list[num]);
+                        fill_breed_1.Parameters.Add(f_3);
+                        breed_pet_1.Text = Convert.ToString(fill_breed_1.ExecuteScalar());
+                        fill_breed_1.ExecuteNonQuery();
+                        MySqlCommand fill_breed_2 = new MySqlCommand("SELECT breed FROM pets WHERE id = @id ", db.getConnection());
+                        MySqlParameter f_4 = new MySqlParameter("@id", list[num + 1]);
+                        fill_breed_2.Parameters.Add(f_4);
+                        breed_pet_2.Text = Convert.ToString(fill_breed_2.ExecuteScalar());
+                        fill_breed_2.ExecuteNonQuery();
+
+                        MySqlCommand fill_age_1 = new MySqlCommand("SELECT age FROM pets WHERE id = @id ", db.getConnection());
+                        MySqlParameter f_5 = new MySqlParameter("@id", list[num]);
+                        fill_age_1.Parameters.Add(f_5);
+                        age_pet_1.Text = Convert.ToString(fill_age_1.ExecuteScalar());
+                        fill_age_1.ExecuteNonQuery();
+                        MySqlCommand fill_age_2 = new MySqlCommand("SELECT age FROM pets WHERE id = @id ", db.getConnection());
+                        MySqlParameter f_6 = new MySqlParameter("@id", list[num + 1]);
+                        fill_age_2.Parameters.Add(f_6);
+                        age_pet_2.Text = Convert.ToString(fill_age_2.ExecuteScalar());
+                        fill_age_2.ExecuteNonQuery();
+                    }
+                }
+                else
+                {
+                    if (num<count && num + 1 < count)
+                    {
+                        name_pet_1.Text = Convert.ToString(list[num]);
+                        name_pet_2.Text = Convert.ToString(list[num + 1]);
+                        card_pet_1.Visible = true;
+                        card_pet_2.Visible = true;
+                        if (num + 2 < count)
+                        {
+                            next_butt.Visible = true;
+                        }
+                        else
+                        {
+                            next_butt.Visible = false;
+                        }
+                        if (num - 1 >= 0)
+                        {
+                            back_butt.Visible = true;
+                        }
+                        else
+                        {
+                            back_butt.Visible = false;
+                        }
+                    }
+                    else
+                    {
+                        name_pet_1.Text = Convert.ToString(list[num]);
+                        card_pet_1.Visible = true;
+                        card_pet_2.Visible = false;
+                        next_butt.Visible = false;
+                        if (num - 1 >= 0)
+                        {
+                            back_butt.Visible = true;
+                        }
+                        else
+                        {
+                            back_butt.Visible = false;
+                        }
+                    }
+                    MySqlCommand fill_name_1 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
+                    MySqlParameter f_1 = new MySqlParameter("@id", list[num]);
+                    fill_name_1.Parameters.Add(f_1);
+                    name_pet_1.Text = Convert.ToString(fill_name_1.ExecuteScalar());
+                    fill_name_1.ExecuteNonQuery();
+
+                    MySqlCommand fill_breed_1 = new MySqlCommand("SELECT breed FROM pets WHERE id = @id ", db.getConnection());
+                    MySqlParameter f_3 = new MySqlParameter("@id", list[num]);
+                    fill_breed_1.Parameters.Add(f_3);
+                    breed_pet_1.Text = Convert.ToString(fill_breed_1.ExecuteScalar());
+                    fill_breed_1.ExecuteNonQuery();
+
+                    MySqlCommand fill_age_1 = new MySqlCommand("SELECT age FROM pets WHERE id = @id ", db.getConnection());
+                    MySqlParameter f_5 = new MySqlParameter("@id", list[num]);
+                    fill_age_1.Parameters.Add(f_5);
+                    age_pet_1.Text = Convert.ToString(fill_age_1.ExecuteScalar());
+                    fill_age_1.ExecuteNonQuery();
+                }
+            }
+            else if (count == 1)
+            {
+                card_pet_1.Visible = true;
+                card_pet_2.Visible = false;
+                back_butt.Visible = false;
+                next_butt.Visible = false;
+
+                if (num < count)
+                {
+                    name_pet_1.Text = Convert.ToString(list[num]);
+                }
+
+                MySqlCommand fill_name_1 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
+                MySqlParameter f_1 = new MySqlParameter("@id", list[num]);
+                fill_name_1.Parameters.Add(f_1);
+                name_pet_1.Text = Convert.ToString(fill_name_1.ExecuteScalar());
+                fill_name_1.ExecuteNonQuery();
+
+                MySqlCommand fill_breed_1 = new MySqlCommand("SELECT breed FROM pets WHERE id = @id ", db.getConnection());
+                MySqlParameter f_3 = new MySqlParameter("@id", list[num]);
+                fill_breed_1.Parameters.Add(f_3);
+                breed_pet_1.Text = Convert.ToString(fill_breed_1.ExecuteScalar());
+                fill_breed_1.ExecuteNonQuery();
+
+                MySqlCommand fill_age_1 = new MySqlCommand("SELECT age FROM pets WHERE id = @id ", db.getConnection());
+                MySqlParameter f_5 = new MySqlParameter("@id", list[num]);
+                fill_age_1.Parameters.Add(f_5);
+                age_pet_1.Text = Convert.ToString(fill_age_1.ExecuteScalar());
+                fill_age_1.ExecuteNonQuery();
+            }
+            else if (count == 0)
+            {
+                card_pet_1.Visible = false;
+                card_pet_2.Visible = false;
+                back_butt.Visible = false;
+                next_butt.Visible = false;
+                MessageBox.Show("Здесь никого нет :)");
+            }
+            else if (count == 2)
+            {
+                card_pet_1.Visible = true;
+                card_pet_2.Visible = true;
+                back_butt.Visible = false;
+                next_butt.Visible = false;
+                
+                if (num < count)
+                {
+                    name_pet_1.Text = Convert.ToString(list[num]);
+                    name_pet_2.Text = Convert.ToString(list[num+1]);
+                }
+                MySqlCommand fill_name_1 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
+                MySqlParameter f_1 = new MySqlParameter("@id", list[num]);
+                fill_name_1.Parameters.Add(f_1);
+                name_pet_1.Text = Convert.ToString(fill_name_1.ExecuteScalar());
+                fill_name_1.ExecuteNonQuery();
+                MySqlCommand fill_name_2 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
+                MySqlParameter f_2 = new MySqlParameter("@id", list[num + 1]);
+                fill_name_2.Parameters.Add(f_2);
+                name_pet_2.Text = Convert.ToString(fill_name_2.ExecuteScalar());
+                fill_name_2.ExecuteNonQuery();
+
+                MySqlCommand fill_breed_1 = new MySqlCommand("SELECT breed FROM pets WHERE id = @id ", db.getConnection());
+                MySqlParameter f_3 = new MySqlParameter("@id", list[num]);
+                fill_breed_1.Parameters.Add(f_3);
+                breed_pet_1.Text = Convert.ToString(fill_breed_1.ExecuteScalar());
+                fill_breed_1.ExecuteNonQuery();
+                MySqlCommand fill_breed_2 = new MySqlCommand("SELECT breed FROM pets WHERE id = @id ", db.getConnection());
+                MySqlParameter f_4 = new MySqlParameter("@id", list[num + 1]);
+                fill_breed_2.Parameters.Add(f_4);
+                breed_pet_2.Text = Convert.ToString(fill_breed_2.ExecuteScalar());
+                fill_breed_2.ExecuteNonQuery();
+
+                MySqlCommand fill_age_1 = new MySqlCommand("SELECT age FROM pets WHERE id = @id ", db.getConnection());
+                MySqlParameter f_5 = new MySqlParameter("@id", list[num]);
+                fill_age_1.Parameters.Add(f_5);
+                age_pet_1.Text = Convert.ToString(fill_age_1.ExecuteScalar());
+                fill_age_1.ExecuteNonQuery();
+                MySqlCommand fill_age_2 = new MySqlCommand("SELECT age FROM pets WHERE id = @id ", db.getConnection());
+                MySqlParameter f_6 = new MySqlParameter("@id", list[num + 1]);
+                fill_age_2.Parameters.Add(f_6);
+                age_pet_2.Text = Convert.ToString(fill_age_2.ExecuteScalar());
+                fill_age_2.ExecuteNonQuery();
+            }
         }
 
+
+
+
+        private void panel_dog_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Animal_card(1, "СОБАКИ", "dog");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка!"+ex);
+            }
+        }
         private void panel_cat_Click(object sender, EventArgs e)
         {
-            many_dog_panel.Visible = true;
-            main_panel.Visible = false;
-            label_title_pet.Text = "КОШКИ";
-            Animal = "cat";
+            try
+            {
+                Animal_card(2, "КОШКИ", "dog");
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка!");
+            }
         }
 
         private void panel_parrot_Click(object sender, EventArgs e)
         {
-            many_dog_panel.Visible = true;
-            main_panel.Visible = false;
-            label_title_pet.Text = "ПОПУГАИ";
-            Animal = "parrot";
+            try
+            {
+                Animal_card(3, "ПОПУГАИ", "parrot");
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка!");
+            }
         }
 
         private void panel_rabbit_Click(object sender, EventArgs e)
         {
-            many_dog_panel.Visible = true;
-            main_panel.Visible = false;
-            label_title_pet.Text = "КРОЛИКИ";
-            Animal = "rabbit";
+            try
+            {
+                Animal_card(4, "КРОЛИКИ", "rabbit");
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка!");
+            }
         }
 
         private void panel_mouse_Click(object sender, EventArgs e)
         {
-            many_dog_panel.Visible = true;
-            main_panel.Visible = false;
-            label_title_pet.Text = "МЕЛКИЕ ГРЫЗУНЫ";
-            Animal = "mouse";
+            try
+            {
+                Animal_card(5, "КРЫСЫ", "mouse");
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка!");
+            }
         }
 
 
@@ -244,9 +511,138 @@ namespace GiveMePaw
             many_dog_panel.Visible = false;
             main_panel.Visible = true;
             Animal = "";
+
         }
 
-        
+        private void next_butt_Click(object sender, EventArgs e)
+        {
+            if (Animal == "dog")
+            {
+                try
+                {
+                    num += 2;
+                    Animal_card(1, "СОБАКИ", "dog");
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка!");
+                }
+            }
+            else if (Animal == "cat")
+            {
+                try
+                {
+                    num += 2;
+                    Animal_card(2, "КОШКИ", "dog");
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка!");
+                }
+            }
+            else if (Animal == "parrot")
+            {
+                try
+                {
+                    num += 2;
+                    Animal_card(3, "ПОПУГАИ", "parrot");
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка!");
+                }
+            }
+            else if (Animal == "rabbit")
+            {
+                try
+                {
+                    num += 2;
+                    Animal_card(4, "КРОЛИКИ", "rabbit");
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка!");
+                }
+            }
+            else if (Animal == "mouse")
+            {
+                try
+                {
+                    num += 2;
+                    Animal_card(5, "КРЫСЫ", "mouse");
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка!");
+                }
+            }
+        }
+
+        private void back_butt_Click(object sender, EventArgs e)
+        {
+            if (Animal == "dog")
+            {
+                try
+                {
+                    num -= 2;
+                    Animal_card(1, "СОБАКИ", "dog");
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка!");
+                }
+            }
+            else if (Animal == "cat")
+            {
+                try
+                {
+                    num -= 2;
+                    Animal_card(2, "КОШКИ", "dog");
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка!");
+                }
+            }
+            else if (Animal == "parrot")
+            {
+                try
+                {
+                    num -= 2;
+                    Animal_card(3, "ПОПУГАИ", "parrot");
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка!");
+                }
+            }
+            else if (Animal == "rabbit")
+            {
+                try
+                {
+                    num -= 2;
+                    Animal_card(4, "КРОЛИКИ", "rabbit");
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка!");
+                }
+            }
+            else if (Animal == "mouse")
+            {
+                try
+                {
+                    num -= 2;
+                    Animal_card(5, "КРЫСЫ", "mouse");
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка!");
+                }
+            }
+        }
+
+
 
 
 
