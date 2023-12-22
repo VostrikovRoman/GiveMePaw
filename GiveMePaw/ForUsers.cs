@@ -384,6 +384,37 @@ namespace GiveMePaw
                         fill_age_2.Parameters.Add(f_6);
                         age_pet_2.Text = Convert.ToString(fill_age_2.ExecuteScalar());
                         fill_age_2.ExecuteNonQuery();
+
+                        try
+                        {
+                            MySqlCommand fill_photo_1 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
+                            MySqlParameter f_7 = new MySqlParameter("@id", list[num]);
+                            fill_photo_1.Parameters.Add(f_7);
+                            image_pet_1.ImageLocation = Convert.ToString(fill_photo_1.ExecuteScalar());
+                            fill_photo_1.ExecuteNonQuery();
+                        }
+                        catch
+                        {
+                            image_pet_1.ImageLocation = "";
+                            image_pet_2.ImageLocation = "";
+                            image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                            image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
+                        }
+                        try
+                        {
+                            MySqlCommand fill_photo_2 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
+                            MySqlParameter f_8 = new MySqlParameter("@id", list[num + 1]);
+                            fill_photo_2.Parameters.Add(f_8);
+                            image_pet_2.ImageLocation = Convert.ToString(fill_photo_2.ExecuteScalar());
+                            fill_photo_2.ExecuteNonQuery();
+                        }
+                        catch
+                        {
+                            image_pet_1.ImageLocation = "";
+                            image_pet_2.ImageLocation = "";
+                            image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                            image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
+                        }
                     }
                     else if (num < count && num + 1 >= count)
                     {
@@ -416,6 +447,22 @@ namespace GiveMePaw
                         fill_age_1.Parameters.Add(f_5);
                         age_pet_1.Text = Convert.ToString(fill_age_1.ExecuteScalar());
                         fill_age_1.ExecuteNonQuery();
+
+                        try
+                        {
+                            MySqlCommand fill_photo_1 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
+                            MySqlParameter f_7 = new MySqlParameter("@id", list[num]);
+                            fill_photo_1.Parameters.Add(f_7);
+                            image_pet_1.ImageLocation = Convert.ToString(fill_photo_1.ExecuteScalar());
+                            fill_photo_1.ExecuteNonQuery();
+                        }
+                        catch
+                        {
+                            image_pet_1.ImageLocation = "";
+                            image_pet_2.ImageLocation = "";
+                            image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                            image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
+                        }
                     }
                     
                 }
@@ -449,6 +496,22 @@ namespace GiveMePaw
                 fill_age_1.Parameters.Add(f_5);
                 age_pet_1.Text = Convert.ToString(fill_age_1.ExecuteScalar());
                 fill_age_1.ExecuteNonQuery();
+
+                try
+                {
+                    MySqlCommand fill_photo_1 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
+                    MySqlParameter f_7 = new MySqlParameter("@id", list[num]);
+                    fill_photo_1.Parameters.Add(f_7);
+                    image_pet_1.ImageLocation = Convert.ToString(fill_photo_1.ExecuteScalar());
+                    fill_photo_1.ExecuteNonQuery();
+                }
+                catch
+                {
+                    image_pet_1.ImageLocation = "";
+                    image_pet_2.ImageLocation = "";
+                    image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                    image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
+                }
             }
             else if (count == 0)
             {
@@ -502,6 +565,37 @@ namespace GiveMePaw
                 fill_age_2.Parameters.Add(f_6);
                 age_pet_2.Text = Convert.ToString(fill_age_2.ExecuteScalar());
                 fill_age_2.ExecuteNonQuery();
+
+                try
+                {
+                    MySqlCommand fill_photo_1 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
+                    MySqlParameter f_7 = new MySqlParameter("@id", list[num]);
+                    fill_photo_1.Parameters.Add(f_7);
+                    image_pet_1.ImageLocation = Convert.ToString(fill_photo_1.ExecuteScalar());
+                    fill_photo_1.ExecuteNonQuery();
+                }
+                catch
+                {
+                    image_pet_1.ImageLocation = "";
+                    image_pet_2.ImageLocation = "";
+                    image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                    image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
+                }
+                try
+                {
+                    MySqlCommand fill_photo_2 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
+                    MySqlParameter f_8 = new MySqlParameter("@id", list[num + 1]);
+                    fill_photo_2.Parameters.Add(f_8);
+                    image_pet_2.ImageLocation = Convert.ToString(fill_photo_2.ExecuteScalar());
+                    fill_photo_2.ExecuteNonQuery();
+                }
+                catch
+                {
+                    image_pet_1.ImageLocation = "";
+                    image_pet_2.ImageLocation = "";
+                    image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                    image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
+                }
             }
         }
 
