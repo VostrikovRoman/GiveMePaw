@@ -1336,7 +1336,7 @@ namespace GiveMePaw
             // 
             this.image_pet_2.BackColor = System.Drawing.Color.Transparent;
             this.image_pet_2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("image_pet_2.ErrorImage")));
-            this.image_pet_2.Image = ((System.Drawing.Image)(resources.GetObject("image_pet_2.Image")));
+            this.image_pet_2.ImageLocation = "";
             this.image_pet_2.InitialImage = ((System.Drawing.Image)(resources.GetObject("image_pet_2.InitialImage")));
             this.image_pet_2.Location = new System.Drawing.Point(39, 25);
             this.image_pet_2.Name = "image_pet_2";
