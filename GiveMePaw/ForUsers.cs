@@ -194,6 +194,13 @@ namespace GiveMePaw
 
         }
 
+        private void Card()
+        {
+
+        }
+
+
+
         public string Animal = "";
 
         public Int32 num = 0;
@@ -617,7 +624,7 @@ namespace GiveMePaw
         {
             try
             {
-                Animal_card(2, "КОШКИ", "dog");
+                Animal_card(2, "КОШКИ", "cat");
             }
             catch
             {
@@ -695,7 +702,7 @@ namespace GiveMePaw
                 try
                 {
                     num += 2;
-                    Animal_card(2, "КОШКИ", "dog");
+                    Animal_card(2, "КОШКИ", "cat");
                 }
                 catch
                 {
@@ -759,7 +766,7 @@ namespace GiveMePaw
                 try
                 {
                     num -= 2;
-                    Animal_card(2, "КОШКИ", "dog");
+                    Animal_card(2, "КОШКИ", "cat");
                 }
                 catch
                 {
@@ -802,6 +809,32 @@ namespace GiveMePaw
                     MessageBox.Show("Ошибка!");
                 }
             }
+        }
+
+
+        //Нажатие на карточку//
+
+        private void card_pet_1_Click(object sender, EventArgs e)
+        {
+            pet_panel.Visible = true;
+            many_dog_panel.Visible = false;
+        }
+
+        private void card_pet_2_Click(object sender, EventArgs e)
+        {
+            pet_panel.Visible = true;
+            many_dog_panel.Visible = false;
+        }
+
+        private void take_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void back_button_card_Click(object sender, EventArgs e)
+        {
+            pet_panel.Visible = false;
+            many_dog_panel.Visible = true;
         }
 
 

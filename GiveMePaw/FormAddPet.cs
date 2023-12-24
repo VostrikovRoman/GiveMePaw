@@ -47,14 +47,16 @@ namespace GiveMePaw
             {
                 if (labelButtSavePet.Text == "Добавить")
                 {
-                    Pet std = new Pet(Pet_typeTxtbx.Text.Trim(), NameTxtbx.Text.Trim(), AgeTxtbx.Text.Trim(), WeightTxtbx.Text.Trim(), BreedTxtbx.Text.Trim(), PhotoTxtbx.Text.Trim());
+                    int index = Pet_typeTxtbx.SelectedIndex + 1;
+                    Pet std = new Pet(index.ToString().Trim(), NameTxtbx.Text.Trim(), AgeTxtbx.Text.Trim(), WeightTxtbx.Text.Trim(), BreedTxtbx.Text.Trim(), PhotoTxtbx.Text.Trim());
                     DB.AddPet(std);
                     Clear();
                 }
 
                 if (labelButtSavePet.Text == "Изменить")
                 {
-                    Pet std = new Pet(Pet_typeTxtbx.Text.Trim(), NameTxtbx.Text.Trim(), AgeTxtbx.Text.Trim(), WeightTxtbx.Text.Trim(), BreedTxtbx.Text.Trim(), PhotoTxtbx.Text.Trim());
+                    int index = Pet_typeTxtbx.SelectedIndex + 1;
+                    Pet std = new Pet(index.ToString().Trim(), NameTxtbx.Text.Trim(), AgeTxtbx.Text.Trim(), WeightTxtbx.Text.Trim(), BreedTxtbx.Text.Trim(), PhotoTxtbx.Text.Trim());
                     DB.UpdatePet(std, id);
                 }
 

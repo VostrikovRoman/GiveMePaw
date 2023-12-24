@@ -244,7 +244,7 @@ namespace GiveMePaw
                 return;
             }
 
-            if (e.ColumnIndex == 1)
+            else if (e.ColumnIndex == 1)
             {
                 //Delete
                 if(MessageBox.Show("Вы уверены что хотите удалить животное?", "Информация", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)

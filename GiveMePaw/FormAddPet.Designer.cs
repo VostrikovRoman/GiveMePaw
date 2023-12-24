@@ -33,6 +33,7 @@ namespace GiveMePaw
             this.panelHat = new System.Windows.Forms.Panel();
             this.labelTextAddPet = new System.Windows.Forms.Label();
             this.panelAddPet = new System.Windows.Forms.Panel();
+            this.Pet_typeTxtbx = new System.Windows.Forms.ComboBox();
             this.save_button_account = new System.Windows.Forms.Panel();
             this.labelButtSavePet = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -46,7 +47,8 @@ namespace GiveMePaw
             this.WeightTxtbx = new System.Windows.Forms.TextBox();
             this.AgeTxtbx = new System.Windows.Forms.TextBox();
             this.NameTxtbx = new System.Windows.Forms.TextBox();
-            this.Pet_typeTxtbx = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.panelHat.SuspendLayout();
             this.panelAddPet.SuspendLayout();
             this.save_button_account.SuspendLayout();
@@ -78,6 +80,9 @@ namespace GiveMePaw
             // panelAddPet
             // 
             this.panelAddPet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelAddPet.Controls.Add(this.label7);
+            this.panelAddPet.Controls.Add(this.label6);
+            this.panelAddPet.Controls.Add(this.Pet_typeTxtbx);
             this.panelAddPet.Controls.Add(this.save_button_account);
             this.panelAddPet.Controls.Add(this.label5);
             this.panelAddPet.Controls.Add(this.label4);
@@ -90,12 +95,27 @@ namespace GiveMePaw
             this.panelAddPet.Controls.Add(this.WeightTxtbx);
             this.panelAddPet.Controls.Add(this.AgeTxtbx);
             this.panelAddPet.Controls.Add(this.NameTxtbx);
-            this.panelAddPet.Controls.Add(this.Pet_typeTxtbx);
             this.panelAddPet.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelAddPet.Location = new System.Drawing.Point(0, 106);
             this.panelAddPet.Name = "panelAddPet";
             this.panelAddPet.Size = new System.Drawing.Size(584, 439);
             this.panelAddPet.TabIndex = 1;
+            // 
+            // Pet_typeTxtbx
+            // 
+            this.Pet_typeTxtbx.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pet_typeTxtbx.ForeColor = System.Drawing.Color.Gray;
+            this.Pet_typeTxtbx.FormattingEnabled = true;
+            this.Pet_typeTxtbx.Items.AddRange(new object[] {
+            "Собаки",
+            "Кошки",
+            "Попугаи",
+            "Кролики",
+            "Крысы"});
+            this.Pet_typeTxtbx.Location = new System.Drawing.Point(146, 42);
+            this.Pet_typeTxtbx.Name = "Pet_typeTxtbx";
+            this.Pet_typeTxtbx.Size = new System.Drawing.Size(356, 36);
+            this.Pet_typeTxtbx.TabIndex = 46;
             // 
             // save_button_account
             // 
@@ -218,7 +238,7 @@ namespace GiveMePaw
             this.WeightTxtbx.ForeColor = System.Drawing.Color.Gray;
             this.WeightTxtbx.Location = new System.Drawing.Point(146, 199);
             this.WeightTxtbx.Name = "WeightTxtbx";
-            this.WeightTxtbx.Size = new System.Drawing.Size(356, 36);
+            this.WeightTxtbx.Size = new System.Drawing.Size(278, 36);
             this.WeightTxtbx.TabIndex = 1;
             // 
             // AgeTxtbx
@@ -227,7 +247,7 @@ namespace GiveMePaw
             this.AgeTxtbx.ForeColor = System.Drawing.Color.Gray;
             this.AgeTxtbx.Location = new System.Drawing.Point(146, 148);
             this.AgeTxtbx.Name = "AgeTxtbx";
-            this.AgeTxtbx.Size = new System.Drawing.Size(356, 36);
+            this.AgeTxtbx.Size = new System.Drawing.Size(278, 36);
             this.AgeTxtbx.TabIndex = 1;
             // 
             // NameTxtbx
@@ -239,14 +259,31 @@ namespace GiveMePaw
             this.NameTxtbx.Size = new System.Drawing.Size(356, 36);
             this.NameTxtbx.TabIndex = 1;
             // 
-            // Pet_typeTxtbx
+            // label6
             // 
-            this.Pet_typeTxtbx.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pet_typeTxtbx.ForeColor = System.Drawing.Color.Gray;
-            this.Pet_typeTxtbx.Location = new System.Drawing.Point(146, 45);
-            this.Pet_typeTxtbx.Name = "Pet_typeTxtbx";
-            this.Pet_typeTxtbx.Size = new System.Drawing.Size(356, 36);
-            this.Pet_typeTxtbx.TabIndex = 1;
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label6.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(430, 148);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(72, 36);
+            this.label6.TabIndex = 47;
+            this.label6.Text = "мес.";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label7.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(430, 199);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(72, 36);
+            this.label7.TabIndex = 48;
+            this.label7.Text = "г";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormAddPet
             // 
@@ -282,7 +319,6 @@ namespace GiveMePaw
         private System.Windows.Forms.TextBox WeightTxtbx;
         private System.Windows.Forms.TextBox AgeTxtbx;
         private System.Windows.Forms.TextBox NameTxtbx;
-        private System.Windows.Forms.TextBox Pet_typeTxtbx;
         private System.Windows.Forms.Label labelButtPetText;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -291,5 +327,8 @@ namespace GiveMePaw
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel save_button_account;
         private System.Windows.Forms.Label labelButtSavePet;
+        private System.Windows.Forms.ComboBox Pet_typeTxtbx;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
     }
 }
