@@ -102,3 +102,23 @@ C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\bin\Debug\System.Numerics.Vector
 C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\bin\Debug\System.Buffers.dll
 C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\bin\Debug\MySql.Data.xml
 C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.CopyComplete
+D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\bin\Debug\GiveMePaw.exe.config
+D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\bin\Debug\GiveMePaw.exe
+D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\bin\Debug\GiveMePaw.pdb
+D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\bin\Debug\System.Memory.dll
+D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\bin\Debug\System.Numerics.Vectors.dll
+D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\bin\Debug\System.Buffers.dll
+D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\bin\Debug\MySql.Data.xml
+D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.AssemblyReference.cache
+D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.Account.resources
+D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.ForEmployers.resources
+D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.FormAddPet.resources
+D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.ForUsers.resources
+D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.SignIn.resources
+D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.Properties.Resources.resources
+D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.GenerateResource.cache
+D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.CoreCompileInputs.cache
+D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.CopyComplete
+D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.exe
+D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.pdb

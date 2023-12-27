@@ -226,35 +226,62 @@ namespace GiveMePaw
             cancel_button_account.Visible = false;
         }
 
+
+
         private void back_button_account_Click(object sender, EventArgs e)
         {
-            string emailUser = File.ReadAllText("checkSignIn.txt");
-
-            DB db = new DB();
-            DataTable table = new DataTable();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-
-            db.openConnection();
-            MySqlCommand role = new MySqlCommand("SELECT role FROM `users` WHERE `email` = @eU", db.getConnection());
-            MySqlParameter n1 = new MySqlParameter("@eU", emailUser);
-            role.Parameters.Add(n1);
-            string role_id = Convert.ToString(role.ExecuteScalar());
-            role.ExecuteNonQuery();
-            db.closeConnection();
-
-            if (role_id=="1" || role_id == "2")
+            try
             {
-                Account.ActiveForm.Hide();
-                ForEmployers NewForm = new ForEmployers();
-                NewForm.ShowDialog();
-                Close();
+                if (SignIn.Remember == "") 
+                {
+                    string emailUser = File.ReadAllText("checkSignIn.txt");
+
+                    DB db = new DB();
+                    DataTable table = new DataTable();
+                    MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+                    db.openConnection();
+                    MySqlCommand role = new MySqlCommand("SELECT role FROM `users` WHERE `email` = @eU", db.getConnection());
+                    MySqlParameter n1 = new MySqlParameter("@eU", emailUser);
+                    role.Parameters.Add(n1);
+                    string role_id = Convert.ToString(role.ExecuteScalar());
+                    role.ExecuteNonQuery();
+                    db.closeConnection();
+
+                    if (role_id == "1" || role_id == "2")
+                    {
+                        Account.ActiveForm.Hide();
+                        ForEmployers NewForm = new ForEmployers();
+                        NewForm.ShowDialog();
+                        Close();
+                    }
+                    else if (role_id == "3")
+                    {
+                        Account.ActiveForm.Hide();
+                        ForUsers NewForm = new ForUsers();
+                        NewForm.ShowDialog();
+                        Close();
+                    }
+
+                }
+                else if (SignIn.Remember == "a")
+                {
+                    Account.ActiveForm.Hide();
+                    ForEmployers NewForm = new ForEmployers();
+                    NewForm.ShowDialog();
+                    Close();
+                }
+                else if (SignIn.Remember == "p")
+                {
+                    Account.ActiveForm.Hide();
+                    ForUsers NewForm = new ForUsers();
+                    NewForm.ShowDialog();
+                    Close();
+                }
             }
-            else if (role_id == "3")
+            catch
             {
-                Account.ActiveForm.Hide();
-                ForUsers NewForm = new ForUsers();
-                NewForm.ShowDialog();
-                Close();
+                MessageBox.Show("Ошибка!");
             }
 
         }
