@@ -58,7 +58,7 @@ namespace GiveMePaw
             main_panel.Visible = true;
             error_panel.Visible = false;
             lacky_panel.Visible = false;
-           
+            no_animal_panel.Visible = false;
 
         }
 
@@ -93,6 +93,7 @@ namespace GiveMePaw
             main_panel.Visible = true;
             error_panel.Visible = false;
             lacky_panel.Visible = false;
+            no_animal_panel.Visible = false;
         }
         private void Give_Tab_button_Click(object sender, EventArgs e)
         {
@@ -109,6 +110,7 @@ namespace GiveMePaw
             main_panel.Visible = false;
             error_panel.Visible = false;
             lacky_panel.Visible = false;
+            no_animal_panel.Visible = false;
         }
         private void contact_Tab_button_Click(object sender, EventArgs e)
         {
@@ -125,6 +127,7 @@ namespace GiveMePaw
             main_panel.Visible = false;
             error_panel.Visible = false;
             lacky_panel.Visible = false;
+            no_animal_panel.Visible = false;
         }
         private void info_Tab_button_Click(object sender, EventArgs e)
         {
@@ -141,6 +144,7 @@ namespace GiveMePaw
             main_panel.Visible = false;
             error_panel.Visible = false;
             lacky_panel.Visible = false;
+
         }
 
 
@@ -507,6 +511,7 @@ namespace GiveMePaw
                 card_pet_2.Visible = false;
                 back_butt.Visible = false;
                 next_butt.Visible = false;
+                many_dog_panel.Visible = false;
                 no_animal_panel.Visible = true;
             }
             else if (count == 2)

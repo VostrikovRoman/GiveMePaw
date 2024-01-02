@@ -163,7 +163,7 @@ namespace GiveMePaw
 
         private void labelChangeRoleUser_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Вы уверены что хотите назначить этого пользователя                                            пользователем?", "Информация", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            if (MessageBox.Show("Вы уверены что хотите назначить этого пользователя\nпользователем?", "Информация", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
                 DB db = new DB();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();

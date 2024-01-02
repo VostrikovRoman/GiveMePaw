@@ -109,6 +109,7 @@ namespace GiveMePaw
             update_button_account.Visible = false;
             save_button_account.Visible = true;
             cancel_button_account.Visible = true;
+            delete_button_account.Visible = true;
         }
 
         private void cancel_button_account_Click(object sender, EventArgs e)
@@ -180,6 +181,7 @@ namespace GiveMePaw
             update_button_account.Visible = true;
             save_button_account.Visible = false;
             cancel_button_account.Visible = false;
+            delete_button_account.Visible = false;
         }
 
         private void save_button_account_Click(object sender, EventArgs e)
@@ -224,6 +226,7 @@ namespace GiveMePaw
             update_button_account.Visible = true;
             save_button_account.Visible = false;
             cancel_button_account.Visible = false;
+            delete_button_account.Visible = false;
         }
 
 
@@ -302,5 +305,20 @@ namespace GiveMePaw
             }
         }
 
+        private void delete_button_account_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                File.Delete("checkSignIn.txt");
+                Account.ActiveForm.Hide();
+                SignIn NewForm = new SignIn();
+                NewForm.ShowDialog();
+                Close();
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка!");
+            }
+        }
     }
 }
