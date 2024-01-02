@@ -314,7 +314,9 @@ namespace GiveMePaw
                         catch 
                         {
                             image_pet_1.ImageLocation = "";
+                            image_pet_2.ImageLocation = "";
                             image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                            image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
                         }
                         try
                         {
@@ -324,9 +326,11 @@ namespace GiveMePaw
                             image_pet_2.ImageLocation = Convert.ToString(fill_photo_2.ExecuteScalar());
                             fill_photo_2.ExecuteNonQuery();
                         }
-                        catch 
+                        catch
                         {
+                            image_pet_1.ImageLocation = "";
                             image_pet_2.ImageLocation = "";
+                            image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
                             image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
                         }
                     }
@@ -399,7 +403,9 @@ namespace GiveMePaw
                         catch
                         {
                             image_pet_1.ImageLocation = "";
+                            image_pet_2.ImageLocation = "";
                             image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                            image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
                         }
                         try
                         {
@@ -412,7 +418,9 @@ namespace GiveMePaw
                         catch
                         {
                             image_pet_1.ImageLocation = "";
+                            image_pet_2.ImageLocation = "";
                             image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                            image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
                         }
                     }
                     else if (num < count && num + 1 >= count)
@@ -458,7 +466,9 @@ namespace GiveMePaw
                         catch
                         {
                             image_pet_1.ImageLocation = "";
+                            image_pet_2.ImageLocation = "";
                             image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                            image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
                         }
                     }
                     
@@ -505,7 +515,9 @@ namespace GiveMePaw
                 catch
                 {
                     image_pet_1.ImageLocation = "";
+                    image_pet_2.ImageLocation = "";
                     image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                    image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
                 }
             }
             else if (count == 0)
@@ -572,7 +584,9 @@ namespace GiveMePaw
                 catch
                 {
                     image_pet_1.ImageLocation = "";
+                    image_pet_2.ImageLocation = "";
                     image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                    image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
                 }
                 try
                 {
@@ -584,7 +598,9 @@ namespace GiveMePaw
                 }
                 catch
                 {
+                    image_pet_1.ImageLocation = "";
                     image_pet_2.ImageLocation = "";
+                    image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
                     image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
                 }
             }
