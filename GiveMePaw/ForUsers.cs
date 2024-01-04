@@ -659,7 +659,7 @@ namespace GiveMePaw
         {
             many_dog_panel.Visible = false;
             main_panel.Visible = true;
-            Animal = "";
+            Animal = ""; 
             num = 0;
             image_pet_1.ImageLocation = "";
             image_pet_2.ImageLocation = "";
