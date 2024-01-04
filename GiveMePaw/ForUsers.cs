@@ -24,9 +24,15 @@ namespace GiveMePaw
         private void ForUsers_Load(object sender, EventArgs e)
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
        
 >>>>>>> parent of b6674f6 (17.12.23 12:58)
+=======
+            //Меню слева//
+            start_color();
+       
+>>>>>>> parent of 8cdf5d2 (19.12.23 7:18)
             //Для того, чтобы в профиле отображалось имя пользователя//
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
@@ -80,6 +86,7 @@ namespace GiveMePaw
            
 
             
+<<<<<<< HEAD
 >>>>>>> parent of b6674f6 (17.12.23 12:58)
             label_dog.Parent = pictureBox_Dog;
             label_dog.BackColor = Color.Transparent;
@@ -106,6 +113,24 @@ namespace GiveMePaw
 
         private void give_away_Tab_button_Paint(object sender, PaintEventArgs e)
         {
+=======
+            /*label_dog.Parent = pictureBox_Dog;
+            label_dog.BackColor = Color.Transparent;
+
+            label_cat.Parent = pictureBox_Cat;
+            label_cat.BackColor = Color.Transparent;
+
+            label_parrot.Parent = pictureBox_Parrot;
+            label_parrot.BackColor = Color.Transparent;
+
+            label_rabbit.Parent = pictureBox_Rabbit;
+            label_rabbit.BackColor = Color.Transparent;
+
+            label_mouse.Parent = pictureBox_Mouse;
+            label_mouse.BackColor = Color.Transparent;*/
+
+
+>>>>>>> parent of 8cdf5d2 (19.12.23 7:18)
 
         }
 
@@ -125,6 +150,7 @@ namespace GiveMePaw
         // сдать животное
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             give_away_panel.Visible = true;
             pet_panel.Visible = false;
             many_animal_panel.Visible = false;
@@ -137,12 +163,19 @@ namespace GiveMePaw
             give_away_Tab_button.BackColor = Color.FromArgb(164, 123, 81); 
             contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
             info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+=======
+            defoult_color();
+            labelButtMainText.ForeColor = Color.FromArgb(92, 65, 48);
+            Main_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+            pictureButtMain.Image = new Bitmap(Properties.Resources.main_Active);
+>>>>>>> parent of 8cdf5d2 (19.12.23 7:18)
         }
 
 <<<<<<< HEAD
 =======
         private void label3_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             give_away_panel.Visible = true;
             pet_panel.Visible = false;
             many_animal_panel.Visible = false;
@@ -172,6 +205,12 @@ namespace GiveMePaw
             give_away_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
             contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
             info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+=======
+            defoult_color();
+            labelButtGiveText.ForeColor = Color.FromArgb(92, 65, 48);
+            Give_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+            pictureButtGive.Image = new Bitmap(Properties.Resources.give_Active);
+>>>>>>> parent of 8cdf5d2 (19.12.23 7:18)
         }
 
         // контакты
@@ -189,6 +228,7 @@ namespace GiveMePaw
             main_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
             give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48); 
             contact_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+<<<<<<< HEAD
             info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
         }
 
@@ -222,6 +262,9 @@ namespace GiveMePaw
             give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48); 
             contact_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
             info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+=======
+            pictureButtContact.Image = new Bitmap(Properties.Resources.phone_Active);
+>>>>>>> parent of 8cdf5d2 (19.12.23 7:18)
         }
         // инфо
 
@@ -239,6 +282,7 @@ namespace GiveMePaw
             give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48); 
             contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48); 
             info_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+<<<<<<< HEAD
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -255,6 +299,9 @@ namespace GiveMePaw
             give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
             contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
             info_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+=======
+            picturePaw.Image = new Bitmap(Properties.Resources.info_Active);
+>>>>>>> parent of 8cdf5d2 (19.12.23 7:18)
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -305,6 +352,7 @@ namespace GiveMePaw
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             give_away_panel.Visible = false;
@@ -346,6 +394,8 @@ namespace GiveMePaw
 
 
 
+=======
+>>>>>>> parent of 8cdf5d2 (19.12.23 7:18)
 
 =======
         
