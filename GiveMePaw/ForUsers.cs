@@ -23,6 +23,10 @@ namespace GiveMePaw
         // Главная
         private void ForUsers_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
+=======
+       
+>>>>>>> parent of b6674f6 (17.12.23 12:58)
             //Для того, чтобы в профиле отображалось имя пользователя//
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
@@ -44,6 +48,7 @@ namespace GiveMePaw
             account_button.Text = surname + " " + name.Substring(0, 1) + ".";
 
             //////////////////
+<<<<<<< HEAD
 
             main_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
             give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
@@ -58,6 +63,24 @@ namespace GiveMePaw
         private void main_Tab_button_Click(object sender, EventArgs e)
         {
 =======
+=======
+
+            //main_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+            //give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+            give_away_panel.Visible = false;
+            pet_panel.Visible = false;
+            many_animal_panel.Visible = false;
+            info_panel.Visible = false;
+            contacts_panel.Visible = false;
+            main_panel.Visible = true;
+            error_panel.Visible = false;
+            lacky_panel.Visible = false;
+           
+
+            
+>>>>>>> parent of b6674f6 (17.12.23 12:58)
             label_dog.Parent = pictureBox_Dog;
             label_dog.BackColor = Color.Transparent;
 
@@ -70,9 +93,14 @@ namespace GiveMePaw
             label_r.Parent = pictureBox_Rabbit;
             label_r.BackColor = Color.Transparent;
 
+<<<<<<< HEAD
             label_m.Parent = pictureBox_Mouse;
             label_m.BackColor = Color.Transparent;
 >>>>>>> parent of 1f79cf1 (16.12.23 12:56)
+=======
+            label_mouse.Parent = pictureBox_Mouse;
+            label_mouse.BackColor = Color.Transparent;
+>>>>>>> parent of b6674f6 (17.12.23 12:58)
 
         }
 
@@ -231,6 +259,7 @@ namespace GiveMePaw
 
         private void label5_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             give_away_panel.Visible = false;
             pet_panel.Visible = false;
             many_animal_panel.Visible = false;
@@ -260,9 +289,22 @@ namespace GiveMePaw
             main_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
             give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
             contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+=======
+            labelButtMainText.ForeColor = Color.FromArgb(164, 123, 81);
+            Main_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+
+            labelButtGiveText.ForeColor = Color.FromArgb(164, 123, 81);
+            Give_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+
+            labelButtContactText.ForeColor = Color.FromArgb(164, 123, 81);
+            contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+
+            labelButInfo.ForeColor = Color.FromArgb(164, 123, 81);
+>>>>>>> parent of b6674f6 (17.12.23 12:58)
             info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
         }
 
+<<<<<<< HEAD
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             give_away_panel.Visible = false;
@@ -305,6 +347,9 @@ namespace GiveMePaw
 
 
 
+=======
+        
+>>>>>>> parent of b6674f6 (17.12.23 12:58)
 
 
 
