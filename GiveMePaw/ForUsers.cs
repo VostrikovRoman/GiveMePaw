@@ -31,8 +31,12 @@ namespace GiveMePaw
 =======
             //Меню слева//
             start_color();
+<<<<<<< HEAD
        
 >>>>>>> parent of 8cdf5d2 (19.12.23 7:18)
+=======
+            /*
+>>>>>>> parent of 987a097 (21.12.23 16:20)
             //Для того, чтобы в профиле отображалось имя пользователя//
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
@@ -50,8 +54,13 @@ namespace GiveMePaw
             command_name.Parameters.Add(n2);
             string name = (string)command_name.ExecuteScalar();
             command_name.ExecuteNonQuery();
+<<<<<<< HEAD
 
             account_button.Text = surname + " " + name.Substring(0, 1) + ".";
+=======
+            
+            account_button.Text = surname + " " + name.Substring(0, 1) + ".";*/
+>>>>>>> parent of 987a097 (21.12.23 16:20)
 
             //////////////////
 <<<<<<< HEAD
@@ -367,10 +376,59 @@ namespace GiveMePaw
             give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
             contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
             info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+<<<<<<< HEAD
+=======
+
+
+
+            pictureButtMain.Image = new Bitmap(Properties.Resources.main_Active);
+
+            pictureButtGive.Image = new Bitmap(Properties.Resources.give_Passive);
+
+            pictureButtContact.Image = new Bitmap(Properties.Resources.phone_Passive);
+
+            picturePaw.Image = new Bitmap(Properties.Resources.info_Passive);
+
+        }
+
+        public string Animal = "";
+
+        private void panel_dog_Click(object sender, EventArgs e)
+        {
+            many_dog_panel.Visible = true;
+            main_panel.Visible = false;
+            label_title_pet.Text = "СОБАКИ";
+            Animal = "dog";
+        }
+
+        private void panel_cat_Click(object sender, EventArgs e)
+        {
+            many_dog_panel.Visible = true;
+            main_panel.Visible = false;
+            label_title_pet.Text = "КОШКИ";
+            Animal = "cat";
+        }
+
+        private void panel_parrot_Click(object sender, EventArgs e)
+        {
+            many_dog_panel.Visible = true;
+            main_panel.Visible = false;
+            label_title_pet.Text = "ПОПУГАИ";
+            Animal = "parrot";
+        }
+
+        private void panel_rabbit_Click(object sender, EventArgs e)
+        {
+            many_dog_panel.Visible = true;
+            main_panel.Visible = false;
+            label_title_pet.Text = "КРОЛИКИ";
+            Animal = "rabbit";
+>>>>>>> parent of 987a097 (21.12.23 16:20)
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             give_away_panel.Visible = false;
             pet_panel.Visible = false;
             many_animal_panel.Visible = false;
@@ -383,16 +441,33 @@ namespace GiveMePaw
             give_away_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
             contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
             info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+=======
+            many_dog_panel.Visible = true;
+            main_panel.Visible = false;
+            label_title_pet.Text = "МЕЛКИЕ ГРЫЗУНЫ";
+            Animal = "mouse";
+>>>>>>> parent of 987a097 (21.12.23 16:20)
         }
 
         
 
 
 
+<<<<<<< HEAD
 
 
 
 
+=======
+        private void back_button_many_pets_Click(object sender, EventArgs e)
+        {
+            many_dog_panel.Visible = false;
+            main_panel.Visible = true;
+            Animal = "";
+        }
+
+        
+>>>>>>> parent of 987a097 (21.12.23 16:20)
 
 =======
 >>>>>>> parent of 8cdf5d2 (19.12.23 7:18)

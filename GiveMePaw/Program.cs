@@ -20,7 +20,8 @@ namespace GiveMePaw
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            try
+            Application.Run(new ForUsers());
+            /*try
             {
                 if (File.Exists("checkSignIn.txt"))
                 {
@@ -59,7 +60,7 @@ namespace GiveMePaw
             catch
             {
                 MessageBox.Show("Ошибка!");
-            }
+            }*/
         }
     }
 }
