@@ -2775,6 +2775,7 @@ namespace GiveMePaw
             // 
             // labelButtContactText
             // 
+<<<<<<< HEAD
             this.labelButtContactText.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelButtContactText.Font = new System.Drawing.Font("Lucida Sans", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelButtContactText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(164)))), ((int)(((byte)(84)))));
@@ -2783,6 +2784,19 @@ namespace GiveMePaw
             this.labelButtContactText.Size = new System.Drawing.Size(151, 50);
             this.labelButtContactText.TabIndex = 9;
             this.labelButtContactText.Text = "Контактная информация";
+=======
+            this.image_pet_2.BackColor = System.Drawing.Color.Transparent;
+            this.image_pet_2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("image_pet_2.ErrorImage")));
+            this.image_pet_2.Image = ((System.Drawing.Image)(resources.GetObject("image_pet_2.Image")));
+            this.image_pet_2.InitialImage = ((System.Drawing.Image)(resources.GetObject("image_pet_2.InitialImage")));
+            this.image_pet_2.Location = new System.Drawing.Point(39, 25);
+            this.image_pet_2.Name = "image_pet_2";
+            this.image_pet_2.Size = new System.Drawing.Size(220, 220);
+            this.image_pet_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.image_pet_2.TabIndex = 1;
+            this.image_pet_2.TabStop = false;
+            this.image_pet_2.WaitOnLoad = true;
+>>>>>>> parent of a468c21 (22.12.23 23:09)
             // 
             // pictureButtContact
             // 
