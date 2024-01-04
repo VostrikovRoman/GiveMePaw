@@ -698,10 +698,21 @@ namespace GiveMePaw
 
         private void panel_cat_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             many_dog_panel.Visible = true;
             main_panel.Visible = false;
             label_title_pet.Text = "КОШКИ";
             Animal = "cat";
+=======
+            try
+            {
+                Animal_card(2, "КОШКИ", "dog");
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка!");
+            }
+>>>>>>> parent of ef5f80e (24.12.23 16:45)
         }
 
         private void panel_parrot_Click(object sender, EventArgs e)
@@ -749,6 +760,7 @@ namespace GiveMePaw
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -775,6 +787,149 @@ namespace GiveMePaw
 
 =======
 >>>>>>> parent of 8cdf5d2 (19.12.23 7:18)
+=======
+        private void back_button_many_pets_Click(object sender, EventArgs e)
+        {
+            many_dog_panel.Visible = false;
+            main_panel.Visible = true;
+            Animal = "";
+            num = 0;
+            image_pet_1.ImageLocation = "";
+            image_pet_2.ImageLocation = "";
+            image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+            image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
+        }
+
+        private void next_butt_Click(object sender, EventArgs e)
+        {
+            if (Animal == "dog")
+            {
+                try
+                {
+                    num += 2;
+                    Animal_card(1, "СОБАКИ", "dog");
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка!");
+                }
+            }
+            else if (Animal == "cat")
+            {
+                try
+                {
+                    num += 2;
+                    Animal_card(2, "КОШКИ", "dog");
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка!");
+                }
+            }
+            else if (Animal == "parrot")
+            {
+                try
+                {
+                    num += 2;
+                    Animal_card(3, "ПОПУГАИ", "parrot");
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка!");
+                }
+            }
+            else if (Animal == "rabbit")
+            {
+                try
+                {
+                    num += 2;
+                    Animal_card(4, "КРОЛИКИ", "rabbit");
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка!");
+                }
+            }
+            else if (Animal == "mouse")
+            {
+                try
+                {
+                    num += 2;
+                    Animal_card(5, "КРЫСЫ", "mouse");
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка!");
+                }
+            }
+        }
+
+        private void back_butt_Click(object sender, EventArgs e)
+        {
+            if (Animal == "dog")
+            {
+                try
+                {
+                    num -= 2;
+                    Animal_card(1, "СОБАКИ", "dog");
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка!");
+                }
+            }
+            else if (Animal == "cat")
+            {
+                try
+                {
+                    num -= 2;
+                    Animal_card(2, "КОШКИ", "dog");
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка!");
+                }
+            }
+            else if (Animal == "parrot")
+            {
+                try
+                {
+                    num -= 2;
+                    Animal_card(3, "ПОПУГАИ", "parrot");
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка!");
+                }
+            }
+            else if (Animal == "rabbit")
+            {
+                try
+                {
+                    num -= 2;
+                    Animal_card(4, "КРОЛИКИ", "rabbit");
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка!");
+                }
+            }
+            else if (Animal == "mouse")
+            {
+                try
+                {
+                    num -= 2;
+                    Animal_card(5, "КРЫСЫ", "mouse");
+                }
+                catch
+                {
+                    MessageBox.Show("Ошибка!");
+                }
+            }
+        }
+
+
+>>>>>>> parent of ef5f80e (24.12.23 16:45)
 
 =======
         

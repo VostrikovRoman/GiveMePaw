@@ -989,6 +989,7 @@
         pL9+Os/Ue3GSBwAAAIjaHnv8fwnMZ9TBk9z4AAAAAElFTkSuQmCC
 </value>
   </data>
+<<<<<<< HEAD
   <data name="pictureButtPet.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -1077,6 +1078,8 @@
   </metadata>
 =======
 >>>>>>> parent of a42d482 (16.12.23 16:57)
+=======
+>>>>>>> parent of ef5f80e (24.12.23 16:45)
   <data name="pictureBox17.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASwAAAEGCAYAAADfSqglAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -2193,6 +2196,39 @@
     <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin mi id lacus cursus, id varius odio commodo. Morbi imperdiet quam quis tortor dictum, ut interdum risus lobortis. Integer ut purus laoreet, elementum neque quis, vestibulum justo. Praesent non bibendum leo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed finibus sed risus sit amet hendrerit. Vivamus in metus ornare, venenatis mauris id, porta mi. Praesent at ipsum orci.</value>
   </data>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> parent of ef5f80e (24.12.23 16:45)
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Colum5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column7.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column8.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column9.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+<<<<<<< HEAD
+>>>>>>> parent of a42d482 (16.12.23 16:57)
 =======
   <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -2221,7 +2257,34 @@
   <metadata name="Column9.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
->>>>>>> parent of a42d482 (16.12.23 16:57)
+  <data name="pictureButtPet.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EAAACxABrSO9dQAABNdJREFUWEe1l2toHFUUx7diUQQfNaKiYGvVD6Ko2C++sLFK8UXcnbnXxBS1Ug2I
+        oLSoHyqaovhB+qEg1ZKgyWZm7mwomGpbKqWltfngB43WUqVBW/cxj7TxkVoRRW3H/7l7tjTN7sy+/MGw
+        93/mzsy555z72FQrRFFqnu/IJ0MlNvmO2B0omfeVKHiOmPCVORyMdt/OXf9f8sPpSwJHfA4n9uPa4Clz
+        C5w4XnLSy6dcuRTODMBehHNDh0bSHfxY+yFHyIlAiW0TA0vmsznl2aKzqB5ZwDJ1ZEReE2gnzYP0DJvb
+        R8UR3zJHo/7+c9gcS6mcwlGW7aERR6iW8rn0ImrrlNoyjyi9Hyr5Ep5f7avHV6O9hi7Pkn2VvnXRaETQ
+        dwb18jbLlOeat/iOOUwXam2nb4s/KhrXHvTfy13jOe2ILbbXmxp6JoqieSxnETq9C8kZT4kVpVzPVVO5
+        nkW+beb5dm3Ykcm4iASO+cKx0e5bWdaFb8mVFA3MulP4/TbRmenN8kqKiGcZubiI0PoSKOMBlg0RlGfc
+        i4nO6NQk1IivMMJ6QhxDYUTeifo6wHIuWDOe9WzzcFKNwOHvEZlVug3HjrldV+gbdeCPPdUR5IwuOHIE
+        a9FGNs+F8knTkGVVzo6K54p3UAP5wJHdbErtePeh84rKWBw6MoMBrtOzSYmv4cA0vnGynGLRz92ro6ef
+        Yz7Ncg56BuCFgSV62KShwtRriiNO6L3KERGcO4oPfqmnsStfQ/ux0DEWRv2d5/Jj8ZC3mCW7WM5CzzBb
+        HMCH3mOT5gdEIbDNu6gd2GIczg5RX32zFXhKz8CpjaVs93VkC7b2XYCRL4PtO4z84zPXEVpBMfJvKBK4
+        NlD6Jj/supBvt0bJNl+mF+LFWVx/4TqpP6TEIdTKGu6mKVjyWs79etTFFPVDe1b6moZejhf+7jvGHaQj
+        RIRqhPKsO5wB106B0koaz/2DCH2lb7bKr5vlxXVVOCBHzu7b1qjQ9EQ9fMIyFhymxvHh9SzLUdI1Y+7B
+        PRftQRy0XmloR66AdWUJ6mQaxZv4MGbTWqqpymyhQxbSheOn3IWp3Bs65nPQr8Mhm6OVGOnT0HlWrws4
+        a7CpJuUIyONF17yJtGeZD+ODM3BiX7WBTNvyeqywgaeM+9gUT+CKZ5CeH1nGAqf1OYRleRlQ8jaWVUHa
+        XvVt+RnL2hy2MpcjjAXPzjzIpproqNjy76RUcv0MVtLI+l/KgO5Qi/KeIT5lGQtFEFHZxrImpaxxLyL9
+        c2hlbiQ9MdA3n1JJR0xsCcuqFnW0d+X5VCuelVnKplhQK1/AmZp7Vhy0kMLBcVyTSFsY2Mbs/1W088Lb
+        fSxjKareBRhd5G169Go2NQ2y8SZKYwvLMnj5fnjYxTIWvKATI5pg2RKBZaxChHazLFMcydzDzUSwi78x
+        ZzRNAkd2+m5z6dYgpQOhLd5i2TT+WLoDGfkT/z4Xs6lx8Ncihz/5a1k2xVErczNFFyv4VjY1B1bYsaSj
+        aIVfdqy4CPWFY6j4CLPvILYOD9E4hbr7jRZM7wN5KXdtDrzErjcyoSsGqdiR2udRH8s9Zd5wwn3iMr7d
+        OrQN4Di5jmUsnIqWUhoLwpzFR+rafX2n536k9afKdtB2MNKhksrUfXDSx4mscTfLBFKp/wA6rD7wZlfo
+        uAAAAABJRU5ErkJggg==
+</value>
+  </data>
+>>>>>>> parent of ef5f80e (24.12.23 16:45)
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAIABTpAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgGAAAAXHKoZgAAgABJ
