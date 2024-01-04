@@ -426,7 +426,11 @@ namespace GiveMePaw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1008, 614);
+=======
+            this.ClientSize = new System.Drawing.Size(1008, 613);
+>>>>>>> parent of a42d482 (16.12.23 16:57)
             this.Controls.Add(this.SignInDisplay);
             this.Controls.Add(this.SignUpDisplay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
