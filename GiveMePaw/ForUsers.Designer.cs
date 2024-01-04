@@ -32,6 +32,9 @@ namespace GiveMePaw
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForUsers));
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.main_Tab_button = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.back_button_for_users = new System.Windows.Forms.PictureBox();
             this.info_Tab_button = new System.Windows.Forms.Panel();
@@ -43,9 +46,12 @@ namespace GiveMePaw
             this.give_away_Tab_button = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.main_Tab_button = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+=======
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -103,6 +109,7 @@ namespace GiveMePaw
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.Main_panel = new System.Windows.Forms.Panel();
             this.pictureBox_Mouse = new System.Windows.Forms.PictureBox();
             this.pictureBox_Rabbit = new System.Windows.Forms.PictureBox();
@@ -139,7 +146,11 @@ namespace GiveMePaw
             this.label10 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
+=======
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
             this.panel2.SuspendLayout();
+            this.main_Tab_button.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.back_button_for_users)).BeginInit();
             this.info_Tab_button.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -147,8 +158,11 @@ namespace GiveMePaw
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.give_away_Tab_button.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+<<<<<<< HEAD
             this.main_Tab_button.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+=======
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -166,6 +180,7 @@ namespace GiveMePaw
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+<<<<<<< HEAD
             this.Main_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Mouse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Rabbit)).BeginInit();
@@ -179,6 +194,8 @@ namespace GiveMePaw
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+=======
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
             this.SuspendLayout();
             // 
             // label6
@@ -195,18 +212,62 @@ namespace GiveMePaw
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+<<<<<<< HEAD
+=======
+            this.panel2.Controls.Add(this.main_Tab_button);
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.back_button_for_users);
             this.panel2.Controls.Add(this.info_Tab_button);
             this.panel2.Controls.Add(this.contact_Tab_button);
             this.panel2.Controls.Add(this.give_away_Tab_button);
+<<<<<<< HEAD
             this.panel2.Controls.Add(this.main_Tab_button);
+=======
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(239, 652);
             this.panel2.TabIndex = 4;
+            // 
+            // main_Tab_button
+            // 
+            this.main_Tab_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.main_Tab_button.Controls.Add(this.label2);
+            this.main_Tab_button.Controls.Add(this.pictureBox3);
+            this.main_Tab_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.main_Tab_button.Enabled = false;
+            this.main_Tab_button.Location = new System.Drawing.Point(0, 132);
+            this.main_Tab_button.Name = "main_Tab_button";
+            this.main_Tab_button.Size = new System.Drawing.Size(239, 60);
+            this.main_Tab_button.TabIndex = 5;
+            this.main_Tab_button.Click += new System.EventHandler(this.main_Tab_button_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(123)))), ((int)(((byte)(81)))));
+            this.label2.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(44)))), ((int)(((byte)(4)))));
+            this.label2.Location = new System.Drawing.Point(74, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 27);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Главная";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(12, 10);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(55, 43);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 6;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // label9
             // 
@@ -243,6 +304,10 @@ namespace GiveMePaw
             this.info_Tab_button.Name = "info_Tab_button";
             this.info_Tab_button.Size = new System.Drawing.Size(239, 60);
             this.info_Tab_button.TabIndex = 7;
+<<<<<<< HEAD
+=======
+            this.info_Tab_button.Click += new System.EventHandler(this.info_Tab_button_Click);
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
             // 
             // label5
             // 
@@ -255,6 +320,10 @@ namespace GiveMePaw
             this.label5.Size = new System.Drawing.Size(152, 27);
             this.label5.TabIndex = 10;
             this.label5.Text = "Информация";
+<<<<<<< HEAD
+=======
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
             // 
             // pictureBox6
             // 
@@ -265,6 +334,10 @@ namespace GiveMePaw
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 9;
             this.pictureBox6.TabStop = false;
+<<<<<<< HEAD
+=======
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
             // 
             // contact_Tab_button
             // 
@@ -276,6 +349,10 @@ namespace GiveMePaw
             this.contact_Tab_button.Name = "contact_Tab_button";
             this.contact_Tab_button.Size = new System.Drawing.Size(239, 60);
             this.contact_Tab_button.TabIndex = 6;
+<<<<<<< HEAD
+=======
+            this.contact_Tab_button.Click += new System.EventHandler(this.contact_Tab_button_Click);
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
             // 
             // label4
             // 
@@ -287,6 +364,10 @@ namespace GiveMePaw
             this.label4.Size = new System.Drawing.Size(116, 27);
             this.label4.TabIndex = 9;
             this.label4.Text = "Контакты";
+<<<<<<< HEAD
+=======
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
             // 
             // pictureBox5
             // 
@@ -297,6 +378,10 @@ namespace GiveMePaw
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 8;
             this.pictureBox5.TabStop = false;
+<<<<<<< HEAD
+=======
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
             // 
             // give_away_Tab_button
             // 
@@ -308,7 +393,11 @@ namespace GiveMePaw
             this.give_away_Tab_button.Name = "give_away_Tab_button";
             this.give_away_Tab_button.Size = new System.Drawing.Size(239, 60);
             this.give_away_Tab_button.TabIndex = 6;
+<<<<<<< HEAD
             this.give_away_Tab_button.Paint += new System.Windows.Forms.PaintEventHandler(this.give_away_Tab_button_Paint);
+=======
+            this.give_away_Tab_button.Click += new System.EventHandler(this.give_away_Tab_button_Click);
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
             // 
             // label3
             // 
@@ -319,6 +408,10 @@ namespace GiveMePaw
             this.label3.Size = new System.Drawing.Size(150, 56);
             this.label3.TabIndex = 8;
             this.label3.Text = "Сдать животное";
+<<<<<<< HEAD
+=======
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
             // 
             // pictureBox4
             // 
@@ -329,6 +422,7 @@ namespace GiveMePaw
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
+<<<<<<< HEAD
             // 
             // main_Tab_button
             // 
@@ -364,6 +458,9 @@ namespace GiveMePaw
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
+=======
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
             // 
             // label1
             // 
@@ -429,7 +526,35 @@ namespace GiveMePaw
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
+<<<<<<< HEAD
             // give_away_panel
+=======
+            // main_panel
+            // 
+            this.main_panel.Controls.Add(this.label_dog);
+            this.main_panel.Controls.Add(this.pictureBox_Mouse);
+            this.main_panel.Controls.Add(this.pictureBox_Rabbit);
+            this.main_panel.Controls.Add(this.pictureBox_Parrot);
+            this.main_panel.Controls.Add(this.pictureBox_Cat);
+            this.main_panel.Controls.Add(this.pictureBox_Dog);
+            this.main_panel.Controls.Add(this.label6);
+            this.main_panel.Location = new System.Drawing.Point(245, 101);
+            this.main_panel.Name = "main_panel";
+            this.main_panel.Size = new System.Drawing.Size(751, 514);
+            this.main_panel.TabIndex = 7;
+            // 
+            // label_dog
+            // 
+            this.label_dog.AutoSize = true;
+            this.label_dog.BackColor = System.Drawing.Color.Transparent;
+            this.label_dog.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_dog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(164)))), ((int)(((byte)(84)))));
+            this.label_dog.Location = new System.Drawing.Point(57, 173);
+            this.label_dog.Name = "label_dog";
+            this.label_dog.Size = new System.Drawing.Size(129, 37);
+            this.label_dog.TabIndex = 9;
+            this.label_dog.Text = "Собаки";
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
             // 
             this.give_away_panel.Controls.Add(this.panel9);
             this.give_away_panel.Controls.Add(this.panel8);
@@ -1371,6 +1496,7 @@ namespace GiveMePaw
             // 
             // label10
             // 
+<<<<<<< HEAD
             this.label10.Font = new System.Drawing.Font("Lucida Sans", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(56, 98);
             this.label10.Name = "label10";
@@ -1397,6 +1523,8 @@ namespace GiveMePaw
             this.label61.Text = "Спасибо за заявку! Скоро мы с вами свяжемся.";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+=======
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
             // ForUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1413,6 +1541,9 @@ namespace GiveMePaw
             this.Load += new System.EventHandler(this.ForUsers_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.main_Tab_button.ResumeLayout(false);
+            this.main_Tab_button.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.back_button_for_users)).EndInit();
             this.info_Tab_button.ResumeLayout(false);
             this.info_Tab_button.PerformLayout();
@@ -1422,9 +1553,12 @@ namespace GiveMePaw
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.give_away_Tab_button.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+<<<<<<< HEAD
             this.main_Tab_button.ResumeLayout(false);
             this.main_Tab_button.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+=======
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -1452,6 +1586,7 @@ namespace GiveMePaw
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+<<<<<<< HEAD
             this.Main_panel.ResumeLayout(false);
             this.Main_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Mouse)).EndInit();
@@ -1470,6 +1605,8 @@ namespace GiveMePaw
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+=======
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
             this.ResumeLayout(false);
 
         }
@@ -1495,7 +1632,11 @@ namespace GiveMePaw
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+<<<<<<< HEAD
         private System.Windows.Forms.Panel Main_panel;
+=======
+        private System.Windows.Forms.Panel main_panel;
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel second_panel;
         private System.Windows.Forms.Label label9;
@@ -1584,6 +1725,11 @@ namespace GiveMePaw
         private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label61;
+<<<<<<< HEAD
         private System.Windows.Forms.Label label10;
+=======
+        private System.Windows.Forms.Label jhhjk;
+        private System.Windows.Forms.Label label_dog;
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
     }
 }

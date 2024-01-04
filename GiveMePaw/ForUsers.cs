@@ -50,12 +50,29 @@ namespace GiveMePaw
             contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
             info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
 
+<<<<<<< HEAD
 
 
         }
 
         private void main_Tab_button_Click(object sender, EventArgs e)
         {
+=======
+            label_dog.Parent = pictureBox_Dog;
+            label_dog.BackColor = Color.Transparent;
+
+            label_c.Parent = pictureBox_Cat;
+            label_c.BackColor = Color.Transparent;
+
+            label_p.Parent = pictureBox_Parrot;
+            label_p.BackColor = Color.Transparent;
+
+            label_r.Parent = pictureBox_Rabbit;
+            label_r.BackColor = Color.Transparent;
+
+            label_m.Parent = pictureBox_Mouse;
+            label_m.BackColor = Color.Transparent;
+>>>>>>> parent of 1f79cf1 (16.12.23 12:56)
 
         }
 
