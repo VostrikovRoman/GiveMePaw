@@ -704,6 +704,10 @@ namespace GiveMePaw
             many_dog_panel.Visible = false;
             main_panel.Visible = true;
             Animal = "";
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of bf2d95b (21.12.23 20:31)
         }
 
         
