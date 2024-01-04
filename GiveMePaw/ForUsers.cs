@@ -494,6 +494,41 @@ namespace GiveMePaw
                         fill_age_2.Parameters.Add(f_6);
                         age_pet_2.Text = Convert.ToString(fill_age_2.ExecuteScalar());
                         fill_age_2.ExecuteNonQuery();
+<<<<<<< HEAD
+=======
+
+                        
+                        try
+                        {
+                            MySqlCommand fill_photo_1 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
+                            MySqlParameter f_7 = new MySqlParameter("@id", list[num]);
+                            fill_photo_1.Parameters.Add(f_7);
+                            image_pet_1.ImageLocation = Convert.ToString(fill_photo_1.ExecuteScalar());
+                            fill_photo_1.ExecuteNonQuery();
+                        }
+                        catch 
+                        {
+                            image_pet_1.ImageLocation = "";
+                            image_pet_2.ImageLocation = "";
+                            image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                            image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
+                        }
+                        try
+                        {
+                            MySqlCommand fill_photo_2 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
+                            MySqlParameter f_8 = new MySqlParameter("@id", list[num + 1]);
+                            fill_photo_2.Parameters.Add(f_8);
+                            image_pet_2.ImageLocation = Convert.ToString(fill_photo_2.ExecuteScalar());
+                            fill_photo_2.ExecuteNonQuery();
+                        }
+                        catch
+                        {
+                            image_pet_1.ImageLocation = "";
+                            image_pet_2.ImageLocation = "";
+                            image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                            image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
+                        }
+>>>>>>> parent of 22027f0 (28.12.23 14:40)
                     }
                 }
                 else
@@ -554,7 +589,41 @@ namespace GiveMePaw
                         fill_age_2.Parameters.Add(f_6);
                         age_pet_2.Text = Convert.ToString(fill_age_2.ExecuteScalar());
                         fill_age_2.ExecuteNonQuery();
+<<<<<<< HEAD
 >>>>>>> parent of 48825d5 (22.12.23 7:25)
+=======
+
+                        try
+                        {
+                            MySqlCommand fill_photo_1 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
+                            MySqlParameter f_7 = new MySqlParameter("@id", list[num]);
+                            fill_photo_1.Parameters.Add(f_7);
+                            image_pet_1.ImageLocation = Convert.ToString(fill_photo_1.ExecuteScalar());
+                            fill_photo_1.ExecuteNonQuery();
+                        }
+                        catch
+                        {
+                            image_pet_1.ImageLocation = "";
+                            image_pet_2.ImageLocation = "";
+                            image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                            image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
+                        }
+                        try
+                        {
+                            MySqlCommand fill_photo_2 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
+                            MySqlParameter f_8 = new MySqlParameter("@id", list[num + 1]);
+                            fill_photo_2.Parameters.Add(f_8);
+                            image_pet_2.ImageLocation = Convert.ToString(fill_photo_2.ExecuteScalar());
+                            fill_photo_2.ExecuteNonQuery();
+                        }
+                        catch
+                        {
+                            image_pet_1.ImageLocation = "";
+                            image_pet_2.ImageLocation = "";
+                            image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                            image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
+                        }
+>>>>>>> parent of 22027f0 (28.12.23 14:40)
                     }
                     else
                     {
@@ -589,7 +658,26 @@ namespace GiveMePaw
                         fill_age_1.Parameters.Add(f_5);
                         age_pet_1.Text = Convert.ToString(fill_age_1.ExecuteScalar());
                         fill_age_1.ExecuteNonQuery();
+<<<<<<< HEAD
 >>>>>>> parent of 48825d5 (22.12.23 7:25)
+=======
+
+                        try
+                        {
+                            MySqlCommand fill_photo_1 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
+                            MySqlParameter f_7 = new MySqlParameter("@id", list[num]);
+                            fill_photo_1.Parameters.Add(f_7);
+                            image_pet_1.ImageLocation = Convert.ToString(fill_photo_1.ExecuteScalar());
+                            fill_photo_1.ExecuteNonQuery();
+                        }
+                        catch
+                        {
+                            image_pet_1.ImageLocation = "";
+                            image_pet_2.ImageLocation = "";
+                            image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                            image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
+                        }
+>>>>>>> parent of 22027f0 (28.12.23 14:40)
                     }
                     MySqlCommand fill_name_1 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
                     MySqlParameter f_1 = new MySqlParameter("@id", list[num]);
@@ -639,6 +727,25 @@ namespace GiveMePaw
                 fill_age_1.Parameters.Add(f_5);
                 age_pet_1.Text = Convert.ToString(fill_age_1.ExecuteScalar());
                 fill_age_1.ExecuteNonQuery();
+<<<<<<< HEAD
+=======
+
+                try
+                {
+                    MySqlCommand fill_photo_1 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
+                    MySqlParameter f_7 = new MySqlParameter("@id", list[num]);
+                    fill_photo_1.Parameters.Add(f_7);
+                    image_pet_1.ImageLocation = Convert.ToString(fill_photo_1.ExecuteScalar());
+                    fill_photo_1.ExecuteNonQuery();
+                }
+                catch
+                {
+                    image_pet_1.ImageLocation = "";
+                    image_pet_2.ImageLocation = "";
+                    image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                    image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
+                }
+>>>>>>> parent of 22027f0 (28.12.23 14:40)
             }
             else if (count == 0)
             {
@@ -692,6 +799,40 @@ namespace GiveMePaw
                 fill_age_2.Parameters.Add(f_6);
                 age_pet_2.Text = Convert.ToString(fill_age_2.ExecuteScalar());
                 fill_age_2.ExecuteNonQuery();
+<<<<<<< HEAD
+=======
+
+                try
+                {
+                    MySqlCommand fill_photo_1 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
+                    MySqlParameter f_7 = new MySqlParameter("@id", list[num]);
+                    fill_photo_1.Parameters.Add(f_7);
+                    image_pet_1.ImageLocation = Convert.ToString(fill_photo_1.ExecuteScalar());
+                    fill_photo_1.ExecuteNonQuery();
+                }
+                catch
+                {
+                    image_pet_1.ImageLocation = "";
+                    image_pet_2.ImageLocation = "";
+                    image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                    image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
+                }
+                try
+                {
+                    MySqlCommand fill_photo_2 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
+                    MySqlParameter f_8 = new MySqlParameter("@id", list[num + 1]);
+                    fill_photo_2.Parameters.Add(f_8);
+                    image_pet_2.ImageLocation = Convert.ToString(fill_photo_2.ExecuteScalar());
+                    fill_photo_2.ExecuteNonQuery();
+                }
+                catch
+                {
+                    image_pet_1.ImageLocation = "";
+                    image_pet_2.ImageLocation = "";
+                    image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                    image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
+                }
+>>>>>>> parent of 22027f0 (28.12.23 14:40)
             }
 >>>>>>> parent of 16dfda5 (21.12.23 20:00)
         }
