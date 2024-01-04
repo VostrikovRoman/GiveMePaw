@@ -84,4 +84,27 @@ C:\Users\женя\source\repos\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.Co
 C:\Users\женя\source\repos\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.CopyComplete
 C:\Users\женя\source\repos\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.exe
 C:\Users\женя\source\repos\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.pdb
+<<<<<<< HEAD
 >>>>>>> parent of 1f79cf1 (16.12.23 12:56)
+=======
+C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.AssemblyReference.cache
+C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.Account.resources
+C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.ForEmployers.resources
+C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.FormAddPet.resources
+C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.ForUsers.resources
+C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.SignIn.resources
+C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.Properties.Resources.resources
+C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.GenerateResource.cache
+C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.CoreCompileInputs.cache
+C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.exe
+C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.pdb
+C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\bin\Debug\GiveMePaw.exe.config
+C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\bin\Debug\GiveMePaw.exe
+C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\bin\Debug\GiveMePaw.pdb
+C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\bin\Debug\System.Memory.dll
+C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\bin\Debug\System.Buffers.dll
+C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\bin\Debug\MySql.Data.xml
+C:\Users\Админ\Desktop\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.csproj.CopyComplete
+>>>>>>> parent of f11cbc0 (27.12.23 15:04)
