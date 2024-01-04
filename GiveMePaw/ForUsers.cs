@@ -391,6 +391,16 @@ namespace GiveMePaw
 
         }
 
+<<<<<<< HEAD
+=======
+        private void Card()
+        {
+
+        }
+
+
+
+>>>>>>> parent of 1178962 (03.01.24)
         public string Animal = "";
 
         private void panel_dog_Click(object sender, EventArgs e)
@@ -495,7 +505,10 @@ namespace GiveMePaw
                         age_pet_2.Text = Convert.ToString(fill_age_2.ExecuteScalar());
                         fill_age_2.ExecuteNonQuery();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 1178962 (03.01.24)
 
                         
                         try
@@ -521,14 +534,17 @@ namespace GiveMePaw
                             image_pet_2.ImageLocation = Convert.ToString(fill_photo_2.ExecuteScalar());
                             fill_photo_2.ExecuteNonQuery();
                         }
-                        catch
+                        catch 
                         {
                             image_pet_1.ImageLocation = "";
                             image_pet_2.ImageLocation = "";
                             image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
                             image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
                         }
+<<<<<<< HEAD
 >>>>>>> parent of 22027f0 (28.12.23 14:40)
+=======
+>>>>>>> parent of 1178962 (03.01.24)
                     }
                 }
                 else
@@ -556,7 +572,10 @@ namespace GiveMePaw
                             back_butt.Visible = false;
                         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 1178962 (03.01.24)
                         MySqlCommand fill_name_1 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
                         MySqlParameter f_1 = new MySqlParameter("@id", list[num]);
                         fill_name_1.Parameters.Add(f_1);
@@ -590,8 +609,11 @@ namespace GiveMePaw
                         age_pet_2.Text = Convert.ToString(fill_age_2.ExecuteScalar());
                         fill_age_2.ExecuteNonQuery();
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 48825d5 (22.12.23 7:25)
 =======
+=======
+>>>>>>> parent of 1178962 (03.01.24)
 
                         try
                         {
@@ -619,9 +641,13 @@ namespace GiveMePaw
                         catch
                         {
                             image_pet_1.ImageLocation = "";
+<<<<<<< HEAD
                             image_pet_2.ImageLocation = "";
                             image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
                             image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
+=======
+                            image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+>>>>>>> parent of 1178962 (03.01.24)
                         }
 >>>>>>> parent of 22027f0 (28.12.23 14:40)
                     }
@@ -640,7 +666,10 @@ namespace GiveMePaw
                             back_butt.Visible = false;
                         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 1178962 (03.01.24)
                         MySqlCommand fill_name_1 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
                         MySqlParameter f_1 = new MySqlParameter("@id", list[num]);
                         fill_name_1.Parameters.Add(f_1);
@@ -659,8 +688,11 @@ namespace GiveMePaw
                         age_pet_1.Text = Convert.ToString(fill_age_1.ExecuteScalar());
                         fill_age_1.ExecuteNonQuery();
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 48825d5 (22.12.23 7:25)
 =======
+=======
+>>>>>>> parent of 1178962 (03.01.24)
 
                         try
                         {
@@ -728,7 +760,10 @@ namespace GiveMePaw
                 age_pet_1.Text = Convert.ToString(fill_age_1.ExecuteScalar());
                 fill_age_1.ExecuteNonQuery();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 1178962 (03.01.24)
 
                 try
                 {
@@ -800,7 +835,10 @@ namespace GiveMePaw
                 age_pet_2.Text = Convert.ToString(fill_age_2.ExecuteScalar());
                 fill_age_2.ExecuteNonQuery();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 1178962 (03.01.24)
 
                 try
                 {
@@ -837,6 +875,23 @@ namespace GiveMePaw
 >>>>>>> parent of 16dfda5 (21.12.23 20:00)
         }
 
+<<<<<<< HEAD
+=======
+
+
+
+        private void panel_dog_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Animal_card(1, "СОБАКИ", "dog");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка!"+ex);
+            }
+        }
+>>>>>>> parent of 1178962 (03.01.24)
         private void panel_cat_Click(object sender, EventArgs e)
         {
 <<<<<<< HEAD
@@ -902,6 +957,7 @@ namespace GiveMePaw
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -929,6 +985,9 @@ namespace GiveMePaw
 =======
 >>>>>>> parent of 8cdf5d2 (19.12.23 7:18)
 =======
+=======
+
+>>>>>>> parent of 1178962 (03.01.24)
         private void back_button_many_pets_Click(object sender, EventArgs e)
         {
             many_dog_panel.Visible = false;
@@ -1069,6 +1128,40 @@ namespace GiveMePaw
             }
         }
 
+<<<<<<< HEAD
+=======
+
+        //Нажатие на карточку//
+
+        private void card_pet_1_Click(object sender, EventArgs e)
+        {
+            pet_panel.Visible = true;
+            many_dog_panel.Visible = false;
+        }
+
+        private void card_pet_2_Click(object sender, EventArgs e)
+        {
+            pet_panel.Visible = true;
+            many_dog_panel.Visible = false;
+        }
+
+        private void take_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void back_button_card_Click(object sender, EventArgs e)
+        {
+            pet_panel.Visible = false;
+            many_dog_panel.Visible = true;
+        }
+
+
+
+
+
+
+>>>>>>> parent of 1178962 (03.01.24)
 
 >>>>>>> parent of ef5f80e (24.12.23 16:45)
 
@@ -1077,11 +1170,14 @@ namespace GiveMePaw
 >>>>>>> parent of b6674f6 (17.12.23 12:58)
 
 
+<<<<<<< HEAD
 
 >>>>>>> parent of a42d482 (16.12.23 16:57)
 
 
 
+=======
+>>>>>>> parent of 1178962 (03.01.24)
         // panel.Visible = true;
         // название панели.Visible = true
     }
