@@ -520,6 +520,41 @@ namespace GiveMePaw
                         {
                             back_butt.Visible = false;
                         }
+<<<<<<< HEAD
+=======
+                        MySqlCommand fill_name_1 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
+                        MySqlParameter f_1 = new MySqlParameter("@id", list[num]);
+                        fill_name_1.Parameters.Add(f_1);
+                        name_pet_1.Text = Convert.ToString(fill_name_1.ExecuteScalar());
+                        fill_name_1.ExecuteNonQuery();
+                        MySqlCommand fill_name_2 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
+                        MySqlParameter f_2 = new MySqlParameter("@id", list[num + 1]);
+                        fill_name_2.Parameters.Add(f_2);
+                        name_pet_2.Text = Convert.ToString(fill_name_2.ExecuteScalar());
+                        fill_name_2.ExecuteNonQuery();
+
+                        MySqlCommand fill_breed_1 = new MySqlCommand("SELECT breed FROM pets WHERE id = @id ", db.getConnection());
+                        MySqlParameter f_3 = new MySqlParameter("@id", list[num]);
+                        fill_breed_1.Parameters.Add(f_3);
+                        breed_pet_1.Text = Convert.ToString(fill_breed_1.ExecuteScalar());
+                        fill_breed_1.ExecuteNonQuery();
+                        MySqlCommand fill_breed_2 = new MySqlCommand("SELECT breed FROM pets WHERE id = @id ", db.getConnection());
+                        MySqlParameter f_4 = new MySqlParameter("@id", list[num + 1]);
+                        fill_breed_2.Parameters.Add(f_4);
+                        breed_pet_2.Text = Convert.ToString(fill_breed_2.ExecuteScalar());
+                        fill_breed_2.ExecuteNonQuery();
+
+                        MySqlCommand fill_age_1 = new MySqlCommand("SELECT age FROM pets WHERE id = @id ", db.getConnection());
+                        MySqlParameter f_5 = new MySqlParameter("@id", list[num]);
+                        fill_age_1.Parameters.Add(f_5);
+                        age_pet_1.Text = Convert.ToString(fill_age_1.ExecuteScalar());
+                        fill_age_1.ExecuteNonQuery();
+                        MySqlCommand fill_age_2 = new MySqlCommand("SELECT age FROM pets WHERE id = @id ", db.getConnection());
+                        MySqlParameter f_6 = new MySqlParameter("@id", list[num + 1]);
+                        fill_age_2.Parameters.Add(f_6);
+                        age_pet_2.Text = Convert.ToString(fill_age_2.ExecuteScalar());
+                        fill_age_2.ExecuteNonQuery();
+>>>>>>> parent of 48825d5 (22.12.23 7:25)
                     }
                     else
                     {
@@ -535,6 +570,26 @@ namespace GiveMePaw
                         {
                             back_butt.Visible = false;
                         }
+<<<<<<< HEAD
+=======
+                        MySqlCommand fill_name_1 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
+                        MySqlParameter f_1 = new MySqlParameter("@id", list[num]);
+                        fill_name_1.Parameters.Add(f_1);
+                        name_pet_1.Text = Convert.ToString(fill_name_1.ExecuteScalar());
+                        fill_name_1.ExecuteNonQuery();
+
+                        MySqlCommand fill_breed_1 = new MySqlCommand("SELECT breed FROM pets WHERE id = @id ", db.getConnection());
+                        MySqlParameter f_3 = new MySqlParameter("@id", list[num]);
+                        fill_breed_1.Parameters.Add(f_3);
+                        breed_pet_1.Text = Convert.ToString(fill_breed_1.ExecuteScalar());
+                        fill_breed_1.ExecuteNonQuery();
+
+                        MySqlCommand fill_age_1 = new MySqlCommand("SELECT age FROM pets WHERE id = @id ", db.getConnection());
+                        MySqlParameter f_5 = new MySqlParameter("@id", list[num]);
+                        fill_age_1.Parameters.Add(f_5);
+                        age_pet_1.Text = Convert.ToString(fill_age_1.ExecuteScalar());
+                        fill_age_1.ExecuteNonQuery();
+>>>>>>> parent of 48825d5 (22.12.23 7:25)
                     }
                     MySqlCommand fill_name_1 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
                     MySqlParameter f_1 = new MySqlParameter("@id", list[num]);
