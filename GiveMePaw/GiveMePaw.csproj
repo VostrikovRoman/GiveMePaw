@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -63,11 +78,23 @@
     <Compile Include="ForEmployers.Designer.cs">
       <DependentUpon>ForEmployers.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAddPet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddPet.Designer.cs">
+      <DependentUpon>FormAddPet.cs</DependentUpon>
+    </Compile>
     <Compile Include="ForUsers.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ForUsers.Designer.cs">
       <DependentUpon>ForUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pet.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="SignIn.cs">
       <SubType>Form</SubType>
@@ -83,6 +110,9 @@
     <EmbeddedResource Include="ForEmployers.resx">
       <DependentUpon>ForEmployers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAddPet.resx">
+      <DependentUpon>FormAddPet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ForUsers.resx">
       <DependentUpon>ForUsers.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,14 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -152,34 +177,76 @@
     <None Include="Resources\back 1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\vibrating-phone_Active.png" />
+    <None Include="Resources\phone_Active.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\vibrating-phone_Passive.png" />
+    <None Include="Resources\phonePassive.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\hand_Active.png" />
+    <None Include="Resources\animal_Active.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\home_Passive.png" />
+    <None Include="Resources\user_Passive.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\hand_Passive.png" />
+    <None Include="Resources\animal_Passive.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\home_Active.png" />
+    <None Include="Resources\user_Active.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\paw_Active.png" />
+    <None Include="Resources\info_Active.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\paw_Passive.png" />
+    <None Include="Resources\info_Passive.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Loop.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\back 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\give_Active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\give_Passive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_Active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_Passive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_Passive.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_Passive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\not_image.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\not_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\not_img.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

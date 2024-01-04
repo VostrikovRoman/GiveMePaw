@@ -36,7 +36,7 @@ namespace GiveMePaw
 
             if (table.Rows.Count > 0)
             {
-                MessageBox.Show("Пользователь с таким email или номер телефона существует!");
+                MessageBox.Show("Пользователь с таким email или номером телефона существует!");
                 return true;
             }
             else
@@ -104,7 +104,7 @@ namespace GiveMePaw
             }
             else
             {
-                MessageBox.Show("Ошибка");
+                MessageBox.Show("Ошибка! Проверьте ваше Интернет-подключение");
             }
             db.closeConnection();
             
@@ -115,6 +115,7 @@ namespace GiveMePaw
             
         }
 
+        public static string Remember = "";
         private void sign_in_button_Click(object sender, EventArgs e)
         {
             String emailUser = email_sign_in.Text;
@@ -151,10 +152,12 @@ namespace GiveMePaw
                 if (remember_me_button.Checked == true)
                 {
                     SaveFile(emailUser, "checkSignIn.txt");
+                    Remember = "";
                 }
 
                 if (role_id == "3")
                 {
+                    Remember = "p";
                     SignIn.ActiveForm.Hide();
                     ForUsers NewForm = new ForUsers();
                     NewForm.ShowDialog();
@@ -162,6 +165,7 @@ namespace GiveMePaw
                 }
                 else if (role_id == "1")
                 {
+                    Remember = "a";
                     SignIn.ActiveForm.Hide();
                     ForEmployers NewForm = new ForEmployers();
                     NewForm.ShowDialog();
@@ -169,6 +173,7 @@ namespace GiveMePaw
                 }
                 else if (role_id == "2")
                 {
+                    Remember = "a";
                     SignIn.ActiveForm.Hide();
                     ForEmployers NewForm = new ForEmployers();
                     NewForm.ShowDialog();
@@ -198,7 +203,7 @@ namespace GiveMePaw
             }
             catch (Exception e)
             {
-                MessageBox.Show("Exception: " + e.Message);
+                MessageBox.Show("Ошибка!");
             }
         }
         /////////
@@ -335,6 +340,11 @@ namespace GiveMePaw
             {
                 password_sign_up.Text = "пароль";
             }
+        }
+
+        private void SignIn_Load(object sender, EventArgs e)
+        {
+
         }
         /////     /////
     }

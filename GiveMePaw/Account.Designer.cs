@@ -34,7 +34,6 @@ namespace GiveMePaw
             this.label1 = new System.Windows.Forms.Label();
             this.back_button_account = new System.Windows.Forms.PictureBox();
             this.exit_button_account = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -52,15 +51,22 @@ namespace GiveMePaw
             this.label4 = new System.Windows.Forms.Label();
             this.cancel_button_account = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.back_button_account)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit_button_account)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.update_button_account.SuspendLayout();
             this.save_button_account.SuspendLayout();
             this.cancel_button_account.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -94,7 +100,7 @@ namespace GiveMePaw
             // 
             this.back_button_account.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
             this.back_button_account.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.back_button_account.Image = global::GiveMePaw.Properties.Resources.back_11;
+            this.back_button_account.Image = global::GiveMePaw.Properties.Resources.back_1;
             this.back_button_account.Location = new System.Drawing.Point(33, 43);
             this.back_button_account.Name = "back_button_account";
             this.back_button_account.Size = new System.Drawing.Size(48, 47);
@@ -115,17 +121,6 @@ namespace GiveMePaw
             this.exit_button_account.TabIndex = 22;
             this.exit_button_account.TabStop = false;
             this.exit_button_account.Click += new System.EventHandler(this.exit_button_account_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::GiveMePaw.Properties.Resources.user_1;
-            this.pictureBox1.Location = new System.Drawing.Point(106, 191);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(186, 178);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox4
             // 
@@ -174,10 +169,10 @@ namespace GiveMePaw
             // 
             this.password_account.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.password_account.ForeColor = System.Drawing.Color.Gray;
-            this.password_account.Location = new System.Drawing.Point(391, 443);
+            this.password_account.Location = new System.Drawing.Point(455, 443);
             this.password_account.Name = "password_account";
             this.password_account.ReadOnly = true;
-            this.password_account.Size = new System.Drawing.Size(356, 36);
+            this.password_account.Size = new System.Drawing.Size(292, 36);
             this.password_account.TabIndex = 32;
             this.password_account.Text = "пароль";
             // 
@@ -185,10 +180,10 @@ namespace GiveMePaw
             // 
             this.email_account.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.email_account.ForeColor = System.Drawing.Color.Gray;
-            this.email_account.Location = new System.Drawing.Point(391, 392);
+            this.email_account.Location = new System.Drawing.Point(455, 392);
             this.email_account.Name = "email_account";
             this.email_account.ReadOnly = true;
-            this.email_account.Size = new System.Drawing.Size(356, 36);
+            this.email_account.Size = new System.Drawing.Size(292, 36);
             this.email_account.TabIndex = 31;
             this.email_account.Text = "email";
             // 
@@ -196,10 +191,10 @@ namespace GiveMePaw
             // 
             this.phone_account.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phone_account.ForeColor = System.Drawing.Color.Gray;
-            this.phone_account.Location = new System.Drawing.Point(391, 341);
+            this.phone_account.Location = new System.Drawing.Point(455, 341);
             this.phone_account.Name = "phone_account";
             this.phone_account.ReadOnly = true;
-            this.phone_account.Size = new System.Drawing.Size(356, 36);
+            this.phone_account.Size = new System.Drawing.Size(292, 36);
             this.phone_account.TabIndex = 30;
             this.phone_account.Text = "телефон";
             // 
@@ -207,10 +202,10 @@ namespace GiveMePaw
             // 
             this.last_name_account.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.last_name_account.ForeColor = System.Drawing.Color.Gray;
-            this.last_name_account.Location = new System.Drawing.Point(391, 290);
+            this.last_name_account.Location = new System.Drawing.Point(455, 290);
             this.last_name_account.Name = "last_name_account";
             this.last_name_account.ReadOnly = true;
-            this.last_name_account.Size = new System.Drawing.Size(356, 36);
+            this.last_name_account.Size = new System.Drawing.Size(292, 36);
             this.last_name_account.TabIndex = 29;
             this.last_name_account.Text = "отчество";
             // 
@@ -218,10 +213,10 @@ namespace GiveMePaw
             // 
             this.name_account.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name_account.ForeColor = System.Drawing.Color.Gray;
-            this.name_account.Location = new System.Drawing.Point(391, 239);
+            this.name_account.Location = new System.Drawing.Point(455, 239);
             this.name_account.Name = "name_account";
             this.name_account.ReadOnly = true;
-            this.name_account.Size = new System.Drawing.Size(356, 36);
+            this.name_account.Size = new System.Drawing.Size(292, 36);
             this.name_account.TabIndex = 28;
             this.name_account.Text = "имя";
             // 
@@ -229,10 +224,10 @@ namespace GiveMePaw
             // 
             this.surname_account.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.surname_account.ForeColor = System.Drawing.Color.Gray;
-            this.surname_account.Location = new System.Drawing.Point(391, 187);
+            this.surname_account.Location = new System.Drawing.Point(455, 187);
             this.surname_account.Name = "surname_account";
             this.surname_account.ReadOnly = true;
-            this.surname_account.Size = new System.Drawing.Size(356, 36);
+            this.surname_account.Size = new System.Drawing.Size(292, 36);
             this.surname_account.TabIndex = 27;
             this.surname_account.Text = "фамилия";
             // 
@@ -319,12 +314,103 @@ namespace GiveMePaw
             this.label5.Text = "Отмена";
             this.label5.Click += new System.EventHandler(this.cancel_button_account_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(318, 190);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(111, 27);
+            this.label7.TabIndex = 37;
+            this.label7.Text = "Фамилия";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(373, 242);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(56, 27);
+            this.label8.TabIndex = 38;
+            this.label8.Text = "Имя";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(316, 293);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(113, 27);
+            this.label9.TabIndex = 39;
+            this.label9.Text = "Отчество";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(320, 344);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(109, 27);
+            this.label10.TabIndex = 40;
+            this.label10.Text = "Телефон";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(351, 395);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(78, 27);
+            this.label11.TabIndex = 41;
+            this.label11.Text = "Email";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(337, 446);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(92, 27);
+            this.label12.TabIndex = 42;
+            this.label12.Text = "Пароль";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::GiveMePaw.Properties.Resources.user_1;
+            this.pictureBox1.Location = new System.Drawing.Point(50, 167);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(155, 168);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 43;
+            this.pictureBox1.TabStop = false;
+            // 
             // Account
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1008, 614);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.cancel_button_account);
             this.Controls.Add(this.save_button_account);
             this.Controls.Add(this.update_button_account);
@@ -339,7 +425,6 @@ namespace GiveMePaw
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.exit_button_account);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
@@ -354,7 +439,6 @@ namespace GiveMePaw
             this.Load += new System.EventHandler(this.Account_Load);
             ((System.ComponentModel.ISupportInitialize)(this.back_button_account)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit_button_account)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -364,6 +448,7 @@ namespace GiveMePaw
             this.save_button_account.PerformLayout();
             this.cancel_button_account.ResumeLayout(false);
             this.cancel_button_account.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -374,7 +459,6 @@ namespace GiveMePaw
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox exit_button_account;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
@@ -393,5 +477,12 @@ namespace GiveMePaw
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel cancel_button_account;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
