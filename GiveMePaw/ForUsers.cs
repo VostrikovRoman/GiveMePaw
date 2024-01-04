@@ -705,7 +705,12 @@ namespace GiveMePaw
             main_panel.Visible = true;
             Animal = "";
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+            num = 0;
+        }
+>>>>>>> parent of a57c4df (21.12.23 22:50)
 
 >>>>>>> parent of bf2d95b (21.12.23 20:31)
         }
