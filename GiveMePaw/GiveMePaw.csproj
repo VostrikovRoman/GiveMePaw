@@ -218,29 +218,5 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-<<<<<<< HEAD
-=======
-  <ItemGroup>
-    <None Include="Resources\give_Active.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\give_Passive.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\home 1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\main_Active.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\main_Passive.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\phone_Passive.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\phone_Passive.png" />
-  </ItemGroup>
->>>>>>> parent of a57c4df (21.12.23 22:50)
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -241,11 +241,7 @@ namespace GiveMePaw
             // 
             this.Pet_typeTxtbx.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pet_typeTxtbx.ForeColor = System.Drawing.Color.Gray;
-<<<<<<< HEAD
             this.Pet_typeTxtbx.Location = new System.Drawing.Point(176, 68);
-=======
-            this.Pet_typeTxtbx.Location = new System.Drawing.Point(146, 45);
->>>>>>> parent of ef5f80e (24.12.23 16:45)
             this.Pet_typeTxtbx.Name = "Pet_typeTxtbx";
             this.Pet_typeTxtbx.Size = new System.Drawing.Size(356, 36);
             this.Pet_typeTxtbx.TabIndex = 1;
