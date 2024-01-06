@@ -775,18 +775,130 @@ namespace GiveMePaw
         {
             pet_panel.Visible = true;
             many_dog_panel.Visible = false;
-            Card(num);
+            if (Animal == "dog")
+            {
+                Card(num, 1, "Собака");
+            }
+            else if (Animal == "cat")
+            {
+                Card(num, 2, "Кошка");
+            }
+            else if (Animal == "parrot")
+            {
+                Card(num, 3, "Попугай");
+            }
+            else if (Animal == "rabbit")
+            {
+                Card(num, 4, "Кролик");
+            }
+            else if (Animal == "mouse")
+            {
+                Card(num, 5, "Крыса");
+            }
         }
         private void card_pet_2_Click(object sender, EventArgs e)
         {
             pet_panel.Visible = true;
             many_dog_panel.Visible = false;
+            if (Animal == "dog")
+            {
+                Card(num+1, 1, "Собака");
+            }
+            else if (Animal == "cat")
+            {
+                Card(num + 1, 2, "Кошка");
+            }
+            else if (Animal == "parrot")
+            {
+                Card(num + 1, 3, "Попугай");
+            }
+            else if (Animal == "rabbit")
+            {
+                Card(num + 1, 4, "Кролик");
+            }
+            else if (Animal == "mouse")
+            {
+                Card(num + 1, 5, "Крыса");
+            }
         }
 
 
         //Функция загрузки карточки//
-        private void Card(int number)
+        private void Card(int number, int animal_type, string animal)
         {
+            try
+            {
+                DataTable table = new DataTable();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                DB db = new DB();
+                db.openConnection();
+
+                MySqlCommand command = new MySqlCommand("SELECT COUNT(pet_type) FROM pets WHERE pet_type = @animal_type ", db.getConnection());
+                MySqlParameter n1 = new MySqlParameter("@animal_type", animal_type);
+                command.Parameters.Add(n1);
+                Int64 count = (Int64)command.ExecuteScalar();
+                command.ExecuteNonQuery();
+
+                MySqlCommand command_give = new MySqlCommand("SELECT id FROM pets WHERE pet_type = @animal_type ", db.getConnection());
+                MySqlParameter n2 = new MySqlParameter("@animal_type", animal_type);
+                command_give.Parameters.Add(n2);
+                MySqlDataReader Reader = command_give.ExecuteReader();
+                Int32[] list = new Int32[count];
+
+                int i = 0;
+
+                if (Reader.HasRows)
+                {
+                    while (Reader.Read())
+                    {
+                        list[i] = Reader.GetInt32(0);
+                        i += 1;
+                    }
+                }
+                Reader.Close();
+
+                object name = "";
+                object breed = "";
+                object age = "";
+                object photo = "";
+                object weight = "";
+
+                MySqlCommand paste = new MySqlCommand("SELECT * FROM pets WHERE id = @id ", db.getConnection());
+                MySqlParameter p = new MySqlParameter("@id", list[number]);
+                paste.Parameters.Add(p);
+                MySqlDataReader Reader_paste = paste.ExecuteReader();
+                if (Reader_paste.HasRows)
+                {
+                    while (Reader_paste.Read())
+                    {
+                        name = Reader_paste.GetValue(2);
+                        age = Reader_paste.GetValue(3);
+                        weight = Reader_paste.GetValue(4);
+                        breed = Reader_paste.GetValue(5);
+                        photo = Reader_paste.GetValue(6);
+                    }
+                }
+                Reader_paste.Close();
+
+                name_card.Text = Convert.ToString(name);
+                age_card.Text = Convert.ToString(age) + " мес.";
+                weight_card.Text = Convert.ToString(weight) + " грамм";
+                breed_card.Text = Convert.ToString(breed);
+                type_card.Text = animal;
+                try
+                {
+                    photo_card.ImageLocation = Convert.ToString(photo);
+                }
+                catch
+                {
+                    photo_card.ImageLocation = "";
+                    photo_card.Image = new Bitmap(Properties.Resources.not_img);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка!");
+            }
             
         }
 

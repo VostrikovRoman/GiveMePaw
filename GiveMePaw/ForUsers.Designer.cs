@@ -132,7 +132,7 @@ namespace GiveMePaw
             this.label38 = new System.Windows.Forms.Label();
             this.weight_card = new System.Windows.Forms.Label();
             this.age_card = new System.Windows.Forms.Label();
-            this.breed_type = new System.Windows.Forms.Label();
+            this.breed_card = new System.Windows.Forms.Label();
             this.type_card = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -411,6 +411,7 @@ namespace GiveMePaw
             this.panel1.Controls.Add(this.account_button);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.pet_panel);
             this.panel1.Controls.Add(this.many_dog_panel);
             this.panel1.Controls.Add(this.main_panel);
             this.panel1.Controls.Add(this.error_panel);
@@ -418,7 +419,6 @@ namespace GiveMePaw
             this.panel1.Controls.Add(this.info_panel);
             this.panel1.Controls.Add(this.contacts_panel);
             this.panel1.Controls.Add(this.give_away_panel);
-            this.panel1.Controls.Add(this.pet_panel);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1016, 618);
@@ -1336,7 +1336,7 @@ namespace GiveMePaw
             this.panel7.Controls.Add(this.take_button);
             this.panel7.Controls.Add(this.weight_card);
             this.panel7.Controls.Add(this.age_card);
-            this.panel7.Controls.Add(this.breed_type);
+            this.panel7.Controls.Add(this.breed_card);
             this.panel7.Controls.Add(this.type_card);
             this.panel7.Controls.Add(this.label31);
             this.panel7.Controls.Add(this.label29);
@@ -1396,16 +1396,16 @@ namespace GiveMePaw
             this.age_card.TabIndex = 16;
             this.age_card.Text = "?";
             // 
-            // breed_type
+            // breed_card
             // 
-            this.breed_type.AutoSize = true;
-            this.breed_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.breed_type.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.breed_type.Location = new System.Drawing.Point(115, 155);
-            this.breed_type.Name = "breed_type";
-            this.breed_type.Size = new System.Drawing.Size(93, 25);
-            this.breed_type.TabIndex = 15;
-            this.breed_type.Text = "Порода";
+            this.breed_card.AutoSize = true;
+            this.breed_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.breed_card.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.breed_card.Location = new System.Drawing.Point(115, 155);
+            this.breed_card.Name = "breed_card";
+            this.breed_card.Size = new System.Drawing.Size(93, 25);
+            this.breed_card.TabIndex = 15;
+            this.breed_card.Text = "Порода";
             // 
             // type_card
             // 
@@ -1646,7 +1646,7 @@ namespace GiveMePaw
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label weight_card;
         private System.Windows.Forms.Label age_card;
-        private System.Windows.Forms.Label breed_type;
+        private System.Windows.Forms.Label breed_card;
         private System.Windows.Forms.Label type_card;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label29;
