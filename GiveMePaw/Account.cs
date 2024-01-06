@@ -12,6 +12,7 @@ using System.Windows.Forms;
 
 namespace GiveMePaw
 {
+    
     public partial class Account : Form
     {
         public Account()
@@ -295,6 +296,7 @@ namespace GiveMePaw
                 SignIn NewForm = new SignIn();
                 NewForm.ShowDialog();
                 Close();
+                
             }
             catch
             {

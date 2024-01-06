@@ -152,6 +152,8 @@ namespace GiveMePaw
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.back_button_lucky_panel = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.Main_Tab_button.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureButtMain)).BeginInit();
@@ -198,6 +200,7 @@ namespace GiveMePaw
             this.no_animal_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.back_button_no_animal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.back_button_lucky_panel)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -424,7 +427,6 @@ namespace GiveMePaw
             this.panel1.Controls.Add(this.account_button);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.error_panel);
             this.panel1.Controls.Add(this.lacky_panel);
             this.panel1.Controls.Add(this.info_panel);
             this.panel1.Controls.Add(this.contacts_panel);
@@ -433,6 +435,7 @@ namespace GiveMePaw
             this.panel1.Controls.Add(this.many_dog_panel);
             this.panel1.Controls.Add(this.main_panel);
             this.panel1.Controls.Add(this.no_animal_panel);
+            this.panel1.Controls.Add(this.error_panel);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1016, 618);
@@ -530,6 +533,8 @@ namespace GiveMePaw
             // 
             // lacky_panel
             // 
+            this.lacky_panel.Controls.Add(this.label10);
+            this.lacky_panel.Controls.Add(this.back_button_lucky_panel);
             this.lacky_panel.Controls.Add(this.label61);
             this.lacky_panel.Controls.Add(this.pictureBox18);
             this.lacky_panel.Controls.Add(this.label8);
@@ -541,7 +546,7 @@ namespace GiveMePaw
             // label61
             // 
             this.label61.Font = new System.Drawing.Font("Lucida Sans", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.Location = new System.Drawing.Point(177, 250);
+            this.label61.Location = new System.Drawing.Point(178, 287);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(407, 70);
             this.label61.TabIndex = 9;
@@ -551,7 +556,7 @@ namespace GiveMePaw
             // pictureBox18
             // 
             this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
-            this.pictureBox18.Location = new System.Drawing.Point(292, 85);
+            this.pictureBox18.Location = new System.Drawing.Point(298, 122);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(150, 150);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1638,6 +1643,31 @@ namespace GiveMePaw
             this.label4.Size = new System.Drawing.Size(0, 38);
             this.label4.TabIndex = 5;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.label10.Location = new System.Drawing.Point(70, 20);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(99, 31);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "Назад";
+            this.label10.Click += new System.EventHandler(this.back_button_lucky_panel_Click);
+            // 
+            // back_button_lucky_panel
+            // 
+            this.back_button_lucky_panel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.back_button_lucky_panel.Image = ((System.Drawing.Image)(resources.GetObject("back_button_lucky_panel.Image")));
+            this.back_button_lucky_panel.Location = new System.Drawing.Point(15, 15);
+            this.back_button_lucky_panel.Name = "back_button_lucky_panel";
+            this.back_button_lucky_panel.Size = new System.Drawing.Size(52, 41);
+            this.back_button_lucky_panel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.back_button_lucky_panel.TabIndex = 13;
+            this.back_button_lucky_panel.TabStop = false;
+            this.back_button_lucky_panel.Click += new System.EventHandler(this.back_button_lucky_panel_Click);
+            // 
             // ForUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1721,6 +1751,7 @@ namespace GiveMePaw
             this.no_animal_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.back_button_no_animal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.back_button_lucky_panel)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1849,5 +1880,7 @@ namespace GiveMePaw
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox back_button_error_panel;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox back_button_lucky_panel;
     }
 }

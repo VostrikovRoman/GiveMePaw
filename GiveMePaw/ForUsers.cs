@@ -1044,7 +1044,8 @@ namespace GiveMePaw
                     EnableSsl = true
                 };
                 smtp.Send(m);
-                MessageBox.Show("Заявка успешно отправлена");
+                lacky_panel.Visible = true;
+                lacky_panel.BringToFront();
             }
             catch (FormatException)
             {
@@ -1068,8 +1069,12 @@ namespace GiveMePaw
             error_panel.Visible = false;
             error_panel.SendToBack();
         }
-
-
+        //Выход из панели удачи//
+        private void back_button_lucky_panel_Click(object sender, EventArgs e)
+        {
+            lacky_panel.Visible = false;
+            lacky_panel.SendToBack();
+        }
     }
 }
 
