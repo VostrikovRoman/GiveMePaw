@@ -585,9 +585,10 @@ namespace GiveMePaw
             {
                 Animal_card(1, "СОБАКИ", "dog");
             }
-            catch (Exception ex)
+            catch 
             {
-                MessageBox.Show("Ошибка!"+ex);
+                error_panel.Visible = true;
+                error_panel.BringToFront();
             }
         }
         private void panel_cat_Click(object sender, EventArgs e)
@@ -598,7 +599,8 @@ namespace GiveMePaw
             }
             catch
             {
-                MessageBox.Show("Ошибка!");
+                error_panel.Visible = true;
+                error_panel.BringToFront();
             }
         }
         private void panel_parrot_Click(object sender, EventArgs e)
@@ -609,7 +611,8 @@ namespace GiveMePaw
             }
             catch
             {
-                MessageBox.Show("Ошибка!");
+                error_panel.Visible = true;
+                error_panel.BringToFront();
             }
         }
         private void panel_rabbit_Click(object sender, EventArgs e)
@@ -620,7 +623,8 @@ namespace GiveMePaw
             }
             catch
             {
-                MessageBox.Show("Ошибка!");
+                error_panel.Visible = true;
+                error_panel.BringToFront();
             }
         }
         private void panel_mouse_Click(object sender, EventArgs e)
@@ -631,7 +635,8 @@ namespace GiveMePaw
             }
             catch
             {
-                MessageBox.Show("Ошибка!");
+                error_panel.Visible = true;
+                error_panel.BringToFront();
             }
         }
 
@@ -665,7 +670,8 @@ namespace GiveMePaw
                 }
                 catch
                 {
-                    MessageBox.Show("Ошибка!");
+                    error_panel.Visible = true;
+                    error_panel.BringToFront();
                 }
             }
             else if (Animal == "cat")
@@ -677,7 +683,8 @@ namespace GiveMePaw
                 }
                 catch
                 {
-                    MessageBox.Show("Ошибка!");
+                    error_panel.Visible = true;
+                    error_panel.BringToFront();
                 }
             }
             else if (Animal == "parrot")
@@ -689,7 +696,8 @@ namespace GiveMePaw
                 }
                 catch
                 {
-                    MessageBox.Show("Ошибка!");
+                    error_panel.Visible = true;
+                    error_panel.BringToFront();
                 }
             }
             else if (Animal == "rabbit")
@@ -701,7 +709,8 @@ namespace GiveMePaw
                 }
                 catch
                 {
-                    MessageBox.Show("Ошибка!");
+                    error_panel.Visible = true;
+                    error_panel.BringToFront();
                 }
             }
             else if (Animal == "mouse")
@@ -713,7 +722,8 @@ namespace GiveMePaw
                 }
                 catch
                 {
-                    MessageBox.Show("Ошибка!");
+                    error_panel.Visible = true;
+                    error_panel.BringToFront();
                 }
             }
         }
@@ -729,7 +739,8 @@ namespace GiveMePaw
                 }
                 catch
                 {
-                    MessageBox.Show("Ошибка!");
+                    error_panel.Visible = true;
+                    error_panel.BringToFront();
                 }
             }
             else if (Animal == "cat")
@@ -741,7 +752,8 @@ namespace GiveMePaw
                 }
                 catch
                 {
-                    MessageBox.Show("Ошибка!");
+                    error_panel.Visible = true;
+                    error_panel.BringToFront();
                 }
             }
             else if (Animal == "parrot")
@@ -753,7 +765,8 @@ namespace GiveMePaw
                 }
                 catch
                 {
-                    MessageBox.Show("Ошибка!");
+                    error_panel.Visible = true;
+                    error_panel.BringToFront();
                 }
             }
             else if (Animal == "rabbit")
@@ -765,7 +778,8 @@ namespace GiveMePaw
                 }
                 catch
                 {
-                    MessageBox.Show("Ошибка!");
+                    error_panel.Visible = true;
+                    error_panel.BringToFront();
                 }
             }
             else if (Animal == "mouse")
@@ -777,7 +791,8 @@ namespace GiveMePaw
                 }
                 catch
                 {
-                    MessageBox.Show("Ошибка!");
+                    error_panel.Visible = true;
+                    error_panel.BringToFront();
                 }
             }
         }
@@ -808,6 +823,11 @@ namespace GiveMePaw
             {
                 Card(num, 5, "Крыса");
             }
+            else
+            {
+                error_panel.Visible = true;
+                error_panel.BringToFront();
+            }
         }
         private void card_pet_2_Click(object sender, EventArgs e)
         {
@@ -832,6 +852,11 @@ namespace GiveMePaw
             else if (Animal == "mouse")
             {
                 Card(num + 1, 5, "Крыса");
+            }
+            else
+            {
+                error_panel.Visible = true;
+                error_panel.BringToFront();
             }
         }
 
@@ -915,7 +940,8 @@ namespace GiveMePaw
             }
             catch
             {
-                MessageBox.Show("Ошибка!");
+                error_panel.Visible = true;
+                error_panel.BringToFront();
             }
             
         }
@@ -994,7 +1020,8 @@ namespace GiveMePaw
             }
             catch
             {
-                MessageBox.Show("Ошибка!");
+                error_panel.Visible = true;
+                error_panel.BringToFront();
             }
 
             try
@@ -1030,11 +1057,17 @@ namespace GiveMePaw
             }
             catch 
             {
-                MessageBox.Show("Ошибка!");
+                error_panel.Visible = true;
+                error_panel.BringToFront();
             }
         }
 
-
+        //Выход из панели ошибки//
+        private void back_button_error_panel_Click(object sender, EventArgs e)
+        {
+            error_panel.Visible = false;
+            error_panel.SendToBack();
+        }
 
 
     }
