@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
+using System.Net.Mail;
 
 namespace GiveMePaw
 {
@@ -878,6 +880,10 @@ namespace GiveMePaw
                         photo = Reader_paste.GetValue(6);
                     }
                 }
+                else
+                {
+                    MessageBox.Show("Животное уже забрали");
+                }
                 Reader_paste.Close();
 
                 name_card.Text = Convert.ToString(name);
@@ -910,7 +916,10 @@ namespace GiveMePaw
 
         private void take_button_Click(object sender, EventArgs e)
         {
-
+            if (MessageBox.Show("Вы уверены что хотите приютить это животное?", "Информация", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                Message_put(SignIn.user_email);
+            }
         }
 
         private void back_button_card_Click(object sender, EventArgs e)
@@ -920,20 +929,83 @@ namespace GiveMePaw
         }
 
 
+        //Функция отправки письма//
+
+        private void Message_put(string u_email)
+        {
+            object u_name = "";
+            object u_surname = "";
+            string animal = "";
+            if (type_card.Text == "Собака")
+            {
+                animal = " собаку, по имени " + name_card.Text;
+            }
+            else if (type_card.Text == "Кошка")
+            {
+                animal = " собаку, по имени " + name_card.Text;
+            }
+
+            try
+            {
+                DataTable table = new DataTable();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                DB db = new DB();
+                db.openConnection();
+
+                MySqlCommand command = new MySqlCommand("SELECT * FROM users WHERE email = @email ", db.getConnection());
+                MySqlParameter n1 = new MySqlParameter("@email", u_email);
+                command.Parameters.Add(n1);
+                MySqlDataReader Reader = command.ExecuteReader();
+
+                if (Reader.HasRows)
+                {
+                    while (Reader.Read())
+                    {
+                        u_name = Convert.ToString(Reader.GetValue(1));
+                        u_surname = Convert.ToString(Reader.GetValue(2));
+                    }
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка!");
+            }
+
+            try
+            {
+                MailAddress from = new MailAddress("fortestIMT@gmail.com");
+                MailAddress to = new MailAddress("rmnvstrkv@gmail.com");
+                MailMessage m = new MailMessage(from, to);
+                m.Subject = "Приём животного!";
+                m.IsBodyHtml = true;
+                m.Body = "<html><head></head><body style = 'background: #e0e0e0;'><h1 align = 'center' style = 'color: #5c4130;'>Приём животного!</h1>" + 
+                    "<h2 align = 'center'>Здравствуйте! Хочу приютить животное.</h2></body></html>";
+                SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587)
+                {
+                    Credentials = new NetworkCredential("fortestIMT@gmail.com", "pexzozphwawhzbog"),
+                    EnableSsl = true
+                };
+                smtp.Send(m);
+                MessageBox.Show("Заявка успешно отправлена");
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Неверный формат электронной почты. Почта должна иметь окончания - @gmail/yandex/mail/bk/list и другие");
+
+            }
+            catch (ArgumentException)
+            {
+                MessageBox.Show("Строка с адресом не должна быть пуста");
+            }
+            catch 
+            {
+                MessageBox.Show("Ошибка!");
+            }
+        }
 
 
 
 
-
-
-
-
-        // panel.Visible = true;
-        // название панели.Visible = true
     }
 }
 
-
-
-// label_cat.Parent = pictureBox_Dog;
-// label_cat.BackColor = Color.Transparent;
