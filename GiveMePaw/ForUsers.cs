@@ -900,6 +900,7 @@ namespace GiveMePaw
                     photo_card.ImageLocation = "";
                     photo_card.Image = new Bitmap(Properties.Resources.not_img);
                 }
+                label2.Text = Convert.ToString(list[number]);
             }
             catch
             {
@@ -936,14 +937,28 @@ namespace GiveMePaw
             object u_name = "";
             object u_surname = "";
             string animal = "";
+
             if (type_card.Text == "Собака")
             {
                 animal = " собаку, по имени " + name_card.Text;
             }
             else if (type_card.Text == "Кошка")
             {
-                animal = " собаку, по имени " + name_card.Text;
+                animal = " кошку, по имени " + name_card.Text;
             }
+            else if (type_card.Text == "Попугай")
+            {
+                animal = " попугая, по имени " + name_card.Text;
+            }
+            else if (type_card.Text == "Кролик")
+            {
+                animal = " кролика, по имени " + name_card.Text;
+            }
+            else if (type_card.Text == "Крыса")
+            {
+                animal = " крысу, по имени " + name_card.Text;
+            }
+
 
             try
             {
@@ -978,8 +993,13 @@ namespace GiveMePaw
                 MailMessage m = new MailMessage(from, to);
                 m.Subject = "Приём животного!";
                 m.IsBodyHtml = true;
-                m.Body = "<html><head></head><body style = 'background: #e0e0e0;'><h1 align = 'center' style = 'color: #5c4130;'>Приём животного!</h1>" + 
-                    "<h2 align = 'center'>Здравствуйте! Хочу приютить животное.</h2></body></html>";
+                m.Body = "<html><head></head><body style = 'background: #e0e0e0;'><h1 align = 'center' style = 'color: #5c4130;'>Приём животного!</h1>" +
+                    "<h2 align = 'center' style = 'color: black;'>Здравствуйте! Хочу приютить" + animal + ".</h2><h2 style = 'color: #3e3e3e; margin-left: 50px;'>Кличка: " + 
+                    name_card.Text + "</h2><h2 style = 'color: #3e3e3e; margin-left: 50px;'>ID: " + label2.Text + "</h2><h2 style = 'color:#cc8c2c; margin-right: 50px;' align = 'right'>" + 
+                    u_surname + " " + u_name + ", </h2><h2 style = 'color:#cc8c2c; margin-right: 50px;' align = 'right'>" + u_email + "</h2>" +
+                    "<h2 align = 'center' style = 'color: black;'>Всего хорошего!</h2>" + 
+                    "<table align = 'center'><tr><td><img src = 'https://github.com/VostrikovRoman/PhotoForGiveMePaw/blob/main/logo_give_me_paw%202.png?raw=true' width = '200px'></img></td></tr></table>" +
+                    "<h2 align = 'center' style = 'color: #5c4130;'>ДайЛапу</h2></body></html>";
                 SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587)
                 {
                     Credentials = new NetworkCredential("fortestIMT@gmail.com", "pexzozphwawhzbog"),

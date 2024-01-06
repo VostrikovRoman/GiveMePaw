@@ -143,6 +143,7 @@ namespace GiveMePaw
             this.label37 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.back_button_card = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.Main_Tab_button.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureButtMain)).BeginInit();
@@ -1345,6 +1346,7 @@ namespace GiveMePaw
             this.panel7.Controls.Add(this.photo_card);
             this.panel7.Controls.Add(this.name_card);
             this.panel7.Controls.Add(this.label37);
+            this.panel7.Controls.Add(this.label2);
             this.panel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
             this.panel7.Location = new System.Drawing.Point(50, 62);
             this.panel7.Name = "panel7";
@@ -1517,6 +1519,17 @@ namespace GiveMePaw
             this.back_button_card.TabIndex = 9;
             this.back_button_card.TabStop = false;
             this.back_button_card.Click += new System.EventHandler(this.back_button_card_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.label2.Location = new System.Drawing.Point(280, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 25);
+            this.label2.TabIndex = 20;
+            this.label2.Visible = false;
             // 
             // ForUsers
             // 
@@ -1715,5 +1728,6 @@ namespace GiveMePaw
         private System.Windows.Forms.Label label_cat;
         private System.Windows.Forms.PictureBox next_butt;
         private System.Windows.Forms.PictureBox back_butt;
+        private System.Windows.Forms.Label label2;
     }
 }
