@@ -126,13 +126,13 @@ namespace GiveMePaw
             }
             else
             {
-                MessageBox.Show("Пользователя с таким email, не существует!");
+                MessageBox.Show("Пользователя с таким email не существует!");
             }
         }
 
         private void labelChangeRoleAdmin_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Вы уверены что хотите назначить этого пользователя                                           администратором?", "Информация", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            if (MessageBox.Show("Вы уверены, что хотите назначить этого пользователя\nадминистратором?", "Информация", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
                 DB db = new DB();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
@@ -148,7 +148,7 @@ namespace GiveMePaw
 
         private void labelChangeRoleManag_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Вы уверены что хотите назначить этого пользователя                                               менеджером?", "Информация", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            if (MessageBox.Show("Вы уверены, что хотите назначить этого пользователя\nменеджером?", "Информация", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
                 DB db = new DB();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
@@ -163,7 +163,7 @@ namespace GiveMePaw
 
         private void labelChangeRoleUser_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Вы уверены что хотите назначить этого пользователя                                            пользователем?", "Информация", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            if (MessageBox.Show("Вы уверены, что хотите назначить этого пользователя\nпользователем?", "Информация", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
             {
                 DB db = new DB();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
@@ -228,7 +228,7 @@ namespace GiveMePaw
             if(e.ColumnIndex == 0)
             {
                 //Edit
-                if (MessageBox.Show("Вы уверены что хотите изменить житвотное?", "Информация", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
+                if (MessageBox.Show("Вы уверены, что хотите изменить житвотное?", "Информация", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
                     form.Clear();
                     form.id = dataGridViewPet.Rows[e.RowIndex].Cells[2].Value.ToString();
@@ -247,7 +247,7 @@ namespace GiveMePaw
             else if (e.ColumnIndex == 1)
             {
                 //Delete
-                if(MessageBox.Show("Вы уверены что хотите удалить животное?", "Информация", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
+                if(MessageBox.Show("Вы уверены, что хотите удалить животное?", "Информация", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
                     DB.DeletePet(dataGridViewPet.Rows[e.RowIndex].Cells[2].Value.ToString());
                     Display();

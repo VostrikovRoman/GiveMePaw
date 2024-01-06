@@ -58,6 +58,8 @@ namespace GiveMePaw
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.delete_button_account = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.back_button_account)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit_button_account)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -67,6 +69,7 @@ namespace GiveMePaw
             this.save_button_account.SuspendLayout();
             this.cancel_button_account.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.delete_button_account.SuspendLayout();
             this.SuspendLayout();
             // 
             // label6
@@ -398,12 +401,38 @@ namespace GiveMePaw
             this.pictureBox1.TabIndex = 43;
             this.pictureBox1.TabStop = false;
             // 
+            // delete_button_account
+            // 
+            this.delete_button_account.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.delete_button_account.Controls.Add(this.label13);
+            this.delete_button_account.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.delete_button_account.Location = new System.Drawing.Point(465, 552);
+            this.delete_button_account.Name = "delete_button_account";
+            this.delete_button_account.Size = new System.Drawing.Size(222, 40);
+            this.delete_button_account.TabIndex = 35;
+            this.delete_button_account.Visible = false;
+            this.delete_button_account.Click += new System.EventHandler(this.delete_button_account_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
+            this.label13.Location = new System.Drawing.Point(15, 6);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(195, 27);
+            this.label13.TabIndex = 34;
+            this.label13.Text = "Удалить аккаунт";
+            this.label13.Click += new System.EventHandler(this.delete_button_account_Click);
+            // 
             // Account
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1008, 614);
+            this.Controls.Add(this.delete_button_account);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -449,6 +478,8 @@ namespace GiveMePaw
             this.cancel_button_account.ResumeLayout(false);
             this.cancel_button_account.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.delete_button_account.ResumeLayout(false);
+            this.delete_button_account.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -484,5 +515,7 @@ namespace GiveMePaw
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel delete_button_account;
+        private System.Windows.Forms.Label label13;
     }
 }

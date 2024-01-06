@@ -954,7 +954,7 @@ namespace GiveMePaw
 
         private void take_button_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Вы уверены что хотите приютить это животное?", "Информация", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
+            if (MessageBox.Show("Вы уверены, что хотите приютить это животное?", "Информация", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
             {
                 Message_put(SignIn.user_email);
             }
