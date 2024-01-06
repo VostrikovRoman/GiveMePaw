@@ -128,8 +128,6 @@ namespace GiveMePaw
             this.label40 = new System.Windows.Forms.Label();
             this.pet_panel = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.take_button = new System.Windows.Forms.Panel();
             this.label38 = new System.Windows.Forms.Label();
             this.weight_card = new System.Windows.Forms.Label();
@@ -140,7 +138,7 @@ namespace GiveMePaw
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.photo_card = new System.Windows.Forms.PictureBox();
             this.name_card = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -185,7 +183,7 @@ namespace GiveMePaw
             this.pet_panel.SuspendLayout();
             this.panel7.SuspendLayout();
             this.take_button.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.photo_card)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.back_button_card)).BeginInit();
             this.SuspendLayout();
             // 
@@ -992,7 +990,7 @@ namespace GiveMePaw
             this.label74.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
             this.label74.Location = new System.Drawing.Point(254, 9);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(173, 38);
+            this.label74.Size = new System.Drawing.Size(172, 38);
             this.label74.TabIndex = 4;
             this.label74.Text = "О приюте";
             // 
@@ -1335,8 +1333,6 @@ namespace GiveMePaw
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
-            this.panel7.Controls.Add(this.label3);
-            this.panel7.Controls.Add(this.label2);
             this.panel7.Controls.Add(this.take_button);
             this.panel7.Controls.Add(this.weight_card);
             this.panel7.Controls.Add(this.age_card);
@@ -1346,7 +1342,7 @@ namespace GiveMePaw
             this.panel7.Controls.Add(this.label29);
             this.panel7.Controls.Add(this.label28);
             this.panel7.Controls.Add(this.label27);
-            this.panel7.Controls.Add(this.pictureBox16);
+            this.panel7.Controls.Add(this.photo_card);
             this.panel7.Controls.Add(this.name_card);
             this.panel7.Controls.Add(this.label37);
             this.panel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
@@ -1355,32 +1351,11 @@ namespace GiveMePaw
             this.panel7.Size = new System.Drawing.Size(657, 418);
             this.panel7.TabIndex = 4;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.label3.Location = new System.Drawing.Point(188, 245);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 25);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "грамм";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.label2.Location = new System.Drawing.Point(220, 200);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 25);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "мес.";
-            // 
             // take_button
             // 
             this.take_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
             this.take_button.Controls.Add(this.label38);
+            this.take_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.take_button.Location = new System.Drawing.Point(213, 346);
             this.take_button.Name = "take_button";
             this.take_button.Size = new System.Drawing.Size(232, 47);
@@ -1487,17 +1462,17 @@ namespace GiveMePaw
             this.label27.TabIndex = 9;
             this.label27.Text = "Вид:";
             // 
-            // pictureBox16
+            // photo_card
             // 
-            this.pictureBox16.ErrorImage = global::GiveMePaw.Properties.Resources.not_img;
-            this.pictureBox16.InitialImage = global::GiveMePaw.Properties.Resources.not_img;
-            this.pictureBox16.Location = new System.Drawing.Point(348, 32);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(275, 275);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 4;
-            this.pictureBox16.TabStop = false;
-            this.pictureBox16.WaitOnLoad = true;
+            this.photo_card.ErrorImage = global::GiveMePaw.Properties.Resources.not_img;
+            this.photo_card.InitialImage = global::GiveMePaw.Properties.Resources.not_img;
+            this.photo_card.Location = new System.Drawing.Point(348, 32);
+            this.photo_card.Name = "photo_card";
+            this.photo_card.Size = new System.Drawing.Size(275, 275);
+            this.photo_card.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.photo_card.TabIndex = 4;
+            this.photo_card.TabStop = false;
+            this.photo_card.WaitOnLoad = true;
             // 
             // name_card
             // 
@@ -1521,6 +1496,7 @@ namespace GiveMePaw
             // label25
             // 
             this.label25.AutoSize = true;
+            this.label25.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
             this.label25.Location = new System.Drawing.Point(58, 8);
@@ -1532,6 +1508,7 @@ namespace GiveMePaw
             // 
             // back_button_card
             // 
+            this.back_button_card.Cursor = System.Windows.Forms.Cursors.Hand;
             this.back_button_card.Image = ((System.Drawing.Image)(resources.GetObject("back_button_card.Image")));
             this.back_button_card.Location = new System.Drawing.Point(3, 3);
             this.back_button_card.Name = "back_button_card";
@@ -1545,7 +1522,7 @@ namespace GiveMePaw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 613);
+            this.ClientSize = new System.Drawing.Size(1008, 614);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -1617,7 +1594,7 @@ namespace GiveMePaw
             this.panel7.PerformLayout();
             this.take_button.ResumeLayout(false);
             this.take_button.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.photo_card)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.back_button_card)).EndInit();
             this.ResumeLayout(false);
 
@@ -1662,7 +1639,7 @@ namespace GiveMePaw
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.PictureBox photo_card;
         private System.Windows.Forms.Label name_card;
         private System.Windows.Forms.Panel give_away_panel;
         private System.Windows.Forms.Panel take_button;
@@ -1738,7 +1715,5 @@ namespace GiveMePaw
         private System.Windows.Forms.Label label_cat;
         private System.Windows.Forms.PictureBox next_butt;
         private System.Windows.Forms.PictureBox back_butt;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
     }
 }

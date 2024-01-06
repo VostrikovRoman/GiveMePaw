@@ -18,9 +18,6 @@ namespace GiveMePaw
             InitializeComponent();
         }
 
-        // Изменение цвета кнопок меню (слева)
-
-        // Главная
         private void ForUsers_Load(object sender, EventArgs e)
         {
 
@@ -57,6 +54,58 @@ namespace GiveMePaw
             error_panel.Visible = false;
             lacky_panel.Visible = false;
            
+
+        }
+
+        private void defoult_color()
+        {
+            labelButtMainText.ForeColor = Color.FromArgb(228, 164, 84);
+            Main_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+
+            labelButtGiveText.ForeColor = Color.FromArgb(228, 164, 84);
+            Give_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+
+            labelButtContactText.ForeColor = Color.FromArgb(228, 164, 84);
+            contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+
+            labelButInfo.ForeColor = Color.FromArgb(228, 164, 84);
+            info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+
+
+
+            pictureButtMain.Image = new Bitmap(Properties.Resources.main_Passive);
+
+            pictureButtGive.Image = new Bitmap(Properties.Resources.give_Passive);
+
+            pictureButtContact.Image = new Bitmap(Properties.Resources.phone_Passive);
+
+            picturePaw.Image = new Bitmap(Properties.Resources.info_Passive);
+
+        }
+
+        private void start_color()
+        {
+            labelButtMainText.ForeColor = Color.FromArgb(92, 65, 48);
+            Main_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
+
+            labelButtGiveText.ForeColor = Color.FromArgb(228, 164, 84);
+            Give_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+
+            labelButtContactText.ForeColor = Color.FromArgb(228, 164, 84);
+            contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+
+            labelButInfo.ForeColor = Color.FromArgb(228, 164, 84);
+            info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
+
+
+
+            pictureButtMain.Image = new Bitmap(Properties.Resources.main_Active);
+
+            pictureButtGive.Image = new Bitmap(Properties.Resources.give_Passive);
+
+            pictureButtContact.Image = new Bitmap(Properties.Resources.phone_Passive);
+
+            picturePaw.Image = new Bitmap(Properties.Resources.info_Passive);
 
         }
 
@@ -142,64 +191,6 @@ namespace GiveMePaw
         }
 
 
-        private void defoult_color()
-        {
-            labelButtMainText.ForeColor = Color.FromArgb(228, 164, 84);
-            Main_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
-
-            labelButtGiveText.ForeColor = Color.FromArgb(228, 164, 84);
-            Give_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
-
-            labelButtContactText.ForeColor = Color.FromArgb(228, 164, 84);
-            contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
-
-            labelButInfo.ForeColor = Color.FromArgb(228, 164, 84);
-            info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
-
-
-
-            pictureButtMain.Image = new Bitmap(Properties.Resources.main_Passive);
-
-            pictureButtGive.Image = new Bitmap(Properties.Resources.give_Passive);
-
-            pictureButtContact.Image = new Bitmap(Properties.Resources.phone_Passive);
-
-            picturePaw.Image = new Bitmap(Properties.Resources.info_Passive);
-
-        }
-
-        private void start_color()
-        {
-            labelButtMainText.ForeColor = Color.FromArgb(92, 65, 48);
-            Main_Tab_button.BackColor = Color.FromArgb(164, 123, 81);
-
-            labelButtGiveText.ForeColor = Color.FromArgb(228, 164, 84);
-            Give_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
-
-            labelButtContactText.ForeColor = Color.FromArgb(228, 164, 84);
-            contact_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
-
-            labelButInfo.ForeColor = Color.FromArgb(228, 164, 84);
-            info_Tab_button.BackColor = Color.FromArgb(92, 65, 48);
-
-
-
-            pictureButtMain.Image = new Bitmap(Properties.Resources.main_Active);
-
-            pictureButtGive.Image = new Bitmap(Properties.Resources.give_Passive);
-
-            pictureButtContact.Image = new Bitmap(Properties.Resources.phone_Passive);
-
-            picturePaw.Image = new Bitmap(Properties.Resources.info_Passive);
-
-        }
-
-        private void Card()
-        {
-
-        }
-
-
 
         public string Animal = "";
 
@@ -241,6 +232,11 @@ namespace GiveMePaw
             }
             Reader.Close();
 
+            object name = "";
+            object breed = "";
+            object age = "";
+            object photo = "";
+
             if (count > 2 )
             {
                 card_pet_1.Visible = true;
@@ -269,60 +265,55 @@ namespace GiveMePaw
                         {
                             back_butt.Visible = false;
                         }
-                        MySqlCommand fill_name_1 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
+                        MySqlCommand fill = new MySqlCommand("SELECT * FROM pets WHERE id = @id ", db.getConnection());
                         MySqlParameter f_1 = new MySqlParameter("@id", list[num]);
-                        fill_name_1.Parameters.Add(f_1);
-                        name_pet_1.Text = Convert.ToString(fill_name_1.ExecuteScalar());
-                        fill_name_1.ExecuteNonQuery();
-                        MySqlCommand fill_name_2 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
-                        MySqlParameter f_2 = new MySqlParameter("@id", list[num+1]);
-                        fill_name_2.Parameters.Add(f_2);
-                        name_pet_2.Text = Convert.ToString(fill_name_2.ExecuteScalar());
-                        fill_name_2.ExecuteNonQuery();
-
-                        MySqlCommand fill_breed_1 = new MySqlCommand("SELECT breed FROM pets WHERE id = @id ", db.getConnection());
-                        MySqlParameter f_3 = new MySqlParameter("@id", list[num]);
-                        fill_breed_1.Parameters.Add(f_3);
-                        breed_pet_1.Text = Convert.ToString(fill_breed_1.ExecuteScalar());
-                        fill_breed_1.ExecuteNonQuery();
-                        MySqlCommand fill_breed_2 = new MySqlCommand("SELECT breed FROM pets WHERE id = @id ", db.getConnection());
-                        MySqlParameter f_4 = new MySqlParameter("@id", list[num + 1]);
-                        fill_breed_2.Parameters.Add(f_4);
-                        breed_pet_2.Text = Convert.ToString(fill_breed_2.ExecuteScalar());
-                        fill_breed_2.ExecuteNonQuery();
-
-                        MySqlCommand fill_age_1 = new MySqlCommand("SELECT age FROM pets WHERE id = @id ", db.getConnection());
-                        MySqlParameter f_5 = new MySqlParameter("@id", list[num]);
-                        fill_age_1.Parameters.Add(f_5);
-                        age_pet_1.Text = Convert.ToString(fill_age_1.ExecuteScalar());
-                        fill_age_1.ExecuteNonQuery();
-                        MySqlCommand fill_age_2 = new MySqlCommand("SELECT age FROM pets WHERE id = @id ", db.getConnection());
-                        MySqlParameter f_6 = new MySqlParameter("@id", list[num + 1]);
-                        fill_age_2.Parameters.Add(f_6);
-                        age_pet_2.Text = Convert.ToString(fill_age_2.ExecuteScalar());
-                        fill_age_2.ExecuteNonQuery();
-
-                        
+                        fill.Parameters.Add(f_1);
+                        MySqlDataReader Reader_fill = fill.ExecuteReader();
+                        if (Reader_fill.HasRows)
+                        {
+                            while (Reader_fill.Read())
+                            {
+                                name = Reader_fill.GetValue(2);
+                                age = Reader_fill.GetValue(3);
+                                breed = Reader_fill.GetValue(5);
+                                photo = Reader_fill.GetValue(6);
+                            }
+                        }
+                        Reader_fill.Close();
+                        name_pet_1.Text = Convert.ToString(name);
+                        breed_pet_1.Text = Convert.ToString(breed);
+                        age_pet_1.Text = Convert.ToString(age);
                         try
                         {
-                            MySqlCommand fill_photo_1 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
-                            MySqlParameter f_7 = new MySqlParameter("@id", list[num]);
-                            fill_photo_1.Parameters.Add(f_7);
-                            image_pet_1.ImageLocation = Convert.ToString(fill_photo_1.ExecuteScalar());
-                            fill_photo_1.ExecuteNonQuery();
+                            image_pet_1.ImageLocation = Convert.ToString(photo);
                         }
-                        catch 
+                        catch
                         {
                             image_pet_1.ImageLocation = "";
                             image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
                         }
+
+                        MySqlCommand fill_2 = new MySqlCommand("SELECT * FROM pets WHERE id = @id ", db.getConnection());
+                        MySqlParameter f_2 = new MySqlParameter("@id", list[num+1]);
+                        fill_2.Parameters.Add(f_2);
+                        MySqlDataReader Reader_fill_2 = fill_2.ExecuteReader();
+                        if (Reader_fill_2.HasRows)
+                        {
+                            while (Reader_fill_2.Read())
+                            {
+                                name = Reader_fill_2.GetValue(2);
+                                age = Reader_fill_2.GetValue(3);
+                                breed = Reader_fill_2.GetValue(5);
+                                photo = Reader_fill_2.GetValue(6);
+                            }
+                        }
+                        Reader_fill_2.Close();
+                        name_pet_2.Text = Convert.ToString(name);
+                        breed_pet_2.Text = Convert.ToString(breed);
+                        age_pet_2.Text = Convert.ToString(age);
                         try
                         {
-                            MySqlCommand fill_photo_2 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
-                            MySqlParameter f_8 = new MySqlParameter("@id", list[num + 1]);
-                            fill_photo_2.Parameters.Add(f_8);
-                            image_pet_2.ImageLocation = Convert.ToString(fill_photo_2.ExecuteScalar());
-                            fill_photo_2.ExecuteNonQuery();
+                            image_pet_2.ImageLocation = Convert.ToString(photo);
                         }
                         catch 
                         {
@@ -355,64 +346,60 @@ namespace GiveMePaw
                         {
                             back_butt.Visible = false;
                         }
-                        MySqlCommand fill_name_1 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
+                        MySqlCommand fill = new MySqlCommand("SELECT * FROM pets WHERE id = @id ", db.getConnection());
                         MySqlParameter f_1 = new MySqlParameter("@id", list[num]);
-                        fill_name_1.Parameters.Add(f_1);
-                        name_pet_1.Text = Convert.ToString(fill_name_1.ExecuteScalar());
-                        fill_name_1.ExecuteNonQuery();
-                        MySqlCommand fill_name_2 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
+                        fill.Parameters.Add(f_1);
+                        MySqlDataReader Reader_fill = fill.ExecuteReader();
+                        if (Reader_fill.HasRows)
+                        {
+                            while (Reader_fill.Read())
+                            {
+                                name = Reader_fill.GetValue(2);
+                                age = Reader_fill.GetValue(3);
+                                breed = Reader_fill.GetValue(5);
+                                photo = Reader_fill.GetValue(6);
+                            }
+                        }
+                        Reader_fill.Close();
+                        name_pet_1.Text = Convert.ToString(name);
+                        breed_pet_1.Text = Convert.ToString(breed);
+                        age_pet_1.Text = Convert.ToString(age);
+                        try
+                        {
+                            image_pet_1.ImageLocation = Convert.ToString(photo);
+                        }
+                        catch
+                        {
+                            image_pet_1.ImageLocation = "";
+                            image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                        }
+
+                        MySqlCommand fill_2 = new MySqlCommand("SELECT * FROM pets WHERE id = @id ", db.getConnection());
                         MySqlParameter f_2 = new MySqlParameter("@id", list[num + 1]);
-                        fill_name_2.Parameters.Add(f_2);
-                        name_pet_2.Text = Convert.ToString(fill_name_2.ExecuteScalar());
-                        fill_name_2.ExecuteNonQuery();
-
-                        MySqlCommand fill_breed_1 = new MySqlCommand("SELECT breed FROM pets WHERE id = @id ", db.getConnection());
-                        MySqlParameter f_3 = new MySqlParameter("@id", list[num]);
-                        fill_breed_1.Parameters.Add(f_3);
-                        breed_pet_1.Text = Convert.ToString(fill_breed_1.ExecuteScalar());
-                        fill_breed_1.ExecuteNonQuery();
-                        MySqlCommand fill_breed_2 = new MySqlCommand("SELECT breed FROM pets WHERE id = @id ", db.getConnection());
-                        MySqlParameter f_4 = new MySqlParameter("@id", list[num + 1]);
-                        fill_breed_2.Parameters.Add(f_4);
-                        breed_pet_2.Text = Convert.ToString(fill_breed_2.ExecuteScalar());
-                        fill_breed_2.ExecuteNonQuery();
-
-                        MySqlCommand fill_age_1 = new MySqlCommand("SELECT age FROM pets WHERE id = @id ", db.getConnection());
-                        MySqlParameter f_5 = new MySqlParameter("@id", list[num]);
-                        fill_age_1.Parameters.Add(f_5);
-                        age_pet_1.Text = Convert.ToString(fill_age_1.ExecuteScalar());
-                        fill_age_1.ExecuteNonQuery();
-                        MySqlCommand fill_age_2 = new MySqlCommand("SELECT age FROM pets WHERE id = @id ", db.getConnection());
-                        MySqlParameter f_6 = new MySqlParameter("@id", list[num + 1]);
-                        fill_age_2.Parameters.Add(f_6);
-                        age_pet_2.Text = Convert.ToString(fill_age_2.ExecuteScalar());
-                        fill_age_2.ExecuteNonQuery();
-
+                        fill_2.Parameters.Add(f_2);
+                        MySqlDataReader Reader_fill_2 = fill_2.ExecuteReader();
+                        if (Reader_fill_2.HasRows)
+                        {
+                            while (Reader_fill_2.Read())
+                            {
+                                name = Reader_fill_2.GetValue(2);
+                                age = Reader_fill_2.GetValue(3);
+                                breed = Reader_fill_2.GetValue(5);
+                                photo = Reader_fill_2.GetValue(6);
+                            }
+                        }
+                        Reader_fill_2.Close();
+                        name_pet_2.Text = Convert.ToString(name);
+                        breed_pet_2.Text = Convert.ToString(breed);
+                        age_pet_2.Text = Convert.ToString(age);
                         try
                         {
-                            MySqlCommand fill_photo_1 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
-                            MySqlParameter f_7 = new MySqlParameter("@id", list[num]);
-                            fill_photo_1.Parameters.Add(f_7);
-                            image_pet_1.ImageLocation = Convert.ToString(fill_photo_1.ExecuteScalar());
-                            fill_photo_1.ExecuteNonQuery();
+                            image_pet_2.ImageLocation = Convert.ToString(photo);
                         }
                         catch
                         {
-                            image_pet_1.ImageLocation = "";
-                            image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
-                        }
-                        try
-                        {
-                            MySqlCommand fill_photo_2 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
-                            MySqlParameter f_8 = new MySqlParameter("@id", list[num + 1]);
-                            fill_photo_2.Parameters.Add(f_8);
-                            image_pet_2.ImageLocation = Convert.ToString(fill_photo_2.ExecuteScalar());
-                            fill_photo_2.ExecuteNonQuery();
-                        }
-                        catch
-                        {
-                            image_pet_1.ImageLocation = "";
-                            image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
+                            image_pet_2.ImageLocation = "";
+                            image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
                         }
                     }
                     else if (num < count && num + 1 >= count)
@@ -429,31 +416,27 @@ namespace GiveMePaw
                         {
                             back_butt.Visible = false;
                         }
-                        MySqlCommand fill_name_1 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
+                        MySqlCommand fill = new MySqlCommand("SELECT * FROM pets WHERE id = @id ", db.getConnection());
                         MySqlParameter f_1 = new MySqlParameter("@id", list[num]);
-                        fill_name_1.Parameters.Add(f_1);
-                        name_pet_1.Text = Convert.ToString(fill_name_1.ExecuteScalar());
-                        fill_name_1.ExecuteNonQuery();
-
-                        MySqlCommand fill_breed_1 = new MySqlCommand("SELECT breed FROM pets WHERE id = @id ", db.getConnection());
-                        MySqlParameter f_3 = new MySqlParameter("@id", list[num]);
-                        fill_breed_1.Parameters.Add(f_3);
-                        breed_pet_1.Text = Convert.ToString(fill_breed_1.ExecuteScalar());
-                        fill_breed_1.ExecuteNonQuery();
-
-                        MySqlCommand fill_age_1 = new MySqlCommand("SELECT age FROM pets WHERE id = @id ", db.getConnection());
-                        MySqlParameter f_5 = new MySqlParameter("@id", list[num]);
-                        fill_age_1.Parameters.Add(f_5);
-                        age_pet_1.Text = Convert.ToString(fill_age_1.ExecuteScalar());
-                        fill_age_1.ExecuteNonQuery();
-
+                        fill.Parameters.Add(f_1);
+                        MySqlDataReader Reader_fill = fill.ExecuteReader();
+                        if (Reader_fill.HasRows)
+                        {
+                            while (Reader_fill.Read())
+                            {
+                                name = Reader_fill.GetValue(2);
+                                age = Reader_fill.GetValue(3);
+                                breed = Reader_fill.GetValue(5);
+                                photo = Reader_fill.GetValue(6);
+                            }
+                        }
+                        Reader_fill.Close();
+                        name_pet_1.Text = Convert.ToString(name);
+                        breed_pet_1.Text = Convert.ToString(breed);
+                        age_pet_1.Text = Convert.ToString(age);
                         try
                         {
-                            MySqlCommand fill_photo_1 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
-                            MySqlParameter f_7 = new MySqlParameter("@id", list[num]);
-                            fill_photo_1.Parameters.Add(f_7);
-                            image_pet_1.ImageLocation = Convert.ToString(fill_photo_1.ExecuteScalar());
-                            fill_photo_1.ExecuteNonQuery();
+                            image_pet_1.ImageLocation = Convert.ToString(photo);
                         }
                         catch
                         {
@@ -476,31 +459,27 @@ namespace GiveMePaw
                     name_pet_1.Text = Convert.ToString(list[num]);
                 }
 
-                MySqlCommand fill_name_1 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
+                MySqlCommand fill = new MySqlCommand("SELECT * FROM pets WHERE id = @id ", db.getConnection());
                 MySqlParameter f_1 = new MySqlParameter("@id", list[num]);
-                fill_name_1.Parameters.Add(f_1);
-                name_pet_1.Text = Convert.ToString(fill_name_1.ExecuteScalar());
-                fill_name_1.ExecuteNonQuery();
-
-                MySqlCommand fill_breed_1 = new MySqlCommand("SELECT breed FROM pets WHERE id = @id ", db.getConnection());
-                MySqlParameter f_3 = new MySqlParameter("@id", list[num]);
-                fill_breed_1.Parameters.Add(f_3);
-                breed_pet_1.Text = Convert.ToString(fill_breed_1.ExecuteScalar());
-                fill_breed_1.ExecuteNonQuery();
-
-                MySqlCommand fill_age_1 = new MySqlCommand("SELECT age FROM pets WHERE id = @id ", db.getConnection());
-                MySqlParameter f_5 = new MySqlParameter("@id", list[num]);
-                fill_age_1.Parameters.Add(f_5);
-                age_pet_1.Text = Convert.ToString(fill_age_1.ExecuteScalar());
-                fill_age_1.ExecuteNonQuery();
-
+                fill.Parameters.Add(f_1);
+                MySqlDataReader Reader_fill = fill.ExecuteReader();
+                if (Reader_fill.HasRows)
+                {
+                    while (Reader_fill.Read())
+                    {
+                        name = Reader_fill.GetValue(2);
+                        age = Reader_fill.GetValue(3);
+                        breed = Reader_fill.GetValue(5);
+                        photo = Reader_fill.GetValue(6);
+                    }
+                }
+                Reader_fill.Close();
+                name_pet_1.Text = Convert.ToString(name);
+                breed_pet_1.Text = Convert.ToString(breed);
+                age_pet_1.Text = Convert.ToString(age);
                 try
                 {
-                    MySqlCommand fill_photo_1 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
-                    MySqlParameter f_7 = new MySqlParameter("@id", list[num]);
-                    fill_photo_1.Parameters.Add(f_7);
-                    image_pet_1.ImageLocation = Convert.ToString(fill_photo_1.ExecuteScalar());
-                    fill_photo_1.ExecuteNonQuery();
+                    image_pet_1.ImageLocation = Convert.ToString(photo);
                 }
                 catch
                 {
@@ -528,59 +507,55 @@ namespace GiveMePaw
                     name_pet_1.Text = Convert.ToString(list[num]);
                     name_pet_2.Text = Convert.ToString(list[num+1]);
                 }
-                MySqlCommand fill_name_1 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
+                MySqlCommand fill = new MySqlCommand("SELECT * FROM pets WHERE id = @id ", db.getConnection());
                 MySqlParameter f_1 = new MySqlParameter("@id", list[num]);
-                fill_name_1.Parameters.Add(f_1);
-                name_pet_1.Text = Convert.ToString(fill_name_1.ExecuteScalar());
-                fill_name_1.ExecuteNonQuery();
-                MySqlCommand fill_name_2 = new MySqlCommand("SELECT name FROM pets WHERE id = @id ", db.getConnection());
-                MySqlParameter f_2 = new MySqlParameter("@id", list[num + 1]);
-                fill_name_2.Parameters.Add(f_2);
-                name_pet_2.Text = Convert.ToString(fill_name_2.ExecuteScalar());
-                fill_name_2.ExecuteNonQuery();
-
-                MySqlCommand fill_breed_1 = new MySqlCommand("SELECT breed FROM pets WHERE id = @id ", db.getConnection());
-                MySqlParameter f_3 = new MySqlParameter("@id", list[num]);
-                fill_breed_1.Parameters.Add(f_3);
-                breed_pet_1.Text = Convert.ToString(fill_breed_1.ExecuteScalar());
-                fill_breed_1.ExecuteNonQuery();
-                MySqlCommand fill_breed_2 = new MySqlCommand("SELECT breed FROM pets WHERE id = @id ", db.getConnection());
-                MySqlParameter f_4 = new MySqlParameter("@id", list[num + 1]);
-                fill_breed_2.Parameters.Add(f_4);
-                breed_pet_2.Text = Convert.ToString(fill_breed_2.ExecuteScalar());
-                fill_breed_2.ExecuteNonQuery();
-
-                MySqlCommand fill_age_1 = new MySqlCommand("SELECT age FROM pets WHERE id = @id ", db.getConnection());
-                MySqlParameter f_5 = new MySqlParameter("@id", list[num]);
-                fill_age_1.Parameters.Add(f_5);
-                age_pet_1.Text = Convert.ToString(fill_age_1.ExecuteScalar());
-                fill_age_1.ExecuteNonQuery();
-                MySqlCommand fill_age_2 = new MySqlCommand("SELECT age FROM pets WHERE id = @id ", db.getConnection());
-                MySqlParameter f_6 = new MySqlParameter("@id", list[num + 1]);
-                fill_age_2.Parameters.Add(f_6);
-                age_pet_2.Text = Convert.ToString(fill_age_2.ExecuteScalar());
-                fill_age_2.ExecuteNonQuery();
-
+                fill.Parameters.Add(f_1);
+                MySqlDataReader Reader_fill = fill.ExecuteReader();
+                if (Reader_fill.HasRows)
+                {
+                    while (Reader_fill.Read())
+                    {
+                        name = Reader_fill.GetValue(2);
+                        age = Reader_fill.GetValue(3);
+                        breed = Reader_fill.GetValue(5);
+                        photo = Reader_fill.GetValue(6);
+                    }
+                }
+                Reader_fill.Close();
+                name_pet_1.Text = Convert.ToString(name);
+                breed_pet_1.Text = Convert.ToString(breed);
+                age_pet_1.Text = Convert.ToString(age);
                 try
                 {
-                    MySqlCommand fill_photo_1 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
-                    MySqlParameter f_7 = new MySqlParameter("@id", list[num]);
-                    fill_photo_1.Parameters.Add(f_7);
-                    image_pet_1.ImageLocation = Convert.ToString(fill_photo_1.ExecuteScalar());
-                    fill_photo_1.ExecuteNonQuery();
+                    image_pet_1.ImageLocation = Convert.ToString(photo);
                 }
                 catch
                 {
                     image_pet_1.ImageLocation = "";
                     image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
                 }
+
+                MySqlCommand fill_2 = new MySqlCommand("SELECT * FROM pets WHERE id = @id ", db.getConnection());
+                MySqlParameter f_2 = new MySqlParameter("@id", list[num + 1]);
+                fill_2.Parameters.Add(f_2);
+                MySqlDataReader Reader_fill_2 = fill_2.ExecuteReader();
+                if (Reader_fill_2.HasRows)
+                {
+                    while (Reader_fill_2.Read())
+                    {
+                        name = Reader_fill_2.GetValue(2);
+                        age = Reader_fill_2.GetValue(3);
+                        breed = Reader_fill_2.GetValue(5);
+                        photo = Reader_fill_2.GetValue(6);
+                    }
+                }
+                Reader_fill_2.Close();
+                name_pet_2.Text = Convert.ToString(name);
+                breed_pet_2.Text = Convert.ToString(breed);
+                age_pet_2.Text = Convert.ToString(age);
                 try
                 {
-                    MySqlCommand fill_photo_2 = new MySqlCommand("SELECT photo FROM pets WHERE id = @id ", db.getConnection());
-                    MySqlParameter f_8 = new MySqlParameter("@id", list[num + 1]);
-                    fill_photo_2.Parameters.Add(f_8);
-                    image_pet_2.ImageLocation = Convert.ToString(fill_photo_2.ExecuteScalar());
-                    fill_photo_2.ExecuteNonQuery();
+                    image_pet_2.ImageLocation = Convert.ToString(photo);
                 }
                 catch
                 {
@@ -592,7 +567,7 @@ namespace GiveMePaw
 
 
 
-
+        //Разделы//
         private void panel_dog_Click(object sender, EventArgs e)
         {
             try
@@ -615,7 +590,6 @@ namespace GiveMePaw
                 MessageBox.Show("Ошибка!");
             }
         }
-
         private void panel_parrot_Click(object sender, EventArgs e)
         {
             try
@@ -627,7 +601,6 @@ namespace GiveMePaw
                 MessageBox.Show("Ошибка!");
             }
         }
-
         private void panel_rabbit_Click(object sender, EventArgs e)
         {
             try
@@ -639,7 +612,6 @@ namespace GiveMePaw
                 MessageBox.Show("Ошибка!");
             }
         }
-
         private void panel_mouse_Click(object sender, EventArgs e)
         {
             try
@@ -654,7 +626,7 @@ namespace GiveMePaw
 
 
 
-
+        //Выйти в главное меню//
         private void back_button_many_pets_Click(object sender, EventArgs e)
         {
             many_dog_panel.Visible = false;
@@ -667,6 +639,8 @@ namespace GiveMePaw
             image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
         }
 
+
+        //Кнопки переключения карточек//
         private void next_butt_Click(object sender, EventArgs e)
         {
             if (Animal == "dog")
@@ -797,18 +771,30 @@ namespace GiveMePaw
 
 
         //Нажатие на карточку//
-
         private void card_pet_1_Click(object sender, EventArgs e)
         {
             pet_panel.Visible = true;
             many_dog_panel.Visible = false;
+            Card(num);
         }
-
         private void card_pet_2_Click(object sender, EventArgs e)
         {
             pet_panel.Visible = true;
             many_dog_panel.Visible = false;
         }
+
+
+        //Функция загрузки карточки//
+        private void Card(int number)
+        {
+            
+        }
+
+
+
+
+
+
 
         private void take_button_Click(object sender, EventArgs e)
         {
