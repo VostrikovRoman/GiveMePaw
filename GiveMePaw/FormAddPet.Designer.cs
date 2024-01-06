@@ -33,6 +33,8 @@ namespace GiveMePaw
             this.panelHat = new System.Windows.Forms.Panel();
             this.labelTextAddPet = new System.Windows.Forms.Label();
             this.panelAddPet = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.Pet_typeTxtbx = new System.Windows.Forms.ComboBox();
             this.save_button_account = new System.Windows.Forms.Panel();
             this.labelButtSavePet = new System.Windows.Forms.Label();
@@ -47,8 +49,6 @@ namespace GiveMePaw
             this.WeightTxtbx = new System.Windows.Forms.TextBox();
             this.AgeTxtbx = new System.Windows.Forms.TextBox();
             this.NameTxtbx = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.panelHat.SuspendLayout();
             this.panelAddPet.SuspendLayout();
             this.save_button_account.SuspendLayout();
@@ -96,10 +96,36 @@ namespace GiveMePaw
             this.panelAddPet.Controls.Add(this.AgeTxtbx);
             this.panelAddPet.Controls.Add(this.NameTxtbx);
             this.panelAddPet.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelAddPet.Location = new System.Drawing.Point(0, 106);
+            this.panelAddPet.Location = new System.Drawing.Point(0, 107);
             this.panelAddPet.Name = "panelAddPet";
             this.panelAddPet.Size = new System.Drawing.Size(584, 439);
             this.panelAddPet.TabIndex = 1;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label7.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(430, 199);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(72, 36);
+            this.label7.TabIndex = 48;
+            this.label7.Text = "г";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label6.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(430, 148);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(72, 36);
+            this.label6.TabIndex = 47;
+            this.label6.Text = "мес.";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Pet_typeTxtbx
             // 
@@ -199,7 +225,7 @@ namespace GiveMePaw
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 36);
             this.label1.TabIndex = 40;
-            this.label1.Text = "Имя";
+            this.label1.Text = "Кличка";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelButtPetText
@@ -211,7 +237,7 @@ namespace GiveMePaw
             this.labelButtPetText.Name = "labelButtPetText";
             this.labelButtPetText.Size = new System.Drawing.Size(127, 36);
             this.labelButtPetText.TabIndex = 39;
-            this.labelButtPetText.Text = "Тип";
+            this.labelButtPetText.Text = "Вид";
             this.labelButtPetText.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // PhotoTxtbx
@@ -259,37 +285,11 @@ namespace GiveMePaw
             this.NameTxtbx.Size = new System.Drawing.Size(356, 36);
             this.NameTxtbx.TabIndex = 1;
             // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label6.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(430, 148);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 36);
-            this.label6.TabIndex = 47;
-            this.label6.Text = "мес.";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label7.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(430, 199);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 36);
-            this.label7.TabIndex = 48;
-            this.label7.Text = "г";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // FormAddPet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 545);
+            this.ClientSize = new System.Drawing.Size(584, 546);
             this.Controls.Add(this.panelAddPet);
             this.Controls.Add(this.panelHat);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
