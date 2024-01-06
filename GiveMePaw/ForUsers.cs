@@ -55,7 +55,7 @@ namespace GiveMePaw
             main_panel.Visible = true;
             error_panel.Visible = false;
             lacky_panel.Visible = false;
-           
+            no_animal_panel.Visible = false;
 
         }
 
@@ -142,6 +142,8 @@ namespace GiveMePaw
             main_panel.Visible = true;
             error_panel.Visible = false;
             lacky_panel.Visible = false;
+            no_animal_panel.Visible = false;
+            num = 0;
         }
         private void Give_Tab_button_Click(object sender, EventArgs e)
         {
@@ -158,6 +160,8 @@ namespace GiveMePaw
             main_panel.Visible = false;
             error_panel.Visible = false;
             lacky_panel.Visible = false;
+            no_animal_panel.Visible = false;
+            num = 0;
         }
         private void contact_Tab_button_Click(object sender, EventArgs e)
         {
@@ -174,6 +178,8 @@ namespace GiveMePaw
             main_panel.Visible = false;
             error_panel.Visible = false;
             lacky_panel.Visible = false;
+            no_animal_panel.Visible = false;
+            num = 0;
         }
         private void info_Tab_button_Click(object sender, EventArgs e)
         {
@@ -190,6 +196,8 @@ namespace GiveMePaw
             main_panel.Visible = false;
             error_panel.Visible = false;
             lacky_panel.Visible = false;
+            no_animal_panel.Visible = false;
+            num = 0;
         }
 
 
@@ -495,7 +503,8 @@ namespace GiveMePaw
                 card_pet_2.Visible = false;
                 back_butt.Visible = false;
                 next_butt.Visible = false;
-                MessageBox.Show("Здесь никого нет :)");
+                no_animal_panel.Visible = true;
+                no_animal_panel.BringToFront();
             }
             else if (count == 2)
             {
@@ -633,12 +642,14 @@ namespace GiveMePaw
         {
             many_dog_panel.Visible = false;
             main_panel.Visible = true;
+            no_animal_panel.Visible = false;
             Animal = "";
             num = 0;
             image_pet_1.ImageLocation = "";
             image_pet_2.ImageLocation = "";
             image_pet_1.Image = new Bitmap(Properties.Resources.not_img);
             image_pet_2.Image = new Bitmap(Properties.Resources.not_img);
+            no_animal_panel.SendToBack();
         }
 
 
@@ -930,7 +941,7 @@ namespace GiveMePaw
         }
 
 
-        //Функция отправки письма//
+        //Функции отправки писем/
 
         private void Message_put(string u_email)
         {
