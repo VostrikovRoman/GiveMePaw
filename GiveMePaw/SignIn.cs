@@ -116,9 +116,11 @@ namespace GiveMePaw
         }
 
         public static string Remember = "";
+        public static string emailUser = "";
+
         private void sign_in_button_Click(object sender, EventArgs e)
         {
-            String emailUser = email_sign_in.Text;
+            emailUser = email_sign_in.Text;
             String passwordUser = password_sign_in.Text;
 
             DB db = new DB();
