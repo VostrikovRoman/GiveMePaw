@@ -951,7 +951,7 @@ namespace GiveMePaw
 
 
 
-
+        //Приютить животное//
         private void take_button_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Вы уверены, что хотите приютить это животное?", "Информация", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
@@ -959,6 +959,8 @@ namespace GiveMePaw
                 Message_put(SignIn.user_email);
             }
         }
+
+
 
         private void back_button_card_Click(object sender, EventArgs e)
         {
@@ -1062,6 +1064,109 @@ namespace GiveMePaw
                 error_panel.BringToFront();
             }
         }
+        private void Message_give_away(string u_email, string a_name, string a_type, string a_breed, string a_age, string a_weight)
+        {
+            object u_name = "";
+            object u_surname = "";
+            string animal = "";
+            string anim = "";
+
+            if (a_type == "1")
+            {
+                anim = "Собака";
+                animal = " собаку, по имени " + a_name;
+            }
+            else if (a_type == "2")
+            {
+                anim = "Кошка";
+                animal = " кошку, по имени " + a_name;
+            }
+            else if (a_type == "3")
+            {
+                anim = "Попугай";
+                animal = " попугая, по имени " + a_name;
+            }
+            else if (a_type == "4")
+            {
+                anim = "Кролик";
+                animal = " кролика, по имени " + a_name;
+            }
+            else if (a_type == "5")
+            {
+                anim = "Крыса";
+                animal = " крысу, по имени " + a_name;
+            }
+
+
+            try
+            {
+                DataTable table = new DataTable();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                DB db = new DB();
+                db.openConnection();
+
+                MySqlCommand command = new MySqlCommand("SELECT * FROM users WHERE email = @email ", db.getConnection());
+                MySqlParameter n1 = new MySqlParameter("@email", u_email);
+                command.Parameters.Add(n1);
+                MySqlDataReader Reader = command.ExecuteReader();
+
+                if (Reader.HasRows)
+                {
+                    while (Reader.Read())
+                    {
+                        u_name = Convert.ToString(Reader.GetValue(1));
+                        u_surname = Convert.ToString(Reader.GetValue(2));
+                    }
+                }
+            }
+            catch
+            {
+                error_panel.Visible = true;
+                error_panel.BringToFront();
+            }
+
+            try
+            {
+                MailAddress from = new MailAddress("fortestIMT@gmail.com");
+                MailAddress to = new MailAddress("rmnvstrkv@gmail.com");
+                MailMessage m = new MailMessage(from, to);
+                m.Subject = "Сдача животного!";
+                m.IsBodyHtml = true;
+                m.Body = "<html><head></head><body style = 'background: #e0e0e0;'><h1 align = 'center' style = 'color: #5c4130;'>Сдача животного!</h1>" +
+                    "<h2 align = 'center' style = 'color: black;'>Здравствуйте! Хочу отдать" + animal + ".</h2><h2 style = 'color: #3e3e3e; margin-left: 50px;'>Кличка: " +
+                    a_name + "</h2><h2 style = 'color: #3e3e3e; margin-left: 50px;'>Вид: " +
+                    anim + "</h2><h2 style = 'color: #3e3e3e; margin-left: 50px;'>Порода: " +
+                    a_breed + "</h2><h2 style = 'color: #3e3e3e; margin-left: 50px;'>Возраст: " +
+                    a_age + " мес.</h2><h2 style = 'color: #3e3e3e; margin-left: 50px;'>Вес: " +
+                    a_weight + " грамм </h2><h2 style = 'color:#cc8c2c; margin-right: 50px;' align = 'right'>" +
+                    u_surname + " " + u_name + ", </h2><h2 style = 'color:#cc8c2c; margin-right: 50px;' align = 'right'>" + u_email + "</h2>" +
+                    "<h2 align = 'center' style = 'color: black;'>Всего хорошего!</h2>" +
+                    "<table align = 'center'><tr><td><img src = 'https://github.com/VostrikovRoman/PhotoForGiveMePaw/blob/main/logo_give_me_paw%202.png?raw=true' width = '200px'></img></td></tr></table>" +
+                    "<h2 align = 'center' style = 'color: #5c4130;'>ДайЛапу</h2></body></html>";
+                SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587)
+                {
+                    Credentials = new NetworkCredential("fortestIMT@gmail.com", "pexzozphwawhzbog"),
+                    EnableSsl = true
+                };
+                smtp.Send(m);
+                lacky_panel.Visible = true;
+                lacky_panel.BringToFront();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Неверный формат электронной почты. Почта должна иметь окончания - @gmail/yandex/mail/bk/list и другие");
+
+            }
+            catch (ArgumentException)
+            {
+                MessageBox.Show("Строка с адресом не должна быть пуста");
+            }
+            catch
+            {
+                error_panel.Visible = true;
+                error_panel.BringToFront();
+            }
+        }
 
         //Выход из панели ошибки//
         private void back_button_error_panel_Click(object sender, EventArgs e)
@@ -1074,6 +1179,26 @@ namespace GiveMePaw
         {
             lacky_panel.Visible = false;
             lacky_panel.SendToBack();
+        }
+
+        //Отправка заявки на сдачу животного//
+        private void send_give_away_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Вы уверены, что хотите сдать ваше животное в приют?", "Информация", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                try
+                {
+                    if (name_give_away.Text.Length > 0 && breed_give_away.Text.Length > 0 && age_give_away.Text.Length > 0 && weight_give_away.Text.Length > 0 && type_give_away.SelectedIndex + 1 > 0)
+                    {
+                        Message_give_away(SignIn.user_email, name_give_away.Text, Convert.ToString(type_give_away.SelectedIndex + 1), breed_give_away.Text, age_give_away.Text, weight_give_away.Text);
+                    }
+                }
+                catch
+                {
+                    error_panel.Visible = true;
+                    error_panel.BringToFront();
+                }
+            }
         }
     }
 }
