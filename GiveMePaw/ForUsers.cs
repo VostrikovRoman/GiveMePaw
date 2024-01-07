@@ -180,6 +180,9 @@ namespace GiveMePaw
             lacky_panel.Visible = false;
             no_animal_panel.Visible = false;
             num = 0;
+
+            Fill_contacts(1);
+            Fill_contacts(2);
         }
         private void info_Tab_button_Click(object sender, EventArgs e)
         {
@@ -1198,6 +1201,95 @@ namespace GiveMePaw
                     error_panel.Visible = true;
                     error_panel.BringToFront();
                 }
+            }
+        }
+
+        //Функция заполнения контактов//
+        private void Fill_contacts(int role)
+        {
+            try
+            {
+                DataTable table = new DataTable();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                DB db = new DB();
+                db.openConnection();
+
+                Int32 count = 0;
+
+                MySqlCommand command_count = new MySqlCommand("SELECT  COUNT(*) FROM users WHERE role = @role ", db.getConnection());
+                MySqlParameter c1 = new MySqlParameter("@role", role);
+                command_count.Parameters.Add(c1);
+                count = Convert.ToInt32(command_count.ExecuteScalar());
+                command_count.ExecuteNonQuery();
+
+                MySqlCommand command = new MySqlCommand("SELECT id FROM users WHERE role = @role ", db.getConnection());
+                MySqlParameter c2 = new MySqlParameter("@role", role);
+                command.Parameters.Add(c2);
+                MySqlDataReader Reader = command.ExecuteReader();
+                Int32[] list = new Int32[count];
+
+                int i = 0;
+
+                if (Reader.HasRows)
+                {
+                    while (Reader.Read())
+                    {
+                        list[i] = Reader.GetInt32(0);
+                        i += 1;
+                    }
+                }
+                Reader.Close();
+                command.ExecuteNonQuery();
+
+                MySqlCommand command_fill = new MySqlCommand("SELECT * FROM users WHERE id = @id ", db.getConnection());
+                MySqlParameter c3 = new MySqlParameter("@id", list[0]);
+                command_fill.Parameters.Add(c3);
+                MySqlDataReader Reader_fill = command_fill.ExecuteReader();
+                
+
+                if (Reader_fill.HasRows)
+                {
+                    if (role == 1)
+                    {
+                        while (Reader_fill.Read())
+                        {
+                            admin_contact_name.Text = Reader_fill.GetString(2) + " " + Reader_fill.GetString(1) + " " + Reader_fill.GetString(3);
+                            admin_contact_phone.Text = " - " + Reader_fill.GetString(5);
+                            admin_contact_email.Text = " - " + Reader_fill.GetString(4);
+                        }
+                    }
+                    else if (role == 2)
+                    {
+                        while (Reader_fill.Read())
+                        {
+                            manager_contact_name.Text = Reader_fill.GetString(2) + " " + Reader_fill.GetString(1) + " " + Reader_fill.GetString(3);
+                            manager_contact_phone.Text = " - " + Reader_fill.GetString(5);
+                            manager_contact_email.Text = " - " + Reader_fill.GetString(4);
+                        }
+                    }
+                }
+                else
+                {
+                    if (role == 1)
+                    {
+                        admin_contact_name.Text = "-";
+                        admin_contact_phone.Text = "-";
+                        admin_contact_email.Text = "-";
+                    }
+                    else if (role == 2)
+                    {
+                        manager_contact_name.Text = "-";
+                        manager_contact_phone.Text = "-";
+                        manager_contact_email.Text = "-";
+                    }
+                }
+                Reader_fill.Close();
+                command_fill.ExecuteNonQuery();
+                db.closeConnection();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка!" + ex);
             }
         }
     }

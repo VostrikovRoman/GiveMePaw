@@ -438,6 +438,7 @@ namespace GiveMePaw
             this.Name = "SignIn";
             this.Text = "Дай лапу";
             this.Load += new System.EventHandler(this.SignIn_Load);
+            this.Shown += new System.EventHandler(this.SignIn_Shown);
             this.SignInDisplay.ResumeLayout(false);
             this.SignInDisplay.PerformLayout();
             this.sign_in_button.ResumeLayout(false);

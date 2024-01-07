@@ -346,7 +346,12 @@ namespace GiveMePaw
 
         private void SignIn_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void SignIn_Shown(object sender, EventArgs e)
+        {
+            
         }
         /////     /////
     }

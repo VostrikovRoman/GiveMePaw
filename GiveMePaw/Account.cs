@@ -282,19 +282,20 @@ namespace GiveMePaw
 
         private void exit_button_account_Click(object sender, EventArgs e)
         {
+            string Out = "";
             if (MessageBox.Show("Вы уверены, что хотите выйти из аккаунта?", "Информация", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
             {
                 try
                 {
-                    File.Delete("checkSignIn.txt");
+                    SaveFile(Out, "checkSignIn.txt");
                     Account.ActiveForm.Hide();
                     SignIn NewForm = new SignIn();
                     NewForm.ShowDialog();
                     Close();
                 }
-                catch
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Ошибка!");
+                    MessageBox.Show("Ошибка!" + ex);
                 }
             }
             
@@ -315,7 +316,7 @@ namespace GiveMePaw
                     command.Parameters.Add(n1);
                     command.ExecuteNonQuery();
                     db.closeConnection();
-                    File.Delete("checkSignIn.txt");
+                    File.WriteAllText("","checkSignIn.txt");
                     Account.ActiveForm.Hide();
                     SignIn NewForm = new SignIn();
                     NewForm.ShowDialog();
@@ -327,6 +328,19 @@ namespace GiveMePaw
                 MessageBox.Show("Ошибка");
             }
             
+        }
+
+        //Функция записи текстового файла//
+        void SaveFile(string a, string b)
+        {
+            try
+            {
+                File.WriteAllText(b, a);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Ошибка!" +e);
+            }
         }
     }
 }

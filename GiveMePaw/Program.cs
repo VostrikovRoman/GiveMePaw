@@ -22,7 +22,7 @@ namespace GiveMePaw
             Application.SetCompatibleTextRenderingDefault(false);
             try
             {
-                if (File.Exists("checkSignIn.txt"))
+                if (File.ReadAllText("checkSignIn.txt") != "")
                 {
                     string emailUser = File.ReadAllText("checkSignIn.txt");
 
