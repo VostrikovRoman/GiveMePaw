@@ -1287,9 +1287,20 @@ namespace GiveMePaw
                 command_fill.ExecuteNonQuery();
                 db.closeConnection();
             }
-            catch (Exception ex)
+            catch 
             {
-                MessageBox.Show("Ошибка!" + ex);
+                if (role == 1)
+                {
+                    admin_contact_name.Text = "-";
+                    admin_contact_phone.Text = "-";
+                    admin_contact_email.Text = "-";
+                }
+                else if (role == 2)
+                {
+                    manager_contact_name.Text = "-";
+                    manager_contact_phone.Text = "-";
+                    manager_contact_email.Text = "-";
+                }
             }
         }
     }
