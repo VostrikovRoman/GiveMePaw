@@ -31,6 +31,9 @@ namespace GiveMePaw
             panelContact.Visible = false;
             panelUsersFind.Visible = true;
             panelInfo.Visible = false;
+
+            Fill_contacts(1);
+            Fill_contacts(2);
         }
         
         private void labelButtPetText_Click(object sender, EventArgs e)
@@ -43,6 +46,9 @@ namespace GiveMePaw
             panelContact.Visible = false;
             panelUsersFind.Visible = false;
             panelInfo.Visible = false;
+
+            Fill_contacts(1);
+            Fill_contacts(2);
         }
 
         private void labelButtContactText_Click(object sender, EventArgs e)
@@ -55,6 +61,9 @@ namespace GiveMePaw
             panelContact.Visible = true;
             panelUsersFind.Visible = false;
             panelInfo.Visible = false;
+
+            Fill_contacts(1);
+            Fill_contacts(2);
         }
 
         private void labelButInfo_Click(object sender, EventArgs e)
@@ -67,6 +76,9 @@ namespace GiveMePaw
             panelContact.Visible = false;
             panelUsersFind.Visible = false;
             panelInfo.Visible = true;
+
+            Fill_contacts(1);
+            Fill_contacts(2);
         }
 
 

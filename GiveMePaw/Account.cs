@@ -293,9 +293,9 @@ namespace GiveMePaw
                     NewForm.ShowDialog();
                     Close();
                 }
-                catch (Exception ex)
+                catch 
                 {
-                    MessageBox.Show("Ошибка!" + ex);
+                    MessageBox.Show("Ошибка!");
                 }
             }
             
@@ -337,9 +337,9 @@ namespace GiveMePaw
             {
                 File.WriteAllText(b, a);
             }
-            catch (Exception e)
+            catch 
             {
-                MessageBox.Show("Ошибка!" +e);
+                MessageBox.Show("Ошибка!");
             }
         }
     }

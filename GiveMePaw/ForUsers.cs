@@ -144,6 +144,9 @@ namespace GiveMePaw
             lacky_panel.Visible = false;
             no_animal_panel.Visible = false;
             num = 0;
+
+            Fill_contacts(1);
+            Fill_contacts(2);
         }
         private void Give_Tab_button_Click(object sender, EventArgs e)
         {
@@ -162,6 +165,9 @@ namespace GiveMePaw
             lacky_panel.Visible = false;
             no_animal_panel.Visible = false;
             num = 0;
+
+            Fill_contacts(1);
+            Fill_contacts(2);
         }
         private void contact_Tab_button_Click(object sender, EventArgs e)
         {
@@ -201,6 +207,9 @@ namespace GiveMePaw
             lacky_panel.Visible = false;
             no_animal_panel.Visible = false;
             num = 0;
+
+            Fill_contacts(1);
+            Fill_contacts(2);
         }
 
 
@@ -295,7 +304,7 @@ namespace GiveMePaw
                         Reader_fill.Close();
                         name_pet_1.Text = Convert.ToString(name);
                         breed_pet_1.Text = Convert.ToString(breed);
-                        age_pet_1.Text = Convert.ToString(age);
+                        age_pet_1.Text = Convert.ToString(age) + " мес.";
                         try
                         {
                             image_pet_1.ImageLocation = Convert.ToString(photo);
@@ -323,7 +332,7 @@ namespace GiveMePaw
                         Reader_fill_2.Close();
                         name_pet_2.Text = Convert.ToString(name);
                         breed_pet_2.Text = Convert.ToString(breed);
-                        age_pet_2.Text = Convert.ToString(age);
+                        age_pet_2.Text = Convert.ToString(age) + " мес.";
                         try
                         {
                             image_pet_2.ImageLocation = Convert.ToString(photo);
@@ -376,7 +385,7 @@ namespace GiveMePaw
                         Reader_fill.Close();
                         name_pet_1.Text = Convert.ToString(name);
                         breed_pet_1.Text = Convert.ToString(breed);
-                        age_pet_1.Text = Convert.ToString(age);
+                        age_pet_1.Text = Convert.ToString(age) + " мес.";
                         try
                         {
                             image_pet_1.ImageLocation = Convert.ToString(photo);
@@ -404,7 +413,7 @@ namespace GiveMePaw
                         Reader_fill_2.Close();
                         name_pet_2.Text = Convert.ToString(name);
                         breed_pet_2.Text = Convert.ToString(breed);
-                        age_pet_2.Text = Convert.ToString(age);
+                        age_pet_2.Text = Convert.ToString(age) + " мес.";
                         try
                         {
                             image_pet_2.ImageLocation = Convert.ToString(photo);
@@ -446,7 +455,7 @@ namespace GiveMePaw
                         Reader_fill.Close();
                         name_pet_1.Text = Convert.ToString(name);
                         breed_pet_1.Text = Convert.ToString(breed);
-                        age_pet_1.Text = Convert.ToString(age);
+                        age_pet_1.Text = Convert.ToString(age) + " мес.";
                         try
                         {
                             image_pet_1.ImageLocation = Convert.ToString(photo);
@@ -489,7 +498,7 @@ namespace GiveMePaw
                 Reader_fill.Close();
                 name_pet_1.Text = Convert.ToString(name);
                 breed_pet_1.Text = Convert.ToString(breed);
-                age_pet_1.Text = Convert.ToString(age);
+                age_pet_1.Text = Convert.ToString(age) + " мес.";
                 try
                 {
                     image_pet_1.ImageLocation = Convert.ToString(photo);
@@ -538,7 +547,7 @@ namespace GiveMePaw
                 Reader_fill.Close();
                 name_pet_1.Text = Convert.ToString(name);
                 breed_pet_1.Text = Convert.ToString(breed);
-                age_pet_1.Text = Convert.ToString(age);
+                age_pet_1.Text = Convert.ToString(age) + " мес.";
                 try
                 {
                     image_pet_1.ImageLocation = Convert.ToString(photo);
@@ -566,7 +575,7 @@ namespace GiveMePaw
                 Reader_fill_2.Close();
                 name_pet_2.Text = Convert.ToString(name);
                 breed_pet_2.Text = Convert.ToString(breed);
-                age_pet_2.Text = Convert.ToString(age);
+                age_pet_2.Text = Convert.ToString(age) + " мес.";
                 try
                 {
                     image_pet_2.ImageLocation = Convert.ToString(photo);
@@ -979,6 +988,7 @@ namespace GiveMePaw
             object u_name = "";
             object u_surname = "";
             string animal = "";
+            string m_email = "";
 
             if (type_card.Text == "Собака")
             {
@@ -1031,8 +1041,49 @@ namespace GiveMePaw
 
             try
             {
+                DataTable table = new DataTable();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                DB db = new DB();
+                db.openConnection();
+
+                Int32 count = 0;
+
+                MySqlCommand command_count = new MySqlCommand("SELECT  COUNT(*) FROM users WHERE role = 2 ", db.getConnection());
+                count = Convert.ToInt32(command_count.ExecuteScalar());
+                command_count.ExecuteNonQuery();
+
+                MySqlCommand command = new MySqlCommand("SELECT id FROM users WHERE role = 2 ", db.getConnection());
+                MySqlDataReader Reader = command.ExecuteReader();
+                Int32[] list = new Int32[count];
+
+                int i = 0;
+
+                if (Reader.HasRows)
+                {
+                    while (Reader.Read())
+                    {
+                        list[i] = Reader.GetInt32(0);
+                        i += 1;
+                    }
+                }
+                Reader.Close();
+                command.ExecuteNonQuery();
+
+                MySqlCommand command_fill = new MySqlCommand("SELECT * FROM users WHERE id = @id ", db.getConnection());
+                MySqlParameter c3 = new MySqlParameter("@id", list[0]);
+                command_fill.Parameters.Add(c3);
+                MySqlDataReader Reader_fill = command_fill.ExecuteReader();
+
+                if (Reader_fill.HasRows)
+                {
+                    while (Reader_fill.Read())
+                    {
+                        m_email = Convert.ToString(Reader_fill.GetString(4));
+                    }
+                }
+
                 MailAddress from = new MailAddress("fortestIMT@gmail.com");
-                MailAddress to = new MailAddress("rmnvstrkv@gmail.com");
+                MailAddress to = new MailAddress(m_email);
                 MailMessage m = new MailMessage(from, to);
                 m.Subject = "Приём животного!";
                 m.IsBodyHtml = true;
@@ -1073,6 +1124,7 @@ namespace GiveMePaw
             object u_surname = "";
             string animal = "";
             string anim = "";
+            string m_email = "";
 
             if (a_type == "1")
             {
@@ -1130,8 +1182,49 @@ namespace GiveMePaw
 
             try
             {
+                DataTable table = new DataTable();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                DB db = new DB();
+                db.openConnection();
+
+                Int32 count = 0;
+
+                MySqlCommand command_count = new MySqlCommand("SELECT  COUNT(*) FROM users WHERE role = 2 ", db.getConnection());
+                count = Convert.ToInt32(command_count.ExecuteScalar());
+                command_count.ExecuteNonQuery();
+
+                MySqlCommand command = new MySqlCommand("SELECT id FROM users WHERE role = 2 ", db.getConnection());
+                MySqlDataReader Reader = command.ExecuteReader();
+                Int32[] list = new Int32[count];
+
+                int i = 0;
+
+                if (Reader.HasRows)
+                {
+                    while (Reader.Read())
+                    {
+                        list[i] = Reader.GetInt32(0);
+                        i += 1;
+                    }
+                }
+                Reader.Close();
+                command.ExecuteNonQuery();
+
+                MySqlCommand command_fill = new MySqlCommand("SELECT * FROM users WHERE id = @id ", db.getConnection());
+                MySqlParameter c3 = new MySqlParameter("@id", list[0]);
+                command_fill.Parameters.Add(c3);
+                MySqlDataReader Reader_fill = command_fill.ExecuteReader();
+
+                if (Reader_fill.HasRows)
+                {
+                    while (Reader_fill.Read())
+                    {
+                        m_email = Convert.ToString(Reader_fill.GetString(4));
+                    }
+                }
+
                 MailAddress from = new MailAddress("fortestIMT@gmail.com");
-                MailAddress to = new MailAddress("rmnvstrkv@gmail.com");
+                MailAddress to = new MailAddress(m_email);
                 MailMessage m = new MailMessage(from, to);
                 m.Subject = "Сдача животного!";
                 m.IsBodyHtml = true;

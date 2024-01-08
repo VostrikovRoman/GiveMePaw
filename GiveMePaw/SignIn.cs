@@ -203,7 +203,7 @@ namespace GiveMePaw
                 File.Create(b).Close();
                 File.WriteAllText(b, a);
             }
-            catch (Exception e)
+            catch 
             {
                 MessageBox.Show("Ошибка!");
             }

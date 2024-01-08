@@ -49,7 +49,7 @@ namespace GiveMePaw
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Добовление прошло успешно!", "Уведомление", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch (MySqlException ex)
+            catch 
             {
                 MessageBox.Show("Не удалось добавить животное!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -76,7 +76,7 @@ namespace GiveMePaw
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Изменение прошло успешно!", "Уведомление", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch (MySqlException ex)
+            catch 
             {
                 MessageBox.Show("Не удалось изменить животное!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -97,7 +97,7 @@ namespace GiveMePaw
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Удаление прошло успешно!", "Уведомление", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch (MySqlException ex)
+            catch 
             {
                 MessageBox.Show("Не удалось удалить животное!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
