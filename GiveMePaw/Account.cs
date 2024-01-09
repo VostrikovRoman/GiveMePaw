@@ -170,6 +170,7 @@ namespace GiveMePaw
             {
                 try
                 {
+                    Hashing GH = new Hashing();
                     DataTable table = new DataTable();
                     MySqlDataAdapter adapter = new MySqlDataAdapter();
                     DB db = new DB();
@@ -186,7 +187,7 @@ namespace GiveMePaw
                     command.Parameters.Add(n4);
                     MySqlParameter n5 = new MySqlParameter("@phone", phone_account.Text);
                     command.Parameters.Add(n5);
-                    MySqlParameter n6 = new MySqlParameter("@password", password_account.Text);
+                    MySqlParameter n6 = new MySqlParameter("@password", GH.Hash(password_account.Text));
                     command.Parameters.Add(n6);
                     MySqlParameter n7 = new MySqlParameter("@last_name", last_name_account.Text);
                     command.Parameters.Add(n7);
