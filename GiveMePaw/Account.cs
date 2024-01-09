@@ -96,6 +96,7 @@ namespace GiveMePaw
             save_button_account.Visible = true;
             cancel_button_account.Visible = true;
             delete_button_account.Visible = true;
+            ButtChangePass.Visible = true;
         }
 
         private void cancel_button_account_Click(object sender, EventArgs e)
@@ -154,6 +155,7 @@ namespace GiveMePaw
                     save_button_account.Visible = false;
                     cancel_button_account.Visible = false;
                     delete_button_account.Visible = false;
+                    ButtChangePass.Visible = false;
                 }
                 catch (Exception ex)
                 {
@@ -341,6 +343,60 @@ namespace GiveMePaw
             catch 
             {
                 MessageBox.Show("Ошибка!");
+            }
+        }
+
+        private void ButtChangePass_Click(object sender, EventArgs e)
+        {
+            panelChangePass.Visible = true;
+            ButtChangePass.Visible = false;
+            delete_button_account.Visible = false;
+
+
+
+        }
+        private void panelCancelChangePass_Click_1(object sender, EventArgs e)
+        {
+            panelChangePass.Visible = false;
+            ButtChangePass.Visible = true;
+            delete_button_account.Visible = true;
+            tBLastPass.Text = "";
+            tBNewPass.Text = "";
+        }
+
+        private void panelSavePass_Click(object sender, EventArgs e)
+        {
+            Hashing GH = new Hashing();
+            if (GH.Hash(tBLastPass.Text) == password_account.Text)
+            {
+                try
+                {
+
+                    DataTable table = new DataTable();
+                    MySqlDataAdapter adapter = new MySqlDataAdapter();
+                    DB db = new DB();
+                    db.openConnection();
+
+                    MySqlCommand command = new MySqlCommand("UPDATE users SET password=@password WHERE email = @old_email", db.getConnection());
+                    MySqlParameter n1 = new MySqlParameter("@old_email", SignIn.user_email);
+                    command.Parameters.Add(n1);
+                    MySqlParameter n2 = new MySqlParameter("@password", GH.Hash(tBNewPass.Text));
+                    command.Parameters.Add(n2);
+                    command.ExecuteNonQuery();
+                    db.closeConnection();
+                    MessageBox.Show("Успешно!");
+                    panelChangePass.Visible = false;
+                    ButtChangePass.Visible = true;
+                    delete_button_account.Visible = true;
+                    tBLastPass.Text = "";
+                    tBNewPass.Text = "";
+
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ошибка!" + ex);
+                }
             }
         }
     }

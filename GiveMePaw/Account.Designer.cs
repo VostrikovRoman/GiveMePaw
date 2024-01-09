@@ -60,6 +60,17 @@ namespace GiveMePaw
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.delete_button_account = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
+            this.ButtChangePass = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.panelChangePass = new System.Windows.Forms.Panel();
+            this.panelCancelChangePass = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.panelSavePass = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.lblNewPass = new System.Windows.Forms.Label();
+            this.lblLastPass = new System.Windows.Forms.Label();
+            this.tBNewPass = new System.Windows.Forms.TextBox();
+            this.tBLastPass = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.back_button_account)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exit_button_account)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -70,6 +81,10 @@ namespace GiveMePaw
             this.cancel_button_account.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.delete_button_account.SuspendLayout();
+            this.ButtChangePass.SuspendLayout();
+            this.panelChangePass.SuspendLayout();
+            this.panelCancelChangePass.SuspendLayout();
+            this.panelSavePass.SuspendLayout();
             this.SuspendLayout();
             // 
             // label6
@@ -178,6 +193,7 @@ namespace GiveMePaw
             this.password_account.Size = new System.Drawing.Size(292, 36);
             this.password_account.TabIndex = 32;
             this.password_account.Text = "пароль";
+            this.password_account.Visible = false;
             // 
             // email_account
             // 
@@ -272,7 +288,7 @@ namespace GiveMePaw
             this.save_button_account.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
             this.save_button_account.Controls.Add(this.label4);
             this.save_button_account.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.save_button_account.Location = new System.Drawing.Point(584, 495);
+            this.save_button_account.Location = new System.Drawing.Point(584, 444);
             this.save_button_account.Name = "save_button_account";
             this.save_button_account.Size = new System.Drawing.Size(153, 40);
             this.save_button_account.TabIndex = 35;
@@ -297,7 +313,7 @@ namespace GiveMePaw
             this.cancel_button_account.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
             this.cancel_button_account.Controls.Add(this.label5);
             this.cancel_button_account.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cancel_button_account.Location = new System.Drawing.Point(401, 495);
+            this.cancel_button_account.Location = new System.Drawing.Point(401, 444);
             this.cancel_button_account.Name = "cancel_button_account";
             this.cancel_button_account.Size = new System.Drawing.Size(153, 40);
             this.cancel_button_account.TabIndex = 36;
@@ -388,6 +404,7 @@ namespace GiveMePaw
             this.label12.Size = new System.Drawing.Size(92, 27);
             this.label12.TabIndex = 42;
             this.label12.Text = "Пароль";
+            this.label12.Visible = false;
             // 
             // pictureBox1
             // 
@@ -426,13 +443,144 @@ namespace GiveMePaw
             this.label13.Text = "Удалить аккаунт";
             this.label13.Click += new System.EventHandler(this.delete_button_account_Click);
             // 
+            // ButtChangePass
+            // 
+            this.ButtChangePass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.ButtChangePass.Controls.Add(this.label14);
+            this.ButtChangePass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtChangePass.Location = new System.Drawing.Point(465, 495);
+            this.ButtChangePass.Name = "ButtChangePass";
+            this.ButtChangePass.Size = new System.Drawing.Size(222, 40);
+            this.ButtChangePass.TabIndex = 44;
+            this.ButtChangePass.Visible = false;
+            this.ButtChangePass.Click += new System.EventHandler(this.ButtChangePass_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
+            this.label14.Location = new System.Drawing.Point(15, 6);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(203, 27);
+            this.label14.TabIndex = 34;
+            this.label14.Text = "Изменить пароль";
+            this.label14.Click += new System.EventHandler(this.ButtChangePass_Click);
+            // 
+            // panelChangePass
+            // 
+            this.panelChangePass.Controls.Add(this.panelCancelChangePass);
+            this.panelChangePass.Controls.Add(this.panelSavePass);
+            this.panelChangePass.Controls.Add(this.lblNewPass);
+            this.panelChangePass.Controls.Add(this.lblLastPass);
+            this.panelChangePass.Controls.Add(this.tBNewPass);
+            this.panelChangePass.Controls.Add(this.tBLastPass);
+            this.panelChangePass.Location = new System.Drawing.Point(321, 187);
+            this.panelChangePass.Name = "panelChangePass";
+            this.panelChangePass.Size = new System.Drawing.Size(426, 297);
+            this.panelChangePass.TabIndex = 45;
+            this.panelChangePass.Visible = false;
+            // 
+            // panelCancelChangePass
+            // 
+            this.panelCancelChangePass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            this.panelCancelChangePass.Controls.Add(this.label15);
+            this.panelCancelChangePass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelCancelChangePass.Location = new System.Drawing.Point(78, 238);
+            this.panelCancelChangePass.Name = "panelCancelChangePass";
+            this.panelCancelChangePass.Size = new System.Drawing.Size(153, 40);
+            this.panelCancelChangePass.TabIndex = 46;
+            this.panelCancelChangePass.Click += new System.EventHandler(this.panelCancelChangePass_Click_1);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Lucida Sans", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.label15.Location = new System.Drawing.Point(27, 7);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(88, 26);
+            this.label15.TabIndex = 34;
+            this.label15.Text = "Отмена";
+            this.label15.Click += new System.EventHandler(this.panelCancelChangePass_Click_1);
+            // 
+            // panelSavePass
+            // 
+            this.panelSavePass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
+            this.panelSavePass.Controls.Add(this.label16);
+            this.panelSavePass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panelSavePass.Location = new System.Drawing.Point(261, 238);
+            this.panelSavePass.Name = "panelSavePass";
+            this.panelSavePass.Size = new System.Drawing.Size(153, 40);
+            this.panelSavePass.TabIndex = 45;
+            this.panelSavePass.Click += new System.EventHandler(this.panelSavePass_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Lucida Sans", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.label16.Location = new System.Drawing.Point(16, 7);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(119, 26);
+            this.label16.TabIndex = 34;
+            this.label16.Text = "Сохранить";
+            this.label16.Click += new System.EventHandler(this.panelSavePass_Click);
+            // 
+            // lblNewPass
+            // 
+            this.lblNewPass.AutoSize = true;
+            this.lblNewPass.BackColor = System.Drawing.Color.Transparent;
+            this.lblNewPass.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.lblNewPass.ForeColor = System.Drawing.Color.Black;
+            this.lblNewPass.Location = new System.Drawing.Point(141, 109);
+            this.lblNewPass.Name = "lblNewPass";
+            this.lblNewPass.Size = new System.Drawing.Size(167, 27);
+            this.lblNewPass.TabIndex = 44;
+            this.lblNewPass.Text = "Новый пароль";
+            // 
+            // lblLastPass
+            // 
+            this.lblLastPass.AutoSize = true;
+            this.lblLastPass.BackColor = System.Drawing.Color.Transparent;
+            this.lblLastPass.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.lblLastPass.ForeColor = System.Drawing.Color.Black;
+            this.lblLastPass.Location = new System.Drawing.Point(129, 15);
+            this.lblLastPass.Name = "lblLastPass";
+            this.lblLastPass.Size = new System.Drawing.Size(179, 27);
+            this.lblLastPass.TabIndex = 43;
+            this.lblLastPass.Text = "Старый пароль";
+            // 
+            // tBNewPass
+            // 
+            this.tBNewPass.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tBNewPass.ForeColor = System.Drawing.Color.Gray;
+            this.tBNewPass.Location = new System.Drawing.Point(93, 151);
+            this.tBNewPass.Name = "tBNewPass";
+            this.tBNewPass.Size = new System.Drawing.Size(273, 36);
+            this.tBNewPass.TabIndex = 41;
+            // 
+            // tBLastPass
+            // 
+            this.tBLastPass.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tBLastPass.ForeColor = System.Drawing.Color.Gray;
+            this.tBLastPass.Location = new System.Drawing.Point(93, 66);
+            this.tBLastPass.Name = "tBLastPass";
+            this.tBLastPass.Size = new System.Drawing.Size(273, 36);
+            this.tBLastPass.TabIndex = 40;
+            // 
             // Account
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1008, 614);
+            this.ClientSize = new System.Drawing.Size(1008, 613);
+            this.Controls.Add(this.panelChangePass);
             this.Controls.Add(this.delete_button_account);
+            this.Controls.Add(this.ButtChangePass);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -455,8 +603,8 @@ namespace GiveMePaw
             this.Controls.Add(this.label6);
             this.Controls.Add(this.exit_button_account);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -480,6 +628,14 @@ namespace GiveMePaw
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.delete_button_account.ResumeLayout(false);
             this.delete_button_account.PerformLayout();
+            this.ButtChangePass.ResumeLayout(false);
+            this.ButtChangePass.PerformLayout();
+            this.panelChangePass.ResumeLayout(false);
+            this.panelChangePass.PerformLayout();
+            this.panelCancelChangePass.ResumeLayout(false);
+            this.panelCancelChangePass.PerformLayout();
+            this.panelSavePass.ResumeLayout(false);
+            this.panelSavePass.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -517,5 +673,16 @@ namespace GiveMePaw
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel delete_button_account;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Panel ButtChangePass;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Panel panelChangePass;
+        private System.Windows.Forms.Panel panelCancelChangePass;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Panel panelSavePass;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lblNewPass;
+        private System.Windows.Forms.Label lblLastPass;
+        private System.Windows.Forms.TextBox tBNewPass;
+        private System.Windows.Forms.TextBox tBLastPass;
     }
 }
