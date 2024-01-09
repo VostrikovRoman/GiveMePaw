@@ -78,7 +78,8 @@ namespace GiveMePaw
             
             if (isUserExists())
                 return;
-            
+
+            Hashing GH = new Hashing();
             DB db = new DB();
             MySqlCommand command = new MySqlCommand("INSERT INTO `users` (`name`, `second_name`, `patronomic`, `email`, `phone_number`, `password`) VALUES (@name, @sname, @patronomic, @email, @phone, @pass)", db.getConnection());
             command.Parameters.Add("@name", MySqlDbType.VarChar).Value = name_sign_up.Text;
@@ -86,7 +87,7 @@ namespace GiveMePaw
             command.Parameters.Add("@patronomic", MySqlDbType.VarChar).Value = last_name_sign_up.Text;
             command.Parameters.Add("@email", MySqlDbType.VarChar).Value = email_sign_up.Text;
             command.Parameters.Add("@phone", MySqlDbType.VarChar).Value = phone_sign_up.Text;
-            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = password_sign_up.Text;
+            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = GH.Hash(password_sign_up.Text);
 
             db.openConnection();
 
@@ -120,6 +121,7 @@ namespace GiveMePaw
 
         private void sign_in_button_Click(object sender, EventArgs e)
         {
+            Hashing GH = new Hashing();
             emailUser = email_sign_in.Text;
             String passwordUser = password_sign_in.Text;
 
@@ -129,7 +131,7 @@ namespace GiveMePaw
 
             MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `email` = @eU AND `password` = @pU", db.getConnection());
             command.Parameters.Add("@eU", MySqlDbType.VarChar).Value = emailUser;
-            command.Parameters.Add("@pU", MySqlDbType.VarChar).Value = passwordUser;
+            command.Parameters.Add("@pU", MySqlDbType.VarChar).Value = GH.Hash(passwordUser);
             db.openConnection();
             adapter.SelectCommand = command;
             adapter.Fill(table);
@@ -139,7 +141,7 @@ namespace GiveMePaw
             MySqlCommand role = new MySqlCommand("SELECT role FROM `users` WHERE `email` = @eU AND `password` = @pU", db.getConnection());
             MySqlParameter n1 = new MySqlParameter("@eU", emailUser);
             role.Parameters.Add(n1);
-            MySqlParameter n2 = new MySqlParameter("@pU", passwordUser);
+            MySqlParameter n2 = new MySqlParameter("@pU", GH.Hash(passwordUser));
             role.Parameters.Add(n2);
             string role_id = Convert.ToString(role.ExecuteScalar());
             role.ExecuteNonQuery();

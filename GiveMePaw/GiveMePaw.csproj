@@ -90,6 +90,7 @@
     <Compile Include="ForUsers.Designer.cs">
       <DependentUpon>ForUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hashing.cs" />
     <Compile Include="Pet.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
