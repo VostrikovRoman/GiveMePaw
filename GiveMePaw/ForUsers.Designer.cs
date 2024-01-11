@@ -51,58 +51,6 @@ namespace GiveMePaw
             this.panel1 = new System.Windows.Forms.Panel();
             this.account_button = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.contacts_panel = new System.Windows.Forms.Panel();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.label56 = new System.Windows.Forms.Label();
-            this.manager_contact_email = new System.Windows.Forms.Label();
-            this.admin_contact_email = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.manager_contact_phone = new System.Windows.Forms.Label();
-            this.admin_contact_phone = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.manager_contact_name = new System.Windows.Forms.Label();
-            this.admin_contact_name = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.give_away_panel = new System.Windows.Forms.Panel();
-            this.type_give_away = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.labelButtPetText = new System.Windows.Forms.Label();
-            this.send_give_away = new System.Windows.Forms.Panel();
-            this.label41 = new System.Windows.Forms.Label();
-            this.weight_give_away = new System.Windows.Forms.TextBox();
-            this.age_give_away = new System.Windows.Forms.TextBox();
-            this.name_give_away = new System.Windows.Forms.TextBox();
-            this.breed_give_away = new System.Windows.Forms.TextBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.pet_panel = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.take_button = new System.Windows.Forms.Panel();
-            this.label38 = new System.Windows.Forms.Label();
-            this.weight_card = new System.Windows.Forms.Label();
-            this.age_card = new System.Windows.Forms.Label();
-            this.breed_card = new System.Windows.Forms.Label();
-            this.type_card = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.photo_card = new System.Windows.Forms.PictureBox();
-            this.name_card = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.back_button_card = new System.Windows.Forms.PictureBox();
             this.many_dog_panel = new System.Windows.Forms.Panel();
             this.back_butt = new System.Windows.Forms.PictureBox();
             this.next_butt = new System.Windows.Forms.PictureBox();
@@ -157,6 +105,58 @@ namespace GiveMePaw
             this.jhhjk = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
+            this.contacts_panel = new System.Windows.Forms.Panel();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.manager_contact_email = new System.Windows.Forms.Label();
+            this.admin_contact_email = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.manager_contact_phone = new System.Windows.Forms.Label();
+            this.admin_contact_phone = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.manager_contact_name = new System.Windows.Forms.Label();
+            this.admin_contact_name = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.give_away_panel = new System.Windows.Forms.Panel();
+            this.type_give_away = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.labelButtPetText = new System.Windows.Forms.Label();
+            this.send_give_away = new System.Windows.Forms.Panel();
+            this.label41 = new System.Windows.Forms.Label();
+            this.weight_give_away = new System.Windows.Forms.TextBox();
+            this.age_give_away = new System.Windows.Forms.TextBox();
+            this.name_give_away = new System.Windows.Forms.TextBox();
+            this.breed_give_away = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.pet_panel = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.take_button = new System.Windows.Forms.Panel();
+            this.label38 = new System.Windows.Forms.Label();
+            this.weight_card = new System.Windows.Forms.Label();
+            this.age_card = new System.Windows.Forms.Label();
+            this.breed_card = new System.Windows.Forms.Label();
+            this.type_card = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.photo_card = new System.Windows.Forms.PictureBox();
+            this.name_card = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.back_button_card = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.Main_Tab_button.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureButtMain)).BeginInit();
@@ -170,15 +170,6 @@ namespace GiveMePaw
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.contacts_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            this.give_away_panel.SuspendLayout();
-            this.send_give_away.SuspendLayout();
-            this.pet_panel.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.take_button.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.photo_card)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.back_button_card)).BeginInit();
             this.many_dog_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.back_butt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.next_butt)).BeginInit();
@@ -203,6 +194,15 @@ namespace GiveMePaw
             ((System.ComponentModel.ISupportInitialize)(this.back_button_lucky_panel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             this.info_panel.SuspendLayout();
+            this.contacts_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            this.give_away_panel.SuspendLayout();
+            this.send_give_away.SuspendLayout();
+            this.pet_panel.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.take_button.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.photo_card)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.back_button_card)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -429,15 +429,15 @@ namespace GiveMePaw
             this.panel1.Controls.Add(this.account_button);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.info_panel);
+            this.panel1.Controls.Add(this.contacts_panel);
+            this.panel1.Controls.Add(this.give_away_panel);
+            this.panel1.Controls.Add(this.pet_panel);
             this.panel1.Controls.Add(this.many_dog_panel);
             this.panel1.Controls.Add(this.main_panel);
             this.panel1.Controls.Add(this.no_animal_panel);
             this.panel1.Controls.Add(this.error_panel);
             this.panel1.Controls.Add(this.lacky_panel);
-            this.panel1.Controls.Add(this.info_panel);
-            this.panel1.Controls.Add(this.contacts_panel);
-            this.panel1.Controls.Add(this.give_away_panel);
-            this.panel1.Controls.Add(this.pet_panel);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1016, 618);
@@ -466,618 +466,6 @@ namespace GiveMePaw
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
-            // 
-            // contacts_panel
-            // 
-            this.contacts_panel.Controls.Add(this.label58);
-            this.contacts_panel.Controls.Add(this.label57);
-            this.contacts_panel.Controls.Add(this.pictureBox17);
-            this.contacts_panel.Controls.Add(this.label56);
-            this.contacts_panel.Controls.Add(this.manager_contact_email);
-            this.contacts_panel.Controls.Add(this.admin_contact_email);
-            this.contacts_panel.Controls.Add(this.label53);
-            this.contacts_panel.Controls.Add(this.manager_contact_phone);
-            this.contacts_panel.Controls.Add(this.admin_contact_phone);
-            this.contacts_panel.Controls.Add(this.label50);
-            this.contacts_panel.Controls.Add(this.manager_contact_name);
-            this.contacts_panel.Controls.Add(this.admin_contact_name);
-            this.contacts_panel.Controls.Add(this.label47);
-            this.contacts_panel.Controls.Add(this.label46);
-            this.contacts_panel.Controls.Add(this.label44);
-            this.contacts_panel.Controls.Add(this.label43);
-            this.contacts_panel.Controls.Add(this.label45);
-            this.contacts_panel.Location = new System.Drawing.Point(246, 102);
-            this.contacts_panel.Name = "contacts_panel";
-            this.contacts_panel.Size = new System.Drawing.Size(751, 514);
-            this.contacts_panel.TabIndex = 12;
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.ForeColor = System.Drawing.Color.Black;
-            this.label58.Location = new System.Drawing.Point(464, 390);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(51, 22);
-            this.label58.TabIndex = 20;
-            this.label58.Text = "д.59";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.ForeColor = System.Drawing.Color.Black;
-            this.label57.Location = new System.Drawing.Point(461, 363);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(283, 22);
-            this.label57.TabIndex = 19;
-            this.label57.Text = "Адрес: ул. Красногвардейская, ";
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
-            this.pictureBox17.Location = new System.Drawing.Point(465, 100);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(270, 241);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox17.TabIndex = 18;
-            this.pictureBox17.TabStop = false;
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.ForeColor = System.Drawing.Color.Black;
-            this.label56.Location = new System.Drawing.Point(23, 391);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(257, 22);
-            this.label56.TabIndex = 17;
-            this.label56.Text = " - arseniy1286@rambler.ru";
-            // 
-            // manager_contact_email
-            // 
-            this.manager_contact_email.AutoSize = true;
-            this.manager_contact_email.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manager_contact_email.ForeColor = System.Drawing.Color.Black;
-            this.manager_contact_email.Location = new System.Drawing.Point(19, 285);
-            this.manager_contact_email.Name = "manager_contact_email";
-            this.manager_contact_email.Size = new System.Drawing.Size(78, 22);
-            this.manager_contact_email.TabIndex = 16;
-            this.manager_contact_email.Text = "• email";
-            // 
-            // admin_contact_email
-            // 
-            this.admin_contact_email.AutoSize = true;
-            this.admin_contact_email.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.admin_contact_email.ForeColor = System.Drawing.Color.Black;
-            this.admin_contact_email.Location = new System.Drawing.Point(19, 178);
-            this.admin_contact_email.Name = "admin_contact_email";
-            this.admin_contact_email.Size = new System.Drawing.Size(78, 22);
-            this.admin_contact_email.TabIndex = 15;
-            this.admin_contact_email.Text = "• email";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.ForeColor = System.Drawing.Color.Black;
-            this.label53.Location = new System.Drawing.Point(23, 369);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(160, 22);
-            this.label53.TabIndex = 14;
-            this.label53.Text = " - 79941792595";
-            // 
-            // manager_contact_phone
-            // 
-            this.manager_contact_phone.AutoSize = true;
-            this.manager_contact_phone.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manager_contact_phone.ForeColor = System.Drawing.Color.Black;
-            this.manager_contact_phone.Location = new System.Drawing.Point(19, 262);
-            this.manager_contact_phone.Name = "manager_contact_phone";
-            this.manager_contact_phone.Size = new System.Drawing.Size(160, 22);
-            this.manager_contact_phone.TabIndex = 13;
-            this.manager_contact_phone.Text = "• номер телефона";
-            // 
-            // admin_contact_phone
-            // 
-            this.admin_contact_phone.AutoSize = true;
-            this.admin_contact_phone.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.admin_contact_phone.ForeColor = System.Drawing.Color.Black;
-            this.admin_contact_phone.Location = new System.Drawing.Point(19, 156);
-            this.admin_contact_phone.Name = "admin_contact_phone";
-            this.admin_contact_phone.Size = new System.Drawing.Size(160, 22);
-            this.admin_contact_phone.TabIndex = 12;
-            this.admin_contact_phone.Text = "• номер телефона";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.ForeColor = System.Drawing.Color.Black;
-            this.label50.Location = new System.Drawing.Point(170, 325);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(236, 22);
-            this.label50.TabIndex = 11;
-            this.label50.Text = "Кожевин Арсений Макарович";
-            // 
-            // manager_contact_name
-            // 
-            this.manager_contact_name.AutoSize = true;
-            this.manager_contact_name.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manager_contact_name.ForeColor = System.Drawing.Color.Black;
-            this.manager_contact_name.Location = new System.Drawing.Point(117, 221);
-            this.manager_contact_name.Name = "manager_contact_name";
-            this.manager_contact_name.Size = new System.Drawing.Size(48, 22);
-            this.manager_contact_name.TabIndex = 10;
-            this.manager_contact_name.Text = "ФИО";
-            // 
-            // admin_contact_name
-            // 
-            this.admin_contact_name.AutoSize = true;
-            this.admin_contact_name.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.admin_contact_name.ForeColor = System.Drawing.Color.Black;
-            this.admin_contact_name.Location = new System.Drawing.Point(164, 122);
-            this.admin_contact_name.Name = "admin_contact_name";
-            this.admin_contact_name.Size = new System.Drawing.Size(48, 22);
-            this.admin_contact_name.TabIndex = 9;
-            this.admin_contact_name.Text = "ФИО";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Lucida Sans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.Color.Black;
-            this.label47.Location = new System.Drawing.Point(19, 325);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(152, 22);
-            this.label47.TabIndex = 8;
-            this.label47.Text = "Тех. Поддержка:";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Lucida Sans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.Color.Black;
-            this.label46.Location = new System.Drawing.Point(19, 220);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(103, 22);
-            this.label46.TabIndex = 7;
-            this.label46.Text = "Менеджер:";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Lucida Sans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.Color.Black;
-            this.label44.Location = new System.Drawing.Point(19, 122);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(150, 22);
-            this.label44.TabIndex = 6;
-            this.label44.Text = "Администратор:";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.Color.Black;
-            this.label43.Location = new System.Drawing.Point(9, 68);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(187, 27);
-            this.label43.TabIndex = 5;
-            this.label43.Text = "Наши контакты:";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Lucida Sans", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.label45.Location = new System.Drawing.Point(170, 8);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(421, 38);
-            this.label45.TabIndex = 4;
-            this.label45.Text = "Контактная информация";
-            // 
-            // give_away_panel
-            // 
-            this.give_away_panel.Controls.Add(this.type_give_away);
-            this.give_away_panel.Controls.Add(this.label11);
-            this.give_away_panel.Controls.Add(this.label12);
-            this.give_away_panel.Controls.Add(this.label17);
-            this.give_away_panel.Controls.Add(this.label21);
-            this.give_away_panel.Controls.Add(this.label22);
-            this.give_away_panel.Controls.Add(this.label26);
-            this.give_away_panel.Controls.Add(this.labelButtPetText);
-            this.give_away_panel.Controls.Add(this.send_give_away);
-            this.give_away_panel.Controls.Add(this.weight_give_away);
-            this.give_away_panel.Controls.Add(this.age_give_away);
-            this.give_away_panel.Controls.Add(this.name_give_away);
-            this.give_away_panel.Controls.Add(this.breed_give_away);
-            this.give_away_panel.Controls.Add(this.label40);
-            this.give_away_panel.Location = new System.Drawing.Point(245, 101);
-            this.give_away_panel.Name = "give_away_panel";
-            this.give_away_panel.Size = new System.Drawing.Size(751, 514);
-            this.give_away_panel.TabIndex = 11;
-            // 
-            // type_give_away
-            // 
-            this.type_give_away.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.type_give_away.FormattingEnabled = true;
-            this.type_give_away.Items.AddRange(new object[] {
-            "Собака",
-            "Кошка",
-            "Попугай",
-            "Кролик",
-            "Крыса"});
-            this.type_give_away.Location = new System.Drawing.Point(256, 104);
-            this.type_give_away.Name = "type_give_away";
-            this.type_give_away.Size = new System.Drawing.Size(300, 36);
-            this.type_give_away.TabIndex = 57;
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label11.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(484, 321);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(72, 36);
-            this.label11.TabIndex = 56;
-            this.label11.Text = "г";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label12
-            // 
-            this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label12.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(484, 266);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(72, 36);
-            this.label12.TabIndex = 55;
-            this.label12.Text = "мес.";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label17
-            // 
-            this.label17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label17.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
-            this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(116, 162);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(129, 36);
-            this.label17.TabIndex = 53;
-            this.label17.Text = "Порода";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label21
-            // 
-            this.label21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label21.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
-            this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(116, 324);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(129, 36);
-            this.label21.TabIndex = 52;
-            this.label21.Text = "Вес";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label22
-            // 
-            this.label22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label22.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
-            this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(116, 270);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(129, 36);
-            this.label22.TabIndex = 51;
-            this.label22.Text = "Возраст";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label26
-            // 
-            this.label26.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label26.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
-            this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(116, 215);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(129, 36);
-            this.label26.TabIndex = 50;
-            this.label26.Text = "Кличка";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // labelButtPetText
-            // 
-            this.labelButtPetText.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelButtPetText.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
-            this.labelButtPetText.ForeColor = System.Drawing.Color.Black;
-            this.labelButtPetText.Location = new System.Drawing.Point(118, 107);
-            this.labelButtPetText.Name = "labelButtPetText";
-            this.labelButtPetText.Size = new System.Drawing.Size(127, 36);
-            this.labelButtPetText.TabIndex = 49;
-            this.labelButtPetText.Text = "Вид";
-            this.labelButtPetText.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // send_give_away
-            // 
-            this.send_give_away.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
-            this.send_give_away.Controls.Add(this.label41);
-            this.send_give_away.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.send_give_away.Location = new System.Drawing.Point(278, 395);
-            this.send_give_away.Name = "send_give_away";
-            this.send_give_away.Size = new System.Drawing.Size(214, 35);
-            this.send_give_away.TabIndex = 20;
-            this.send_give_away.Click += new System.EventHandler(this.send_give_away_Click);
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Lucida Sans", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(44)))), ((int)(((byte)(4)))));
-            this.label41.Location = new System.Drawing.Point(46, 2);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(124, 29);
-            this.label41.TabIndex = 0;
-            this.label41.Text = "Отправить";
-            this.label41.Click += new System.EventHandler(this.send_give_away_Click);
-            // 
-            // weight_give_away
-            // 
-            this.weight_give_away.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weight_give_away.ForeColor = System.Drawing.Color.Black;
-            this.weight_give_away.Location = new System.Drawing.Point(256, 321);
-            this.weight_give_away.Name = "weight_give_away";
-            this.weight_give_away.Size = new System.Drawing.Size(219, 36);
-            this.weight_give_away.TabIndex = 9;
-            // 
-            // age_give_away
-            // 
-            this.age_give_away.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.age_give_away.ForeColor = System.Drawing.Color.Black;
-            this.age_give_away.Location = new System.Drawing.Point(256, 267);
-            this.age_give_away.Name = "age_give_away";
-            this.age_give_away.Size = new System.Drawing.Size(219, 36);
-            this.age_give_away.TabIndex = 8;
-            // 
-            // name_give_away
-            // 
-            this.name_give_away.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name_give_away.ForeColor = System.Drawing.Color.Black;
-            this.name_give_away.Location = new System.Drawing.Point(256, 212);
-            this.name_give_away.Name = "name_give_away";
-            this.name_give_away.Size = new System.Drawing.Size(300, 36);
-            this.name_give_away.TabIndex = 7;
-            // 
-            // breed_give_away
-            // 
-            this.breed_give_away.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.breed_give_away.ForeColor = System.Drawing.Color.Black;
-            this.breed_give_away.Location = new System.Drawing.Point(256, 159);
-            this.breed_give_away.Name = "breed_give_away";
-            this.breed_give_away.Size = new System.Drawing.Size(300, 36);
-            this.breed_give_away.TabIndex = 6;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Lucida Sans", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.label40.Location = new System.Drawing.Point(170, 6);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(420, 38);
-            this.label40.TabIndex = 4;
-            this.label40.Text = "Сдать животное в приют";
-            // 
-            // pet_panel
-            // 
-            this.pet_panel.Controls.Add(this.panel7);
-            this.pet_panel.Controls.Add(this.label25);
-            this.pet_panel.Controls.Add(this.back_button_card);
-            this.pet_panel.Location = new System.Drawing.Point(245, 101);
-            this.pet_panel.Name = "pet_panel";
-            this.pet_panel.Size = new System.Drawing.Size(751, 514);
-            this.pet_panel.TabIndex = 10;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
-            this.panel7.Controls.Add(this.take_button);
-            this.panel7.Controls.Add(this.weight_card);
-            this.panel7.Controls.Add(this.age_card);
-            this.panel7.Controls.Add(this.breed_card);
-            this.panel7.Controls.Add(this.type_card);
-            this.panel7.Controls.Add(this.label31);
-            this.panel7.Controls.Add(this.label29);
-            this.panel7.Controls.Add(this.label28);
-            this.panel7.Controls.Add(this.label27);
-            this.panel7.Controls.Add(this.photo_card);
-            this.panel7.Controls.Add(this.name_card);
-            this.panel7.Controls.Add(this.label37);
-            this.panel7.Controls.Add(this.label2);
-            this.panel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.panel7.Location = new System.Drawing.Point(50, 62);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(657, 418);
-            this.panel7.TabIndex = 4;
-            // 
-            // take_button
-            // 
-            this.take_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
-            this.take_button.Controls.Add(this.label38);
-            this.take_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.take_button.Location = new System.Drawing.Point(213, 346);
-            this.take_button.Name = "take_button";
-            this.take_button.Size = new System.Drawing.Size(232, 47);
-            this.take_button.TabIndex = 19;
-            this.take_button.Click += new System.EventHandler(this.take_button_Click);
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Lucida Sans", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(44)))), ((int)(((byte)(4)))));
-            this.label38.Location = new System.Drawing.Point(45, 5);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(146, 34);
-            this.label38.TabIndex = 0;
-            this.label38.Text = "Приютить";
-            this.label38.Click += new System.EventHandler(this.take_button_Click);
-            // 
-            // weight_card
-            // 
-            this.weight_card.AutoSize = true;
-            this.weight_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.weight_card.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.weight_card.Location = new System.Drawing.Point(70, 245);
-            this.weight_card.Name = "weight_card";
-            this.weight_card.Size = new System.Drawing.Size(25, 25);
-            this.weight_card.TabIndex = 18;
-            this.weight_card.Text = "?";
-            // 
-            // age_card
-            // 
-            this.age_card.AutoSize = true;
-            this.age_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.age_card.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.age_card.Location = new System.Drawing.Point(120, 200);
-            this.age_card.Name = "age_card";
-            this.age_card.Size = new System.Drawing.Size(25, 25);
-            this.age_card.TabIndex = 16;
-            this.age_card.Text = "?";
-            // 
-            // breed_card
-            // 
-            this.breed_card.AutoSize = true;
-            this.breed_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.breed_card.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.breed_card.Location = new System.Drawing.Point(115, 155);
-            this.breed_card.Name = "breed_card";
-            this.breed_card.Size = new System.Drawing.Size(93, 25);
-            this.breed_card.TabIndex = 15;
-            this.breed_card.Text = "Порода";
-            // 
-            // type_card
-            // 
-            this.type_card.AutoSize = true;
-            this.type_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.type_card.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.type_card.Location = new System.Drawing.Point(75, 110);
-            this.type_card.Name = "type_card";
-            this.type_card.Size = new System.Drawing.Size(53, 25);
-            this.type_card.TabIndex = 14;
-            this.type_card.Text = "Вид";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.label31.Location = new System.Drawing.Point(20, 245);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(59, 25);
-            this.label31.TabIndex = 13;
-            this.label31.Text = "Вес:";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.label29.Location = new System.Drawing.Point(20, 200);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(108, 25);
-            this.label29.TabIndex = 11;
-            this.label29.Text = "Возраст:";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.label28.Location = new System.Drawing.Point(20, 155);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(107, 25);
-            this.label28.TabIndex = 10;
-            this.label28.Text = "Порода: ";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.label27.Location = new System.Drawing.Point(20, 110);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(60, 25);
-            this.label27.TabIndex = 9;
-            this.label27.Text = "Вид:";
-            // 
-            // photo_card
-            // 
-            this.photo_card.ErrorImage = global::GiveMePaw.Properties.Resources.not_img;
-            this.photo_card.InitialImage = global::GiveMePaw.Properties.Resources.not_img;
-            this.photo_card.Location = new System.Drawing.Point(348, 32);
-            this.photo_card.Name = "photo_card";
-            this.photo_card.Size = new System.Drawing.Size(275, 275);
-            this.photo_card.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.photo_card.TabIndex = 4;
-            this.photo_card.TabStop = false;
-            this.photo_card.WaitOnLoad = true;
-            // 
-            // name_card
-            // 
-            this.name_card.AutoSize = true;
-            this.name_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.name_card.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.name_card.Location = new System.Drawing.Point(20, 36);
-            this.name_card.Name = "name_card";
-            this.name_card.Size = new System.Drawing.Size(138, 39);
-            this.name_card.TabIndex = 3;
-            this.name_card.Text = "Кличка";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(41, 333);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(0, 13);
-            this.label37.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
-            this.label2.Location = new System.Drawing.Point(280, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 25);
-            this.label2.TabIndex = 20;
-            this.label2.Visible = false;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.label25.Location = new System.Drawing.Point(58, 8);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(99, 31);
-            this.label25.TabIndex = 8;
-            this.label25.Text = "Назад";
-            this.label25.Click += new System.EventHandler(this.back_button_card_Click);
-            // 
-            // back_button_card
-            // 
-            this.back_button_card.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.back_button_card.Image = ((System.Drawing.Image)(resources.GetObject("back_button_card.Image")));
-            this.back_button_card.Location = new System.Drawing.Point(3, 3);
-            this.back_button_card.Name = "back_button_card";
-            this.back_button_card.Size = new System.Drawing.Size(52, 41);
-            this.back_button_card.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.back_button_card.TabIndex = 9;
-            this.back_button_card.TabStop = false;
-            this.back_button_card.Click += new System.EventHandler(this.back_button_card_Click);
             // 
             // many_dog_panel
             // 
@@ -1692,7 +1080,7 @@ namespace GiveMePaw
             // 
             // jhhjk
             // 
-            this.jhhjk.Font = new System.Drawing.Font("Lucida Sans", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jhhjk.Font = new System.Drawing.Font("Lucida Sans", 19F);
             this.jhhjk.Location = new System.Drawing.Point(56, 98);
             this.jhhjk.Name = "jhhjk";
             this.jhhjk.Size = new System.Drawing.Size(642, 351);
@@ -1719,6 +1107,618 @@ namespace GiveMePaw
             this.label74.Size = new System.Drawing.Size(172, 38);
             this.label74.TabIndex = 4;
             this.label74.Text = "О приюте";
+            // 
+            // contacts_panel
+            // 
+            this.contacts_panel.Controls.Add(this.label58);
+            this.contacts_panel.Controls.Add(this.label57);
+            this.contacts_panel.Controls.Add(this.pictureBox17);
+            this.contacts_panel.Controls.Add(this.label56);
+            this.contacts_panel.Controls.Add(this.manager_contact_email);
+            this.contacts_panel.Controls.Add(this.admin_contact_email);
+            this.contacts_panel.Controls.Add(this.label53);
+            this.contacts_panel.Controls.Add(this.manager_contact_phone);
+            this.contacts_panel.Controls.Add(this.admin_contact_phone);
+            this.contacts_panel.Controls.Add(this.label50);
+            this.contacts_panel.Controls.Add(this.manager_contact_name);
+            this.contacts_panel.Controls.Add(this.admin_contact_name);
+            this.contacts_panel.Controls.Add(this.label47);
+            this.contacts_panel.Controls.Add(this.label46);
+            this.contacts_panel.Controls.Add(this.label44);
+            this.contacts_panel.Controls.Add(this.label43);
+            this.contacts_panel.Controls.Add(this.label45);
+            this.contacts_panel.Location = new System.Drawing.Point(246, 102);
+            this.contacts_panel.Name = "contacts_panel";
+            this.contacts_panel.Size = new System.Drawing.Size(751, 514);
+            this.contacts_panel.TabIndex = 12;
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.ForeColor = System.Drawing.Color.Black;
+            this.label58.Location = new System.Drawing.Point(464, 390);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(51, 22);
+            this.label58.TabIndex = 20;
+            this.label58.Text = "д.59";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.ForeColor = System.Drawing.Color.Black;
+            this.label57.Location = new System.Drawing.Point(461, 363);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(283, 22);
+            this.label57.TabIndex = 19;
+            this.label57.Text = "Адрес: ул. Красногвардейская, ";
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
+            this.pictureBox17.Location = new System.Drawing.Point(465, 100);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(270, 241);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox17.TabIndex = 18;
+            this.pictureBox17.TabStop = false;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.ForeColor = System.Drawing.Color.Black;
+            this.label56.Location = new System.Drawing.Point(23, 391);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(257, 22);
+            this.label56.TabIndex = 17;
+            this.label56.Text = " - arseniy1286@rambler.ru";
+            // 
+            // manager_contact_email
+            // 
+            this.manager_contact_email.AutoSize = true;
+            this.manager_contact_email.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manager_contact_email.ForeColor = System.Drawing.Color.Black;
+            this.manager_contact_email.Location = new System.Drawing.Point(19, 285);
+            this.manager_contact_email.Name = "manager_contact_email";
+            this.manager_contact_email.Size = new System.Drawing.Size(78, 22);
+            this.manager_contact_email.TabIndex = 16;
+            this.manager_contact_email.Text = "• email";
+            // 
+            // admin_contact_email
+            // 
+            this.admin_contact_email.AutoSize = true;
+            this.admin_contact_email.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.admin_contact_email.ForeColor = System.Drawing.Color.Black;
+            this.admin_contact_email.Location = new System.Drawing.Point(19, 178);
+            this.admin_contact_email.Name = "admin_contact_email";
+            this.admin_contact_email.Size = new System.Drawing.Size(78, 22);
+            this.admin_contact_email.TabIndex = 15;
+            this.admin_contact_email.Text = "• email";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.ForeColor = System.Drawing.Color.Black;
+            this.label53.Location = new System.Drawing.Point(23, 369);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(160, 22);
+            this.label53.TabIndex = 14;
+            this.label53.Text = " - 79941792595";
+            // 
+            // manager_contact_phone
+            // 
+            this.manager_contact_phone.AutoSize = true;
+            this.manager_contact_phone.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manager_contact_phone.ForeColor = System.Drawing.Color.Black;
+            this.manager_contact_phone.Location = new System.Drawing.Point(19, 262);
+            this.manager_contact_phone.Name = "manager_contact_phone";
+            this.manager_contact_phone.Size = new System.Drawing.Size(160, 22);
+            this.manager_contact_phone.TabIndex = 13;
+            this.manager_contact_phone.Text = "• номер телефона";
+            // 
+            // admin_contact_phone
+            // 
+            this.admin_contact_phone.AutoSize = true;
+            this.admin_contact_phone.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.admin_contact_phone.ForeColor = System.Drawing.Color.Black;
+            this.admin_contact_phone.Location = new System.Drawing.Point(19, 156);
+            this.admin_contact_phone.Name = "admin_contact_phone";
+            this.admin_contact_phone.Size = new System.Drawing.Size(160, 22);
+            this.admin_contact_phone.TabIndex = 12;
+            this.admin_contact_phone.Text = "• номер телефона";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.Color.Black;
+            this.label50.Location = new System.Drawing.Point(170, 325);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(236, 22);
+            this.label50.TabIndex = 11;
+            this.label50.Text = "Кожевин Арсений Макарович";
+            // 
+            // manager_contact_name
+            // 
+            this.manager_contact_name.AutoSize = true;
+            this.manager_contact_name.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manager_contact_name.ForeColor = System.Drawing.Color.Black;
+            this.manager_contact_name.Location = new System.Drawing.Point(117, 221);
+            this.manager_contact_name.Name = "manager_contact_name";
+            this.manager_contact_name.Size = new System.Drawing.Size(48, 22);
+            this.manager_contact_name.TabIndex = 10;
+            this.manager_contact_name.Text = "ФИО";
+            // 
+            // admin_contact_name
+            // 
+            this.admin_contact_name.AutoSize = true;
+            this.admin_contact_name.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.admin_contact_name.ForeColor = System.Drawing.Color.Black;
+            this.admin_contact_name.Location = new System.Drawing.Point(164, 122);
+            this.admin_contact_name.Name = "admin_contact_name";
+            this.admin_contact_name.Size = new System.Drawing.Size(48, 22);
+            this.admin_contact_name.TabIndex = 9;
+            this.admin_contact_name.Text = "ФИО";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Lucida Sans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.Black;
+            this.label47.Location = new System.Drawing.Point(19, 325);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(152, 22);
+            this.label47.TabIndex = 8;
+            this.label47.Text = "Тех. Поддержка:";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Lucida Sans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.Black;
+            this.label46.Location = new System.Drawing.Point(19, 220);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(103, 22);
+            this.label46.TabIndex = 7;
+            this.label46.Text = "Менеджер:";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Lucida Sans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.Black;
+            this.label44.Location = new System.Drawing.Point(19, 122);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(150, 22);
+            this.label44.TabIndex = 6;
+            this.label44.Text = "Администратор:";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.Black;
+            this.label43.Location = new System.Drawing.Point(9, 68);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(187, 27);
+            this.label43.TabIndex = 5;
+            this.label43.Text = "Наши контакты:";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Lucida Sans", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.label45.Location = new System.Drawing.Point(170, 8);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(421, 38);
+            this.label45.TabIndex = 4;
+            this.label45.Text = "Контактная информация";
+            // 
+            // give_away_panel
+            // 
+            this.give_away_panel.Controls.Add(this.type_give_away);
+            this.give_away_panel.Controls.Add(this.label11);
+            this.give_away_panel.Controls.Add(this.label12);
+            this.give_away_panel.Controls.Add(this.label17);
+            this.give_away_panel.Controls.Add(this.label21);
+            this.give_away_panel.Controls.Add(this.label22);
+            this.give_away_panel.Controls.Add(this.label26);
+            this.give_away_panel.Controls.Add(this.labelButtPetText);
+            this.give_away_panel.Controls.Add(this.send_give_away);
+            this.give_away_panel.Controls.Add(this.weight_give_away);
+            this.give_away_panel.Controls.Add(this.age_give_away);
+            this.give_away_panel.Controls.Add(this.name_give_away);
+            this.give_away_panel.Controls.Add(this.breed_give_away);
+            this.give_away_panel.Controls.Add(this.label40);
+            this.give_away_panel.Location = new System.Drawing.Point(245, 101);
+            this.give_away_panel.Name = "give_away_panel";
+            this.give_away_panel.Size = new System.Drawing.Size(751, 514);
+            this.give_away_panel.TabIndex = 11;
+            // 
+            // type_give_away
+            // 
+            this.type_give_away.Font = new System.Drawing.Font("Lucida Sans Unicode", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.type_give_away.FormattingEnabled = true;
+            this.type_give_away.Items.AddRange(new object[] {
+            "Собака",
+            "Кошка",
+            "Попугай",
+            "Кролик",
+            "Крыса"});
+            this.type_give_away.Location = new System.Drawing.Point(256, 104);
+            this.type_give_away.Name = "type_give_away";
+            this.type_give_away.Size = new System.Drawing.Size(300, 36);
+            this.type_give_away.TabIndex = 57;
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label11.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(484, 321);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(72, 36);
+            this.label11.TabIndex = 56;
+            this.label11.Text = "г";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.White;
+            this.label12.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label12.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(484, 266);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(72, 36);
+            this.label12.TabIndex = 55;
+            this.label12.Text = "мес.";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label17
+            // 
+            this.label17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label17.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.label17.ForeColor = System.Drawing.Color.Black;
+            this.label17.Location = new System.Drawing.Point(116, 162);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(129, 36);
+            this.label17.TabIndex = 53;
+            this.label17.Text = "Порода";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label21
+            // 
+            this.label21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label21.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.label21.ForeColor = System.Drawing.Color.Black;
+            this.label21.Location = new System.Drawing.Point(116, 324);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(129, 36);
+            this.label21.TabIndex = 52;
+            this.label21.Text = "Вес";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label22
+            // 
+            this.label22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label22.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(116, 270);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(129, 36);
+            this.label22.TabIndex = 51;
+            this.label22.Text = "Возраст";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label26
+            // 
+            this.label26.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label26.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.label26.ForeColor = System.Drawing.Color.Black;
+            this.label26.Location = new System.Drawing.Point(116, 215);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(129, 36);
+            this.label26.TabIndex = 50;
+            this.label26.Text = "Кличка";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // labelButtPetText
+            // 
+            this.labelButtPetText.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelButtPetText.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.labelButtPetText.ForeColor = System.Drawing.Color.Black;
+            this.labelButtPetText.Location = new System.Drawing.Point(118, 107);
+            this.labelButtPetText.Name = "labelButtPetText";
+            this.labelButtPetText.Size = new System.Drawing.Size(127, 36);
+            this.labelButtPetText.TabIndex = 49;
+            this.labelButtPetText.Text = "Вид";
+            this.labelButtPetText.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // send_give_away
+            // 
+            this.send_give_away.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
+            this.send_give_away.Controls.Add(this.label41);
+            this.send_give_away.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.send_give_away.Location = new System.Drawing.Point(278, 395);
+            this.send_give_away.Name = "send_give_away";
+            this.send_give_away.Size = new System.Drawing.Size(214, 35);
+            this.send_give_away.TabIndex = 20;
+            this.send_give_away.Click += new System.EventHandler(this.send_give_away_Click);
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Lucida Sans", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(44)))), ((int)(((byte)(4)))));
+            this.label41.Location = new System.Drawing.Point(46, 2);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(124, 29);
+            this.label41.TabIndex = 0;
+            this.label41.Text = "Отправить";
+            this.label41.Click += new System.EventHandler(this.send_give_away_Click);
+            // 
+            // weight_give_away
+            // 
+            this.weight_give_away.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.weight_give_away.ForeColor = System.Drawing.Color.Black;
+            this.weight_give_away.Location = new System.Drawing.Point(256, 321);
+            this.weight_give_away.Name = "weight_give_away";
+            this.weight_give_away.Size = new System.Drawing.Size(219, 36);
+            this.weight_give_away.TabIndex = 9;
+            // 
+            // age_give_away
+            // 
+            this.age_give_away.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.age_give_away.ForeColor = System.Drawing.Color.Black;
+            this.age_give_away.Location = new System.Drawing.Point(256, 267);
+            this.age_give_away.Name = "age_give_away";
+            this.age_give_away.Size = new System.Drawing.Size(219, 36);
+            this.age_give_away.TabIndex = 8;
+            // 
+            // name_give_away
+            // 
+            this.name_give_away.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_give_away.ForeColor = System.Drawing.Color.Black;
+            this.name_give_away.Location = new System.Drawing.Point(256, 212);
+            this.name_give_away.Name = "name_give_away";
+            this.name_give_away.Size = new System.Drawing.Size(300, 36);
+            this.name_give_away.TabIndex = 7;
+            // 
+            // breed_give_away
+            // 
+            this.breed_give_away.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.breed_give_away.ForeColor = System.Drawing.Color.Black;
+            this.breed_give_away.Location = new System.Drawing.Point(256, 159);
+            this.breed_give_away.Name = "breed_give_away";
+            this.breed_give_away.Size = new System.Drawing.Size(300, 36);
+            this.breed_give_away.TabIndex = 6;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Lucida Sans", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.label40.Location = new System.Drawing.Point(170, 6);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(420, 38);
+            this.label40.TabIndex = 4;
+            this.label40.Text = "Сдать животное в приют";
+            // 
+            // pet_panel
+            // 
+            this.pet_panel.Controls.Add(this.panel7);
+            this.pet_panel.Controls.Add(this.label25);
+            this.pet_panel.Controls.Add(this.back_button_card);
+            this.pet_panel.Location = new System.Drawing.Point(245, 101);
+            this.pet_panel.Name = "pet_panel";
+            this.pet_panel.Size = new System.Drawing.Size(751, 514);
+            this.pet_panel.TabIndex = 10;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            this.panel7.Controls.Add(this.take_button);
+            this.panel7.Controls.Add(this.weight_card);
+            this.panel7.Controls.Add(this.age_card);
+            this.panel7.Controls.Add(this.breed_card);
+            this.panel7.Controls.Add(this.type_card);
+            this.panel7.Controls.Add(this.label31);
+            this.panel7.Controls.Add(this.label29);
+            this.panel7.Controls.Add(this.label28);
+            this.panel7.Controls.Add(this.label27);
+            this.panel7.Controls.Add(this.photo_card);
+            this.panel7.Controls.Add(this.name_card);
+            this.panel7.Controls.Add(this.label37);
+            this.panel7.Controls.Add(this.label2);
+            this.panel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.panel7.Location = new System.Drawing.Point(50, 62);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(657, 418);
+            this.panel7.TabIndex = 4;
+            // 
+            // take_button
+            // 
+            this.take_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
+            this.take_button.Controls.Add(this.label38);
+            this.take_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.take_button.Location = new System.Drawing.Point(213, 346);
+            this.take_button.Name = "take_button";
+            this.take_button.Size = new System.Drawing.Size(232, 47);
+            this.take_button.TabIndex = 19;
+            this.take_button.Click += new System.EventHandler(this.take_button_Click);
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Lucida Sans", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(44)))), ((int)(((byte)(4)))));
+            this.label38.Location = new System.Drawing.Point(45, 5);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(146, 34);
+            this.label38.TabIndex = 0;
+            this.label38.Text = "Приютить";
+            this.label38.Click += new System.EventHandler(this.take_button_Click);
+            // 
+            // weight_card
+            // 
+            this.weight_card.AutoSize = true;
+            this.weight_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.weight_card.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.weight_card.Location = new System.Drawing.Point(70, 245);
+            this.weight_card.Name = "weight_card";
+            this.weight_card.Size = new System.Drawing.Size(25, 25);
+            this.weight_card.TabIndex = 18;
+            this.weight_card.Text = "?";
+            // 
+            // age_card
+            // 
+            this.age_card.AutoSize = true;
+            this.age_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.age_card.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.age_card.Location = new System.Drawing.Point(120, 200);
+            this.age_card.Name = "age_card";
+            this.age_card.Size = new System.Drawing.Size(25, 25);
+            this.age_card.TabIndex = 16;
+            this.age_card.Text = "?";
+            // 
+            // breed_card
+            // 
+            this.breed_card.AutoSize = true;
+            this.breed_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.breed_card.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.breed_card.Location = new System.Drawing.Point(115, 155);
+            this.breed_card.Name = "breed_card";
+            this.breed_card.Size = new System.Drawing.Size(93, 25);
+            this.breed_card.TabIndex = 15;
+            this.breed_card.Text = "Порода";
+            // 
+            // type_card
+            // 
+            this.type_card.AutoSize = true;
+            this.type_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.type_card.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.type_card.Location = new System.Drawing.Point(75, 110);
+            this.type_card.Name = "type_card";
+            this.type_card.Size = new System.Drawing.Size(53, 25);
+            this.type_card.TabIndex = 14;
+            this.type_card.Text = "Вид";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.label31.Location = new System.Drawing.Point(20, 245);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(59, 25);
+            this.label31.TabIndex = 13;
+            this.label31.Text = "Вес:";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.label29.Location = new System.Drawing.Point(20, 200);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(108, 25);
+            this.label29.TabIndex = 11;
+            this.label29.Text = "Возраст:";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.label28.Location = new System.Drawing.Point(20, 155);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(107, 25);
+            this.label28.TabIndex = 10;
+            this.label28.Text = "Порода: ";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.label27.Location = new System.Drawing.Point(20, 110);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(60, 25);
+            this.label27.TabIndex = 9;
+            this.label27.Text = "Вид:";
+            // 
+            // photo_card
+            // 
+            this.photo_card.ErrorImage = global::GiveMePaw.Properties.Resources.not_img;
+            this.photo_card.InitialImage = global::GiveMePaw.Properties.Resources.not_img;
+            this.photo_card.Location = new System.Drawing.Point(348, 32);
+            this.photo_card.Name = "photo_card";
+            this.photo_card.Size = new System.Drawing.Size(275, 275);
+            this.photo_card.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.photo_card.TabIndex = 4;
+            this.photo_card.TabStop = false;
+            this.photo_card.WaitOnLoad = true;
+            // 
+            // name_card
+            // 
+            this.name_card.AutoSize = true;
+            this.name_card.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.name_card.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.name_card.Location = new System.Drawing.Point(20, 36);
+            this.name_card.Name = "name_card";
+            this.name_card.Size = new System.Drawing.Size(138, 39);
+            this.name_card.TabIndex = 3;
+            this.name_card.Text = "Кличка";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(41, 333);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(0, 13);
+            this.label37.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(67)))), ((int)(((byte)(67)))));
+            this.label2.Location = new System.Drawing.Point(280, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 25);
+            this.label2.TabIndex = 20;
+            this.label2.Visible = false;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.label25.Location = new System.Drawing.Point(58, 8);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(99, 31);
+            this.label25.TabIndex = 8;
+            this.label25.Text = "Назад";
+            this.label25.Click += new System.EventHandler(this.back_button_card_Click);
+            // 
+            // back_button_card
+            // 
+            this.back_button_card.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.back_button_card.Image = ((System.Drawing.Image)(resources.GetObject("back_button_card.Image")));
+            this.back_button_card.Location = new System.Drawing.Point(3, 3);
+            this.back_button_card.Name = "back_button_card";
+            this.back_button_card.Size = new System.Drawing.Size(52, 41);
+            this.back_button_card.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.back_button_card.TabIndex = 9;
+            this.back_button_card.TabStop = false;
+            this.back_button_card.Click += new System.EventHandler(this.back_button_card_Click);
             // 
             // ForUsers
             // 
@@ -1751,21 +1751,6 @@ namespace GiveMePaw
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.contacts_panel.ResumeLayout(false);
-            this.contacts_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            this.give_away_panel.ResumeLayout(false);
-            this.give_away_panel.PerformLayout();
-            this.send_give_away.ResumeLayout(false);
-            this.send_give_away.PerformLayout();
-            this.pet_panel.ResumeLayout(false);
-            this.pet_panel.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.take_button.ResumeLayout(false);
-            this.take_button.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.photo_card)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.back_button_card)).EndInit();
             this.many_dog_panel.ResumeLayout(false);
             this.many_dog_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.back_butt)).EndInit();
@@ -1802,6 +1787,21 @@ namespace GiveMePaw
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             this.info_panel.ResumeLayout(false);
             this.info_panel.PerformLayout();
+            this.contacts_panel.ResumeLayout(false);
+            this.contacts_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            this.give_away_panel.ResumeLayout(false);
+            this.give_away_panel.PerformLayout();
+            this.send_give_away.ResumeLayout(false);
+            this.send_give_away.PerformLayout();
+            this.pet_panel.ResumeLayout(false);
+            this.pet_panel.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.take_button.ResumeLayout(false);
+            this.take_button.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.photo_card)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.back_button_card)).EndInit();
             this.ResumeLayout(false);
 
         }
