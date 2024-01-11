@@ -184,8 +184,8 @@ namespace GiveMePaw
 
                 db.openConnection();
                 command.ExecuteNonQuery();
-                db.closeConnection();
                 refreshUserStatus();
+                db.closeConnection();
             }
         }
 
@@ -283,30 +283,101 @@ namespace GiveMePaw
 
         private void ForEmployers_Load(object sender, EventArgs e)
         {
-            //Для того, чтобы в профиле отображалось имя пользователя//
-            DataTable table = new DataTable();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            DB db = new DB();
-            db.openConnection();
-            //Surname//
-            MySqlCommand command_surname = new MySqlCommand("SELECT second_name FROM users WHERE email = @email", db.getConnection());
-            MySqlParameter n1 = new MySqlParameter("@email", SignIn.user_email);
-            command_surname.Parameters.Add(n1);
-            string surname = (string)command_surname.ExecuteScalar();
-            command_surname.ExecuteNonQuery();
-            //Name//
-            MySqlCommand command_name = new MySqlCommand("SELECT name FROM users WHERE email = @email", db.getConnection());
-            MySqlParameter n2 = new MySqlParameter("@email", SignIn.user_email);
-            command_name.Parameters.Add(n2);
-            string name = (string)command_name.ExecuteScalar();
-            command_name.ExecuteNonQuery();
+            try
+            {
+                //Для того, чтобы в профиле отображалось имя пользователя//
+                DataTable table = new DataTable();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                DB db = new DB();
+                db.openConnection();
+                //Surname//
+                MySqlCommand command_surname = new MySqlCommand("SELECT second_name FROM users WHERE email = @email", db.getConnection());
+                MySqlParameter n1 = new MySqlParameter("@email", SignIn.user_email);
+                command_surname.Parameters.Add(n1);
+                string surname = (string)command_surname.ExecuteScalar();
+                command_surname.ExecuteNonQuery();
+                //Name//
+                MySqlCommand command_name = new MySqlCommand("SELECT name FROM users WHERE email = @email", db.getConnection());
+                MySqlParameter n2 = new MySqlParameter("@email", SignIn.user_email);
+                command_name.Parameters.Add(n2);
+                string name = (string)command_name.ExecuteScalar();
+                command_name.ExecuteNonQuery();
 
-            account_button.Text = surname + " " + name.Substring(0, 1) + ".";
+                MySqlCommand command_role = new MySqlCommand("SELECT role FROM users WHERE email = @email", db.getConnection());
+                MySqlParameter r = new MySqlParameter("@email", SignIn.user_email);
+                command_role.Parameters.Add(r);
+                string role = Convert.ToString(command_role.ExecuteScalar());
+                command_role.ExecuteNonQuery();
 
-            /////////////////////
-            Fill_contacts(1);
-            Fill_contacts(2);
+                account_button.Text = surname + " " + name.Substring(0, 1) + ".";
 
+                /////////////////////
+                Fill_contacts(1);
+                Fill_contacts(2);
+
+                if (role == "2")
+                {
+                    panel3.Visible = false;
+                    panel4.Visible = false;
+                    panel5.Visible = false;
+                    panelUserInfo.Location = new Point(130, 55);
+                    Fill_contacts(1);
+                    Fill_contacts(2);
+                    admin_contact_name.Visible = true;
+                    manager_contact_name.Visible = true;
+                    admin_combobox.Visible = false;
+                    manager_combobox.Visible = false;
+                }
+                else
+                {
+                    admin_contact_name.Visible = false;
+                    manager_contact_name.Visible = false;
+                    admin_combobox.Visible = true;
+                    manager_combobox.Visible = true;
+
+                    MySqlCommand command = new MySqlCommand("SELECT * FROM users WHERE role = 1", db.getConnection());
+                    MySqlDataReader Reader = command.ExecuteReader();
+                    int i = 0;
+
+                    if (Reader.HasRows)
+                    {
+                        while (Reader.Read())
+                        {
+                            admin_combobox.Items.Insert(i, Convert.ToString(Reader.GetString(2)) + " " + Convert.ToString(Reader.GetString(1)) + " " + Convert.ToString(Reader.GetString(3)));
+                            i += 1;
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ошибон");
+                    }
+                    Reader.Close();
+                    command.ExecuteNonQuery();
+
+                    MySqlCommand command_2 = new MySqlCommand("SELECT * FROM users WHERE role = 2", db.getConnection());
+                    MySqlDataReader Reader_2 = command_2.ExecuteReader();
+                    int j = 0;
+
+                    if (Reader_2.HasRows)
+                    {
+                        while (Reader_2.Read())
+                        {
+                            manager_combobox.Items.Insert(j, Convert.ToString(Reader_2.GetString(2)) + " " + Convert.ToString(Reader_2.GetString(1)) + " " + Convert.ToString(Reader_2.GetString(3)));
+                            i += 1;
+                        }
+                    }
+                    Reader_2.Close();
+                    command_2.ExecuteNonQuery();
+
+                    Fill_contacts(1);
+                    Fill_contacts(2);
+                }
+            }
+            catch 
+            {
+                MessageBox.Show("Ошибка!");
+            }
+            
         }
 
         private void Fill_contacts(int role)
@@ -320,13 +391,13 @@ namespace GiveMePaw
 
                 Int32 count = 0;
 
-                MySqlCommand command_count = new MySqlCommand("SELECT  COUNT(*) FROM users WHERE role = @role ", db.getConnection());
+                MySqlCommand command_count = new MySqlCommand("SELECT  COUNT(*) FROM users WHERE role = @role AND primacy = '+'", db.getConnection());
                 MySqlParameter c1 = new MySqlParameter("@role", role);
                 command_count.Parameters.Add(c1);
                 count = Convert.ToInt32(command_count.ExecuteScalar());
                 command_count.ExecuteNonQuery();
 
-                MySqlCommand command = new MySqlCommand("SELECT id FROM users WHERE role = @role ", db.getConnection());
+                MySqlCommand command = new MySqlCommand("SELECT id FROM users WHERE role = @role AND primacy = '+'", db.getConnection());
                 MySqlParameter c2 = new MySqlParameter("@role", role);
                 command.Parameters.Add(c2);
                 MySqlDataReader Reader = command.ExecuteReader();
@@ -360,6 +431,7 @@ namespace GiveMePaw
                             admin_contact_name.Text = Reader_fill.GetString(2) + " " + Reader_fill.GetString(1) + " " + Reader_fill.GetString(3);
                             admin_contact_phone.Text = " - " + Reader_fill.GetString(5);
                             admin_contact_email.Text = " - " + Reader_fill.GetString(4);
+                            admin_combobox.Text = Reader_fill.GetString(2) + " " + Reader_fill.GetString(1) + " " + Reader_fill.GetString(3);
                         }
                     }
                     else if (role == 2)
@@ -369,6 +441,7 @@ namespace GiveMePaw
                             manager_contact_name.Text = Reader_fill.GetString(2) + " " + Reader_fill.GetString(1) + " " + Reader_fill.GetString(3);
                             manager_contact_phone.Text = " - " + Reader_fill.GetString(5);
                             manager_contact_email.Text = " - " + Reader_fill.GetString(4);
+                            manager_combobox.Text = Reader_fill.GetString(2) + " " + Reader_fill.GetString(1) + " " + Reader_fill.GetString(3);
                         }
                     }
                 }
@@ -379,12 +452,14 @@ namespace GiveMePaw
                         admin_contact_name.Text = "-";
                         admin_contact_phone.Text = "-";
                         admin_contact_email.Text = "-";
+                        admin_combobox.Text = "-";
                     }
                     else if (role == 2)
                     {
                         manager_contact_name.Text = "-";
                         manager_contact_phone.Text = "-";
                         manager_contact_email.Text = "-";
+                        manager_combobox.Text = "-";
                     }
                 }
                 Reader_fill.Close();
@@ -398,15 +473,97 @@ namespace GiveMePaw
                     admin_contact_name.Text = "-";
                     admin_contact_phone.Text = "-";
                     admin_contact_email.Text = "-";
+                    admin_combobox.Text = "-";
                 }
                 else if (role == 2)
                 {
                     manager_contact_name.Text = "-";
                     manager_contact_phone.Text = "-";
                     manager_contact_email.Text = "-";
+                    manager_combobox.Text = "-";
                 }
             }
         }
 
+        private void Fill_combobox(int role)
+        {
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            DB db = new DB();
+            db.openConnection();
+
+            Int32 num = admin_combobox.SelectedIndex;
+
+            MySqlCommand command_count = new MySqlCommand("SELECT  COUNT(*) FROM users WHERE role = @role", db.getConnection());
+            MySqlParameter c1 = new MySqlParameter("@role", role);
+            command_count.Parameters.Add(c1);
+            Int32 count = Convert.ToInt32(command_count.ExecuteScalar());
+            command_count.ExecuteNonQuery();
+
+            MySqlCommand command = new MySqlCommand("SELECT id FROM users WHERE role = @role", db.getConnection());
+            MySqlParameter c2 = new MySqlParameter("@role", role);
+            command.Parameters.Add(c2);
+            MySqlDataReader Reader = command.ExecuteReader();
+            Int32[] list = new Int32[count];
+
+            int i = 0;
+
+            if (Reader.HasRows)
+            {
+                while (Reader.Read())
+                {
+                    list[i] = Reader.GetInt32(0);
+                    i += 1;
+                }
+            }
+            Reader.Close();
+
+            int j = 0;
+
+            while (j < count)
+            {
+                if (j == num)
+                {
+                    MySqlCommand command_update = new MySqlCommand("UPDATE users SET primacy = '+' WHERE id = @id", db.getConnection());
+                    MySqlParameter cu_1 = new MySqlParameter("@id", list[j]);
+                    command_update.Parameters.Add(cu_1);
+                    command_update.ExecuteNonQuery();
+                }
+                else
+                {
+                    MySqlCommand command_update = new MySqlCommand("UPDATE users SET primacy = '' WHERE id = @id", db.getConnection());
+                    MySqlParameter cu_1 = new MySqlParameter("@id", list[j]);
+                    command_update.Parameters.Add(cu_1);
+                    command_update.ExecuteNonQuery();
+                }
+                j += 1;
+            }
+            
+            db.closeConnection();
+        }
+        private void admin_combobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Fill_combobox(1);
+                Fill_contacts(1);
+            }
+            catch 
+            {
+            }
+            
+        }
+
+        private void manager_combobox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Fill_combobox(2);
+                Fill_contacts(2);
+            }
+            catch
+            {
+            }
+        }
     }
 }

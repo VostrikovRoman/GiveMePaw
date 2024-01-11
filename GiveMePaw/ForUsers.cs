@@ -1309,13 +1309,13 @@ namespace GiveMePaw
 
                 Int32 count = 0;
 
-                MySqlCommand command_count = new MySqlCommand("SELECT  COUNT(*) FROM users WHERE role = @role ", db.getConnection());
+                MySqlCommand command_count = new MySqlCommand("SELECT  COUNT(*) FROM users WHERE role = @role AND primacy = '+'", db.getConnection());
                 MySqlParameter c1 = new MySqlParameter("@role", role);
                 command_count.Parameters.Add(c1);
                 count = Convert.ToInt32(command_count.ExecuteScalar());
                 command_count.ExecuteNonQuery();
 
-                MySqlCommand command = new MySqlCommand("SELECT id FROM users WHERE role = @role ", db.getConnection());
+                MySqlCommand command = new MySqlCommand("SELECT id FROM users WHERE role = @role AND primacy = '+' ", db.getConnection());
                 MySqlParameter c2 = new MySqlParameter("@role", role);
                 command.Parameters.Add(c2);
                 MySqlDataReader Reader = command.ExecuteReader();

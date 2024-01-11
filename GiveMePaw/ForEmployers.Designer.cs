@@ -53,6 +53,8 @@ namespace GiveMePaw
             this.labelButNewPet = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelContact = new System.Windows.Forms.Panel();
+            this.manager_combobox = new System.Windows.Forms.ComboBox();
+            this.admin_combobox = new System.Windows.Forms.ComboBox();
             this.label58 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
@@ -90,14 +92,9 @@ namespace GiveMePaw
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panelUsersFind = new System.Windows.Forms.Panel();
-            this.labelButtBackText = new System.Windows.Forms.Label();
+            this.panelBackButtBack = new System.Windows.Forms.Panel();
             this.pictureBoxButtBack = new System.Windows.Forms.PictureBox();
-            this.panelFindUsers = new System.Windows.Forms.Panel();
-            this.labelButtFindUser = new System.Windows.Forms.Label();
-            this.panelBackTextBoxFindUser = new System.Windows.Forms.Panel();
-            this.pictureBoxLoop = new System.Windows.Forms.PictureBox();
-            this.emailFindUser = new System.Windows.Forms.TextBox();
-            this.labelFindUserText = new System.Windows.Forms.Label();
+            this.labelButtBackText = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
             this.panelUser = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -113,7 +110,12 @@ namespace GiveMePaw
             this.labelPatronomic = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.labelSecondName = new System.Windows.Forms.Label();
-            this.panelBackButtBack = new System.Windows.Forms.Panel();
+            this.panelFindUsers = new System.Windows.Forms.Panel();
+            this.labelButtFindUser = new System.Windows.Forms.Label();
+            this.panelBackTextBoxFindUser = new System.Windows.Forms.Panel();
+            this.pictureBoxLoop = new System.Windows.Forms.PictureBox();
+            this.emailFindUser = new System.Windows.Forms.TextBox();
+            this.labelFindUserText = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -134,16 +136,16 @@ namespace GiveMePaw
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPet)).BeginInit();
             this.panelUsersFind.SuspendLayout();
+            this.panelBackButtBack.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxButtBack)).BeginInit();
-            this.panelFindUsers.SuspendLayout();
-            this.panelBackTextBoxFindUser.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoop)).BeginInit();
             this.panelUser.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelUserInfo.SuspendLayout();
-            this.panelBackButtBack.SuspendLayout();
+            this.panelFindUsers.SuspendLayout();
+            this.panelBackTextBoxFindUser.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoop)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -152,10 +154,10 @@ namespace GiveMePaw
             this.panel1.Controls.Add(this.account_button);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.panelUsersFind);
             this.panel1.Controls.Add(this.panelContact);
             this.panel1.Controls.Add(this.panelInfo);
             this.panel1.Controls.Add(this.panelPet);
+            this.panel1.Controls.Add(this.panelUsersFind);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -386,6 +388,8 @@ namespace GiveMePaw
             // 
             // panelContact
             // 
+            this.panelContact.Controls.Add(this.manager_combobox);
+            this.panelContact.Controls.Add(this.admin_combobox);
             this.panelContact.Controls.Add(this.label58);
             this.panelContact.Controls.Add(this.label57);
             this.panelContact.Controls.Add(this.pictureBox17);
@@ -408,6 +412,27 @@ namespace GiveMePaw
             this.panelContact.Size = new System.Drawing.Size(751, 514);
             this.panelContact.TabIndex = 13;
             this.panelContact.Visible = false;
+            // 
+            // manager_combobox
+            // 
+            this.manager_combobox.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
+            this.manager_combobox.FormattingEnabled = true;
+            this.manager_combobox.Location = new System.Drawing.Point(121, 220);
+            this.manager_combobox.Name = "manager_combobox";
+            this.manager_combobox.Size = new System.Drawing.Size(279, 28);
+            this.manager_combobox.TabIndex = 39;
+            this.manager_combobox.SelectedIndexChanged += new System.EventHandler(this.manager_combobox_SelectedIndexChanged);
+            // 
+            // admin_combobox
+            // 
+            this.admin_combobox.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
+            this.admin_combobox.FormattingEnabled = true;
+            this.admin_combobox.Location = new System.Drawing.Point(168, 121);
+            this.admin_combobox.Name = "admin_combobox";
+            this.admin_combobox.Size = new System.Drawing.Size(279, 28);
+            this.admin_combobox.TabIndex = 38;
+            this.admin_combobox.TabStop = false;
+            this.admin_combobox.SelectedIndexChanged += new System.EventHandler(this.admin_combobox_SelectedIndexChanged);
             // 
             // label58
             // 
@@ -824,18 +849,15 @@ namespace GiveMePaw
             this.panelUsersFind.Size = new System.Drawing.Size(751, 514);
             this.panelUsersFind.TabIndex = 9;
             // 
-            // labelButtBackText
+            // panelBackButtBack
             // 
-            this.labelButtBackText.AutoSize = true;
-            this.labelButtBackText.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelButtBackText.Font = new System.Drawing.Font("Lucida Sans", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelButtBackText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.labelButtBackText.Location = new System.Drawing.Point(52, 11);
-            this.labelButtBackText.Name = "labelButtBackText";
-            this.labelButtBackText.Size = new System.Drawing.Size(99, 31);
-            this.labelButtBackText.TabIndex = 8;
-            this.labelButtBackText.Text = "Назад";
-            this.labelButtBackText.Click += new System.EventHandler(this.labelButtBackText_Click);
+            this.panelBackButtBack.Controls.Add(this.pictureBoxButtBack);
+            this.panelBackButtBack.Controls.Add(this.labelButtBackText);
+            this.panelBackButtBack.Location = new System.Drawing.Point(17, 5);
+            this.panelBackButtBack.Name = "panelBackButtBack";
+            this.panelBackButtBack.Size = new System.Drawing.Size(150, 50);
+            this.panelBackButtBack.TabIndex = 8;
+            this.panelBackButtBack.Visible = false;
             // 
             // pictureBoxButtBack
             // 
@@ -849,71 +871,18 @@ namespace GiveMePaw
             this.pictureBoxButtBack.TabStop = false;
             this.pictureBoxButtBack.Click += new System.EventHandler(this.labelButtBackText_Click);
             // 
-            // panelFindUsers
+            // labelButtBackText
             // 
-            this.panelFindUsers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panelFindUsers.Controls.Add(this.labelButtFindUser);
-            this.panelFindUsers.Controls.Add(this.panelBackTextBoxFindUser);
-            this.panelFindUsers.Controls.Add(this.labelFindUserText);
-            this.panelFindUsers.Location = new System.Drawing.Point(157, 143);
-            this.panelFindUsers.Name = "panelFindUsers";
-            this.panelFindUsers.Size = new System.Drawing.Size(443, 207);
-            this.panelFindUsers.TabIndex = 6;
-            // 
-            // labelButtFindUser
-            // 
-            this.labelButtFindUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
-            this.labelButtFindUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelButtFindUser.Font = new System.Drawing.Font("Lucida Sans", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelButtFindUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.labelButtFindUser.Location = new System.Drawing.Point(159, 148);
-            this.labelButtFindUser.Name = "labelButtFindUser";
-            this.labelButtFindUser.Size = new System.Drawing.Size(140, 40);
-            this.labelButtFindUser.TabIndex = 6;
-            this.labelButtFindUser.Text = "Найти";
-            this.labelButtFindUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelButtFindUser.Click += new System.EventHandler(this.labelButtFindUser_Click);
-            // 
-            // panelBackTextBoxFindUser
-            // 
-            this.panelBackTextBoxFindUser.Controls.Add(this.pictureBoxLoop);
-            this.panelBackTextBoxFindUser.Controls.Add(this.emailFindUser);
-            this.panelBackTextBoxFindUser.Location = new System.Drawing.Point(35, 89);
-            this.panelBackTextBoxFindUser.Name = "panelBackTextBoxFindUser";
-            this.panelBackTextBoxFindUser.Size = new System.Drawing.Size(383, 35);
-            this.panelBackTextBoxFindUser.TabIndex = 5;
-            // 
-            // pictureBoxLoop
-            // 
-            this.pictureBoxLoop.BackColor = System.Drawing.Color.White;
-            this.pictureBoxLoop.Image = global::GiveMePaw.Properties.Resources.Loop;
-            this.pictureBoxLoop.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxLoop.Name = "pictureBoxLoop";
-            this.pictureBoxLoop.Size = new System.Drawing.Size(35, 35);
-            this.pictureBoxLoop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLoop.TabIndex = 10;
-            this.pictureBoxLoop.TabStop = false;
-            // 
-            // emailFindUser
-            // 
-            this.emailFindUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.emailFindUser.Font = new System.Drawing.Font("Lucida Sans", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailFindUser.ForeColor = System.Drawing.Color.Gray;
-            this.emailFindUser.Location = new System.Drawing.Point(35, 0);
-            this.emailFindUser.Name = "emailFindUser";
-            this.emailFindUser.Size = new System.Drawing.Size(348, 35);
-            this.emailFindUser.TabIndex = 4;
-            // 
-            // labelFindUserText
-            // 
-            this.labelFindUserText.Font = new System.Drawing.Font("Lucida Sans", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFindUserText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.labelFindUserText.Location = new System.Drawing.Point(19, 16);
-            this.labelFindUserText.Name = "labelFindUserText";
-            this.labelFindUserText.Size = new System.Drawing.Size(399, 64);
-            this.labelFindUserText.TabIndex = 0;
-            this.labelFindUserText.Text = "Найти пользователя по email";
-            this.labelFindUserText.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.labelButtBackText.AutoSize = true;
+            this.labelButtBackText.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelButtBackText.Font = new System.Drawing.Font("Lucida Sans", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelButtBackText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.labelButtBackText.Location = new System.Drawing.Point(52, 11);
+            this.labelButtBackText.Name = "labelButtBackText";
+            this.labelButtBackText.Size = new System.Drawing.Size(99, 31);
+            this.labelButtBackText.TabIndex = 8;
+            this.labelButtBackText.Text = "Назад";
+            this.labelButtBackText.Click += new System.EventHandler(this.labelButtBackText_Click);
             // 
             // label74
             // 
@@ -1091,15 +1060,71 @@ namespace GiveMePaw
             this.labelSecondName.TabIndex = 0;
             this.labelSecondName.Text = "Фамилия:";
             // 
-            // panelBackButtBack
+            // panelFindUsers
             // 
-            this.panelBackButtBack.Controls.Add(this.pictureBoxButtBack);
-            this.panelBackButtBack.Controls.Add(this.labelButtBackText);
-            this.panelBackButtBack.Location = new System.Drawing.Point(17, 5);
-            this.panelBackButtBack.Name = "panelBackButtBack";
-            this.panelBackButtBack.Size = new System.Drawing.Size(150, 50);
-            this.panelBackButtBack.TabIndex = 8;
-            this.panelBackButtBack.Visible = false;
+            this.panelFindUsers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panelFindUsers.Controls.Add(this.labelButtFindUser);
+            this.panelFindUsers.Controls.Add(this.panelBackTextBoxFindUser);
+            this.panelFindUsers.Controls.Add(this.labelFindUserText);
+            this.panelFindUsers.Location = new System.Drawing.Point(157, 143);
+            this.panelFindUsers.Name = "panelFindUsers";
+            this.panelFindUsers.Size = new System.Drawing.Size(443, 207);
+            this.panelFindUsers.TabIndex = 6;
+            // 
+            // labelButtFindUser
+            // 
+            this.labelButtFindUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
+            this.labelButtFindUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelButtFindUser.Font = new System.Drawing.Font("Lucida Sans", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelButtFindUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.labelButtFindUser.Location = new System.Drawing.Point(159, 148);
+            this.labelButtFindUser.Name = "labelButtFindUser";
+            this.labelButtFindUser.Size = new System.Drawing.Size(140, 40);
+            this.labelButtFindUser.TabIndex = 6;
+            this.labelButtFindUser.Text = "Найти";
+            this.labelButtFindUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelButtFindUser.Click += new System.EventHandler(this.labelButtFindUser_Click);
+            // 
+            // panelBackTextBoxFindUser
+            // 
+            this.panelBackTextBoxFindUser.Controls.Add(this.pictureBoxLoop);
+            this.panelBackTextBoxFindUser.Controls.Add(this.emailFindUser);
+            this.panelBackTextBoxFindUser.Location = new System.Drawing.Point(35, 89);
+            this.panelBackTextBoxFindUser.Name = "panelBackTextBoxFindUser";
+            this.panelBackTextBoxFindUser.Size = new System.Drawing.Size(383, 35);
+            this.panelBackTextBoxFindUser.TabIndex = 5;
+            // 
+            // pictureBoxLoop
+            // 
+            this.pictureBoxLoop.BackColor = System.Drawing.Color.White;
+            this.pictureBoxLoop.Image = global::GiveMePaw.Properties.Resources.Loop;
+            this.pictureBoxLoop.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxLoop.Name = "pictureBoxLoop";
+            this.pictureBoxLoop.Size = new System.Drawing.Size(35, 35);
+            this.pictureBoxLoop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLoop.TabIndex = 10;
+            this.pictureBoxLoop.TabStop = false;
+            // 
+            // emailFindUser
+            // 
+            this.emailFindUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.emailFindUser.Font = new System.Drawing.Font("Lucida Sans", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailFindUser.ForeColor = System.Drawing.Color.Gray;
+            this.emailFindUser.Location = new System.Drawing.Point(35, 0);
+            this.emailFindUser.Name = "emailFindUser";
+            this.emailFindUser.Size = new System.Drawing.Size(348, 35);
+            this.emailFindUser.TabIndex = 4;
+            // 
+            // labelFindUserText
+            // 
+            this.labelFindUserText.Font = new System.Drawing.Font("Lucida Sans", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFindUserText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.labelFindUserText.Location = new System.Drawing.Point(19, 16);
+            this.labelFindUserText.Name = "labelFindUserText";
+            this.labelFindUserText.Size = new System.Drawing.Size(399, 64);
+            this.labelFindUserText.TabIndex = 0;
+            this.labelFindUserText.Text = "Найти пользователя по email";
+            this.labelFindUserText.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // ForEmployers
             // 
@@ -1144,11 +1169,9 @@ namespace GiveMePaw
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPet)).EndInit();
             this.panelUsersFind.ResumeLayout(false);
             this.panelUsersFind.PerformLayout();
+            this.panelBackButtBack.ResumeLayout(false);
+            this.panelBackButtBack.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxButtBack)).EndInit();
-            this.panelFindUsers.ResumeLayout(false);
-            this.panelBackTextBoxFindUser.ResumeLayout(false);
-            this.panelBackTextBoxFindUser.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoop)).EndInit();
             this.panelUser.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -1158,8 +1181,10 @@ namespace GiveMePaw
             this.panel3.PerformLayout();
             this.panelUserInfo.ResumeLayout(false);
             this.panelUserInfo.PerformLayout();
-            this.panelBackButtBack.ResumeLayout(false);
-            this.panelBackButtBack.PerformLayout();
+            this.panelFindUsers.ResumeLayout(false);
+            this.panelBackTextBoxFindUser.ResumeLayout(false);
+            this.panelBackTextBoxFindUser.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoop)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1248,5 +1273,7 @@ namespace GiveMePaw
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Panel panelBackButtBack;
+        private System.Windows.Forms.ComboBox manager_combobox;
+        private System.Windows.Forms.ComboBox admin_combobox;
     }
 }
