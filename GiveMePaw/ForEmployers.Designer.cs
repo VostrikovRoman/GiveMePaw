@@ -30,8 +30,8 @@ namespace GiveMePaw
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForEmployers));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.account_button = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -53,7 +53,6 @@ namespace GiveMePaw
             this.labelButNewPet = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelContact = new System.Windows.Forms.Panel();
-            this.manager_combobox = new System.Windows.Forms.ComboBox();
             this.admin_combobox = new System.Windows.Forms.ComboBox();
             this.label58 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
@@ -116,6 +115,7 @@ namespace GiveMePaw
             this.pictureBoxLoop = new System.Windows.Forms.PictureBox();
             this.emailFindUser = new System.Windows.Forms.TextBox();
             this.labelFindUserText = new System.Windows.Forms.Label();
+            this.manager_combobox = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -412,16 +412,6 @@ namespace GiveMePaw
             this.panelContact.Size = new System.Drawing.Size(751, 514);
             this.panelContact.TabIndex = 13;
             this.panelContact.Visible = false;
-            // 
-            // manager_combobox
-            // 
-            this.manager_combobox.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
-            this.manager_combobox.FormattingEnabled = true;
-            this.manager_combobox.Location = new System.Drawing.Point(121, 220);
-            this.manager_combobox.Name = "manager_combobox";
-            this.manager_combobox.Size = new System.Drawing.Size(279, 28);
-            this.manager_combobox.TabIndex = 39;
-            this.manager_combobox.SelectedIndexChanged += new System.EventHandler(this.manager_combobox_SelectedIndexChanged);
             // 
             // admin_combobox
             // 
@@ -770,13 +760,13 @@ namespace GiveMePaw
             // 
             // Column8
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.Column8.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(140)))), ((int)(((byte)(44)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Column8.HeaderText = "";
             this.Column8.Name = "Column8";
@@ -786,13 +776,13 @@ namespace GiveMePaw
             // 
             // Column9
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
-            this.Column9.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(181)))), ((int)(((byte)(152)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(65)))), ((int)(((byte)(48)))));
+            this.Column9.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Column9.HeaderText = "";
             this.Column9.Name = "Column9";
@@ -1126,6 +1116,17 @@ namespace GiveMePaw
             this.labelFindUserText.Text = "Найти пользователя по email";
             this.labelFindUserText.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
+            // manager_combobox
+            // 
+            this.manager_combobox.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F);
+            this.manager_combobox.FormattingEnabled = true;
+            this.manager_combobox.Location = new System.Drawing.Point(121, 219);
+            this.manager_combobox.Name = "manager_combobox";
+            this.manager_combobox.Size = new System.Drawing.Size(279, 28);
+            this.manager_combobox.TabIndex = 39;
+            this.manager_combobox.TabStop = false;
+            this.manager_combobox.SelectedIndexChanged += new System.EventHandler(this.manager_combobox_SelectedIndexChanged);
+            // 
             // ForEmployers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1273,7 +1274,7 @@ namespace GiveMePaw
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Panel panelBackButtBack;
-        private System.Windows.Forms.ComboBox manager_combobox;
         private System.Windows.Forms.ComboBox admin_combobox;
+        private System.Windows.Forms.ComboBox manager_combobox;
     }
 }
