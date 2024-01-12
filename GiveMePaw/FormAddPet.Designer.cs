@@ -46,12 +46,14 @@ namespace GiveMePaw
             this.labelButtPetText = new System.Windows.Forms.Label();
             this.PhotoTxtbx = new System.Windows.Forms.TextBox();
             this.BreedTxtbx = new System.Windows.Forms.TextBox();
-            this.WeightTxtbx = new System.Windows.Forms.TextBox();
-            this.AgeTxtbx = new System.Windows.Forms.TextBox();
             this.NameTxtbx = new System.Windows.Forms.TextBox();
+            this.AgeTxtbx = new System.Windows.Forms.NumericUpDown();
+            this.WeightTxtbx = new System.Windows.Forms.NumericUpDown();
             this.panelHat.SuspendLayout();
             this.panelAddPet.SuspendLayout();
             this.save_button_account.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AgeTxtbx)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WeightTxtbx)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHat
@@ -80,6 +82,8 @@ namespace GiveMePaw
             // panelAddPet
             // 
             this.panelAddPet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelAddPet.Controls.Add(this.WeightTxtbx);
+            this.panelAddPet.Controls.Add(this.AgeTxtbx);
             this.panelAddPet.Controls.Add(this.label7);
             this.panelAddPet.Controls.Add(this.label6);
             this.panelAddPet.Controls.Add(this.Pet_typeTxtbx);
@@ -92,8 +96,6 @@ namespace GiveMePaw
             this.panelAddPet.Controls.Add(this.labelButtPetText);
             this.panelAddPet.Controls.Add(this.PhotoTxtbx);
             this.panelAddPet.Controls.Add(this.BreedTxtbx);
-            this.panelAddPet.Controls.Add(this.WeightTxtbx);
-            this.panelAddPet.Controls.Add(this.AgeTxtbx);
             this.panelAddPet.Controls.Add(this.NameTxtbx);
             this.panelAddPet.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelAddPet.Location = new System.Drawing.Point(0, 107);
@@ -254,36 +256,43 @@ namespace GiveMePaw
             this.BreedTxtbx.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BreedTxtbx.ForeColor = System.Drawing.Color.Gray;
             this.BreedTxtbx.Location = new System.Drawing.Point(146, 250);
+            this.BreedTxtbx.MaxLength = 30;
             this.BreedTxtbx.Name = "BreedTxtbx";
             this.BreedTxtbx.Size = new System.Drawing.Size(356, 36);
             this.BreedTxtbx.TabIndex = 1;
-            // 
-            // WeightTxtbx
-            // 
-            this.WeightTxtbx.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WeightTxtbx.ForeColor = System.Drawing.Color.Gray;
-            this.WeightTxtbx.Location = new System.Drawing.Point(146, 199);
-            this.WeightTxtbx.Name = "WeightTxtbx";
-            this.WeightTxtbx.Size = new System.Drawing.Size(278, 36);
-            this.WeightTxtbx.TabIndex = 1;
-            // 
-            // AgeTxtbx
-            // 
-            this.AgeTxtbx.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AgeTxtbx.ForeColor = System.Drawing.Color.Gray;
-            this.AgeTxtbx.Location = new System.Drawing.Point(146, 148);
-            this.AgeTxtbx.Name = "AgeTxtbx";
-            this.AgeTxtbx.Size = new System.Drawing.Size(278, 36);
-            this.AgeTxtbx.TabIndex = 1;
             // 
             // NameTxtbx
             // 
             this.NameTxtbx.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameTxtbx.ForeColor = System.Drawing.Color.Gray;
             this.NameTxtbx.Location = new System.Drawing.Point(146, 97);
+            this.NameTxtbx.MaxLength = 20;
             this.NameTxtbx.Name = "NameTxtbx";
             this.NameTxtbx.Size = new System.Drawing.Size(356, 36);
             this.NameTxtbx.TabIndex = 1;
+            // 
+            // AgeTxtbx
+            // 
+            this.AgeTxtbx.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.AgeTxtbx.ForeColor = System.Drawing.Color.Gray;
+            this.AgeTxtbx.Location = new System.Drawing.Point(146, 148);
+            this.AgeTxtbx.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.AgeTxtbx.Name = "AgeTxtbx";
+            this.AgeTxtbx.Size = new System.Drawing.Size(278, 36);
+            this.AgeTxtbx.TabIndex = 49;
+            // 
+            // WeightTxtbx
+            // 
+            this.WeightTxtbx.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
+            this.WeightTxtbx.ForeColor = System.Drawing.Color.Gray;
+            this.WeightTxtbx.Location = new System.Drawing.Point(146, 199);
+            this.WeightTxtbx.Name = "WeightTxtbx";
+            this.WeightTxtbx.Size = new System.Drawing.Size(278, 36);
+            this.WeightTxtbx.TabIndex = 50;
             // 
             // FormAddPet
             // 
@@ -305,6 +314,8 @@ namespace GiveMePaw
             this.panelAddPet.PerformLayout();
             this.save_button_account.ResumeLayout(false);
             this.save_button_account.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AgeTxtbx)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WeightTxtbx)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -316,8 +327,6 @@ namespace GiveMePaw
         private System.Windows.Forms.Panel panelAddPet;
         private System.Windows.Forms.TextBox PhotoTxtbx;
         private System.Windows.Forms.TextBox BreedTxtbx;
-        private System.Windows.Forms.TextBox WeightTxtbx;
-        private System.Windows.Forms.TextBox AgeTxtbx;
         private System.Windows.Forms.TextBox NameTxtbx;
         private System.Windows.Forms.Label labelButtPetText;
         private System.Windows.Forms.Label label5;
@@ -330,5 +339,7 @@ namespace GiveMePaw
         private System.Windows.Forms.ComboBox Pet_typeTxtbx;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.NumericUpDown AgeTxtbx;
+        private System.Windows.Forms.NumericUpDown WeightTxtbx;
     }
 }

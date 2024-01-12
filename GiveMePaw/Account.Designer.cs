@@ -187,7 +187,8 @@ namespace GiveMePaw
             // 
             this.email_account.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
             this.email_account.ForeColor = System.Drawing.Color.Gray;
-            this.email_account.Location = new System.Drawing.Point(467, 349);
+            this.email_account.Location = new System.Drawing.Point(429, 349);
+            this.email_account.MaxLength = 300;
             this.email_account.Name = "email_account";
             this.email_account.ReadOnly = true;
             this.email_account.Size = new System.Drawing.Size(292, 36);
@@ -198,7 +199,8 @@ namespace GiveMePaw
             // 
             this.phone_account.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phone_account.ForeColor = System.Drawing.Color.Gray;
-            this.phone_account.Location = new System.Drawing.Point(467, 306);
+            this.phone_account.Location = new System.Drawing.Point(429, 306);
+            this.phone_account.MaxLength = 12;
             this.phone_account.Name = "phone_account";
             this.phone_account.ReadOnly = true;
             this.phone_account.Size = new System.Drawing.Size(292, 36);
@@ -209,7 +211,8 @@ namespace GiveMePaw
             // 
             this.last_name_account.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.last_name_account.ForeColor = System.Drawing.Color.Gray;
-            this.last_name_account.Location = new System.Drawing.Point(467, 263);
+            this.last_name_account.Location = new System.Drawing.Point(429, 263);
+            this.last_name_account.MaxLength = 30;
             this.last_name_account.Name = "last_name_account";
             this.last_name_account.ReadOnly = true;
             this.last_name_account.Size = new System.Drawing.Size(292, 36);
@@ -220,7 +223,8 @@ namespace GiveMePaw
             // 
             this.name_account.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name_account.ForeColor = System.Drawing.Color.Gray;
-            this.name_account.Location = new System.Drawing.Point(467, 220);
+            this.name_account.Location = new System.Drawing.Point(429, 220);
+            this.name_account.MaxLength = 20;
             this.name_account.Name = "name_account";
             this.name_account.ReadOnly = true;
             this.name_account.Size = new System.Drawing.Size(292, 36);
@@ -231,7 +235,8 @@ namespace GiveMePaw
             // 
             this.surname_account.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.surname_account.ForeColor = System.Drawing.Color.Gray;
-            this.surname_account.Location = new System.Drawing.Point(467, 177);
+            this.surname_account.Location = new System.Drawing.Point(429, 177);
+            this.surname_account.MaxLength = 40;
             this.surname_account.Name = "surname_account";
             this.surname_account.ReadOnly = true;
             this.surname_account.Size = new System.Drawing.Size(292, 36);
@@ -328,7 +333,7 @@ namespace GiveMePaw
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(330, 180);
+            this.label7.Location = new System.Drawing.Point(292, 180);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(111, 27);
             this.label7.TabIndex = 37;
@@ -340,7 +345,7 @@ namespace GiveMePaw
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(385, 223);
+            this.label8.Location = new System.Drawing.Point(347, 223);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(56, 27);
             this.label8.TabIndex = 38;
@@ -352,7 +357,7 @@ namespace GiveMePaw
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(328, 266);
+            this.label9.Location = new System.Drawing.Point(290, 266);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(113, 27);
             this.label9.TabIndex = 39;
@@ -364,7 +369,7 @@ namespace GiveMePaw
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(332, 309);
+            this.label10.Location = new System.Drawing.Point(294, 309);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(109, 27);
             this.label10.TabIndex = 40;
@@ -376,7 +381,7 @@ namespace GiveMePaw
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Lucida Sans", 16F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(366, 353);
+            this.label11.Location = new System.Drawing.Point(328, 353);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(73, 25);
             this.label11.TabIndex = 41;
@@ -425,7 +430,7 @@ namespace GiveMePaw
             this.lblNewPass.BackColor = System.Drawing.Color.Transparent;
             this.lblNewPass.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
             this.lblNewPass.ForeColor = System.Drawing.Color.Black;
-            this.lblNewPass.Location = new System.Drawing.Point(274, 438);
+            this.lblNewPass.Location = new System.Drawing.Point(236, 438);
             this.lblNewPass.Name = "lblNewPass";
             this.lblNewPass.Size = new System.Drawing.Size(167, 27);
             this.lblNewPass.TabIndex = 44;
@@ -438,7 +443,7 @@ namespace GiveMePaw
             this.lblLastPass.BackColor = System.Drawing.Color.Transparent;
             this.lblLastPass.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold);
             this.lblLastPass.ForeColor = System.Drawing.Color.Black;
-            this.lblLastPass.Location = new System.Drawing.Point(262, 395);
+            this.lblLastPass.Location = new System.Drawing.Point(224, 395);
             this.lblLastPass.Name = "lblLastPass";
             this.lblLastPass.Size = new System.Drawing.Size(179, 27);
             this.lblLastPass.TabIndex = 43;
@@ -450,7 +455,7 @@ namespace GiveMePaw
             this.tBNewPass.BackColor = System.Drawing.SystemColors.Control;
             this.tBNewPass.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tBNewPass.ForeColor = System.Drawing.Color.Black;
-            this.tBNewPass.Location = new System.Drawing.Point(467, 435);
+            this.tBNewPass.Location = new System.Drawing.Point(429, 435);
             this.tBNewPass.Name = "tBNewPass";
             this.tBNewPass.Size = new System.Drawing.Size(292, 36);
             this.tBNewPass.TabIndex = 41;
@@ -461,7 +466,7 @@ namespace GiveMePaw
             this.tBLastPass.BackColor = System.Drawing.SystemColors.Control;
             this.tBLastPass.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tBLastPass.ForeColor = System.Drawing.Color.Black;
-            this.tBLastPass.Location = new System.Drawing.Point(467, 392);
+            this.tBLastPass.Location = new System.Drawing.Point(429, 392);
             this.tBLastPass.Name = "tBLastPass";
             this.tBLastPass.Size = new System.Drawing.Size(292, 36);
             this.tBLastPass.TabIndex = 40;
@@ -496,12 +501,12 @@ namespace GiveMePaw
             this.Controls.Add(this.label6);
             this.Controls.Add(this.exit_button_account);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.tBNewPass);
             this.Controls.Add(this.update_button_account);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.password_account);
             this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pictureBox4);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1024, 652);

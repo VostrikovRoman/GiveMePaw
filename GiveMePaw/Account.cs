@@ -181,16 +181,72 @@ namespace GiveMePaw
             Hashing GH = new Hashing();
             if (MessageBox.Show("Вы уверены, что хотите сохранить изменения?", "Информация", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
             {
-                if (GH.Hash(tBLastPass.Text) == password_account.Text && tBLastPass.Text != "" && tBNewPass.Text != "")
+                if (surname_account.Text != "" && name_account.Text != "" && last_name_account.Text != "")
                 {
-                    try
+                    if (GH.Hash(tBLastPass.Text) == password_account.Text && tBLastPass.Text != "" && tBNewPass.Text != "")
+                    {
+                        try
+                        {
+                            DataTable table = new DataTable();
+                            MySqlDataAdapter adapter = new MySqlDataAdapter();
+                            DB db = new DB();
+                            db.openConnection();
+
+                            MySqlCommand command = new MySqlCommand("UPDATE users SET name=@name, second_name=@surname, patronomic=@last_name, email=@new_email, phone_number=@phone, password=@password WHERE email = @old_email", db.getConnection());
+                            MySqlParameter n1 = new MySqlParameter("@old_email", SignIn.user_email);
+                            command.Parameters.Add(n1);
+                            MySqlParameter n2 = new MySqlParameter("@surname", surname_account.Text);
+                            command.Parameters.Add(n2);
+                            MySqlParameter n3 = new MySqlParameter("@name", name_account.Text);
+                            command.Parameters.Add(n3);
+                            MySqlParameter n4 = new MySqlParameter("@new_email", email_account.Text);
+                            command.Parameters.Add(n4);
+                            MySqlParameter n5 = new MySqlParameter("@phone", phone_account.Text);
+                            command.Parameters.Add(n5);
+                            MySqlParameter n6 = new MySqlParameter("@password", GH.Hash(tBNewPass.Text));
+                            command.Parameters.Add(n6);
+                            MySqlParameter n7 = new MySqlParameter("@last_name", last_name_account.Text);
+                            command.Parameters.Add(n7);
+                            command.ExecuteNonQuery();
+
+                            surname_account.ReadOnly = true;
+                            name_account.ReadOnly = true;
+                            last_name_account.ReadOnly = true;
+                            password_account.ReadOnly = true;
+
+                            surname_account.ForeColor = Color.Gray;
+                            name_account.ForeColor = Color.Gray;
+                            last_name_account.ForeColor = Color.Gray;
+                            email_account.ForeColor = Color.Gray;
+                            phone_account.ForeColor = Color.Gray;
+                            password_account.ForeColor = Color.Gray;
+
+
+                            update_button_account.Visible = true;
+                            save_button_account.Visible = false;
+                            cancel_button_account.Visible = false;
+                            delete_button_account.Visible = false;
+                            tBLastPass.Visible = false;
+                            tBNewPass.Visible = false;
+                            lblLastPass.Visible = false;
+                            lblNewPass.Visible = false;
+                            tBLastPass.Text = "";
+                            tBNewPass.Text = "";
+                            MessageBox.Show("Успешно!");
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Ошибка!");
+                        }
+                    }
+                    else if (tBLastPass.Text == "")
                     {
                         DataTable table = new DataTable();
                         MySqlDataAdapter adapter = new MySqlDataAdapter();
                         DB db = new DB();
                         db.openConnection();
 
-                        MySqlCommand command = new MySqlCommand("UPDATE users SET name=@name, second_name=@surname, patronomic=@last_name, email=@new_email, phone_number=@phone, password=@password WHERE email = @old_email", db.getConnection());
+                        MySqlCommand command = new MySqlCommand("UPDATE users SET name=@name, second_name=@surname, patronomic=@last_name, email=@new_email, phone_number=@phone WHERE email = @old_email", db.getConnection());
                         MySqlParameter n1 = new MySqlParameter("@old_email", SignIn.user_email);
                         command.Parameters.Add(n1);
                         MySqlParameter n2 = new MySqlParameter("@surname", surname_account.Text);
@@ -201,8 +257,6 @@ namespace GiveMePaw
                         command.Parameters.Add(n4);
                         MySqlParameter n5 = new MySqlParameter("@phone", phone_account.Text);
                         command.Parameters.Add(n5);
-                        MySqlParameter n6 = new MySqlParameter("@password", GH.Hash(tBNewPass.Text));
-                        command.Parameters.Add(n6);
                         MySqlParameter n7 = new MySqlParameter("@last_name", last_name_account.Text);
                         command.Parameters.Add(n7);
                         command.ExecuteNonQuery();
@@ -232,61 +286,16 @@ namespace GiveMePaw
                         tBNewPass.Text = "";
                         MessageBox.Show("Успешно!");
                     }
-                    catch
+                    else
                     {
-                        MessageBox.Show("Ошибка!");
+                        tBLastPass.ForeColor = Color.Firebrick;
                     }
-                }
-                else if (tBLastPass.Text == "")
-                {
-                    DataTable table = new DataTable();
-                    MySqlDataAdapter adapter = new MySqlDataAdapter();
-                    DB db = new DB();
-                    db.openConnection();
-
-                    MySqlCommand command = new MySqlCommand("UPDATE users SET name=@name, second_name=@surname, patronomic=@last_name, email=@new_email, phone_number=@phone WHERE email = @old_email", db.getConnection());
-                    MySqlParameter n1 = new MySqlParameter("@old_email", SignIn.user_email);
-                    command.Parameters.Add(n1);
-                    MySqlParameter n2 = new MySqlParameter("@surname", surname_account.Text);
-                    command.Parameters.Add(n2);
-                    MySqlParameter n3 = new MySqlParameter("@name", name_account.Text);
-                    command.Parameters.Add(n3);
-                    MySqlParameter n4 = new MySqlParameter("@new_email", email_account.Text);
-                    command.Parameters.Add(n4);
-                    MySqlParameter n5 = new MySqlParameter("@phone", phone_account.Text);
-                    command.Parameters.Add(n5);
-                    MySqlParameter n7 = new MySqlParameter("@last_name", last_name_account.Text);
-                    command.Parameters.Add(n7);
-                    command.ExecuteNonQuery();
-
-                    surname_account.ReadOnly = true;
-                    name_account.ReadOnly = true;
-                    last_name_account.ReadOnly = true;
-                    password_account.ReadOnly = true;
-
-                    surname_account.ForeColor = Color.Gray;
-                    name_account.ForeColor = Color.Gray;
-                    last_name_account.ForeColor = Color.Gray;
-                    email_account.ForeColor = Color.Gray;
-                    phone_account.ForeColor = Color.Gray;
-                    password_account.ForeColor = Color.Gray;
-
-
-                    update_button_account.Visible = true;
-                    save_button_account.Visible = false;
-                    cancel_button_account.Visible = false;
-                    delete_button_account.Visible = false;
-                    tBLastPass.Visible = false;
-                    tBNewPass.Visible = false;
-                    lblLastPass.Visible = false;
-                    lblNewPass.Visible = false;
-                    tBLastPass.Text = "";
-                    tBNewPass.Text = "";
-                    MessageBox.Show("Успешно!");
                 }
                 else
                 {
-                    tBLastPass.ForeColor = Color.Firebrick;
+                    surname_account.ForeColor = Color.Firebrick;
+                    name_account.ForeColor = Color.Firebrick;
+                    last_name_account.ForeColor = Color.Firebrick;
                 }
                 
             }

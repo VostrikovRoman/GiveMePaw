@@ -123,3 +123,4 @@ D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\obj\Debu
 D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.exe
 D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.pdb
 D:\Востриков\Востриков Роман\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.Lost_Internet.resources
+C:\Users\Рома\Desktop\Институт\2 курс\ОРПО\GiveMePaw\GiveMePaw\obj\Debug\GiveMePaw.Lost_Internet.resources

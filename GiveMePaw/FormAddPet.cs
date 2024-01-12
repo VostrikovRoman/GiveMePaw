@@ -43,29 +43,33 @@ namespace GiveMePaw
 
         private void labelButtSavePet_Click(object sender, EventArgs e)
         {
-            try
+            if ((Pet_typeTxtbx.SelectedIndex == 0 || Pet_typeTxtbx.SelectedIndex == 1 || Pet_typeTxtbx.SelectedIndex == 2 || Pet_typeTxtbx.SelectedIndex == 3 || Pet_typeTxtbx.SelectedIndex == 4 ) && NameTxtbx.Text!="" && WeightTxtbx.Value != 0 && BreedTxtbx.Text != "")
             {
-                if (labelButtSavePet.Text == "Добавить")
+                try
                 {
-                    int index = Pet_typeTxtbx.SelectedIndex + 1;
-                    Pet std = new Pet(index.ToString().Trim(), NameTxtbx.Text.Trim(), AgeTxtbx.Text.Trim(), WeightTxtbx.Text.Trim(), BreedTxtbx.Text.Trim(), PhotoTxtbx.Text.Trim());
-                    DB.AddPet(std);
-                    Clear();
-                }
+                    if (labelButtSavePet.Text == "Добавить")
+                    {
+                        int index = Pet_typeTxtbx.SelectedIndex + 1;
+                        Pet std = new Pet(index.ToString().Trim(), NameTxtbx.Text.Trim(), Convert.ToString(AgeTxtbx.Value), Convert.ToString(WeightTxtbx.Value), BreedTxtbx.Text.Trim(), PhotoTxtbx.Text.Trim());
+                        DB.AddPet(std);
+                        Clear();
+                    }
 
-                if (labelButtSavePet.Text == "Изменить")
+                    if (labelButtSavePet.Text == "Изменить")
+                    {
+                        int index = Pet_typeTxtbx.SelectedIndex + 1;
+                        Pet std = new Pet(index.ToString().Trim(), NameTxtbx.Text.Trim(), Convert.ToString(AgeTxtbx.Value), Convert.ToString(WeightTxtbx.Value), BreedTxtbx.Text.Trim(), PhotoTxtbx.Text.Trim());
+                        DB.UpdatePet(std, id);
+                    }
+
+                    _parent.Display();
+                }
+                catch
                 {
-                    int index = Pet_typeTxtbx.SelectedIndex + 1;
-                    Pet std = new Pet(index.ToString().Trim(), NameTxtbx.Text.Trim(), AgeTxtbx.Text.Trim(), WeightTxtbx.Text.Trim(), BreedTxtbx.Text.Trim(), PhotoTxtbx.Text.Trim());
-                    DB.UpdatePet(std, id);
+                    MessageBox.Show("Ошибка!");
                 }
-
-                _parent.Display();
             }
-            catch
-            {
-                MessageBox.Show("Ошибка!");
-            }
+            
         }
     }
 }

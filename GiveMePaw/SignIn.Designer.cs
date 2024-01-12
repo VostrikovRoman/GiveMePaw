@@ -282,6 +282,7 @@ namespace GiveMePaw
             this.email_sign_up.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.email_sign_up.ForeColor = System.Drawing.Color.Gray;
             this.email_sign_up.Location = new System.Drawing.Point(330, 340);
+            this.email_sign_up.MaxLength = 300;
             this.email_sign_up.Name = "email_sign_up";
             this.email_sign_up.Size = new System.Drawing.Size(356, 36);
             this.email_sign_up.TabIndex = 7;
@@ -294,6 +295,7 @@ namespace GiveMePaw
             this.phone_sign_up.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phone_sign_up.ForeColor = System.Drawing.Color.Gray;
             this.phone_sign_up.Location = new System.Drawing.Point(330, 289);
+            this.phone_sign_up.MaxLength = 12;
             this.phone_sign_up.Name = "phone_sign_up";
             this.phone_sign_up.Size = new System.Drawing.Size(356, 36);
             this.phone_sign_up.TabIndex = 6;
@@ -306,6 +308,7 @@ namespace GiveMePaw
             this.last_name_sign_up.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.last_name_sign_up.ForeColor = System.Drawing.Color.Gray;
             this.last_name_sign_up.Location = new System.Drawing.Point(330, 238);
+            this.last_name_sign_up.MaxLength = 30;
             this.last_name_sign_up.Name = "last_name_sign_up";
             this.last_name_sign_up.Size = new System.Drawing.Size(356, 36);
             this.last_name_sign_up.TabIndex = 5;
@@ -318,6 +321,7 @@ namespace GiveMePaw
             this.name_sign_up.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name_sign_up.ForeColor = System.Drawing.Color.Gray;
             this.name_sign_up.Location = new System.Drawing.Point(330, 187);
+            this.name_sign_up.MaxLength = 20;
             this.name_sign_up.Name = "name_sign_up";
             this.name_sign_up.Size = new System.Drawing.Size(356, 36);
             this.name_sign_up.TabIndex = 4;
@@ -389,6 +393,7 @@ namespace GiveMePaw
             this.surname_sign_up.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.surname_sign_up.ForeColor = System.Drawing.Color.Gray;
             this.surname_sign_up.Location = new System.Drawing.Point(330, 136);
+            this.surname_sign_up.MaxLength = 40;
             this.surname_sign_up.Name = "surname_sign_up";
             this.surname_sign_up.Size = new System.Drawing.Size(356, 36);
             this.surname_sign_up.TabIndex = 3;
@@ -428,9 +433,9 @@ namespace GiveMePaw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 613);
-            this.Controls.Add(this.SignInDisplay);
+            this.ClientSize = new System.Drawing.Size(1008, 614);
             this.Controls.Add(this.SignUpDisplay);
+            this.Controls.Add(this.SignInDisplay);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1024, 652);
