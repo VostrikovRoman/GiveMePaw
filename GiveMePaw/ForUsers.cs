@@ -1069,7 +1069,7 @@ namespace GiveMePaw
                 Reader.Close();
                 command.ExecuteNonQuery();
 
-                MySqlCommand command_fill = new MySqlCommand("SELECT * FROM users WHERE id = @id ", db.getConnection());
+                MySqlCommand command_fill = new MySqlCommand("SELECT * FROM users WHERE id = @id AND primacy = '+'", db.getConnection());
                 MySqlParameter c3 = new MySqlParameter("@id", list[0]);
                 command_fill.Parameters.Add(c3);
                 MySqlDataReader Reader_fill = command_fill.ExecuteReader();
@@ -1105,12 +1105,13 @@ namespace GiveMePaw
             }
             catch (FormatException)
             {
-                MessageBox.Show("Неверный формат электронной почты. Почта должна иметь окончания - @gmail/yandex/mail/bk/list и другие");
-
+                error_panel.Visible = true;
+                error_panel.BringToFront();
             }
             catch (ArgumentException)
             {
-                MessageBox.Show("Строка с адресом не должна быть пуста");
+                error_panel.Visible = true;
+                error_panel.BringToFront();
             }
             catch 
             {
@@ -1210,7 +1211,7 @@ namespace GiveMePaw
                 Reader.Close();
                 command.ExecuteNonQuery();
 
-                MySqlCommand command_fill = new MySqlCommand("SELECT * FROM users WHERE id = @id ", db.getConnection());
+                MySqlCommand command_fill = new MySqlCommand("SELECT * FROM users WHERE id = @id AND primacy = '+' ", db.getConnection());
                 MySqlParameter c3 = new MySqlParameter("@id", list[0]);
                 command_fill.Parameters.Add(c3);
                 MySqlDataReader Reader_fill = command_fill.ExecuteReader();
@@ -1250,12 +1251,14 @@ namespace GiveMePaw
             }
             catch (FormatException)
             {
-                MessageBox.Show("Неверный формат электронной почты. Почта должна иметь окончания - @gmail/yandex/mail/bk/list и другие");
+                error_panel.Visible = true;
+                error_panel.BringToFront();
 
             }
             catch (ArgumentException)
             {
-                MessageBox.Show("Строка с адресом не должна быть пуста");
+                error_panel.Visible = true;
+                error_panel.BringToFront();
             }
             catch
             {

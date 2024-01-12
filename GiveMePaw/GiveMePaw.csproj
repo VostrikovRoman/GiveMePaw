@@ -91,6 +91,12 @@
       <DependentUpon>ForUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="Hashing.cs" />
+    <Compile Include="Lost_Internet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lost_Internet.Designer.cs">
+      <DependentUpon>Lost_Internet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pet.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -116,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ForUsers.resx">
       <DependentUpon>ForUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lost_Internet.resx">
+      <DependentUpon>Lost_Internet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>

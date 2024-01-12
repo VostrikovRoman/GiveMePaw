@@ -58,7 +58,7 @@ namespace GiveMePaw
             }
             catch
             {
-                MessageBox.Show("Ошибка!");
+                Application.Run(new Lost_Internet());
             }
         }
     }

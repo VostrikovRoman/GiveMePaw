@@ -106,7 +106,7 @@ namespace GiveMePaw
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
 
-            MySqlCommand command = new MySqlCommand("Select * FROM `users` INNER JOIN `roles` ON users.role = roles.id_roles WHERE `email` = @eU", db.getConnection());
+            MySqlCommand command = new MySqlCommand("Select users.email, users.second_name, users.name, users.patronomic, users.phone_number, roles.description FROM `users` INNER JOIN `roles` ON users.role = roles.id_roles WHERE `email` = @eU", db.getConnection());
             command.Parameters.Add("@eU", MySqlDbType.VarChar).Value = email;
 
             db.openConnection();
@@ -120,12 +120,12 @@ namespace GiveMePaw
                 panelUser.Visible = true;
                 panelBackButtBack.Visible = true;
 
-                labelEmail.Text = Convert.ToString(table.Rows[0][4]);
-                labelSecondName.Text = "Фамилия: " + Convert.ToString(table.Rows[0][2]);
-                labelName.Text = "Имя: " + Convert.ToString(table.Rows[0][1]);
+                labelEmail.Text = Convert.ToString(table.Rows[0][0]);
+                labelSecondName.Text = "Фамилия: " + Convert.ToString(table.Rows[0][1]);
+                labelName.Text = "Имя: " + Convert.ToString(table.Rows[0][2]);
                 labelPatronomic.Text = "Отчество: " + Convert.ToString(table.Rows[0][3]);
-                labelPhoneNum.Text = "Номер телефона: " + Convert.ToString(table.Rows[0][5]);
-                labelRole.Text = "Роль: " + Convert.ToString(table.Rows[0][9]);
+                labelPhoneNum.Text = "Номер телефона: " + Convert.ToString(table.Rows[0][4]);
+                labelRole.Text = "Роль: " + Convert.ToString(table.Rows[0][5]);
             }
             else
             {
@@ -189,14 +189,14 @@ namespace GiveMePaw
             DB db = new DB();
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
-            MySqlCommand command = new MySqlCommand("Select * FROM `users` INNER JOIN `roles` ON users.role = roles.id_roles WHERE `email` = '" + email + "'", db.getConnection());
+            MySqlCommand command = new MySqlCommand("Select roles.description FROM `users` INNER JOIN `roles` ON users.role = roles.id_roles WHERE `email` = '" + email + "'", db.getConnection());
             
             db.openConnection();
             adapter.SelectCommand = command;
             adapter.Fill(table);
             db.closeConnection();
 
-            labelRole.Text = "Роль: " + Convert.ToString(table.Rows[0][9]);
+            labelRole.Text = "Роль: " + Convert.ToString(table.Rows[0][0]);
          
         }
 
